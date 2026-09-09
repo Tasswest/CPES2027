@@ -118,9 +118,9 @@ def main() -> None:
     ranks = pd.DataFrame(rank_rows)
     seps = pd.DataFrame(sep_rows)
     selfc = pd.DataFrame(selfcheck_rows)
-    ranks.to_csv(RESULT_DIR / "03_1_classements_bruts_ziak.csv", index=False)
-    seps.to_csv(RESULT_DIR / "03_2_separation_ziak.csv", index=False)
-    selfc.to_csv(RESULT_DIR / "03_3_controle_positif_ziak.csv", index=False)
+    ranks.to_csv(RESULT_DIR / "04_1_classements_bruts_ziak.csv", index=False)
+    seps.to_csv(RESULT_DIR / "04_2_separation_ziak.csv", index=False)
+    selfc.to_csv(RESULT_DIR / "04_3_controle_positif_ziak.csv", index=False)
 
     # --- Stabilité du classement : fréquence d'apparition dans le top-5 ---
     top5 = (
@@ -130,7 +130,7 @@ def main() -> None:
     )
     top5["freq_top5"] = top5["n_top5"] / N_REPEATS
     top5 = top5.sort_values(["features", "metric", "freq_top5"], ascending=[True, True, False])
-    top5.to_csv(RESULT_DIR / "03_4_stabilite_top5.csv", index=False)
+    top5.to_csv(RESULT_DIR / "04_4_stabilite_top5.csv", index=False)
 
     # --- Consensus toutes méthodes confondues : rang moyen ---
     consensus = (
@@ -141,10 +141,10 @@ def main() -> None:
     )
     consensus["n_methodes"] = ranks.groupby("artiste")["metric"].nunique().reindex(
         consensus["artiste"]).to_numpy()
-    consensus.to_csv(RESULT_DIR / "03_5_consensus_candidats.csv", index=False)
+    consensus.to_csv(RESULT_DIR / "04_5_consensus_candidats.csv", index=False)
 
     # --- Confrontation aux seuils de décision de la validation ---
-    seuils = pd.read_csv(RESULT_DIR / "02_3_seuils_decision.csv")
+    seuils = pd.read_csv(RESULT_DIR / "03_3_seuils_decision.csv")
     verdict = []
     for (f, m), g in seps.groupby(["features", "metric"]):
         s = seuils[(seuils["features"] == f) & (seuils["metric"] == m)].iloc[0]
@@ -166,7 +166,7 @@ def main() -> None:
             "top1_modal": g["top1"].mode().iloc[0],
         })
     verdict_df = pd.DataFrame(verdict)
-    verdict_df.to_csv(RESULT_DIR / "03_6_verdict_hypotheses.csv", index=False)
+    verdict_df.to_csv(RESULT_DIR / "04_6_verdict_hypotheses.csv", index=False)
 
     print("\n=== CONTRÔLE POSITIF : Ziak retrouve-t-il sa propre moitié ? ===")
     ctrl = selfc.groupby(["features", "metric"]).agg(

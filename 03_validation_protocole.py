@@ -159,7 +159,7 @@ def main() -> None:
         print(f"  répétition {rep + 1}/{N_REPEATS} terminée")
 
     res = pd.DataFrame(rows)
-    res.to_csv(RESULT_DIR / "02_1_validation_brute.csv", index=False)
+    res.to_csv(RESULT_DIR / "03_1_validation_brute.csv", index=False)
 
     # --- Puissance de la méthode sous H1 ---
     h1 = res[res["condition"] == "H1_jumeau_present"]
@@ -177,7 +177,7 @@ def main() -> None:
         .reset_index()
         .sort_values("recall_at_1", ascending=False)
     )
-    perf.to_csv(RESULT_DIR / "02_2_puissance_methode.csv", index=False)
+    perf.to_csv(RESULT_DIR / "03_2_puissance_methode.csv", index=False)
 
     # --- Seuils de décision : séparation sous H1 vs H0 ---
     seuils = []
@@ -193,7 +193,7 @@ def main() -> None:
             "sep_H0_p05": b.quantile(0.05),
             "ecart_H1_H0": b.mean() - a.mean(),
         })
-    pd.DataFrame(seuils).to_csv(RESULT_DIR / "02_3_seuils_decision.csv", index=False)
+    pd.DataFrame(seuils).to_csv(RESULT_DIR / "03_3_seuils_decision.csv", index=False)
 
     print("\n=== PUISSANCE DE LA MÉTHODE (le jumeau est dans le pool) ===")
     print(perf.to_string(index=False, float_format=lambda x: f"{x:.3f}"))

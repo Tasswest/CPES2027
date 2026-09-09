@@ -2,10 +2,11 @@
 """Préparation du corpus et mise en cache des compteurs stylométriques.
 
 Ce module produit, une fois pour toutes, les matrices de comptes utilisées par
-l'analyse d'attribution (`02_stylometrie_ziak.py`) :
+les scripts d'analyse (`02_` à `06_`) :
 
 - `counts_mfw`  : comptes des N mots les plus fréquents, par chanson ;
 - `counts_char` : comptes des 4-grammes de caractères les plus fréquents ;
+- `counts_word_ext` : vocabulaire élargi, pour les seuls marqueurs lexicaux ;
 - `n_tokens`    : longueur en tokens de chaque chanson.
 
 Travailler sur des *comptes par chanson* permet ensuite de recomposer
@@ -31,6 +32,7 @@ CACHE_DIR = Path(".cache_stylo")
 # Nombre de traits retenus pour chaque famille de descripteurs.
 N_MFW = 500          # mots les plus fréquents (Burrows's Delta)
 N_CHAR = 3000        # 4-grammes de caractères les plus fréquents
+N_WORD_EXT = 6000    # vocabulaire élargi, réservé à l'analyse lexicale
 
 # Balises de section Genius ([Couplet 1], [Refrain], ...). Absentes du corpus
 # LRFAF mais on les neutralise par sécurité si une version enrichie est utilisée.
@@ -117,14 +119,19 @@ def build_cache(force: bool = False) -> dict:
     char_path = CACHE_DIR / "counts_char.npz"
     vocab_path = CACHE_DIR / "vocab.npz"
 
-    if not force and all(p.exists() for p in (meta_path, mfw_path, char_path, vocab_path)):
+    ext_path = CACHE_DIR / "counts_word_ext.npz"
+
+    if not force and all(p.exists() for p in (meta_path, mfw_path, char_path,
+                                              vocab_path, ext_path)):
         vocabs = np.load(vocab_path, allow_pickle=True)
         return {
             "meta": pd.read_parquet(meta_path),
             "counts_mfw": sparse.load_npz(mfw_path),
             "counts_char": sparse.load_npz(char_path),
+            "counts_word_ext": sparse.load_npz(ext_path),
             "vocab_mfw": list(vocabs["mfw"]),
             "vocab_char": list(vocabs["char"]),
+            "vocab_word_ext": list(vocabs["word_ext"]),
         }
 
     print("Construction du cache stylométrique (quelques minutes)...")
@@ -136,6 +143,8 @@ def build_cache(force: bool = False) -> dict:
     for toks in df["tokens"]:
         word_freq.update(toks)
     vocab_mfw = [w for w, _ in word_freq.most_common(N_MFW)]
+    # Vocabulaire élargi : sert aux marqueurs lexicaux, pas à l'attribution.
+    vocab_ext = [w for w, _ in word_freq.most_common(N_WORD_EXT)]
 
     # Vocabulaire des 4-grammes de caractères les plus fréquents.
     char_freq: Counter = Counter()
@@ -149,6 +158,8 @@ def build_cache(force: bool = False) -> dict:
     counts_char = build_count_matrix(
         [char_ngrams(t) for t in df["lyrics_clean"]], vocab_char
     )
+    print("  vectorisation du vocabulaire élargi...")
+    counts_ext = build_count_matrix(df["tokens"].tolist(), vocab_ext)
 
     meta = df[["artist", "title", "year", "n_tokens", "pageviews"]].copy()
     meta["n_chargrams"] = np.asarray(counts_char.sum(axis=1)).ravel()
@@ -156,16 +167,20 @@ def build_cache(force: bool = False) -> dict:
     meta.to_parquet(meta_path)
     sparse.save_npz(mfw_path, counts_mfw)
     sparse.save_npz(char_path, counts_char)
+    sparse.save_npz(ext_path, counts_ext)
     np.savez(vocab_path, mfw=np.array(vocab_mfw, dtype=object),
-             char=np.array(vocab_char, dtype=object))
+             char=np.array(vocab_char, dtype=object),
+             word_ext=np.array(vocab_ext, dtype=object))
     print(f"  cache écrit dans {CACHE_DIR}/")
 
     return {
         "meta": meta,
         "counts_mfw": counts_mfw,
         "counts_char": counts_char,
+        "counts_word_ext": counts_ext,
         "vocab_mfw": vocab_mfw,
         "vocab_char": vocab_char,
+        "vocab_word_ext": vocab_ext,
     }
 
 

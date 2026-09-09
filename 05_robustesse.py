@@ -35,7 +35,7 @@ SEED = 20260911
 
 def puissance_par_generation(cache, t_query: int) -> pd.DataFrame:
     """Recall@1 des contrôles, ventilé par période d'activité médiane."""
-    val = pd.read_csv(RESULT_DIR / "02_1_validation_brute.csv")
+    val = pd.read_csv(RESULT_DIR / "03_1_validation_brute.csv")
     meta = cache["meta"]
     annee_med = meta.groupby("artist")["year"].median()
 
@@ -55,7 +55,7 @@ def puissance_par_generation(cache, t_query: int) -> pd.DataFrame:
              n_artistes=("artist", "nunique"))
         .reset_index()
     )
-    out.to_csv(RESULT_DIR / "04_1_puissance_par_generation.csv", index=False)
+    out.to_csv(RESULT_DIR / "05_1_puissance_par_generation.csv", index=False)
     return out
 
 
@@ -90,7 +90,7 @@ def sensibilite_seuil(cache, t_query: int) -> pd.DataFrame:
             "stabilite_top1": float(pd.Series(tops).value_counts().iloc[0] / len(tops)),
         })
     out = pd.DataFrame(rows)
-    out.to_csv(RESULT_DIR / "04_2_sensibilite_seuil.csv", index=False)
+    out.to_csv(RESULT_DIR / "05_2_sensibilite_seuil.csv", index=False)
     return out
 
 
@@ -147,7 +147,7 @@ def test_imposteurs(cache, candidats: list[str], n_iter: int = 200) -> pd.DataFr
             "seuil_hasard": 1.0 / (n_imp + 1),
         })
     out = pd.DataFrame(rows).sort_values("score_imposteurs", ascending=False)
-    out.to_csv(RESULT_DIR / "04_3_test_imposteurs.csv", index=False)
+    out.to_csv(RESULT_DIR / "05_3_test_imposteurs.csv", index=False)
     return out
 
 
@@ -211,7 +211,7 @@ def imposteurs_reference(cache, n_controles: int = 40, n_iter: int = 200) -> pd.
         rows.append({"artiste": ctrl, "score_imposteurs_jumeau": wins / n_iter})
 
     out = pd.DataFrame(rows).sort_values("score_imposteurs_jumeau", ascending=False)
-    out.to_csv(RESULT_DIR / "04_4_imposteurs_reference.csv", index=False)
+    out.to_csv(RESULT_DIR / "05_4_imposteurs_reference.csv", index=False)
     return out
 
 

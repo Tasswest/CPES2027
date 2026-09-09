@@ -6,7 +6,7 @@ Deux principes gouvernent ce module :
 1. **Taille contrôlée.** Chaque « document d'artiste » est un échantillon de
    `T` tokens exactement. Sans cette contrainte, la similarité cosinus mesure
    surtout la couverture de vocabulaire : un artiste prolifique paraît proche
-   de tout le monde (cf. `03_diagnostic_biais_taille.py`).
+   de tout le monde (cf. `02_diagnostic_biais_taille.py`).
 
 2. **Distances calibrées.** La distance brute au meilleur candidat n'est pas
    interprétable seule. On la convertit en score standardisé par rapport à la

@@ -45,3 +45,41 @@ Voir les skills [`notebook-authoring`](.github/skills/notebook-authoring/SKILL.m
 ## Notebooks
 
 - [`01_description_variables_quantitatives.ipynb`](01_description_variables_quantitatives.ipynb) : description des variables quantitatives du corpus (statistiques descriptives, distributions, évolution des moyennes annuelles).
+- [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) : **article** — Ziak est-il un autre rappeur ? Test stylométrique de l'hypothèse du pseudonyme.
+
+## Étude : l'identité stylométrique de Ziak
+
+Ziak est apparu en 2020 sans identité civile publique, ce qui a nourri l'hypothèse
+d'un artiste déjà établi rappant sous un pseudonyme. Cette hypothèse est testable :
+si Ziak est le second nom d'un rappeur du corpus, ses textes doivent porter la même
+signature statistique.
+
+**Résultat** — aucun des 393 artistes éligibles ne correspond, avec une méthode qui
+retrouve le bon auteur dans 90 % des cas quand la réponse est connue (97,7 % pour la
+génération de Ziak). Les quatre combinaisons de traits et de distances testées
+convergent vers l'hypothèse « auteur absent du corpus ».
+
+**Point méthodologique** — l'approche intuitive (concaténer les chansons de chaque
+artiste, puis comparer) donne un classement d'apparence convaincante mais se trompe
+trois fois sur quatre : elle mesure surtout la quantité de texte disponible sur chaque
+artiste. Le protocole retenu contrôle la taille des documents, se valide sur des cas
+de vérité-terrain et se calibre contre une hypothèse nulle explicite.
+
+### Pipeline
+
+Les scripts s'exécutent dans l'ordre ; le premier construit un cache de compteurs
+(`.cache_stylo/`, non versionné) qui rend les suivants quasi instantanés.
+
+```bash
+python3 stylo_features.py             # cache des compteurs par chanson (~1 min)
+python3 02_diagnostic_biais_taille.py  # pourquoi l'approche naïve échoue
+python3 03_validation_protocole.py     # validation sur vérité-terrain
+python3 04_attribution_ziak.py         # application à Ziak, verdict
+python3 05_robustesse.py               # sensibilité, imposteurs, générations
+python3 06_profil_stylistique.py       # portrait : marqueurs, excentricité
+python3 07_figures.py                  # figures de l'article
+```
+
+Modules partagés : [`stylo_features.py`](stylo_features.py) (nettoyage, tokenisation,
+cache) et [`stylo_attribution.py`](stylo_attribution.py) (Cosine Delta, Delta de
+Burrows, échantillonnage à taille contrôlée, scores de séparation).
