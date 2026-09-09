@@ -54,7 +54,7 @@ d'un artiste déjà établi rappant sous un pseudonyme. Cette hypothèse est tes
 si Ziak est le second nom d'un rappeur du corpus, ses textes doivent porter la même
 signature statistique.
 
-**Résultat** — aucun des 393 artistes éligibles ne correspond, avec une méthode qui
+**Résultat** — aucun des 392 autres artistes éligibles ne correspond, avec une méthode qui
 retrouve le bon auteur dans 90 % des cas quand la réponse est connue (97,7 % pour la
 génération de Ziak). Les quatre combinaisons de traits et de distances testées
 convergent vers l'hypothèse « auteur absent du corpus ».
