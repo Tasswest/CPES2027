@@ -42,10 +42,17 @@ Les notebooks livrés dans ce dépôt sont des **premiers jets**. Ils posent une
 
 Voir les skills [`notebook-authoring`](.github/skills/notebook-authoring/SKILL.md) et [`export-organization`](.github/skills/export-organization/SKILL.md) pour les conventions détaillées de rédaction des notebooks et d'organisation des exports.
 
+## Article
+
+- 📄 **[`article_ziak_stylometrie.pdf`](article_ziak_stylometrie.pdf)** — l'article rédigé (8 pages, 6 figures, 4 tableaux). C'est le document à lire.
+- [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) — la version reproductible : même analyse, avec le code et ses sorties.
+
+Le PDF est régénéré par [`12_article_pdf.py`](12_article_pdf.py), qui relit tous ses
+chiffres dans `result/` : il ne peut pas diverger des résultats produits par les scripts.
+
 ## Notebooks
 
 - [`01_description_variables_quantitatives.ipynb`](01_description_variables_quantitatives.ipynb) : description des variables quantitatives du corpus (statistiques descriptives, distributions, évolution des moyennes annuelles).
-- [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) : **article** — Ziak est-il un autre rappeur ? Test stylométrique de l'hypothèse du pseudonyme.
 
 ## Étude : l'identité stylométrique de Ziak
 
@@ -89,6 +96,7 @@ python3 08_ajout_mikeysem.py           # ajoute Mikeysem au format LRFAF
 python3 09_controle_reproduction.py    # contrôles du pipeline reconstitué
 python3 10_test_ziak_mikeysem.py       # test de l'hypothèse Mikeysem
 python3 07_figures.py                  # figures de l'article
+python3 12_article_pdf.py              # article_ziak_stylometrie.pdf
 ```
 
 Le pipeline LRFAF reconstitué ([`lrfaf_pipeline.py`](lrfaf_pipeline.py)) et son rapport
