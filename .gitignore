@@ -8,3 +8,9 @@ __pycache__/
 
 # Checkpoints Jupyter
 .ipynb_checkpoints/
+
+# Cache stylométrique régénérable (stylo_features.py)
+.cache_stylo/
+
+# macOS
+.DS_Store

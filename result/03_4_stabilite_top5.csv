@@ -1,0 +1,112 @@
+features,metric,artiste,n_top5,freq_top5
+char,burrows_delta,L’Animalerie,30,1.0
+char,burrows_delta,Zkr,22,0.7333333333333333
+char,burrows_delta,ISK,12,0.4
+char,burrows_delta,S-Crew,12,0.4
+char,burrows_delta,Leck,8,0.26666666666666666
+char,burrows_delta,Dibson,7,0.23333333333333334
+char,burrows_delta,Nahir,5,0.16666666666666666
+char,burrows_delta,Panama Bende,4,0.13333333333333333
+char,burrows_delta,Vin’s,4,0.13333333333333333
+char,burrows_delta,Worms-T,4,0.13333333333333333
+char,burrows_delta,Bigflo & Oli,3,0.1
+char,burrows_delta,Guizmo,3,0.1
+char,burrows_delta,Mister You,3,0.1
+char,burrows_delta,Nekfeu,3,0.1
+char,burrows_delta,Niro,3,0.1
+char,burrows_delta,Ademo,2,0.06666666666666667
+char,burrows_delta,Deen Burbigo,2,0.06666666666666667
+char,burrows_delta,Hayce Lemsi,2,0.06666666666666667
+char,burrows_delta,Lacrim,2,0.06666666666666667
+char,burrows_delta,L’Entourage,2,0.06666666666666667
+char,burrows_delta,Nakk Mendosa,2,0.06666666666666667
+char,burrows_delta,Sopico,2,0.06666666666666667
+char,burrows_delta,Aketo,1,0.03333333333333333
+char,burrows_delta,Beeby,1,0.03333333333333333
+char,burrows_delta,Beendo Z,1,0.03333333333333333
+char,burrows_delta,Hugo TSR,1,0.03333333333333333
+char,burrows_delta,JuL,1,0.03333333333333333
+char,burrows_delta,Lesram,1,0.03333333333333333
+char,burrows_delta,Ninho,1,0.03333333333333333
+char,burrows_delta,Rimkus,1,0.03333333333333333
+char,burrows_delta,Sadek,1,0.03333333333333333
+char,burrows_delta,Sam’s,1,0.03333333333333333
+char,burrows_delta,Swift Guad,1,0.03333333333333333
+char,burrows_delta,Zola,1,0.03333333333333333
+char,burrows_delta,​DA Uzi,1,0.03333333333333333
+char,cosine_delta,Beendo Z,24,0.8
+char,cosine_delta,Kerchak,16,0.5333333333333333
+char,cosine_delta,ISK,15,0.5
+char,cosine_delta,UZI (FRA),15,0.5
+char,cosine_delta,Zkr,13,0.43333333333333335
+char,cosine_delta,Rimkus,8,0.26666666666666666
+char,cosine_delta,Werenoi,7,0.23333333333333334
+char,cosine_delta,Maes,6,0.2
+char,cosine_delta,Roshi,6,0.2
+char,cosine_delta,ASHE 22,5,0.16666666666666666
+char,cosine_delta,Nahir,5,0.16666666666666666
+char,cosine_delta,Fresh laDouille,4,0.13333333333333333
+char,cosine_delta,SDM,4,0.13333333333333333
+char,cosine_delta,Djadja & Dinaz,3,0.1
+char,cosine_delta,Lesram,3,0.1
+char,cosine_delta,​DA Uzi,3,0.1
+char,cosine_delta,GLK,2,0.06666666666666667
+char,cosine_delta,Lemon Haze,2,0.06666666666666667
+char,cosine_delta,Niro,2,0.06666666666666667
+char,cosine_delta,SCH,2,0.06666666666666667
+char,cosine_delta,Gambi,1,0.03333333333333333
+char,cosine_delta,JuL,1,0.03333333333333333
+char,cosine_delta,Timal,1,0.03333333333333333
+char,cosine_delta,Worms-T,1,0.03333333333333333
+char,cosine_delta,Zola,1,0.03333333333333333
+mfw,burrows_delta,Zkr,26,0.8666666666666667
+mfw,burrows_delta,Rimkus,15,0.5
+mfw,burrows_delta,ISK,14,0.4666666666666667
+mfw,burrows_delta,SCH,11,0.36666666666666664
+mfw,burrows_delta,Lacrim,8,0.26666666666666666
+mfw,burrows_delta,S-Pion,7,0.23333333333333334
+mfw,burrows_delta,Beendo Z,6,0.2
+mfw,burrows_delta,Dibson,6,0.2
+mfw,burrows_delta,GLK,6,0.2
+mfw,burrows_delta,Panama Bende,6,0.2
+mfw,burrows_delta,Hayce Lemsi,5,0.16666666666666666
+mfw,burrows_delta,S-Crew,5,0.16666666666666666
+mfw,burrows_delta,Graya,4,0.13333333333333333
+mfw,burrows_delta,L’Animalerie,4,0.13333333333333333
+mfw,burrows_delta,Guizmo,3,0.1
+mfw,burrows_delta,Mister You,3,0.1
+mfw,burrows_delta,YL,3,0.1
+mfw,burrows_delta,Lesram,2,0.06666666666666667
+mfw,burrows_delta,Maes,2,0.06666666666666667
+mfw,burrows_delta,Nahir,2,0.06666666666666667
+mfw,burrows_delta,Seth Gueko,2,0.06666666666666667
+mfw,burrows_delta,Sofiane,2,0.06666666666666667
+mfw,burrows_delta,Despo Rutti,1,0.03333333333333333
+mfw,burrows_delta,Hatik,1,0.03333333333333333
+mfw,burrows_delta,Intouchable,1,0.03333333333333333
+mfw,burrows_delta,Mister V,1,0.03333333333333333
+mfw,burrows_delta,Niro,1,0.03333333333333333
+mfw,burrows_delta,RK,1,0.03333333333333333
+mfw,burrows_delta,Sam’s,1,0.03333333333333333
+mfw,burrows_delta,Zola,1,0.03333333333333333
+mfw,cosine_delta,Rimkus,27,0.9
+mfw,cosine_delta,Lemon Haze,25,0.8333333333333334
+mfw,cosine_delta,Werenoi,21,0.7
+mfw,cosine_delta,SCH,14,0.4666666666666667
+mfw,cosine_delta,Beendo Z,10,0.3333333333333333
+mfw,cosine_delta,Fresh laDouille,8,0.26666666666666666
+mfw,cosine_delta,ISK,8,0.26666666666666666
+mfw,cosine_delta,GLK,7,0.23333333333333334
+mfw,cosine_delta,Maes,6,0.2
+mfw,cosine_delta,Graya,3,0.1
+mfw,cosine_delta,Koba LaD,3,0.1
+mfw,cosine_delta,Roshi,3,0.1
+mfw,cosine_delta,Soso Maness,3,0.1
+mfw,cosine_delta,Lacrim,2,0.06666666666666667
+mfw,cosine_delta,Sofiane,2,0.06666666666666667
+mfw,cosine_delta,UZI (FRA),2,0.06666666666666667
+mfw,cosine_delta,Zkr,2,0.06666666666666667
+mfw,cosine_delta,Dika,1,0.03333333333333333
+mfw,cosine_delta,Mister You,1,0.03333333333333333
+mfw,cosine_delta,S-Pion,1,0.03333333333333333
+mfw,cosine_delta,Zola,1,0.03333333333333333
