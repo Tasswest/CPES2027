@@ -59,6 +59,14 @@ retrouve le bon auteur dans 90 % des cas quand la réponse est connue (97,7 % po
 génération de Ziak). Les quatre combinaisons de traits et de distances testées
 convergent vers l'hypothèse « auteur absent du corpus ».
 
+**Le cas Mikeysem** — le nom le plus souvent avancé par les auditeurs ne figurait pas
+dans LRFAF : sans page Wikipédia, il échappait au critère d'inclusion du corpus. Ses
+titres ont été collectés et passés dans le pipeline LRFAF reconstitué
+(voir [`RAPPORT_LRFAF.md`](RAPPORT_LRFAF.md)), puis testés. Il se classe 58ᵉ sur 493,
+derrière six artistes que personne ne soupçonne, et obtient au test par paire un score
+à peine supérieur au hasard. Son corpus (3 745 mots) reste mince : le résultat vaut
+comme faisceau convergent, pas comme démonstration.
+
 **Point méthodologique** — l'approche intuitive (concaténer les chansons de chaque
 artiste, puis comparer) donne un classement d'apparence convaincante mais se trompe
 trois fois sur quatre : elle mesure surtout la quantité de texte disponible sur chaque
@@ -77,8 +85,15 @@ python3 03_validation_protocole.py     # validation sur vérité-terrain
 python3 04_attribution_ziak.py         # application à Ziak, verdict
 python3 05_robustesse.py               # sensibilité, imposteurs, générations
 python3 06_profil_stylistique.py       # portrait : marqueurs, excentricité
+python3 08_ajout_mikeysem.py           # ajoute Mikeysem au format LRFAF
+python3 09_controle_reproduction.py    # contrôles du pipeline reconstitué
+python3 10_test_ziak_mikeysem.py       # test de l'hypothèse Mikeysem
 python3 07_figures.py                  # figures de l'article
 ```
+
+Le pipeline LRFAF reconstitué ([`lrfaf_pipeline.py`](lrfaf_pipeline.py)) et son rapport
+de reproductibilité ([`RAPPORT_LRFAF.md`](RAPPORT_LRFAF.md)) documentent, colonne par
+colonne, ce qui est reproduit exactement, approximé ou impossible à retrouver.
 
 Modules partagés : [`stylo_features.py`](stylo_features.py) (nettoyage, tokenisation,
 cache) et [`stylo_attribution.py`](stylo_attribution.py) (Cosine Delta, Delta de

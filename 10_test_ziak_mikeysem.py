@@ -296,6 +296,8 @@ def controles_complementaires(cache, mike: pd.DataFrame, t_cand: int) -> None:
         pos = {names[j]: i + 1 for i, j in enumerate(order)}
         rows.append({a: pos[a] for a in autres + [CHALLENGER]})
     perspective = pd.DataFrame(rows).median().sort_values()
+    perspective.rename("rang_median").to_frame().assign(
+        n_candidats=len(pool)).to_csv(RESULT_DIR / "10_5_rangs_compares.csv")
     print("\n  c) Rangs médians vus depuis Ziak, à taille égale (char/cosine) :")
     for a, r in perspective.items():
         mark = "  <-- hypothèse testée" if a == CHALLENGER else ""
