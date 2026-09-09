@@ -252,9 +252,31 @@ du corpus, décrit au §0.
 > départ. L'ajouter étend le corpus au-delà de son critère d'inclusion d'origine
 > — ce qui est le but ici, mais doit être déclaré.
 
+### Couverture : 7 titres sur 21
+
+Sa discographie réelle compte **21 titres distincts** (relevé via l'API Deezer,
+`result/11_discographie_mikeysem.csv`), répartis en deux projets — *Akimbo*
+(8 titres, décembre 2021) et *Prochains Héritiers* (10 titres, avril 2022) — plus
+quelques singles.
+
+**Seuls 9 d'entre eux ont une page Genius**, et 7 satisfont aux critères LRFAF.
+Les 14 autres n'ont aucune transcription sur Genius — vérifié titre par titre par
+recherche directe. Parmi les absents : **l'intégralité de *Prochains Héritiers***,
+soit la moitié de sa production.
+
+Récupérer ces paroles sur des sites tiers romprait la compatibilité
+méthodologique : LRFAF ne contient que des transcriptions Genius, avec leurs
+conventions propres (élisions, balises, orthographe). Le corpus obtenu est donc
+un **échantillon non aléatoire** — ce que les contributeurs de Genius ont
+transcrit — et non l'œuvre complète.
+
+À noter également : les années renvoyées par Genius sont peu fiables pour cet
+artiste (« Short » daté 2017, « Sport » 2019, alors que Deezer situe les deux
+fin 2021).
+
 ### Sélection des titres
 
-9 titres sur Genius, **7 retenus** par les critères LRFAF :
+Sur les 9 titres présents sur Genius, **7 retenus** par les critères LRFAF :
 
 | Titre exclu | Motif | Fidèle à LRFAF ? |
 |---|---|---|
