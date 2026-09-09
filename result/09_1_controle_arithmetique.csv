@@ -1,0 +1,6 @@
+relation,n,exact_%
+n_non_french_words = n_words - n_french_words,37307,100.0
+pageviews_corrected = log(pageviews+10) + f(year),33696,100.0
+pageviews_2 = log(pageviews / pageview_mean),10547,100.0
+pageviews_2 = 0 quand pageviews = 0,26760,99.97757847533633
+age_artist = year - birthdate_artist,14064,100.0
