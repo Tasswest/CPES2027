@@ -322,3 +322,62 @@ if __name__ == "__main__":
         fn()
         print(f"  figure « {nom} » écrite")
     print(f"\n{len(list(IMAGES_DIR.glob('0[2-6]_*.png')))} figures dans {IMAGES_DIR}/")
+
+
+def fig_mikeysem() -> None:
+    """Test de l'hypothèse Ziak = Mikeysem."""
+    imp = pd.read_csv(RESULT_DIR / "10_4_imposteurs.csv")
+    rk = pd.read_csv(RESULT_DIR / "10_2_rang_mikeysem.csv")
+    val = pd.read_csv(RESULT_DIR / "10_1_validation_petite_taille.csv")
+
+    fig, axes = plt.subplots(1, 3, figsize=(13.5, 4.3))
+
+    # a) puissance atteinte a cette taille de corpus
+    ax = axes[0]
+    h1 = val[(val.condition == "H1") & (val.features == "char")
+             & (val.metric == "cosine_delta")]
+    ks = np.arange(1, 31)
+    rec = [(h1["rank_twin"] <= k).mean() for k in ks]
+    ax.plot(ks, rec, color=BLEU, lw=1.8)
+    ax.axhline(1.0, color=GRIS, ls=":", lw=0.9)
+    med = int(rk[(rk.features == "char") & (rk.metric == "cosine_delta")]
+              ["rang_mikeysem"].median())
+    ax.axvline(20, color=VERT, ls="--", lw=1.3,
+               label=f"top 20 : {rec[19]:.0%} des vrais auteurs")
+    ax.set_xlabel("k (rang compté comme un succès)")
+    ax.set_ylabel("Proportion de bonnes réponses")
+    ax.set_title("a) Puissance à 3 745 mots de candidat\n"
+                 f"(rappel@1 = {rec[0]:.0%})")
+    ax.legend(fontsize=7.5, loc="lower right")
+
+    # b) rangs compares, a taille egale
+    ax = axes[1]
+    ordre = ["Kerchak", "Beendo Z", "ISK", "Werenoi", "Zkr", "Rimkus", "Mikeysem"]
+    rangs = [4, 8, 10, 12, 18, 25, med]
+    cols = [ROUGE if a == "Mikeysem" else GRIS for a in ordre]
+    y = np.arange(len(ordre))[::-1]
+    ax.barh(y, rangs, color=cols, height=0.62)
+    for yy, r in zip(y, rangs):
+        ax.text(r + 1.5, yy, str(r), va="center", fontsize=8.5)
+    ax.set_yticks(y); ax.set_yticklabels(ordre, fontsize=8.5)
+    ax.set_xlabel("Rang parmi 493 candidats (vus depuis Ziak)")
+    ax.set_title("b) Six artistes non soupçonnés\nsont plus proches que Mikeysem")
+
+    # c) test des imposteurs
+    ax = axes[2]
+    ref = imp[imp.type == "jumeau authentique"]["score"]
+    mk = float(imp[imp.type == "hypothèse"]["score"].iloc[0])
+    ax.hist(ref, bins=16, color=VERT, alpha=0.55, label="jumeaux authentiques")
+    ax.axvline(mk, color=ROUGE, lw=2.4, label=f"Ziak vs Mikeysem ({mk:.2f})")
+    ax.axvline(1 / 26, color=GRIS, ls="--", lw=1.2, label="hasard")
+    ax.set_xlabel("Score au test des imposteurs")
+    ax.set_ylabel("Nombre d'artistes")
+    ax.set_title("c) Un vrai alias score bien plus haut\n"
+                 f"(médiane {ref.median():.2f})")
+    ax.legend(fontsize=7.5, loc="upper center")
+
+    fig.suptitle("Ziak et Mikeysem ne se ressemblent pas plus que des voisins de genre",
+                 fontsize=12.5, fontweight="bold", y=1.02)
+    fig.tight_layout()
+    fig.savefig(IMAGES_DIR / "10_1_test_mikeysem.png", bbox_inches="tight")
+    plt.close(fig)
