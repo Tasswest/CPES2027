@@ -66,6 +66,12 @@ retrouve le bon auteur dans 90 % des cas quand la réponse est connue (97,7 % po
 génération de Ziak). Les quatre combinaisons de traits et de distances testées
 convergent vers l'hypothèse « auteur absent du corpus ».
 
+**Validation sur des liens réels** — la méthode n'est pas seulement testée sur des
+jumeaux fabriqués. Confrontée à 14 recouvrements auteur/groupe et à 3 changements
+de nom documentés, elle retrouve *Joke → Ateyaba* au premier rang sur 393 malgré un
+changement d'identité revendiqué, mais perd sa capacité de détection quand l'auteur
+ne signe qu'une fraction des textes.
+
 **Le cas Mikeysem** — le nom le plus souvent avancé par les auditeurs ne figurait pas
 dans LRFAF : sans page Wikipédia, il échappait au critère d'inclusion du corpus. Ses
 titres ont été collectés et passés dans le pipeline LRFAF reconstitué
@@ -95,6 +101,8 @@ python3 06_profil_stylistique.py       # portrait : marqueurs, excentricité
 python3 08_ajout_mikeysem.py           # ajoute Mikeysem au format LRFAF
 python3 09_controle_reproduction.py    # contrôles du pipeline reconstitué
 python3 10_test_ziak_mikeysem.py       # test de l'hypothèse Mikeysem
+python3 13_validation_alias_reels.py   # validation sur recouvrements réels
+python3 14_test_alias_temporel.py      # coût d'un changement d'identité
 python3 07_figures.py                  # figures de l'article
 python3 12_article_pdf.py              # article_ziak_stylometrie.pdf
 ```

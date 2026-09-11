@@ -440,3 +440,61 @@ def fig_alias_reels() -> None:
     fig.tight_layout()
     fig.savefig(IMAGES_DIR / "13_1_alias_reels.png", bbox_inches="tight")
     plt.close(fig)
+
+
+def fig_alias_temporel() -> None:
+    """Ce que coûte un changement d'identité artistique."""
+    res = pd.read_csv(RESULT_DIR / "14_1_alias_temporel_bruts.csv")
+    syn = pd.read_csv(RESULT_DIR / "14_2_alias_temporel_synthese.csv")
+    chg = syn[syn.groupe == "changement d'identité"].sort_values("rang_median")
+    ctl = syn[syn.groupe == "sans changement"]
+
+    fig, axes = plt.subplots(1, 3, figsize=(13.5, 4.3))
+
+    # a) les trois cas de changement d'identite
+    ax = axes[0]
+    y = np.arange(len(chg))[::-1]
+    ax.barh(y, chg.rang_median, color=ROUGE, height=0.5)
+    for yy, r in zip(y, chg.rang_median):
+        ax.text(r + 0.4, yy, f"{int(r)}", va="center", fontsize=9, fontweight="bold")
+    ax.set_yticks(y); ax.set_yticklabels(chg.libelle, fontsize=8.5)
+    ax.set_xlim(0, max(chg.rang_median) * 1.5)
+    ax.set_xlabel("Rang de la période postérieure (sur 393)")
+    ax.set_title("a) L'artiste change de nom —\nla méthode le retrouve quand même")
+
+    # b) distribution des rangs : changement vs controle
+    ax = axes[1]
+    bins = np.logspace(0, np.log10(max(syn.rang_median.max(), 10)) + 0.1, 18)
+    ax.hist(ctl.rang_median, bins=bins, color=GRIS, alpha=0.65,
+            label=f"sans changement (n={len(ctl)})")
+    for _, r in chg.iterrows():
+        ax.axvline(r.rang_median, color=ROUGE, lw=1.8)
+    ax.axvline(chg.rang_median.median(), color=ROUGE, lw=0, label="changement d'identité")
+    ax.set_xscale("log")
+    ax.set_xlabel("Rang de la période postérieure (log)")
+    ax.set_ylabel("Nombre d'artistes")
+    ax.set_title(f"b) Le changement d'identité coûte peu\n(médiane {ctl.rang_median.median():.0f} → "
+                 f"{chg.rang_median.median():.0f})")
+    ax.legend(fontsize=7.5)
+
+    # c) separation : ces tests vs Ziak
+    ax = axes[2]
+    z = pd.read_csv(RESULT_DIR / "04_2_separation_ziak.csv")
+    z = z[(z.features == "char") & (z.metric == "cosine_delta")]
+    # Grandeur comparable : la séparation du MEILLEUR candidat du classement,
+    # dans les deux cas — et non celle d'une cible désignée, que Ziak n'a pas.
+    ax.hist(res.sep_top1, bins=20, color=VERT, alpha=0.6,
+            label="top-1, tests à lien réel")
+    zv = float(z.sep_top1.mean())
+    ax.axvline(zv, color=ROUGE, lw=2.4, label=f"Ziak, top-1 ({zv:.2f})")
+    ax.set_xlabel("Séparation du meilleur candidat")
+    ax.set_ylabel("Fréquence")
+    part = 100 * (res.sep_top1 < zv).mean()
+    ax.set_title(f"c) Le favori de Ziak se détache moins\nque dans {part:.0f} % des tests à lien réel")
+    ax.legend(fontsize=7.5, loc="upper left")
+
+    fig.suptitle("Un changement de nom n'efface pas la signature stylométrique",
+                 fontsize=12.5, fontweight="bold", y=1.02)
+    fig.tight_layout()
+    fig.savefig(IMAGES_DIR / "14_1_alias_temporel.png", bbox_inches="tight")
+    plt.close(fig)

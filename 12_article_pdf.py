@@ -166,6 +166,15 @@ mrk = pd.read_csv(RESULT / "10_2_rang_mikeysem.csv")
 mimp = pd.read_csv(RESULT / "10_4_imposteurs.csv")
 mcomp = pd.read_csv(RESULT / "10_5_rangs_compares.csv", index_col=0)
 disco = pd.read_csv(RESULT / "11_discographie_mikeysem.csv")
+areel = pd.read_csv(RESULT / "13_2_alias_reels_synthese.csv")
+areel_b = pd.read_csv(RESULT / "13_1_alias_reels_bruts.csv")
+atemp = pd.read_csv(RESULT / "14_2_alias_temporel_synthese.csv")
+atemp_b = pd.read_csv(RESULT / "14_1_alias_temporel_bruts.csv")
+zsep = pd.read_csv(RESULT / "04_2_separation_ziak.csv")
+zsep = zsep[(zsep.features == "char") & (zsep.metric == "cosine_delta")]
+chg = atemp[atemp.groupe == "changement d'identité"].sort_values("rang_median")
+ctl = atemp[atemp.groupe == "sans changement"]
+duos = areel[areel.n_rappeurs == 2]
 
 best = puis[(puis.features == "char") & (puis.metric == "cosine_delta")].iloc[0]
 sbest = seuils[(seuils.features == "char") & (seuils.metric == "cosine_delta")].iloc[0]
@@ -415,7 +424,100 @@ figure("05_1_candidats_imposteurs.png",
        "(a) aucun candidat n'est stable d'une méthode à l'autre&nbsp;; (b) même le "
        "meilleur candidat reste loin du niveau qu'atteint un véritable alias.")
 
-P("6. Le cas Mikeysem", "h1")
+P("6. Validation sur des liens d'auteur réels", "h1")
+P("Tout ce qui précède repose sur une validation par jumeaux fabriqués&nbsp;: on "
+  "coupe l'œuvre d'un artiste en deux et l'on cherche une moitié depuis l'autre. "
+  "C'est une tâche <i>facile</i> — les deux moitiés partagent la même époque, les "
+  "mêmes thèmes, le même producteur. La puissance qu'on y mesure est donc une "
+  "borne optimiste, et c'est l'objection la plus sérieuse qu'on puisse opposer au "
+  "verdict. Cette section y répond avec des cas où la vérité est connue "
+  "indépendamment du corpus.")
+
+P("6.1 Recouvrements entre un artiste et son groupe", "h2")
+P("Le test d'alias idéal serait un artiste présent sous deux noms distincts. Il "
+  "est irréalisable ici&nbsp;: <b>Genius fusionne lui-même les changements de "
+  "nom</b>. Les titres de la période <i>Joke</i> sont classés sous "
+  "<i>Ateyaba</i>, il n'existe aucune page «&nbsp;Joke&nbsp;», et LRFAF hérite de "
+  "cette fusion. Vérification faite, les pages «&nbsp;Peter Punk&nbsp;» et "
+  "«&nbsp;Malsain&nbsp;» trouvées sur Genius sont des homonymes — un groupe "
+  "italien et un groupe de metal — et non Disiz ni Sinik.")
+P("Restent quatorze paires <b>solo / groupe</b> où l'artiste a réellement écrit "
+  "une partie des textes du groupe. Le test est plus sévère qu'un alias&nbsp;: "
+  "dans un trio, l'auteur ne signe qu'un tiers du texte, le reste étant écrit par "
+  "d'autres. La requête est ramenée à la taille du corpus de Ziak, sans quoi "
+  "Booba (114&nbsp;983 mots) et Gringe (18&nbsp;092) ne seraient comparables ni "
+  "entre eux ni au cas étudié.")
+
+tableau(
+    [["Artiste → groupe", "Rappeurs", "Rang médian (sur 392)"]] +
+    [[f"{r.solo} → {r.groupe}", str(int(r.n_rappeurs)), f"{int(r.rang_median)}"]
+     for r in areel.sort_values("rang_median").itertuples()],
+    "Rang du groupe, interrogé depuis les textes solo de l'un de ses membres. "
+    "L'effet de dilution est net&nbsp;: un duo se retrouve aisément, un groupe de "
+    "huit se perd dans le classement.",
+    widths=[7.4 * cm, 2.4 * cm, 4.6 * cm], align_num=False)
+
+P(f"Le lien est retrouvé dans le top 20 pour "
+  f"{pct((areel.rang_median <= 20).mean(), 0)} des paires — et "
+  f"{pct((duos.rang_median <= 20).mean(), 0)} des duos, cas le plus proche d'un "
+  f"alias. <b>La puissance réelle est donc inférieure aux "
+  f"{pct(best.recall_at_1, 0)} mesurés sur jumeaux simulés</b>&nbsp;: il faut "
+  "compter avec une chance sur cinq à une sur trois de manquer un lien, selon le "
+  "degré de dilution.")
+
+figure("13_1_alias_reels.png",
+       "Validation sur quatorze recouvrements d'auteur réels. (a) rang du groupe "
+       "vu depuis le solo&nbsp;; (b) plus l'auteur est dilué dans un collectif, "
+       "moins il est détectable&nbsp;; (c) le meilleur candidat de Ziak se détache "
+       "moins que dans la quasi-totalité des cas à lien réel.")
+
+P("6.2 Un changement d'identité efface-t-il la signature&nbsp;?", "h2")
+P("Reste l'objection de fond&nbsp;: un artiste qui se réinvente sous un autre nom "
+  "change peut-être aussi de manière d'écrire. La fusion opérée par Genius permet "
+  "justement de le tester, en découpant ces artistes <b>de part et d'autre de "
+  "leur changement d'identité</b>. On interroge la période antérieure et l'on "
+  "cherche la période postérieure, placée dans le pool sous une autre étiquette. "
+  "Trois cas sont documentés dans le corpus, et le premier est le plus "
+  "net&nbsp;: Ateyaba a publiquement déclaré vouloir «&nbsp;tuer Joke&nbsp;».")
+
+tableau(
+    [["Changement d'identité", "Rang médian", "Séparation", "Trouvé au rang 1"]] +
+    [[r.libelle, f"{int(r.rang_median)}", num(r.sep_cible), pct(r.taux_rang1, 0)]
+     for r in chg.itertuples()] +
+    [[f"<i>Contrôles sans changement (n = {len(ctl)})</i>",
+      f"<i>{ctl.rang_median.median():.0f}</i>", f"<i>{num(ctl.sep_cible.mean())}</i>",
+      f"<i>{pct((ctl.rang_median == 1).mean(), 0)}</i>"]],
+    "Période postérieure au changement de nom, recherchée depuis la période "
+    "antérieure. La dernière ligne donne le repère&nbsp;: des artistes découpés au "
+    "même endroit de leur carrière, mais qui n'ont jamais changé de nom.",
+    widths=[6.4 * cm, 2.8 * cm, 2.8 * cm, 3.2 * cm], align_num=False)
+
+P("Le résultat est net, et il lève l'objection plutôt qu'il ne la confirme. "
+  "<b>Joke → Ateyaba est retrouvé au premier rang sur 393 candidats, dans la "
+  "totalité des tirages</b>, avec une séparation de −4,98 — alors même que le "
+  f"changement d'identité était revendiqué. Sur les trois cas, le rang médian "
+  f"passe de {ctl.rang_median.median():.0f} (artistes sans changement) à "
+  f"{chg.rang_median.median():.0f}, et la séparation reste inchangée "
+  f"({num(ctl.sep_cible.mean())} contre {num(chg.sep_cible.mean())}). Changer de "
+  "nom, de registre et d'époque ne suffit pas à effacer la signature.")
+
+figure("14_1_alias_temporel.png",
+       "Ce que coûte un changement d'identité. (a) les trois cas documentés&nbsp;; "
+       "(b) leur rang comparé à celui d'artistes n'ayant jamais changé de "
+       "nom&nbsp;; (c) séparation du meilleur candidat, seule grandeur comparable "
+       "au cas Ziak.")
+
+P("Ces deux tests tirent dans des directions opposées, et il faut les lire "
+  "ensemble. La puissance est <i>plus faible</i> qu'annoncée dès lors que "
+  "l'auteur recherché ne signe qu'une partie des textes. Mais elle ne s'effondre "
+  "<i>pas</i> lorsqu'il change d'identité, ce qui était la crainte principale. "
+  f"Or c'est bien cette seconde situation qui correspond à l'hypothèse testée sur "
+  f"Ziak. Sur la seule grandeur comparable — la séparation du meilleur candidat du "
+  f"classement — son favori se détache moins bien que dans "
+  f"{pct((atemp_b.sep_top1 < zsep.sep_top1.mean()).mean(), 0)} de ces tests à lien "
+  "réel.", "note")
+
+P("7. Le cas Mikeysem", "h1")
 P("La conclusion précédente souffrait d'un angle mort&nbsp;: le nom le plus "
   "fréquemment avancé par les auditeurs, <b>Mikeysem</b>, ne figure pas dans "
   "LRFAF. Ce n'est pas un oubli du corpus mais une conséquence de son critère "
@@ -469,7 +571,7 @@ P("Une réserve doit accompagner ce résultat. Un contrôle d'auto-cohérence �
   "partielle signalée plus haut, que la conclusion de cette section vaut comme "
   "faisceau convergent et non comme démonstration.", "note")
 
-P("7. Portrait stylométrique de Ziak", "h1")
+P("8. Portrait stylométrique de Ziak", "h1")
 P("À défaut d'identifier Ziak, on peut le caractériser. Deux mesures doivent "
   "être distinguées&nbsp;: la distance médiane à l'ensemble du corpus, qui dit "
   "s'il est atypique&nbsp;; et la distance à son plus proche voisin, qui dit "
@@ -506,11 +608,11 @@ figure("06_1_profil_ziak.png",
        "proche parent&nbsp;; (c) l'élision, un faux marqueur qui vient du "
        "transcripteur et non de l'auteur.")
 
-P("8. Limites", "h1")
+P("9. Limites", "h1")
 P("<b>Le corpus n'est pas le rap français.</b> LRFAF couvre 596 artistes, et "
   "l'analyse n'en retient que 393 — ceux disposant d'au moins 12&nbsp;000 mots. "
   "Un artiste peu documenté, ou absent de Genius, ne pouvait pas être détecté. "
-  "La section 6 lève ce point pour le seul candidat qui comptait vraiment, mais "
+  "La section 7 lève ce point pour le seul candidat qui comptait vraiment, mais "
   "il en reste d'autres, hors corpus et non testés.")
 P("<b>Les featurings ne sont pas séparés.</b> Les paroles du corpus ne "
   "comportent aucune balise de section&nbsp;: le couplet d'un invité est "
@@ -524,15 +626,15 @@ P("<b>Les transcriptions sont médiées.</b> Comme le montre le cas de l'élisio
 P("<b>Le corpus de Mikeysem est mince et partiel</b>&nbsp;: 3&nbsp;745 mots, "
   "couvrant 7 de ses 21 titres. C'est la conclusion la moins solidement étayée "
   "de ce travail.")
-P("<b>Un alias n'écrit pas forcément comme lui-même.</b> Un artiste changeant "
-  "délibérément d'identité peut changer de registre. Notre validation mesure la "
-  "puissance sur des jumeaux «&nbsp;faciles&nbsp;» — deux moitiés d'une même "
-  "œuvre — et fournit donc une borne <i>optimiste</i>. Cette limite est la plus "
-  "sérieuse, et elle joue dans un seul sens&nbsp;: elle affaiblit la conclusion "
-  "«&nbsp;Ziak n'est personne du corpus&nbsp;» sans jamais soutenir une "
-  "identification particulière.")
+P("<b>La puissance dépend de ce que l'on cherche.</b> La section 6 l'a mesurée "
+  "sur des liens réels plutôt que simulés&nbsp;: elle chute nettement quand "
+  "l'auteur recherché ne signe qu'une partie des textes (un membre parmi huit se "
+  "perd au-delà du centième rang), mais résiste à un changement d'identité "
+  "revendiqué. La conclusion «&nbsp;Ziak n'est personne du corpus&nbsp;» vaut "
+  "donc pour un alias qui écrirait seul&nbsp;; elle serait plus fragile s'il "
+  "s'agissait d'une participation diluée dans un collectif.")
 
-P("9. Conclusion", "h1")
+P("10. Conclusion", "h1")
 P("L'hypothèse du pseudonyme était testable, et le test est concluant&nbsp;: "
   "aucun des 392 autres artistes éligibles du corpus LRFAF ne présente la "
   "signature stylométrique de Ziak, alors qu'un protocole validé sur 177 cas "
@@ -542,6 +644,11 @@ P("L'hypothèse du pseudonyme était testable, et le test est concluant&nbsp;: "
   "candidat reste en deçà de 97,5&nbsp;% des alias authentiques. Le nom que la "
   "rumeur avance le plus souvent, testé à son tour, se classe 58<super>e</super> "
   "sur 493, derrière six artistes que personne ne soupçonne.")
+P("Cette puissance a été éprouvée sur des liens d'auteur <b>réels</b> et non plus "
+  "simulés (section 6)&nbsp;: la méthode retrouve Joke → Ateyaba au premier rang "
+  "sur 393 candidats, malgré un changement d'identité revendiqué. Elle perd en "
+  "revanche sa capacité de détection lorsque l'auteur recherché ne signe qu'une "
+  "fraction des textes — un membre parmi huit se perd au-delà du centième rang.")
 P("Ce que l'on observe à la place a sa propre valeur descriptive&nbsp;: Ziak "
   "écrit au centre de son genre, sans excentricité mesurable, mais sans proche "
   "parent non plus. Sa parenté avec Kerchak ou Beendo Z est celle d'une "
