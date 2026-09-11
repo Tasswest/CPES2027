@@ -17,3 +17,12 @@ __pycache__/
 
 # Lexiques et donnees brutes (regenerables via collecte_mikeysem.py)
 .cache_lex/
+
+# Sorties brutes de diagnostic : régénérées par les scripts, jamais relues
+# ni par l'article ni par le notebook. Volumineuses, donc non versionnées.
+result/02_2_rangs_par_variante.csv
+result/04_1_classements_bruts_ziak.csv
+result/06_4_voisinage_ziak.csv
+result/09_2_controle_archive.csv
+result/09_3_controle_interne.csv
+result/10_3_seuils_petite_taille.csv
