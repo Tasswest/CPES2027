@@ -381,3 +381,62 @@ def fig_mikeysem() -> None:
     fig.tight_layout()
     fig.savefig(IMAGES_DIR / "10_1_test_mikeysem.png", bbox_inches="tight")
     plt.close(fig)
+
+
+def fig_alias_reels() -> None:
+    """Validation sur des recouvrements d'auteur réels (solo / groupe)."""
+    syn = pd.read_csv(RESULT_DIR / "13_2_alias_reels_synthese.csv")
+    bruts = pd.read_csv(RESULT_DIR / "13_1_alias_reels_bruts.csv")
+    zsep = pd.read_csv(RESULT_DIR / "04_2_separation_ziak.csv")
+    zsep = zsep[(zsep.features == "char") & (zsep.metric == "cosine_delta")]
+
+    fig, axes = plt.subplots(1, 3, figsize=(13.5, 4.5),
+                             gridspec_kw={"width_ratios": [1.35, 1, 1]})
+
+    # a) rang du vrai partenaire, par paire
+    ax = axes[0]
+    s = syn.sort_values("rang_median", ascending=False)
+    y = np.arange(len(s))
+    cols = [VERT if r <= 20 else ORANGE for r in s.rang_median]
+    ax.barh(y, s.rang_median, color=cols, height=0.66)
+    ax.set_yticks(y)
+    ax.set_yticklabels([f"{a} → {b}" for a, b in zip(s.solo, s.groupe)], fontsize=7.6)
+    ax.set_xscale("log")
+    ax.axvline(20, color=GRIS, ls="--", lw=1.2, label="seuil top 20")
+    for yy, r in zip(y, s.rang_median):
+        ax.text(r * 1.15, yy, f"{int(r)}", va="center", fontsize=7.5)
+    ax.set_xlabel("Rang du groupe parmi 392 candidats (log)")
+    ax.set_title("a) Le lien d'auteur est-il retrouvé ?\n(vert : oui, dans le top 20)")
+    ax.legend(fontsize=7.5, loc="lower right")
+
+    # b) effet de dilution
+    ax = axes[1]
+    ax.scatter(syn.n_rappeurs, syn.rang_median, s=46, c=BLEU, alpha=0.75,
+               edgecolors="none")
+    g = syn.groupby("n_rappeurs").rang_median.median()
+    ax.plot(g.index, g.values, color=ROUGE, lw=1.8, marker="o", ms=4,
+            label="médiane")
+    ax.set_yscale("log")
+    ax.axhline(20, color=GRIS, ls="--", lw=1.2)
+    ax.set_xlabel("Nombre de rappeurs dans le groupe")
+    ax.set_ylabel("Rang du groupe (log)")
+    ax.set_title("b) Plus l'auteur est dilué,\nmoins il est détectable")
+    ax.legend(fontsize=7.5)
+
+    # c) separation du top-1 : cas reels vs Ziak
+    ax = axes[2]
+    ax.hist(bruts.sep_top1, bins=18, color=VERT, alpha=0.6,
+            label="cas à lien réel")
+    zv = float(zsep.sep_top1.mean())
+    ax.axvline(zv, color=ROUGE, lw=2.4, label=f"Ziak ({zv:.2f})")
+    ax.set_xlabel("Séparation du meilleur candidat")
+    ax.set_ylabel("Fréquence")
+    part = 100 * (bruts.sep_top1 > zv).mean()
+    ax.set_title(f"c) Le favori de Ziak se détache moins\nque dans {100 - part:.0f} % des cas réels")
+    ax.legend(fontsize=7.5, loc="upper left")
+
+    fig.suptitle("Validation sur des recouvrements d'auteur réels, non simulés",
+                 fontsize=12.5, fontweight="bold", y=1.02)
+    fig.tight_layout()
+    fig.savefig(IMAGES_DIR / "13_1_alias_reels.png", bbox_inches="tight")
+    plt.close(fig)
