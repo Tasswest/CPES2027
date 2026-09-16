@@ -44,11 +44,15 @@ Voir les skills [`notebook-authoring`](.github/skills/notebook-authoring/SKILL.m
 
 ## Article
 
-- 📄 **[`article_ziak_stylometrie.pdf`](article_ziak_stylometrie.pdf)** — l'article rédigé (8 pages, 6 figures, 4 tableaux). C'est le document à lire.
-- [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) — la version reproductible : même analyse, avec le code et ses sorties.
+- 📝 **[`article_ziak_stylometrie.docx`](article_ziak_stylometrie.docx)** — l'article rédigé, au format Word pour être retravaillé (13 pages, 9 figures, 8 tableaux).
+- 📄 [`article_ziak_stylometrie.pdf`](article_ziak_stylometrie.pdf) — la même version en PDF.
+- [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) — la version reproductible, avec le code et ses sorties (sans la section 8 sur web7).
 
-Le PDF est régénéré par [`12_article_pdf.py`](12_article_pdf.py), qui relit tous ses
-chiffres dans `result/` : il ne peut pas diverger des résultats produits par les scripts.
+Le texte de l'article vit dans [`article_contenu.py`](article_contenu.py), partagé par
+[`12_article_pdf.py`](12_article_pdf.py) et [`17_article_docx.py`](17_article_docx.py) :
+les deux formats ne peuvent pas diverger, et tous les chiffres sont relus dans `result/`.
+Une fois le Word modifié à la main, c'est lui qui fait foi — relancer le script
+écraserait ces modifications.
 
 ## Notebooks
 
@@ -103,8 +107,13 @@ python3 09_controle_reproduction.py    # contrôles du pipeline reconstitué
 python3 10_test_ziak_mikeysem.py       # test de l'hypothèse Mikeysem
 python3 13_validation_alias_reels.py   # validation sur recouvrements réels
 python3 14_test_alias_temporel.py      # coût d'un changement d'identité
+python3 collecte_genius.py 1078135 .cache_lex/web7_raw.json   # web7 (ex-7 Jaws)
+python3 collecte_genius.py 2113831 .cache_lex/ziak_raw.json   # Ziak, avec balises
+python3 15_test_ziak_7jaws.py          # web7 au niveau de l'artiste, crédits
+python3 16_test_2025_web7.py           # expérience naturelle 2025, sans featurings
 python3 07_figures.py                  # figures de l'article
 python3 12_article_pdf.py              # article_ziak_stylometrie.pdf
+python3 17_article_docx.py             # article_ziak_stylometrie.docx
 ```
 
 Le pipeline LRFAF reconstitué ([`lrfaf_pipeline.py`](lrfaf_pipeline.py)) et son rapport

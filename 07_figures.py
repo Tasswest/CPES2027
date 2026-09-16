@@ -498,3 +498,75 @@ def fig_alias_temporel() -> None:
     fig.tight_layout()
     fig.savefig(IMAGES_DIR / "14_1_alias_temporel.png", bbox_inches="tight")
     plt.close(fig)
+
+
+def fig_web7() -> None:
+    """L'hypothèse web7 : classement général, expérience 2025, puissance."""
+    syn15 = pd.read_csv(RESULT_DIR / "15_2_web7_synthese.csv")
+    t16 = pd.read_csv(RESULT_DIR / "16_1_test_2025_web7.csv")
+    perm = pd.read_csv(RESULT_DIR / "16_2_permutation_2025.csv")
+    ctrl = pd.read_csv(RESULT_DIR / "16_3_controles_puissance.csv")
+    VAR = "sans featurings ni ad-libs"
+
+    fig, axes = plt.subplots(1, 3, figsize=(13.5, 4.4),
+                             gridspec_kw={"width_ratios": [1.05, 1.1, 0.9]})
+
+    # a) classement general : web7 face aux voisins de Ziak
+    ax = axes[0]
+    ref = syn15[syn15.variante == "sans ad-libs entre parenthèses"].iloc[0]
+    voisins = ["Beendo Z", "Kerchak", "Werenoi", "Rimkus", "ISK", "Zkr"]
+    noms = voisins + ["web7"]
+    rangs = [ref[f"rang_{v}"] for v in voisins] + [ref["rang_median_web7"]]
+    ordre = np.argsort(rangs)[::-1]
+    y = np.arange(len(noms))
+    ax.barh(y, [rangs[i] for i in ordre],
+            color=[ROUGE if noms[i] == "web7" else GRIS for i in ordre], height=0.62)
+    for yy, i in zip(y, ordre):
+        ax.text(rangs[i] * 1.12, yy, f"{rangs[i]:.0f}", va="center", fontsize=8.5)
+    ax.set_yticks(y)
+    ax.set_yticklabels([noms[i] for i in ordre], fontsize=8.5)
+    ax.set_xscale("log")
+    ax.set_xlabel("Rang médian vu depuis Ziak (sur 390, log)")
+    ax.set_title("a) Au niveau de l'artiste, web7\nn'est pas un voisin de Ziak")
+
+    # b) experience 2025 : distribution de permutation
+    ax = axes[1]
+    obs = t16[(t16.variante == VAR) & (t16.test.str.startswith("2025"))].iloc[0]
+    null = perm[perm.variante == VAR].distance_hasard
+    ax.hist(null, bins=40, color=GRIS, alpha=0.7,
+            label="8 titres de 2025 tirés au hasard")
+    ax.axvline(obs.distance, color=ROUGE, lw=2.4,
+               label=f"8 titres crédités à web7 ({obs.distance:.3f})")
+    ax.axvline(obs.distance_non_credites, color=BLEU, lw=1.8, ls="--",
+               label=f"15 titres non crédités ({obs.distance_non_credites:.3f})")
+    ax.set_xlabel("Distance au profil de web7 (Cosine Delta)")
+    ax.set_ylabel("Nombre de tirages")
+    ax.set_title(f"b) Essonne History X : les titres co-écrits\nsont plus proches de web7 (p = {obs.p_valeur:.3f})")
+    ax.legend(fontsize=7.3, loc="upper left")
+
+    # c) controles de puissance
+    ax = axes[2]
+    c = ctrl[ctrl.variante == VAR]
+    plancher = 1 / 400
+    for k, (nom, col) in enumerate([("contrôle : 100 % web7", VERT),
+                                    ("contrôle : 50 % web7", ORANGE)]):
+        pv = np.clip(c[c.controle == nom].p_valeur.to_numpy(), plancher, 1)
+        jitter = np.random.default_rng(k).uniform(-0.18, 0.18, len(pv))
+        ax.scatter(np.full(len(pv), k) + jitter, pv, s=7, alpha=0.35, color=col)
+        ax.text(k, 0.6, f"détecté\n{100 * (pv < 0.05).mean():.0f} %",
+                ha="center", fontsize=8.5, fontweight="bold")
+    ax.axhline(0.05, color="#333", ls=":", lw=1, label="seuil 0,05")
+    ax.axhline(obs.p_valeur, color=ROUGE, lw=2, label=f"observé ({obs.p_valeur:.3f})")
+    ax.set_yscale("log")
+    ax.set_ylim(plancher * 0.7, 1.5)
+    ax.set_xticks([0, 1])
+    ax.set_xticklabels(["100 % web7", "50 % web7"])
+    ax.set_ylabel("p-valeur (log)")
+    ax.set_title("c) Le test avait la puissance\nde voir une co-écriture")
+    ax.legend(fontsize=7.3, loc="center left")
+
+    fig.suptitle("web7 est un co-auteur crédité, dont la trace ne se voit qu'au bon endroit",
+                 fontsize=12.5, fontweight="bold", y=1.02)
+    fig.tight_layout()
+    fig.savefig(IMAGES_DIR / "16_1_web7.png", bbox_inches="tight")
+    plt.close(fig)

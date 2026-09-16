@@ -203,6 +203,8 @@ def main() -> None:
         r["variante"] = nom
         bruts.append(r)
         s = resume(nom, r)
+        s["n_titres_web7"] = int(len(idx_w7))
+        s["mots_web7"] = mots_w7
         resumes.append(s)
         print(f"  rang médian de web7 : {s['rang_median_web7']:.0f} / {s['n_candidats']}"
               f"  (min {s['rang_min']}, max {s['rang_max']})")

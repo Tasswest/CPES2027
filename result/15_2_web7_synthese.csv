@@ -1,5 +1,5 @@
-variante,rang_median_web7,rang_min,rang_max,top20_%,sep_web7,n_candidats,top1_modal,rang_Kerchak,rang_Beendo Z,rang_ISK,rang_Werenoi,rang_Zkr,rang_Rimkus
-textes complets,129.0,63.0,211.0,0.0,-0.4905869421318222,393,Beendo Z,3.0,2.0,8.0,7.0,14.0,6.0
-sans ad-libs entre parenthèses,132.0,65.0,179.0,0.0,-0.4679656294921094,390,Kerchak,3.0,3.5,5.0,2.5,13.5,4.0
-"web7 depuis 2019, sans ad-libs",118.5,67.0,184.0,0.0,-0.49420884632166745,390,Beendo Z,5.0,2.0,7.0,4.0,10.0,5.0
-inverse : Ziak vu depuis web7,137.0,,,0.0,-0.4699097337852677,390,,,,,,,
+variante,rang_median_web7,rang_min,rang_max,top20_%,sep_web7,n_candidats,top1_modal,rang_Kerchak,rang_Beendo Z,rang_ISK,rang_Werenoi,rang_Zkr,rang_Rimkus,n_titres_web7,mots_web7
+textes complets,129.0,63.0,211.0,0.0,-0.4905869421318222,393,Beendo Z,3.0,2.0,8.0,7.0,14.0,6.0,80.0,40225.0
+sans ad-libs entre parenthèses,132.0,65.0,179.0,0.0,-0.4679656294921094,390,Kerchak,3.0,3.5,5.0,2.5,13.5,4.0,80.0,39124.0
+"web7 depuis 2019, sans ad-libs",118.5,67.0,184.0,0.0,-0.49420884632166745,390,Beendo Z,5.0,2.0,7.0,4.0,10.0,5.0,46.0,21686.0
+inverse : Ziak vu depuis web7,137.0,,,0.0,-0.4699097337852677,390,,,,,,,,,
