@@ -12,7 +12,7 @@ import pandas as pd
 from scipy import stats
 
 IMAGES_DIR = Path("images")
-RESULT_DIR = Path("result")
+RESULT_DIR = Path("export")
 IMAGES_DIR.mkdir(exist_ok=True)
 
 mpl.rcParams.update({
@@ -313,17 +313,6 @@ def fig_profil() -> None:
     plt.close(fig)
 
 
-if __name__ == "__main__":
-    for nom, fn in [("biais de taille", fig_biais_taille),
-                    ("validation", fig_validation),
-                    ("verdict", fig_verdict),
-                    ("candidats", fig_candidats),
-                    ("profil", fig_profil)]:
-        fn()
-        print(f"  figure « {nom} » écrite")
-    print(f"\n{len(list(IMAGES_DIR.glob('0[2-6]_*.png')))} figures dans {IMAGES_DIR}/")
-
-
 def fig_mikeysem() -> None:
     """Test de l'hypothèse Ziak = Mikeysem."""
     imp = pd.read_csv(RESULT_DIR / "10_4_imposteurs.csv")
@@ -570,3 +559,23 @@ def fig_web7() -> None:
     fig.tight_layout()
     fig.savefig(IMAGES_DIR / "16_1_web7.png", bbox_inches="tight")
     plt.close(fig)
+
+
+# Les fonctions doivent toutes être définies avant d'être appelées : ce bloc
+# ferme le fichier, sans quoi les figures écrites plus bas restent orphelines.
+FIGURES = [("biais de taille", fig_biais_taille),
+           ("validation", fig_validation),
+           ("verdict", fig_verdict),
+           ("candidats", fig_candidats),
+           ("profil", fig_profil),
+           ("Mikeysem", fig_mikeysem),
+           ("alias réels", fig_alias_reels),
+           ("alias temporel", fig_alias_temporel),
+           ("web7", fig_web7)]
+
+
+if __name__ == "__main__":
+    for nom, fn in FIGURES:
+        fn()
+        print(f"  figure « {nom} » écrite")
+    print(f"\n{len(FIGURES)} figures dans {IMAGES_DIR}/")

@@ -1,4 +1,7 @@
-# Corpus brut trop volumineux pour GitHub (>100 Mo) — voir README pour le retélécharger
+# Corpus brut trop volumineux pour GitHub (>100 Mo) — voir README pour le
+# retélécharger. Le dépôt amont l'a renommé `corpus.csv` ; l'ancien nom reste
+# accepté par les scripts pour les copies déjà téléchargées.
+corpus.csv
 RapFr.csv
 
 # Environnement Python local
@@ -12,17 +15,17 @@ __pycache__/
 # Cache stylométrique régénérable (stylo_features.py)
 .cache_stylo/
 
+# Lexiques et données brutes Genius (régénérables via collecte_genius.py)
+.cache_lex/
+
 # macOS
 .DS_Store
 
-# Lexiques et donnees brutes (regenerables via collecte_mikeysem.py)
-.cache_lex/
-
 # Sorties brutes de diagnostic : régénérées par les scripts, jamais relues
 # ni par l'article ni par le notebook. Volumineuses, donc non versionnées.
-result/02_2_rangs_par_variante.csv
-result/04_1_classements_bruts_ziak.csv
-result/06_4_voisinage_ziak.csv
-result/09_2_controle_archive.csv
-result/09_3_controle_interne.csv
-result/10_3_seuils_petite_taille.csv
+export/02_2_rangs_par_variante.csv
+export/04_1_classements_bruts_ziak.csv
+export/06_4_voisinage_ziak.csv
+export/09_2_controle_archive.csv
+export/09_3_controle_interne.csv
+export/10_3_seuils_petite_taille.csv

@@ -5,14 +5,14 @@ Sorties :
 - `mikeysem_lrfaf.csv` : colonnes, ordre et conventions du corpus LRFAF. Les
   colonnes non reproductibles y sont vides, comme le sont les valeurs
   manquantes du corpus original.
-- `result/08_mikeysem_estimations.csv` : les mêmes titres avec les colonnes
+- `export/08_mikeysem_estimations.csv` : les mêmes titres avec les colonnes
   approximées ou estimées, suffixées `_est`, et un indicateur de statut par
   colonne. Rien d'estimé n'entre dans le fichier principal.
-- `result/08_mikeysem_collecte.csv` : trace des données brutes Genius, pour
+- `export/08_mikeysem_collecte.csv` : trace des données brutes Genius, pour
   distinguer ce qui est récupéré de ce qui est calculé.
 
-Prérequis : `RapFr.csv` à la racine (constantes annuelles), les lexiques dans
-`.cache_lex/`, et les données brutes collectées par `collecte_mikeysem.py`.
+Prérequis : `corpus.csv` à la racine (constantes annuelles), les lexiques dans
+`.cache_lex/`, et les données brutes collectées par `collecte_genius.py`.
 """
 
 from __future__ import annotations
@@ -25,11 +25,12 @@ import numpy as np
 import pandas as pd
 
 import lrfaf_pipeline as P
+from stylo_features import corpus_csv
 
 ARTIST = "Mikeysem"
 RAW_JSON = Path(".cache_lex/mikeysem_raw.json")
 LEX_DIR = Path(".cache_lex")
-RESULT_DIR = Path("result")
+RESULT_DIR = Path("export")
 RESULT_DIR.mkdir(exist_ok=True)
 
 # Colonnes que le pipeline LRFAF ne permet pas de reproduire (voir RAPPORT).
@@ -45,7 +46,8 @@ NOT_REPRODUCIBLE = [
 def load_raw() -> list[dict]:
     if not RAW_JSON.exists():
         raise SystemExit(
-            f"{RAW_JSON} introuvable — lancer d'abord collecte_mikeysem.py")
+            f"{RAW_JSON} introuvable — lancer d'abord "
+            f"collecte_genius.py 3152412 {RAW_JSON}")
     return json.load(open(RAW_JSON, encoding="utf-8"))
 
 
@@ -137,7 +139,7 @@ def match_lrfaf_dtypes(df: pd.DataFrame, corpus: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> None:
-    corpus = pd.read_csv("RapFr.csv")
+    corpus = pd.read_csv(corpus_csv())
     consts = P.year_constants(corpus)
     lex = P.load_lexicons(LEX_DIR)
     print(f"Lexiques chargés : "

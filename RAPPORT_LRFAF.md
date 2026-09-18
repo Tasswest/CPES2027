@@ -255,7 +255,7 @@ du corpus, décrit au §0.
 ### Couverture : 7 titres sur 21
 
 Sa discographie réelle compte **21 titres distincts** (relevé via l'API Deezer,
-`result/11_discographie_mikeysem.csv`), répartis en deux projets — *Akimbo*
+`export/11_discographie_mikeysem.csv`), répartis en deux projets — *Akimbo*
 (8 titres, décembre 2021) et *Prochains Héritiers* (10 titres, avril 2022) — plus
 quelques singles.
 
@@ -287,7 +287,7 @@ Sur les 9 titres présents sur Genius, **7 retenus** par les critères LRFAF :
 > françaises, mais Genius les déclare anglaises. L'article LRFAF signale
 > exactement ce cas pour « Ma Benz » et l'assume : « il vaut mieux manquer
 > quelques titres que polluer le corpus ». Le titre est donc exclu du CSV
-> principal par fidélité, et conservé dans `result/08_mikeysem_collecte.csv`.
+> principal par fidélité, et conservé dans `export/08_mikeysem_collecte.csv`.
 
 Autre particularité : `Phone` utilise des accolades (`{Refrain}`) et non des
 crochets pour ses balises de section — que le nettoyage de `lyricsgenius` ne
@@ -299,8 +299,8 @@ titres ; le comportement est conservé tel quel.
 | Fichier | Contenu |
 |---|---|
 | `mikeysem_lrfaf.csv` | 7 lignes, 33 colonnes, ordre et types de LRFAF. **Aucune valeur estimée** : les colonnes non reproductibles sont vides |
-| `result/08_mikeysem_estimations.csv` | Colonnes approximées, suffixées `_est` |
-| `result/08_mikeysem_collecte.csv` | Données brutes Genius des 9 titres, avant tout calcul |
+| `export/08_mikeysem_estimations.csv` | Colonnes approximées, suffixées `_est` |
+| `export/08_mikeysem_collecte.csv` | Données brutes Genius des 9 titres, avant tout calcul |
 
 ---
 
@@ -342,7 +342,7 @@ titres ; le comportement est conservé tel quel.
 **Reproduire**
 
 ```bash
-python3 collecte_mikeysem.py       # collecte Genius (9 titres)
+python3 collecte_genius.py 3152412 .cache_lex/mikeysem_raw.json   # collecte Genius
 python3 08_ajout_mikeysem.py       # produit mikeysem_lrfaf.csv
 python3 09_controle_reproduction.py # contrôles A, B et arithmétique
 ```

@@ -142,6 +142,7 @@ def styles(doc) -> None:
         "Affiliation": dict(taille=9.5, couleur=GRIS, align=WD_ALIGN_PARAGRAPH.CENTER, apres=16),
         "Résumé": dict(taille=10, retrait=0.8, apres=5),
         "Note": dict(taille=10, retrait=0.4, apres=8, avant=4),
+        "En clair": dict(taille=10, retrait=0.4, apres=8, avant=4),
         "Référence": dict(taille=9.5, apres=3),
         "Cellule": dict(taille=9.5, apres=0, interligne=1.0),
     }
@@ -164,19 +165,24 @@ def styles(doc) -> None:
 
     # Le schéma impose l'ordre des enfants de w:pPr : bordure, puis ombrage,
     # tous deux avant l'espacement et les retraits.
-    note = doc.styles["Note"].element.get_or_add_pPr()
     apres = ("w:tabs", "w:suppressAutoHyphens", "w:kinsoku", "w:wordWrap",
              "w:overflowPunct", "w:topLinePunct", "w:autoSpaceDE", "w:autoSpaceDN",
              "w:bidi", "w:adjustRightInd", "w:snapToGrid", "w:spacing", "w:ind",
              "w:contextualSpacing", "w:mirrorIndents", "w:suppressOverlap", "w:jc",
              "w:textDirection", "w:textAlignment", "w:textboxTightWrap",
              "w:outlineLvl", "w:divId", "w:cnfStyle", "w:rPr", "w:sectPr", "w:pPrChange")
-    bordure = xml("w:pBdr")
-    bordure.append(xml("w:left", **{"w:val": "single", "w:sz": "18", "w:space": "8",
-                                    "w:color": "2F6F9F"}))
-    note.insert_element_before(bordure, "w:shd", *apres)
-    note.insert_element_before(
-        xml("w:shd", **{"w:val": "clear", "w:color": "auto", "w:fill": "F4F6F8"}), *apres)
+    # Les réserves méthodologiques sont bleu-gris, les encadrés « En clair »
+    # ambrés : la couleur seule doit suffire à les distinguer en feuilletant.
+    for nom, filet, fond in [("Note", "2F6F9F", "F4F6F8"),
+                             ("En clair", "D9A441", "FDF6E7")]:
+        ppr = doc.styles[nom].element.get_or_add_pPr()
+        bordure = xml("w:pBdr")
+        bordure.append(xml("w:left", **{"w:val": "single", "w:sz": "18",
+                                        "w:space": "8", "w:color": filet}))
+        ppr.insert_element_before(bordure, "w:shd", *apres)
+        ppr.insert_element_before(
+            xml("w:shd", **{"w:val": "clear", "w:color": "auto", "w:fill": fond}),
+            *apres)
 
     legende = doc.styles["Caption"]
     police(legende, 9, gras=False, italique=False, couleur=GRIS)
@@ -188,7 +194,7 @@ class RenduWord:
     STYLES = {"titre": "Titre de l'article", "soustitre": "Sous-titre de l'article",
               "auteur": "Auteur", "date": "Affiliation", "abstract": "Résumé",
               "h1": "Heading 1", "h2": "Heading 2", "p": "Normal", "note": "Note",
-              "ref": "Référence"}
+              "clair": "En clair", "ref": "Référence"}
 
     def __init__(self, doc):
         self.doc = doc
@@ -223,7 +229,7 @@ class RenduWord:
         par.add_run().add_picture(str(IMAGES / image), width=Cm(LARGEUR_TEXTE_CM))
         self.legende("Figure", self.n_fig, legende)
 
-    def tableau(self, lignes, legende, widths=None, align_num=True):
+    def tableau(self, lignes, legende, widths=None, gauche=(0,)):
         self.n_tab += 1
         self.legende("Tableau", self.n_tab, legende, garder_avec_suivant=True)
         n_col = len(lignes[0])
@@ -231,6 +237,14 @@ class RenduWord:
         t = self.doc.add_table(rows=len(lignes), cols=n_col)
         t.alignment = WD_TABLE_ALIGNMENT.CENTER
         t.autofit = False
+        # Word lit la grille, pas seulement la largeur des cellules : sans cette
+        # reprise, toutes les colonnes ressortent égales quelle que soit `widths`.
+        tblw = t._tbl.tblPr.find(qn("w:tblW"))
+        if tblw is not None:
+            tblw.set(qn("w:type"), "dxa")
+            tblw.set(qn("w:w"), str(int(Cm(sum(widths)).twips)))
+        for col, largeur in zip(t._tbl.tblGrid.findall(qn("w:gridCol")), widths):
+            col.set(qn("w:w"), str(int(Cm(largeur).twips)))
         tpr = t._tbl.tblPr
         bords = xml("w:tblBorders")
         for cote in ("top", "bottom", "insideH"):
@@ -259,7 +273,7 @@ class RenduWord:
                 tcpr.append(xml("w:vAlign", **{"w:val": "center"}))
                 par = cell.paragraphs[0]
                 par.style = self.doc.styles["Cellule"]
-                par.alignment = (WD_ALIGN_PARAGRAPH.LEFT if (j == 0 and i > 0)
+                par.alignment = (WD_ALIGN_PARAGRAPH.LEFT if (j in gauche and i > 0)
                                  else WD_ALIGN_PARAGRAPH.CENTER)
                 if i == 0:
                     ecrire(par, f"<b>{valeur}</b>")
@@ -286,7 +300,7 @@ def main() -> None:
     champ(pied, "PAGE", "1")
 
     props = doc.core_properties
-    props.title = "Ziak est-il un autre rappeur ? Une enquête stylométrique"
+    props.title = "Qui se cache derrière Ziak ? Une enquête stylométrique"
     props.author = "Tassilo Westphalen"
     props.subject = "Stylométrie et attribution d'auteur sur le corpus LRFAF"
     props.keywords = "stylométrie, attribution d'auteur, rap français, LRFAF"

@@ -41,7 +41,7 @@ from genius_sections import retire_featurings
 from stylo_attribution import make_docs, rank_candidates, sample_indices, separation_score
 from stylo_features import CACHE_DIR, build_cache, build_count_matrix, char_ngrams, clean_lyrics, tokenize
 
-RESULT_DIR = Path("result")
+RESULT_DIR = Path("export")
 ZIAK_RAW = Path(".cache_lex/ziak_raw.json")
 WEB7_RAW = Path(".cache_lex/web7_raw.json")
 CREDITS = RESULT_DIR / "15_3_credits_auteurs_ziak.csv"

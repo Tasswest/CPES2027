@@ -9,7 +9,7 @@ faisant passer dans le pipeline, on compare des valeurs calculées sur *le même
 texte source* que celui du corpus. C'est le vrai test du pipeline.
 
 **Contrôle B — cohérence interne.** On applique le pipeline aux paroles
-publiées dans `RapFr.csv` et on les compare aux compteurs de la même ligne.
+publiées dans `corpus.csv` et on les compare aux compteurs de la même ligne.
 Ce contrôle mesure surtout une propriété du corpus lui-même : compteurs et
 paroles n'y ont pas été produits au même moment.
 
@@ -30,11 +30,12 @@ import numpy as np
 import pandas as pd
 
 import lrfaf_pipeline as P
+from stylo_features import corpus_csv
 
 CACHE = Path(".cache_lex")
 ARCHIVE_URL = ("https://github.com/regicid/genius_french_rap_corpus/"
                "raw/master/corpus_rap_francais.tar.gz")
-RESULT_DIR = Path("result")
+RESULT_DIR = Path("export")
 RESULT_DIR.mkdir(exist_ok=True)
 
 
@@ -150,7 +151,7 @@ def resume(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
 
 
 def main() -> None:
-    corpus = pd.read_csv("RapFr.csv")
+    corpus = pd.read_csv(corpus_csv())
     lex = P.load_lexicons(CACHE)
     cols = ["d_n_words", "d_n_unique", "d_n_je", "d_n_lines", "d_mwl",
             "d_n_french"]

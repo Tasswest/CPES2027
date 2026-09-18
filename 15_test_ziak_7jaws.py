@@ -39,7 +39,7 @@ from stylo_attribution import make_docs, rank_candidates, sample_indices, separa
 from stylo_features import (CACHE_DIR, build_cache, build_count_matrix, char_ngrams,
                             clean_lyrics, load_corpus, tokenize)
 
-RESULT_DIR = Path("result")
+RESULT_DIR = Path("export")
 RESULT_DIR.mkdir(exist_ok=True)
 
 RAW = Path(".cache_lex/web7_raw.json")

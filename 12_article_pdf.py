@@ -8,7 +8,7 @@ lecture — texte rédigé, figures légendées, tableaux mis en forme — dans
 
 Le texte vient de `article_contenu.py`, partagé avec la version Word
 (`17_article_docx.py`) : les deux documents ne peuvent pas diverger. Tous les
-chiffres sont relus dans `result/` au moment de la génération.
+chiffres sont relus dans `export/` au moment de la génération.
 """
 
 from __future__ import annotations
@@ -28,7 +28,7 @@ from reportlab.platypus import (BaseDocTemplate, Frame, Image, KeepTogether,
                                 NextPageTemplate, PageBreak, PageTemplate,
                                 Paragraph, Spacer, Table, TableStyle)
 
-RESULT = Path("result")
+RESULT = Path("export")
 IMAGES = Path("images")
 OUT = Path("article_ziak_stylometrie.pdf")
 
@@ -83,6 +83,15 @@ st = {
                            fontSize=9, leading=12, alignment=TA_JUSTIFY,
                            leftIndent=10, rightIndent=10, spaceAfter=6,
                            borderPadding=5, backColor=colors.HexColor("#f4f6f8")),
+    # Encadré « En clair » : fond chaud et filet, pour le distinguer au premier
+    # coup d'œil des réserves méthodologiques (style « note », gris et sans filet).
+    "clair": ParagraphStyle("clair", parent=S["Normal"], fontName="Times",
+                            fontSize=9.2, leading=12.4, alignment=TA_JUSTIFY,
+                            leftIndent=10, rightIndent=10, spaceBefore=3,
+                            spaceAfter=8, borderPadding=6,
+                            backColor=colors.HexColor("#fdf6e7"),
+                            borderColor=colors.HexColor("#d9a441"),
+                            borderWidth=0.7),
 }
 
 story: list = []
@@ -102,18 +111,18 @@ def figure(path: str, legende: str, largeur=16.4 * cm) -> None:
         img, Paragraph(f"<b>Figure {FIGN['n']}.</b> {legende}", st["legende"])]))
 
 
-def tableau(data, legende, widths=None, align_num=True) -> None:
+def tableau(data, legende, widths=None, gauche=(0,)) -> None:
     """Les cellules texte sont converties en Paragraph, pour que le balisage
     (<sub>, <br/>, <b>) soit interprété et que le texte long puisse revenir à
-    la ligne."""
+    la ligne. `gauche` donne les colonnes alignées à gauche : les colonnes de
+    texte long, illisibles centrées."""
     TABN["n"] += 1
     body = []
     for i, row in enumerate(data):
         cells = []
         for j, c in enumerate(row):
             if isinstance(c, str):
-                sty = "th" if i == 0 else ("tdl" if (j == 0 and not align_num) or
-                                           (j == 0 and i > 0) else "td")
+                sty = "th" if i == 0 else ("tdl" if j in gauche else "td")
                 cells.append(Paragraph(c, st[sty]))
             else:
                 cells.append(c)
@@ -148,8 +157,8 @@ class RenduPDF:
     def gap(self, h=6):
         GAP(h)
 
-    def tableau(self, lignes, legende, widths=None, align_num=True):
-        tableau(lignes, legende, [w * cm for w in widths] if widths else None, align_num)
+    def tableau(self, lignes, legende, widths=None, gauche=(0,)):
+        tableau(lignes, legende, [w * cm for w in widths] if widths else None, gauche)
 
     def figure(self, image, legende):
         figure(image, legende)
@@ -164,11 +173,11 @@ def pied(canvas, doc):
     canvas.drawCentredString(A4[0] / 2, 1.15 * cm, str(doc.page))
     if doc.page > 1:
         canvas.drawString(2.2 * cm, 1.15 * cm,
-                          "Ziak est-il un autre rappeur ? Une enquête stylométrique")
+                          "Qui se cache derrière Ziak ? Une enquête stylométrique")
     canvas.restoreState()
 
 
-doc = BaseDocTemplate(str(OUT), pagesize=A4, title="Ziak est-il un autre rappeur ?",
+doc = BaseDocTemplate(str(OUT), pagesize=A4, title="Qui se cache derrière Ziak ?",
                       author="Tassilo Westphalen",
                       subject="Stylométrie et attribution d'auteur sur le corpus LRFAF",
                       leftMargin=2.2 * cm, rightMargin=2.2 * cm,

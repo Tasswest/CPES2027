@@ -1,39 +1,37 @@
 ---
 name: notebook-authoring
-description: 'Conventions pour rédiger ou modifier des notebooks Jupyter (.ipynb) dans ce projet : structuration en sections/sous-sections, une cellule markdown avant chaque chunk de code, style des commentaires. Use when creating, editing, or reviewing a Jupyter notebook, adding a code cell, or organizing notebook sections.'
+description: 'Conventions for creating, editing, and reviewing Jupyter notebooks in the Rap corpus project: numbered English Markdown sections, focused code cells, and concise English comments. Use when working on any project notebook.'
 ---
 
-# Rédaction de notebooks Jupyter
+# Rap Notebook Authoring
 
-## Quand utiliser
-- Création d'un nouveau notebook d'analyse.
-- Ajout, modification ou réorganisation de cellules dans un notebook existant.
-- Revue d'un notebook pour vérifier qu'il respecte les conventions du projet.
+## When to Use
+- Creating a new analysis notebook.
+- Adding, editing, or reorganizing cells in an existing notebook.
+- Reviewing a notebook for project conventions.
 
-## Structure générale
-- Le notebook commence par une cellule markdown de titre (`#`) avec un court paragraphe d'objectifs et un plan numéroté des sections.
-- Chaque grande étape de l'analyse correspond à une **section** markdown `##` numérotée (`## 1. ...`, `## 2. ...`).
-- Une étape secondaire à l'intérieur d'une section utilise une **sous-section** `###` numérotée (`### 1.1 ...`).
-- **Chaque cellule de code est précédée d'une cellule markdown** (section ou sous-section) qui explique :
-  - ce que la cellule calcule ou affiche,
-  - pourquoi (le rôle dans l'analyse), pas seulement le "quoi".
-- Ne jamais enchaîner deux cellules de code sans cellule markdown intermédiaire, sauf si elles appartiennent à un même bloc logique déjà documenté juste avant (ex. plusieurs `print` de contrôle qui suivent directement le chargement).
+## Structure
+- Begin with a `#` title, a concise objective, and a numbered outline.
+- Use numbered `##` sections and, when necessary, numbered `###` subsections.
+- Write reader-facing Markdown, output labels, and code comments in English.
+- Precede each logical code block with Markdown that explains its analytical purpose.
+- Do not place two unrelated code cells together without an intervening explanatory Markdown cell.
 
-## Style des commentaires dans le code
-- Un commentaire de code ne doit dire que ce que le code ne montre pas déjà (ex. une convention, une raison, un choix arbitraire), jamais reformuler la ligne suivante.
-- Une ligne de commentaire max par choix notable, pas de docstring multi-paragraphes pour une opération simple.
-- Exemple correct : `# Organisation du projet : scripts à la racine, figures dans images/, tables dans result/`
-- Exemple à éviter : `# On importe pandas` au-dessus de `import pandas as pd`.
+## Code Comment Style
+- A comment states a convention, rationale, or non-obvious choice; it does not narrate the next line.
+- Use at most one short comment for each notable choice. Avoid multi-paragraph docstrings for simple work.
+- Example: `# Preserve lyric-line boundaries so syntax never crosses a verse.`
 
-## Découpage des chunks
-- Un chunk de code = une opération ou un groupe d'opérations cohérent (ex. un graphique, une agrégation, un export).
-- Séparer les variantes d'une même analyse (histogramme / densité / boxplot, moyennes brutes / standardisées / lissées) en chunks distincts, chacun avec sa propre sous-section.
-- Préférer plusieurs petits chunks documentés à un chunk monolithique qui mélange plusieurs analyses.
+## Code Cell Scope
+- A code cell performs one coherent operation: loading, annotation, aggregation, one figure, or one export.
+- Keep long-running computations observable with `tqdm`, explicit batches, throughput, ETA, and persisted resumable outputs.
+- Prefer several small documented cells to a monolithic cell that mixes unrelated analyses.
 
-## Vérification avant de livrer un notebook
-- Chaque cellule de code a bien une cellule markdown juste au-dessus.
-- La numérotation des sections/sous-sections dans le plan initial correspond à celle utilisée dans les titres.
-- Le code a été validé (exécution ou script équivalent en terminal) pour s'assurer qu'il tourne sans erreur avant de considérer le notebook terminé.
+## Validation Before Delivery
+- Each code cell has an appropriate Markdown explanation before it.
+- Heading numbering is continuous and matches the outline.
+- Run a focused cell or equivalent command after every substantive edit.
+- Validate the full execution path before considering a long-running notebook complete.
 
-## Lien avec les exports
-- Voir le skill `export-organization` pour les conventions de sauvegarde des figures et des tables produites par les cellules de code.
+## Exports
+See `export-organization` for file locations, scoped naming, and Git-size rules.

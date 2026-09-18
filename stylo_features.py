@@ -26,8 +26,20 @@ import numpy as np
 import pandas as pd
 from scipy import sparse
 
-CORPUS_CSV = Path("RapFr.csv")
 CACHE_DIR = Path(".cache_stylo")
+
+
+def corpus_csv() -> Path:
+    """Chemin du corpus LRFAF. Le dépôt amont l'a renommé `corpus.csv` ;
+    l'ancien nom reste accepté pour les copies locales déjà téléchargées."""
+    for nom in ("corpus.csv", "RapFr.csv"):
+        if Path(nom).exists():
+            return Path(nom)
+    raise FileNotFoundError(
+        "Corpus LRFAF introuvable — le télécharger depuis "
+        "huggingface.co/datasets/regicid/LRFAF (voir README).")
+
+
 
 # Nombre de traits retenus pour chaque famille de descripteurs.
 N_MFW = 500          # mots les plus fréquents (Burrows's Delta)
@@ -71,13 +83,13 @@ def strip_accents(text: str) -> str:
 
 
 def load_corpus(min_tokens: int = 100) -> pd.DataFrame:
-    """Charge RapFr.csv, nettoie les paroles et retire doublons et titres courts.
+    """Charge le corpus LRFAF, nettoie les paroles et retire doublons et titres courts.
 
     Les doublons de paroles entre artistes (0,3 % du corpus) correspondent à des
     featurings ou à des rééditions : les conserver reviendrait à attribuer le
     même texte à deux auteurs, ce qui fausse mécaniquement les distances.
     """
-    df = pd.read_csv(CORPUS_CSV)
+    df = pd.read_csv(corpus_csv())
     df = df.dropna(subset=["artist", "lyrics", "year"]).copy()
     df["lyrics_clean"] = df["lyrics"].map(clean_lyrics)
     df["tokens"] = df["lyrics_clean"].map(tokenize)

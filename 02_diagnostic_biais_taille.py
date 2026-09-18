@@ -28,7 +28,7 @@ from scipy import stats
 from stylo_attribution import make_docs, rank_candidates, sample_indices
 from stylo_features import build_cache
 
-RESULT_DIR = Path("result")
+RESULT_DIR = Path("export")
 RESULT_DIR.mkdir(exist_ok=True)
 
 TARGET = "Ziak"
