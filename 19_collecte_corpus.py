@@ -83,9 +83,15 @@ def paroles(url: str) -> tuple[str | None, str]:
             continue
         soup = BeautifulSoup(
             r.text.replace("<br/>", "\n").replace("<br>", "\n"), "html.parser")
+        # `data-lyrics-container` est l'attribut stable, que Genius maintient
+        # pour son propre front-end. Les deux replis visent les balisages plus
+        # anciens, dont les noms de classes minifiés changent à chaque refonte
+        # (c'est sur eux que repose lyricsgenius, et ce qui le casse).
         divs = soup.find_all("div", attrs={"data-lyrics-container": "true"})
         if not divs:
             divs = soup.find_all("div", class_=re.compile(r"Lyrics__Container"))
+        if not divs:
+            divs = soup.find_all("div", class_=re.compile(r"^Lyrics-\w{2}.\w+.[1]"))
         if not divs:
             return None, "pas de bloc de paroles"
         return "\n".join(d.get_text() for d in divs), "ok"
