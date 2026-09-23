@@ -42,9 +42,19 @@ COLLECTE = Path(".cache_lex/corpus_balises.jsonl")
 SORTIE = Path("corpus_sans_invites.csv")
 RESULT_DIR = export_dir()
 
-PART_MEMBRE = 0.40   # part des titres d'un artiste au-delà de laquelle
-                     # un intervenant est considéré comme membre, non invité
-GARDE_FOU = 0.50     # au-delà, on renonce à nettoyer l'artiste
+# Un intervenant est réputé interne s'il porte une bonne part du répertoire,
+# ou s'il revient régulièrement sans l'emporter : chez IAM, Akhenaton figure sur
+# 58 titres sur 97 et Shurik'n sur 54, mais Freeman sur 7 seulement — il n'en est
+# pas moins membre du groupe. Les deux clauses se lisent ensemble.
+PART_MEMBRE = 0.40      # part du répertoire suffisant à elle seule
+PART_RECURRENT = 0.05   # part minimale de la seconde clause…
+TITRES_RECURRENT = 4    # …assortie d'un nombre absolu de titres
+GARDE_FOU = 0.50        # au-delà, on renonce à nettoyer l'artiste
+
+# Les deux erreurs possibles ne se valent pas. Garder par erreur le couplet d'un
+# invité reproduit simplement le défaut de LRFAF ; retirer par erreur le couplet
+# d'un membre ampute un artiste d'une part de sa propre écriture, et fabrique un
+# défaut que le corpus publié n'a pas. Le réglage penche donc vers la conservation.
 
 
 def charge_collecte() -> dict[str, dict]:
@@ -89,10 +99,16 @@ def membres_par_artiste(collecte: dict, urls: pd.DataFrame) -> tuple[dict, pd.Da
         n = n_titres[artiste]
         internes = {_norme(artiste)}
         for nom, k in compte.items():
-            if n and k / n >= PART_MEMBRE:
+            if not n:
+                continue
+            part = k / n
+            motif = ("répertoire" if part >= PART_MEMBRE else
+                     "récurrent" if part >= PART_RECURRENT and k >= TITRES_RECURRENT
+                     else None)
+            if motif:
                 internes.add(nom)
-                lignes.append({"artiste": artiste, "intervenant": nom,
-                               "titres": k, "sur": n, "part": k / n})
+                lignes.append({"artiste": artiste, "intervenant": nom, "titres": k,
+                               "sur": n, "part": part, "motif": motif})
         membres[artiste] = internes
     return membres, pd.DataFrame(lignes).sort_values(["artiste", "part"],
                                                      ascending=[True, False])

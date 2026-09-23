@@ -43,12 +43,22 @@ def _norme(nom: str) -> str:
     return re.sub(r"[^a-z0-9]", "", nom.lower())
 
 
+def _est_libelle(texte: str) -> bool:
+    return any(_norme(texte).startswith(_norme(l)) for l in LIBELLES)
+
+
 def interpretes(balise: str) -> set[str] | None:
     """Interprètes nommés par une balise ; None si elle n'en nomme aucun."""
     contenu = re.sub(r"\([^)]*\)", "", balise).strip()      # « (x2) », « (Ziak) »…
+    tiret = re.match(r"^([^:\-–—]+?)\s*[-–—]\s*(.+)$", contenu)
     if ":" in contenu:
         noms = contenu.split(":", 1)[1]
-    elif any(_norme(contenu).startswith(_norme(l)) for l in LIBELLES):
+    elif tiret and _est_libelle(tiret.group(1)):
+        # Genius emploie le tiret aussi bien que le deux-points :
+        # « [Couplet 3 - Kool Shen] ». Le libellé doit précéder, sinon
+        # « Pre-refrain » ou « Jay-Z » seraient coupés en deux.
+        noms = tiret.group(2)
+    elif _est_libelle(contenu):
         return None
     else:
         noms = contenu                                        # « [Sofiane] »
