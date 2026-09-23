@@ -1,0 +1,466 @@
+=== sans_feats : cache ===
+Construction du cache stylométrique (quelques minutes)...
+  25,452 chansons retenues, 595 artistes
+  vectorisation des mots...
+  vectorisation des 4-grammes...
+  vectorisation du vocabulaire élargi...
+  cache écrit dans .cache_stylo_sans_feats/
+
+Mots les plus fréquents : j', la, de, est, les, le, l', pas, d', c', on, à, dans, et, je
+4-grammes les plus fréquents : ' la ', 'les ', 'ais ', ' de ', 'est ', ' pas', ' les', ' le '
+
+Ziak : 41 titres, 22961 tokens
+=== sans_feats : 02_diagnostic_biais_taille.py (18:36) ===
+Évaluation sur 129 artistes de contrôle, 6 répétitions
+
+  répétition 1/6
+  répétition 2/6
+  répétition 3/6
+  répétition 4/6
+  répétition 5/6
+  répétition 6/6
+
+=== LE BIAIS DE TAILLE DANS L'APPROCHE NAÏVE ===
+  Corrélation de Spearman entre la distance à Ziak et la taille
+  du corpus du candidat : rho = -0.430 (p = 4.4e-16)
+  -> 18% de la variance du classement s'explique par la
+     seule quantité de texte disponible sur chaque artiste.
+
+  Taille médiane du corpus des 20 « plus proches » : 55,446 tokens
+  Taille médiane sur l'ensemble du pool            : 28,346 tokens
+
+=== LES DEUX CLASSEMENTS N'ONT RIEN EN COMMUN ===
+  Corrélation des rangs naïf / contrôlé : rho = 0.600
+  Premier candidat, approche naïve   : ISK
+  Premier candidat, taille contrôlée : ISK
+
+  Top 10 naïf (avec la taille du corpus) :
+     1. ISK                         44,303 tokens  -> rang   1 une fois la taille contrôlée
+     2. Niro                       108,704 tokens  -> rang  25 une fois la taille contrôlée
+     3. Sadek                       85,973 tokens  -> rang  66 une fois la taille contrôlée
+     4. Zkr                         65,215 tokens  -> rang   5 une fois la taille contrôlée
+     5. Ninho                       69,505 tokens  -> rang  21 une fois la taille contrôlée
+     6. PLK                         75,621 tokens  -> rang  60 une fois la taille contrôlée
+     7. Sofiane                     54,535 tokens  -> rang  58 une fois la taille contrôlée
+     8. Deen Burbigo                33,826 tokens  -> rang  46 une fois la taille contrôlée
+     9. SCH                         59,388 tokens  -> rang   9 une fois la taille contrôlée
+    10. GLK                         46,269 tokens  -> rang  20 une fois la taille contrôlée
+
+=== PUISSANCE COMPARÉE SUR VÉRITÉ-TERRAIN ===
+                          variante  recall_at_1  recall_at_5  recall_at_20  rang_median  rang_moyen
+        A. naïve (corpus complets)        0.390        0.610         0.801        3.000      15.236
+               B. taille contrôlée        0.786        0.910         0.963        1.000       3.552
+C. taille contrôlée + Cosine Delta        0.946        0.991         0.997        1.000       1.247
+=== sans_feats : 03_validation_protocole.py (18:37) ===
+Requête calibrée sur la taille de Ziak : 22,961 tokens
+Candidats : 12,000 tokens chacun
+
+Pool de candidats : 327 artistes
+Artistes de contrôle (>= 34,961 tokens) : 129
+
+  répétition 1/10 terminée
+  répétition 2/10 terminée
+  répétition 3/10 terminée
+  répétition 4/10 terminée
+  répétition 5/10 terminée
+  répétition 6/10 terminée
+  répétition 7/10 terminée
+  répétition 8/10 terminée
+  répétition 9/10 terminée
+  répétition 10/10 terminée
+
+=== PUISSANCE DE LA MÉTHODE (le jumeau est dans le pool) ===
+features        metric  recall_at_1  recall_at_5  recall_at_10  recall_at_20  rang_median  sep_top1_moy  n_essais
+    char  cosine_delta        0.946        0.987         0.996         0.998        1.000        -4.657      1290
+     mfw  cosine_delta        0.919        0.985         0.997         0.998        1.000        -4.898      1290
+     mfw burrows_delta        0.878        0.961         0.976         0.988        1.000        -3.280      1290
+    char burrows_delta        0.797        0.924         0.952         0.973        1.000        -2.872      1290
+
+=== SÉPARATION DU MEILLEUR CANDIDAT ===
+features        metric  sep_H1_moy  sep_H1_sd  sep_H1_correct_moy  sep_H0_moy  sep_H0_sd  sep_H0_p05  ecart_H1_H0
+    char burrows_delta      -2.872      0.685              -3.026      -2.226      0.255      -2.706        0.646
+    char  cosine_delta      -4.657      1.338              -4.739      -2.965      0.511      -3.946        1.692
+     mfw burrows_delta      -3.280      0.794              -3.405      -2.341      0.252      -2.818        0.939
+     mfw  cosine_delta      -4.898      1.426              -5.032      -3.130      0.504      -4.018        1.768
+=== sans_feats : 04_attribution_ziak.py (18:37) ===
+Ziak : 41 titres, 22,961 tokens
+Pool de candidats : 326 artistes (12,000 tokens chacun)
+
+  répétition 10/30
+  répétition 20/30
+  répétition 30/30
+
+=== CONTRÔLE POSITIF : Ziak retrouve-t-il sa propre moitié ? ===
+features        metric  rang_median_moitie_B  taux_rang1  sep_moyenne
+    char burrows_delta                 1.000       0.533       -1.963
+    char  cosine_delta                 1.000       1.000       -3.829
+     mfw burrows_delta                 1.000       0.967       -2.606
+     mfw  cosine_delta                 1.000       0.967       -3.741
+
+=== CANDIDATS LES PLUS PROCHES DE ZIAK (top 8 par méthode) ===
+
+[char / burrows_delta]
+   Worms-T                      présent dans le top-5 : 97%
+   Zkr                          présent dans le top-5 : 70%
+   Panama Bende                 présent dans le top-5 : 60%
+   ISK                          présent dans le top-5 : 40%
+   S.Pri Noir                   présent dans le top-5 : 30%
+   Vin’s                        présent dans le top-5 : 27%
+   Dibson                       présent dans le top-5 : 23%
+   Lesram                       présent dans le top-5 : 23%
+
+[char / cosine_delta]
+   Kerchak                      présent dans le top-5 : 93%
+   Beendo Z                     présent dans le top-5 : 87%
+   UZI (FRA)                    présent dans le top-5 : 53%
+   Werenoi                      présent dans le top-5 : 47%
+   ISK                          présent dans le top-5 : 33%
+   Zkr                          présent dans le top-5 : 30%
+   ASHE 22                      présent dans le top-5 : 23%
+   Fresh laDouille              présent dans le top-5 : 20%
+
+[mfw / burrows_delta]
+   Zkr                          présent dans le top-5 : 77%
+   Panama Bende                 présent dans le top-5 : 43%
+   GLK                          présent dans le top-5 : 40%
+   Dibson                       présent dans le top-5 : 37%
+   ISK                          présent dans le top-5 : 37%
+   SCH                          présent dans le top-5 : 33%
+   Lacrim                       présent dans le top-5 : 30%
+   Sofiane                      présent dans le top-5 : 30%
+
+[mfw / cosine_delta]
+   Werenoi                      présent dans le top-5 : 60%
+   Kerchak                      présent dans le top-5 : 53%
+   SCH                          présent dans le top-5 : 50%
+   Beendo Z                     présent dans le top-5 : 43%
+   GLK                          présent dans le top-5 : 43%
+   Soso Maness                  présent dans le top-5 : 43%
+   Maes                         présent dans le top-5 : 30%
+   UZI (FRA)                    présent dans le top-5 : 27%
+
+=== VERDICT ===
+features        metric  sep_ziak  sep_H1_correct_moy  sep_H0_moy          hypothese_favorisee  top1_modal
+    char burrows_delta     -1.98               -3.03       -2.23 H0 (auteur absent du corpus)         Zkr
+    char  cosine_delta     -2.45               -4.74       -2.96 H0 (auteur absent du corpus)    Beendo Z
+     mfw burrows_delta     -2.14               -3.41       -2.34 H0 (auteur absent du corpus)         Zkr
+     mfw  cosine_delta     -2.63               -5.03       -3.13 H0 (auteur absent du corpus) Soso Maness
+=== sans_feats : 05_robustesse.py (18:37) ===
+=== 1. Puissance de la méthode par génération d'artistes ===
+features generation  recall_at_1  recall_at_5  n_essais  n_artistes
+    char  1990-2005        0.975        1.000        40           4
+    char  2006-2012        0.891        0.964       220          22
+    char  2013-2017        0.954        0.991       560          56
+    char  2018-2020        0.955        0.990       420          42
+    char  2021-2024        1.000        1.000        50           5
+     mfw  1990-2005        0.925        1.000        40           4
+     mfw  2006-2012        0.864        0.968       220          22
+     mfw  2013-2017        0.905        0.980       560          56
+     mfw  2018-2020        0.957        0.998       420          42
+     mfw  2021-2024        1.000        1.000        50           5
+
+=== 2. Sensibilité au seuil de taille des candidats ===
+ t_cand  n_candidats  sep_ziak_moy top1_modal  stabilite_top1
+   5000          468        -2.686   Beendo Z           0.300
+   8000          415        -2.448    Kerchak           0.300
+  12000          326        -2.364   Beendo Z           0.300
+  18000          266        -2.367   Beendo Z           0.600
+  25000          189        -2.292   Beendo Z           1.000
+
+=== 3. Test des imposteurs sur les candidats récurrents ===
+       candidat  score_imposteurs  seuil_hasard
+        Kerchak             0.810         0.038
+       Beendo Z             0.770         0.038
+            Zkr             0.730         0.038
+        Werenoi             0.670         0.038
+      UZI (FRA)             0.390         0.038
+            ISK             0.330         0.038
+            SCH             0.280         0.038
+Fresh laDouille             0.275         0.038
+   Panama Bende             0.010         0.038
+Sexion d’Assaut             0.000         0.038
+         Dibson             0.000         0.038
+
+=== 4. Étalonnage : mêmes tests sur des jumeaux authentiques ===
+  n = 40 artistes de contrôle
+  score médian d'un vrai jumeau : 1.000
+  1er décile                    : 0.867
+  meilleur score obtenu par Ziak: 0.810 (Kerchak)
+  part des vrais jumeaux faisant moins bien que le meilleur candidat de Ziak : 10.0%
+=== sans_feats : 06_profil_stylistique.py (18:37) ===
+=== 1. EXCENTRICITÉ STYLISTIQUE ===
+  Deux mesures qu'il faut distinguer :
+  a) Distance médiane à l'ensemble du corpus — position d'ensemble
+     Ziak : 1.0086  (médiane du corpus : 1.0056)
+     Rang 115 / 327 : Ziak est stylistiquement *banal*, au centre du genre.
+  b) Distance au voisin le plus proche — existe-t-il un parent ?
+     Ziak : 0.8529 vers Beendo Z  (médiane du corpus : 0.8227)
+     Rang 221 / 327 : 68 % des artistes ont un voisin plus proche que Ziak n'en a un.
+
+  Artistes les plus excentrés du corpus (repère) :
+      1. Assassin (FRA)             1.0327
+      2. Rocé (FRA)                 1.0291
+      3. La Rumeur                  1.0290
+      4. VII                        1.0288
+      5. Manau                      1.0277
+      6. Akhenaton                  1.0272
+
+=== 2. MARQUEURS LEXICAUX ===
+  Sur-employés par Ziak :
+    uh             z =   47.9     5.76 vs   0.03 ‰   (x199.7)
+    huh            z =   26.2     2.02 vs   0.02 ‰   (x99.6)
+    know           z =   22.8     1.92 vs   0.03 ‰   (x54.9)
+    pow            z =   22.1     1.73 vs   0.03 ‰   (x61.1)
+    chrome         z =   20.2     1.34 vs   0.02 ‰   (x72.4)
+    copains        z =   19.5     1.20 vs   0.01 ‰   (x81.2)
+    zipette        z =   15.1     0.86 vs   0.02 ‰   (x52.0)
+    op             z =   15.1     0.82 vs   0.01 ‰   (x58.7)
+    libérez        z =   14.5     0.82 vs   0.02 ‰   (x48.8)
+    sheitan        z =   13.4     1.15 vs   0.06 ‰   (x20.3)
+    règles         z =   13.2     1.10 vs   0.05 ‰   (x20.6)
+    you            z =   13.1     1.92 vs   0.20 ‰   (x9.8)
+    oi             z =   12.3     0.82 vs   0.03 ‰   (x26.3)
+    paw            z =   11.8     1.15 vs   0.08 ‰   (x14.1)
+  Sous-employés par Ziak :
+    ce             z =   -4.4     1.49 vs   3.56 ‰
+    se             z =   -4.7     0.58 vs   2.51 ‰
+    ma             z =   -5.3     2.54 vs   5.77 ‰
+    ouais          z =   -5.4     0.53 vs   2.88 ‰
+    que            z =   -5.5     6.34 vs  10.78 ‰
+    me             z =   -6.0     1.97 vs   5.56 ‰
+    de             z =   -6.8    13.06 vs  20.59 ‰
+    je             z =  -10.6     2.35 vs  11.69 ‰
+
+  Contrôle : ces marqueurs résistent-ils à l'élision ?
+    je    x0.20   j'    x1.18   cumulé x0.96  <-- artefact de transcription
+    se    x0.23   s'    x1.01   cumulé x0.75
+    me    x0.35   m'    x0.95   cumulé x0.69
+    ne    x0.36   n'    x0.83   cumulé x0.62
+    ce    x0.42   c'    x1.09   cumulé x0.95  <-- artefact de transcription
+    -> 5 des 10 paires testées sont des artefacts : l'écart disparaît une fois les deux formes additionnées.
+
+=== 3. STABILITÉ TEMPORELLE ===
+  Période 1 (2020-2021) : 21 titres
+  Période 2 (2022-2024) : 20 titres
+  Distance entre les deux périodes      : 0.7678
+  Distance entre moitiés aléatoires     : 0.7563 (± 0.0172)
+  Écart standardisé                     : z = +0.67
+
+=== 4. VOISINAGE STYLISTIQUE ===
+        artiste  rang_moyen  meilleur_rang  annee_mediane
+        Kerchak         3.8              1         2022.0
+        Werenoi         6.7              1         2023.0
+   Panama Bende         6.8              1         2017.0
+       Beendo Z         7.3              1         2022.0
+            Zkr         7.3              1         2021.0
+      UZI (FRA)         8.6              1         2021.0
+Sexion d’Assaut         9.0              9         2008.0
+            ISK         9.2              1         2021.0
+Fresh laDouille         9.4              2         2021.5
+         Dibson         9.7              2         2019.0
+        Sofiane         9.9              1         2016.0
+            GLK        10.4              1         2019.0
+
+  Année médiane de production du voisinage : 2021 (Ziak : 2021)
+=== sans_feats : 10_test_ziak_mikeysem.py (18:37) ===
+Mikeysem : 7 titres, 3745 mots
+Ziak : 22961 mots (requête)
+
+=== 1. PUISSANCE DE LA MÉTHODE À CETTE TAILLE ===
+  491 candidats, 175 artistes de contrôle
+features        metric  recall_at_1  recall_at_5  recall_at_20  rang_median
+    char  cosine_delta        0.714        0.897         0.970        1.000
+     mfw  cosine_delta        0.634        0.858         0.955        1.000
+     mfw burrows_delta        0.417        0.622         0.780        2.000
+    char burrows_delta        0.255        0.448         0.626        8.000
+
+=== 2. RANG DE MIKEYSEM VU DEPUIS ZIAK ===
+features        metric  rang_median  rang_min  rang_max  sep_mikeysem  n_candidats   top1_modal
+    char burrows_delta       343.00       324       356          0.40          491  L’Entourage
+    char  cosine_delta        78.50        58       123         -1.06          491     Beendo Z
+     mfw burrows_delta       202.00       173       229         -0.31          491 Panama Bende
+     mfw  cosine_delta       157.50       125       202         -0.47          491          SCH
+
+  Séparation de Mikeysem, comparée aux repères de cette taille :
+features        metric  sep_mikeysem  sep_H1_correct  sep_H0  z_vs_H0
+    char burrows_delta          0.40           -2.82   -2.38    11.94
+    char  cosine_delta         -1.06           -4.53   -3.26     3.07
+     mfw burrows_delta         -0.31           -3.08   -2.47     8.37
+     mfw  cosine_delta         -0.47           -4.73   -3.52     4.06
+
+=== 3. TEST DES IMPOSTEURS ===
+  Ziak vs Mikeysem            : 0.047
+  Jumeaux authentiques (n=40) : médiane 0.993, 1er décile 0.765
+  Hasard                      : 0.038
+  Part des vrais jumeaux sous le score de Mikeysem : 0 %
+
+=== 4. CONTRÔLES COMPLÉMENTAIRES ===
+  a) Sans le titre redondant (3161 mots) : rang médian 58 / 491
+  b) Auto-cohérence (moitié vers moitié, ~1 870 mots de chaque côté) : 0/20 tirages
+     Test volontairement plus dur que le test principal ; il montre
+     la faiblesse du volume, pas l'invalidité du classement.
+
+  c) Rangs médians vus depuis Ziak, à taille égale (char/cosine) :
+       Beendo Z       rang   4 / 491
+       Kerchak        rang   5 / 491
+       Rimkus         rang  18 / 491
+       Werenoi        rang  18 / 491
+       Zkr            rang  21 / 491
+       ISK            rang  28 / 491
+       Mikeysem       rang  74 / 491  <-- hypothèse testée
+=== sans_feats : 13_validation_alias_reels.py (18:38) ===
+  Booba            -> Lunatic              rang médian   15 / 326   séparation -1.97
+  Kool Shen        -> Suprême NTM          rang médian   20 / 326   séparation -1.64
+  (ignoré : Gringe / Casseurs Flowters absent du pool, ou sous 12,000 mots)
+  Kery James       -> Ideal J              rang médian    4 / 326   séparation -2.35
+  Rockin’ Squat    -> Assassin (FRA)       rang médian    1 / 326   séparation -3.40
+  Akhenaton        -> IAM                  rang médian    1 / 326   séparation -2.88
+  Nekfeu           -> S-Crew               rang médian   45 / 326   séparation -1.26
+  Tunisiano        -> Sniper               rang médian   13 / 326   séparation -1.70
+  Jazzy Bazz       -> L’Entourage          rang médian   77 / 326   séparation -0.78
+  Deen Burbigo     -> L’Entourage          rang médian   14 / 326   séparation -1.88
+  Nekfeu           -> 1995                 rang médian   25 / 326   séparation -1.49
+  Alpha Wann       -> 1995                 rang médian    3 / 326   séparation -2.30
+  Black M          -> Sexion d’Assaut      rang médian   75 / 326   séparation -0.76
+  Lefa             -> Sexion d’Assaut      rang médian  102 / 326   séparation -0.57
+
+=== SYNTHÈSE ===
+         solo          groupe  n_rappeurs  rang_median  rang_min  rang_max  sep_moy  sep_top1_moy  taux_rang1  n_candidats
+    Akhenaton             IAM           3         1.00         1         3    -2.88         -2.96        0.60          326
+Rockin’ Squat  Assassin (FRA)           2         1.00         1         2    -3.40         -3.40        0.90          326
+   Alpha Wann            1995           6         3.50         2        10    -2.30         -3.00        0.00          326
+   Kery James         Ideal J           2         4.00         2        11    -2.35         -2.75        0.00          326
+    Tunisiano          Sniper           3        13.50         5        90    -1.70         -2.60        0.00          326
+ Deen Burbigo     L’Entourage           5        14.50         4        54    -1.88         -3.12        0.00          326
+        Booba         Lunatic           2        15.00         1        56    -1.97         -3.21        0.10          326
+    Kool Shen     Suprême NTM           2        20.00         5        53    -1.64         -3.14        0.00          326
+       Nekfeu            1995           6        25.50         6        57    -1.49         -2.55        0.00          326
+       Nekfeu          S-Crew           3        45.00         8        83    -1.26         -2.67        0.00          326
+      Black M Sexion d’Assaut           8        75.00        23       174    -0.76         -3.14        0.00          326
+   Jazzy Bazz     L’Entourage           5        77.00        38        93    -0.78         -2.84        0.00          326
+         Lefa Sexion d’Assaut           8       102.00        12       272    -0.57         -3.36        0.00          326
+
+=== MISE EN PERSPECTIVE (4-grammes, Cosine Delta) ===
+  Recouvrements réels : rang médian 15, séparation moyenne -1.77
+  dont top 1          : 15 % des paires
+  dont top 20         : 62 % des paires
+
+  Restreint aux duos (cas le plus proche d'un alias, n=4) :
+    rang médian 10, top 20 pour 100 % des paires
+
+  COMPARAISON VALIDE — séparation du meilleur candidat du classement :
+    cas à recouvrement réel : -2.98 (écart-type 0.36)
+    Ziak                    : -2.45
+    part des cas réels dont le top-1 sépare moins bien que Ziak : 5 %
+
+=== EFFET DE LA DILUTION ===
+  (plus le groupe compte de rappeurs, moins le solo y pèse)
+ n_rappeurs  rang_median   sep  n
+          2         9.50 -2.34  4
+          3        13.50 -1.95  3
+          5        45.75 -1.33  2
+          6        14.50 -1.90  2
+          8        88.50 -0.67  2
+=== sans_feats : 14_test_alias_temporel.py (18:38) ===
+=== CAS DE CHANGEMENT D'IDENTITÉ ===
+  Joke → Ateyaba             rang médian   1 / 327   séparation -5.06   rang 1 : 100 %
+  Maître Gims → Gims         rang médian   6 / 327   séparation -2.57   rang 1 : 0 %
+  Disiz la Peste → Disiz     rang médian   2 / 327   séparation -2.90   rang 1 : 30 %
+
+=== CONTRÔLES : 45 artistes sans changement de nom ===
+
+=== COMPARAISON ===
+
+  changement d'identité (n = 3) :
+    rang médian de la période postérieure : 2
+    retrouvée au rang 1                   : 33 % des artistes
+    retrouvée dans le top 20              : 100 %
+    séparation moyenne                    : -3.51
+
+  sans changement (n = 45) :
+    rang médian de la période postérieure : 1
+    retrouvée au rang 1                   : 76 % des artistes
+    retrouvée dans le top 20              : 96 %
+    séparation moyenne                    : -3.71
+
+=== LECTURE ===
+  Un changement d'identité fait passer le rang médian de 1 à 2,
+  et la séparation de -3.71 à -3.51.
+  20 % des artistes sans changement de nom font moins bien
+  que la médiane des artistes qui en ont changé.
+
+  Pour mémoire, Ziak : séparation du meilleur candidat -2.45 (aucun lien connu)
+  Séparation du top-1 dans ces tests : -3.99
+=== sans_feats : 15_test_ziak_7jaws.py (18:38) ===
+web7 : 69 titres retenus, 72 exclus
+  exclu : Akimbo — artiste principal : Ziak
+  exclu : Jusqu’à la fin — titre avec invité (option 1)
+  exclu : Toko dombi — artiste principal : THEODORT
+  exclu : Wayeh — artiste principal : THEODORT
+  exclu : Parasite — artiste principal : Ziak
+  exclu : Zeulee — artiste principal : Zeu
+  exclu : Manuel de vengeance — artiste principal : Ziak
+  exclu : RAGE — artiste principal : Ebony (FRA)
+  exclu : Rupture — artiste principal : Ziak
+  exclu : Boulot — artiste principal : Légendes Industries
+  exclu : Turbo S — langue Genius : en
+  exclu : Rentre dans le Cercle - Saison 3 : Épisode 2 — artiste principal : Rentre dans le Cercle
+  ... et 60 autres
+
+=== textes complets (web7 : 33 951 mots) ===
+  rang médian de web7 : 137 / 327  (min 63, max 197)
+  dans le top 20 : 0 % des tirages   séparation : -0.34
+  repères — Kerchak 3, Beendo Z 2, ISK 8, Werenoi 5, Zkr 8
+  recalcul des comptes sans parenthèses (une fois, ~1 min)...
+
+=== sans ad-libs entre parenthèses (web7 : 33 062 mots) ===
+  rang médian de web7 : 132 / 326  (min 88, max 184)
+  dans le top 20 : 0 % des tirages   séparation : -0.27
+  repères — Kerchak 3, Beendo Z 4, ISK 9, Werenoi 2, Zkr 12
+
+=== web7 depuis 2019  sans ad-libs (web7 : 18 738 mots) ===
+  rang médian de web7 : 133 / 326  (min 75, max 183)
+  dans le top 20 : 0 % des tirages   séparation : -0.28
+  repères — Kerchak 2, Beendo Z 4, ISK 8, Werenoi 2, Zkr 10
+
+=== Test inverse (sans ad-libs) : rang de Ziak vu depuis web7 ===
+  rang médian 131 / 326   top 20 : 0 %
+
+=== REPÈRES : liens d'auteur réels (section 6) ===
+  artiste → son groupe      : rang médian 15, top 20 pour 62 % des paires
+  artiste → son groupe (duo): rang médian 10
+  changement d'identité     : rang médian 2, top 20 pour 100 % des cas
+=== sans_feats : 16_test_2025_web7.py (18:38) ===
+
+========================================================================
+VARIANTE : sans featurings ni ad-libs
+========================================================================
+Featurings retirés — Ziak : 0 mots (0.0 %), web7 : 0 mots (0.0 %)
+
+Ziak 2025 : 16 titres — 7 crédités à web7 (2422 mots), 9 non crédités (4388 mots)
+  distance à web7 — titres crédités : 0.9300 | non crédités : 0.9720
+  tirages aléatoires de 7 titres : médiane 0.9596
+  p-valeur (crédités plus proches que le hasard) : 0.144
+  contrôle : 100 % web7    : détecté (p < 0,05) dans 100 % des tirages, p médiane 0.000
+  contrôle : 50 % web7     : détecté (p < 0,05) dans 92 % des tirages, p médiane 0.000
+
+Toutes années : 8 titres crédités sur 57, p-valeur 0.159 (époque non contrôlée)
+Classement général (Ziak 2020-2024 sans invités) : web7 au rang médian 119 / 326, top 20 dans 0 % des tirages
+
+========================================================================
+VARIANTE : sans featurings
+========================================================================
+Featurings retirés — Ziak : 0 mots (0.0 %), web7 : 0 mots (0.0 %)
+
+Ziak 2025 : 16 titres — 7 crédités à web7 (2566 mots), 9 non crédités (4724 mots)
+  distance à web7 — titres crédités : 0.9245 | non crédités : 0.9700
+  tirages aléatoires de 7 titres : médiane 0.9568
+  p-valeur (crédités plus proches que le hasard) : 0.126
+  contrôle : 100 % web7    : détecté (p < 0,05) dans 100 % des tirages, p médiane 0.000
+  contrôle : 50 % web7     : détecté (p < 0,05) dans 87 % des tirages, p médiane 0.000
+
+Toutes années : 8 titres crédités sur 57, p-valeur 0.131 (époque non contrôlée)
+Classement général (Ziak 2020-2024 sans invités) : web7 au rang médian 121 / 327, top 20 dans 0 % des tirages
+
+-> export/sans_feats/16_1_test_2025_web7.csv
+=== sans_feats : terminé (18:39) ===

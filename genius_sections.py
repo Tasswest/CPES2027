@@ -33,6 +33,8 @@ LIBELLES = ("refrain", "couplet", "intro", "outro", "pont", "pre-refrain",
             "prechorus", "pre-chorus", "post-chorus", "refrain", "partie",
             "part", "skit", "spoken", "paroles de", "texte", "freestyle")
 
+_LIBELLES_NORMES = {re.sub(r"[^a-z0-9]", "", l) for l in LIBELLES} | {"outro"}
+
 LIGNE_BALISE = re.compile(r"^\s*\[([^\[\]\n]+)\]\s*$")
 SEPARATEURS = re.compile(r"\s*(?:&|,|\+|/|\bet\b|\band\b|\bx\b|\bfeat\.?|\bft\.?)\s*",
                          re.IGNORECASE)
@@ -47,12 +49,21 @@ def _est_libelle(texte: str) -> bool:
     return any(_norme(texte).startswith(_norme(l)) for l in LIBELLES)
 
 
+def _libelle_seul(nom: str) -> bool:
+    """Un « nom » qui n'est qu'un libellé : « Outro », « Instrumental », « Couplet 1 »…"""
+    n = re.sub(r"(x?\d+)+$", "", _norme(nom))
+    return n in _LIBELLES_NORMES or n in ("instrumentale", "choeurs", "choeur")
+
+
 def interpretes(balise: str) -> set[str] | None:
     """Interprètes nommés par une balise ; None si elle n'en nomme aucun."""
     contenu = re.sub(r"\([^)]*\)", "", balise).strip()      # « (x2) », « (Ziak) »…
     tiret = re.match(r"^([^:\-–—]+?)\s*[-–—]\s*(.+)$", contenu)
     if ":" in contenu:
-        noms = contenu.split(":", 1)[1]
+        gauche, noms = contenu.split(":", 1)
+        # Ordre inversé : « [Soprano : Outro] », « [Lefa : Couplet 1] ».
+        if not _est_libelle(gauche) and _libelle_seul(noms):
+            noms = gauche
     elif tiret and _est_libelle(tiret.group(1)):
         # Genius emploie le tiret aussi bien que le deux-points :
         # « [Couplet 3 - Kool Shen] ». Le libellé doit précéder, sinon
@@ -62,7 +73,9 @@ def interpretes(balise: str) -> set[str] | None:
         return None
     else:
         noms = contenu                                        # « [Sofiane] »
-    out = {_norme(n) for n in SEPARATEURS.split(noms) if _norme(n)}
+    # « [Refrain - Outro] », « [Pont : Instrumental] » : deux libellés, aucun nom.
+    out = {_norme(n) for n in SEPARATEURS.split(noms)
+           if _norme(n) and not _libelle_seul(n)}
     return out or None
 
 

@@ -1,0 +1,9 @@
+,0
+spearman_distance_vs_taille,-0.4330478912758717
+p_value,1.5814804508496882e-18
+part_variance_expliquee_par_taille,0.18753047613847917
+spearman_rang_naif_vs_controle,0.5715488523462029
+top1_naif,ISK
+top1_controle,Beendo Z
+recall1_naif,0.3532494758909853
+recall1_protocole,0.9444444444444444

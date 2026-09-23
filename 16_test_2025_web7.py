@@ -46,7 +46,8 @@ from stylo_features import (CACHE_DIR, OPTION_FEATURINGS, build_cache,
 RESULT_DIR = export_dir()
 ZIAK_RAW = Path(".cache_lex/ziak_raw.json")
 WEB7_RAW = Path(".cache_lex/web7_raw.json")
-CREDITS = RESULT_DIR / "15_3_credits_auteurs_ziak.csv"
+# Les crédits d'auteur ne dépendent pas du corpus : une seule copie, dans export/.
+CREDITS = Path("export") / "15_3_credits_auteurs_ziak.csv"
 ZIAK_ID, WEB7_ID = 2113831, 1078135
 ALIAS = {"Ziak": {"Ziak"},
          "web7": {"web7", "7 Jaws", "7Jaws", "JawsLee", "SeptMachoires"}}

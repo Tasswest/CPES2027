@@ -1,0 +1,9 @@
+,0
+spearman_distance_vs_taille,-0.42979529289783663
+p_value,4.352431299406911e-16
+part_variance_expliquee_par_taille,0.1847239937971372
+spearman_rang_naif_vs_controle,0.5996442843473855
+top1_naif,ISK
+top1_controle,ISK
+recall1_naif,0.39018087855297157
+recall1_protocole,0.9457364341085271

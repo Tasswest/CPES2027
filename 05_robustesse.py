@@ -228,11 +228,17 @@ def main() -> None:
     print(sensibilite_seuil(cache, t_query).to_string(
         index=False, float_format=lambda x: f"{x:.3f}"))
 
-    # Candidats récurrents relevés dans 03_attribution_ziak.py.
+    # Candidats récurrents relevés sur le corpus publié, complétés par la tête
+    # du classement de la variante courante : retirer les featurings peut faire
+    # émerger d'autres noms, et en faire sortir (un candidat passé sous 12 000
+    # mots n'est plus testable).
     cands = ["Zkr", "ISK", "Beendo Z", "Rimkus", "L’Animalerie", "Kerchak",
              "Werenoi", "SCH", "Lemon Haze", "UZI (FRA)"]
-    dispo = set(cache["meta"]["artist"])
-    cands = [c for c in cands if c in dispo]
+    consensus = RESULT_DIR / "04_5_consensus_candidats.csv"
+    if consensus.exists():
+        cands += [c for c in pd.read_csv(consensus).artiste.head(10) if c not in cands]
+    n_tok = cache["meta"].groupby("artist")["n_tokens"].sum()
+    cands = [c for c in cands if n_tok.get(c, 0) >= 12_000]
 
     print("\n=== 3. Test des imposteurs sur les candidats récurrents ===")
     imp = test_imposteurs(cache, cands)

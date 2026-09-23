@@ -100,6 +100,8 @@ def main() -> None:
         for x in r:
             x["groupe"] = "changement d'identité"; x["libelle"] = lib
         rows += r
+        if not r:
+            print(f"  {lib:26} ignoré : trop peu de texte d'un côté de la rupture")
         if r:
             rr = pd.DataFrame(r)
             print(f"  {lib:26} rang médian {int(rr.rang_periode_apres.median()):3d}"

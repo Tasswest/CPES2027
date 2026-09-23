@@ -1,0 +1,955 @@
+rep,artiste,A_naive,B_taille_controlee,C_protocole
+0,13 Block,87,14,1
+0,3010,1,1,1
+0,404Billy,2,1,1
+0,A2H,24,2,1
+0,Akhenaton,2,1,1
+0,Aladin 135,3,1,1
+0,Alkpote,1,1,1
+0,Alonzo,16,1,1
+0,Alpha Wann,1,1,1
+0,Ateyaba,1,1,1
+0,Beeby,16,1,1
+0,Bekar,33,4,1
+0,Bigflo & Oli,18,1,1
+0,Black M,32,4,1
+0,Booba,4,1,1
+0,Busta Flex,29,2,1
+0,Caballero,7,1,1
+0,D. Ace,23,1,1
+0,DTF,1,1,1
+0,Dadju,1,1,1
+0,Damso,1,1,1
+0,Davodka,1,1,1
+0,Deen Burbigo,18,1,1
+0,Demi Portion,8,1,1
+0,Despo Rutti,10,1,1
+0,Diam’s,263,183,1
+0,Dibson,1,1,1
+0,Dinos,1,1,1
+0,Disiz,35,3,1
+0,Djadja & Dinaz,6,1,1
+0,Dooz Kawa,2,1,1
+0,Dosseh,22,1,1
+0,Elams,25,1,1
+0,Fabe,5,1,1
+0,Fonky Family,14,3,1
+0,Franglish,2,1,1
+0,Freeze Corleone,1,1,1
+0,Furax Barbarossa,1,1,1
+0,GLK,65,10,1
+0,Georgio,15,1,1
+0,Gims,9,1,1
+0,Gradur,13,1,1
+0,Grand Corps Malade,13,2,1
+0,Grems,8,1,1
+0,Guizmo,44,5,1
+0,Hamza,2,1,1
+0,Hatik,3,1,1
+0,Hayce Lemsi,1,1,1
+0,Hippocampe Fou,20,2,1
+0,Hooss,1,1,1
+0,Hornet La Frappe,45,3,1
+0,Hugo TSR,2,1,1
+0,IAM,2,1,2
+0,ISK,2,1,1
+0,Jarod,4,1,1
+0,Jok’Air,35,1,1
+0,Jorrdee,1,1,1
+0,Josman,1,1,1
+0,JuL,19,1,1
+0,KIK,71,12,1
+0,Kaaris,13,1,1
+0,Kalash Criminel,1,1,1
+0,Kamikaz,1,1,1
+0,KeBlack,4,1,1
+0,Kekra,21,2,1
+0,Keny Arkana,1,1,1
+0,Kery James,27,6,2
+0,Klub des Loosers,1,1,1
+0,Koba LaD,1,1,1
+0,Kofs,3,1,1
+0,Krisy,1,1,1
+0,La Fouine,233,129,1
+0,La Fève,1,1,1
+0,La Rumeur,1,1,1
+0,Lacraps,1,1,1
+0,Lacrim,3,1,1
+0,Lartiste,174,58,2
+0,Laylow,4,1,1
+0,Lefa,5,1,1
+0,Les Sages Poètes de la Rue,3,1,1
+0,Leto,1,1,1
+0,Lomepal,1,1,1
+0,Lonepsi,1,1,1
+0,Lord Esperanza,1,1,1
+0,Lucio Bukowski,1,1,1
+0,Luv Resval,1,1,1
+0,L’Algérino,88,18,1
+0,L’Entourage,1,1,1
+0,MC Solaar,1,1,1
+0,MZ,20,1,1
+0,Mac Tyer,5,1,1
+0,Maes,3,1,1
+0,Maska,63,8,1
+0,Mister You,27,1,1
+0,Moha La Squale,1,1,1
+0,Mysa,1,1,1
+0,Mystik,7,1,1
+0,Médine,7,1,1
+0,Nahir,3,1,1
+0,Naps,1,1,1
+0,Naza,18,3,1
+0,Neg’ Marrons,97,42,1
+0,Nekfeu,88,15,1
+0,Nessbeal,1,1,1
+0,Ninho,5,1,1
+0,Niro,19,1,1
+0,Niska,12,1,1
+0,Octobre Rouge,15,3,1
+0,Ol’ Kainry,21,2,1
+0,OrelSan,1,1,1
+0,Oxmo Puccino,13,1,1
+0,PLK,32,2,1
+0,PNL,2,1,1
+0,Psy 4 de la Rime,33,2,1
+0,R.E.D.K.,2,1,1
+0,RK,1,1,1
+0,Retro X,1,1,1
+0,Ridsa,14,1,1
+0,Rim’K,3,1,1
+0,Rochdi,1,1,1
+0,Rockin’ Squat,1,1,1
+0,Rohff,23,1,1
+0,Roméo Elvis,3,1,1
+0,Roshi,14,2,1
+0,S-Crew,15,1,3
+0,S.Pri Noir,17,1,1
+0,SCH,2,1,1
+0,Sadek,32,1,1
+0,Salif,19,2,2
+0,Sam’s,7,1,1
+0,Scylla,31,5,1
+0,Sefyu,148,82,1
+0,Seth Gueko,2,1,1
+0,Sexion d’Assaut,1,1,1
+0,Sinik,1,1,1
+0,Sneazzy,40,1,1
+0,Sniper,91,27,36
+0,So La Lune,1,1,1
+0,Sofiane,4,1,1
+0,Sopico,12,2,1
+0,Soprano,78,18,1
+0,Stupeflip,1,1,1
+0,Suzuya,1,1,1
+0,Svinkels,26,3,1
+0,Swift Guad,1,1,1
+0,TSR Crew,3,1,1
+0,TiTo Prince,7,1,1
+0,Timal,2,1,1
+0,VII,1,1,1
+0,Vald,26,2,1
+0,Vin’s,1,1,1
+0,Volts Face,1,1,1
+0,YL,7,1,1
+0,Youssoupha,41,4,1
+0,Youv Dee,10,1,1
+0,Zamdane,1,1,1
+0,Zikxo,1,1,1
+0,Zkr,1,1,1
+0,​DA Uzi,1,1,1
+1,13 Block,72,7,1
+1,3010,22,1,1
+1,404Billy,3,1,1
+1,A2H,10,2,1
+1,Akhenaton,2,1,1
+1,Aladin 135,1,1,1
+1,Alkpote,1,1,1
+1,Alonzo,41,4,3
+1,Alpha Wann,2,1,1
+1,Ateyaba,2,1,1
+1,Beeby,9,1,1
+1,Bekar,6,1,1
+1,Bigflo & Oli,25,3,1
+1,Black M,20,2,1
+1,Booba,6,1,1
+1,Busta Flex,24,1,1
+1,Caballero,1,1,1
+1,D. Ace,14,1,1
+1,DTF,1,1,1
+1,Dadju,5,1,1
+1,Damso,1,1,1
+1,Davodka,1,1,1
+1,Deen Burbigo,12,2,1
+1,Demi Portion,1,1,1
+1,Despo Rutti,6,1,1
+1,Diam’s,23,1,1
+1,Dibson,1,1,1
+1,Dinos,8,1,1
+1,Disiz,19,1,1
+1,Djadja & Dinaz,3,1,1
+1,Dooz Kawa,2,1,1
+1,Dosseh,32,3,1
+1,Elams,11,1,1
+1,Fabe,4,1,1
+1,Fonky Family,6,1,2
+1,Franglish,47,17,1
+1,Freeze Corleone,1,1,1
+1,Furax Barbarossa,1,1,1
+1,GLK,30,2,4
+1,Georgio,13,1,1
+1,Gims,64,5,1
+1,Gradur,2,1,1
+1,Grand Corps Malade,1,1,1
+1,Grems,15,1,1
+1,Guizmo,2,1,1
+1,Hamza,5,1,1
+1,Hatik,25,3,1
+1,Hayce Lemsi,5,1,1
+1,Hippocampe Fou,165,87,5
+1,Hooss,1,1,1
+1,Hornet La Frappe,30,1,1
+1,Hugo TSR,2,1,1
+1,IAM,3,2,2
+1,ISK,7,1,1
+1,Jarod,9,1,1
+1,Jok’Air,35,1,1
+1,Jorrdee,16,1,1
+1,Josman,1,1,1
+1,JuL,97,18,3
+1,KIK,19,2,1
+1,Kaaris,4,1,1
+1,Kalash Criminel,1,1,1
+1,Kamikaz,1,1,1
+1,KeBlack,1,1,1
+1,Kekra,75,9,1
+1,Keny Arkana,1,1,1
+1,Kery James,49,19,1
+1,Klub des Loosers,1,1,1
+1,Koba LaD,1,1,1
+1,Kofs,1,1,1
+1,Krisy,2,1,1
+1,La Fouine,56,9,1
+1,La Fève,1,1,1
+1,La Rumeur,3,1,1
+1,Lacraps,1,1,1
+1,Lacrim,22,1,1
+1,Lartiste,68,5,1
+1,Laylow,7,1,1
+1,Lefa,17,1,1
+1,Les Sages Poètes de la Rue,1,1,1
+1,Leto,14,2,1
+1,Lomepal,1,1,1
+1,Lonepsi,1,1,1
+1,Lord Esperanza,1,1,1
+1,Lucio Bukowski,1,1,1
+1,Luv Resval,1,1,1
+1,L’Algérino,163,51,1
+1,L’Entourage,1,1,1
+1,MC Solaar,1,1,1
+1,MZ,67,11,1
+1,Mac Tyer,1,1,1
+1,Maes,1,1,1
+1,Maska,3,1,1
+1,Mister You,1,1,1
+1,Moha La Squale,1,1,1
+1,Mysa,1,1,1
+1,Mystik,24,1,1
+1,Médine,13,2,1
+1,Nahir,2,1,1
+1,Naps,1,1,1
+1,Naza,7,1,1
+1,Neg’ Marrons,4,1,1
+1,Nekfeu,12,2,1
+1,Nessbeal,2,1,1
+1,Ninho,18,1,1
+1,Niro,81,18,1
+1,Niska,6,1,1
+1,Octobre Rouge,10,1,1
+1,Ol’ Kainry,12,1,1
+1,OrelSan,11,1,1
+1,Oxmo Puccino,22,1,2
+1,PLK,62,7,1
+1,PNL,2,1,1
+1,Psy 4 de la Rime,11,1,1
+1,R.E.D.K.,8,1,1
+1,RK,41,4,1
+1,Retro X,1,1,1
+1,Ridsa,1,1,1
+1,Rim’K,1,1,1
+1,Rochdi,1,1,1
+1,Rockin’ Squat,1,1,1
+1,Rohff,27,2,1
+1,Roméo Elvis,2,1,1
+1,Roshi,1,1,1
+1,S-Crew,3,1,1
+1,S.Pri Noir,8,1,1
+1,SCH,2,1,1
+1,Sadek,18,1,1
+1,Salif,7,1,2
+1,Sam’s,9,1,1
+1,Scylla,3,1,1
+1,Sefyu,142,60,1
+1,Seth Gueko,1,1,1
+1,Sexion d’Assaut,86,16,2
+1,Sinik,8,1,1
+1,Sneazzy,15,1,1
+1,Sniper,62,11,17
+1,So La Lune,1,1,1
+1,Sofiane,36,4,1
+1,Sopico,54,6,1
+1,Soprano,34,2,1
+1,Stupeflip,52,7,1
+1,Suzuya,1,1,1
+1,Svinkels,11,1,1
+1,Swift Guad,1,1,1
+1,TSR Crew,3,1,1
+1,TiTo Prince,21,1,1
+1,Timal,2,1,1
+1,VII,1,1,1
+1,Vald,16,1,1
+1,Vin’s,1,1,1
+1,Volts Face,1,1,1
+1,YL,3,1,1
+1,Youssoupha,45,8,1
+1,Youv Dee,1,1,1
+1,Zamdane,1,1,1
+1,Zikxo,3,1,1
+1,Zkr,1,1,1
+1,​DA Uzi,1,1,1
+2,13 Block,113,30,1
+2,3010,1,1,1
+2,404Billy,1,1,1
+2,A2H,2,1,1
+2,Akhenaton,3,1,2
+2,Aladin 135,1,1,1
+2,Alkpote,2,1,1
+2,Alonzo,121,24,5
+2,Alpha Wann,1,1,1
+2,Ateyaba,1,1,1
+2,Beeby,3,1,1
+2,Bekar,2,1,1
+2,Bigflo & Oli,56,3,1
+2,Black M,23,1,1
+2,Booba,11,1,1
+2,Busta Flex,137,40,4
+2,Caballero,1,1,1
+2,D. Ace,58,6,1
+2,DTF,1,1,1
+2,Dadju,1,1,1
+2,Damso,14,1,1
+2,Davodka,1,1,1
+2,Deen Burbigo,50,7,1
+2,Demi Portion,1,1,1
+2,Despo Rutti,3,1,1
+2,Diam’s,95,22,1
+2,Dibson,5,1,1
+2,Dinos,1,1,1
+2,Disiz,23,1,1
+2,Djadja & Dinaz,3,1,1
+2,Dooz Kawa,1,1,1
+2,Dosseh,68,11,1
+2,Elams,43,1,1
+2,Fabe,2,1,1
+2,Fonky Family,9,1,1
+2,Franglish,4,1,1
+2,Freeze Corleone,1,1,1
+2,Furax Barbarossa,1,1,1
+2,GLK,11,1,1
+2,Georgio,25,2,1
+2,Gims,74,10,2
+2,Gradur,4,1,1
+2,Grand Corps Malade,1,1,1
+2,Grems,16,1,1
+2,Guizmo,1,1,1
+2,Hamza,1,1,1
+2,Hatik,13,1,1
+2,Hayce Lemsi,3,1,1
+2,Hippocampe Fou,1,1,1
+2,Hooss,1,1,1
+2,Hornet La Frappe,34,1,1
+2,Hugo TSR,2,1,1
+2,IAM,2,1,1
+2,ISK,3,1,1
+2,Jarod,1,1,1
+2,Jok’Air,67,4,1
+2,Jorrdee,6,1,1
+2,Josman,2,1,1
+2,JuL,20,2,1
+2,KIK,62,10,1
+2,Kaaris,40,2,1
+2,Kalash Criminel,2,1,1
+2,Kamikaz,1,1,1
+2,KeBlack,3,1,2
+2,Kekra,114,32,1
+2,Keny Arkana,8,1,1
+2,Kery James,35,5,1
+2,Klub des Loosers,1,1,1
+2,Koba LaD,5,1,1
+2,Kofs,1,1,1
+2,Krisy,1,1,1
+2,La Fouine,209,88,1
+2,La Fève,1,1,1
+2,La Rumeur,1,1,1
+2,Lacraps,1,1,1
+2,Lacrim,77,8,1
+2,Lartiste,42,2,1
+2,Laylow,5,1,1
+2,Lefa,10,1,1
+2,Les Sages Poètes de la Rue,1,1,1
+2,Leto,3,1,2
+2,Lomepal,1,1,1
+2,Lonepsi,1,1,1
+2,Lord Esperanza,1,1,1
+2,Lucio Bukowski,1,1,1
+2,Luv Resval,1,1,1
+2,L’Algérino,92,17,1
+2,L’Entourage,1,1,1
+2,MC Solaar,1,1,1
+2,MZ,1,1,1
+2,Mac Tyer,6,1,1
+2,Maes,1,1,1
+2,Maska,24,2,1
+2,Mister You,8,1,1
+2,Moha La Squale,1,1,1
+2,Mysa,1,1,1
+2,Mystik,98,27,2
+2,Médine,13,1,2
+2,Nahir,1,1,1
+2,Naps,1,1,1
+2,Naza,6,1,1
+2,Neg’ Marrons,2,2,1
+2,Nekfeu,55,4,1
+2,Nessbeal,1,1,1
+2,Ninho,1,1,1
+2,Niro,13,1,1
+2,Niska,5,1,1
+2,Octobre Rouge,8,2,1
+2,Ol’ Kainry,5,1,1
+2,OrelSan,36,3,1
+2,Oxmo Puccino,4,1,1
+2,PLK,5,1,1
+2,PNL,38,3,1
+2,Psy 4 de la Rime,29,2,1
+2,R.E.D.K.,2,1,1
+2,RK,12,1,1
+2,Retro X,1,1,1
+2,Ridsa,1,1,1
+2,Rim’K,1,1,1
+2,Rochdi,1,1,1
+2,Rockin’ Squat,21,1,1
+2,Rohff,19,2,2
+2,Roméo Elvis,19,1,1
+2,Roshi,1,1,1
+2,S-Crew,24,1,1
+2,S.Pri Noir,20,1,1
+2,SCH,4,1,1
+2,Sadek,7,1,1
+2,Salif,6,1,1
+2,Sam’s,2,1,1
+2,Scylla,38,7,1
+2,Sefyu,100,31,1
+2,Seth Gueko,1,1,1
+2,Sexion d’Assaut,3,1,1
+2,Sinik,19,1,1
+2,Sneazzy,1,1,1
+2,Sniper,107,44,75
+2,So La Lune,1,1,1
+2,Sofiane,92,14,1
+2,Sopico,2,1,1
+2,Soprano,21,2,1
+2,Stupeflip,1,1,1
+2,Suzuya,1,1,1
+2,Svinkels,3,1,1
+2,Swift Guad,1,1,1
+2,TSR Crew,6,1,1
+2,TiTo Prince,29,1,1
+2,Timal,8,1,1
+2,VII,1,1,1
+2,Vald,54,4,1
+2,Vin’s,12,1,1
+2,Volts Face,1,1,1
+2,YL,1,1,1
+2,Youssoupha,14,1,1
+2,Youv Dee,1,1,1
+2,Zamdane,2,1,1
+2,Zikxo,1,1,1
+2,Zkr,6,1,1
+2,​DA Uzi,1,1,1
+3,13 Block,42,1,1
+3,3010,1,1,1
+3,404Billy,10,1,1
+3,A2H,4,1,1
+3,Akhenaton,3,1,1
+3,Aladin 135,3,1,1
+3,Alkpote,12,1,1
+3,Alonzo,22,1,3
+3,Alpha Wann,2,1,1
+3,Ateyaba,52,4,1
+3,Beeby,11,1,1
+3,Bekar,43,4,1
+3,Bigflo & Oli,22,2,1
+3,Black M,46,2,3
+3,Booba,5,1,1
+3,Busta Flex,11,1,1
+3,Caballero,5,1,1
+3,D. Ace,5,1,1
+3,DTF,2,1,1
+3,Dadju,18,3,1
+3,Damso,1,1,1
+3,Davodka,1,1,1
+3,Deen Burbigo,7,1,1
+3,Demi Portion,7,1,1
+3,Despo Rutti,43,5,1
+3,Diam’s,72,11,1
+3,Dibson,4,1,1
+3,Dinos,7,1,1
+3,Disiz,69,9,1
+3,Djadja & Dinaz,7,1,1
+3,Dooz Kawa,1,1,1
+3,Dosseh,138,35,1
+3,Elams,7,1,1
+3,Fabe,2,1,1
+3,Fonky Family,2,1,1
+3,Franglish,1,1,1
+3,Freeze Corleone,1,1,1
+3,Furax Barbarossa,1,1,1
+3,GLK,41,2,1
+3,Georgio,1,1,1
+3,Gims,118,15,2
+3,Gradur,1,1,1
+3,Grand Corps Malade,1,1,1
+3,Grems,21,1,1
+3,Guizmo,1,1,1
+3,Hamza,2,1,1
+3,Hatik,8,1,1
+3,Hayce Lemsi,1,1,1
+3,Hippocampe Fou,41,5,2
+3,Hooss,1,1,1
+3,Hornet La Frappe,28,1,1
+3,Hugo TSR,1,1,1
+3,IAM,5,1,1
+3,ISK,2,1,1
+3,Jarod,1,1,1
+3,Jok’Air,79,6,1
+3,Jorrdee,3,1,1
+3,Josman,2,1,1
+3,JuL,31,3,3
+3,KIK,10,1,1
+3,Kaaris,37,3,1
+3,Kalash Criminel,1,1,1
+3,Kamikaz,1,1,1
+3,KeBlack,4,1,1
+3,Kekra,289,187,1
+3,Keny Arkana,3,1,1
+3,Kery James,23,3,1
+3,Klub des Loosers,1,1,1
+3,Koba LaD,1,1,1
+3,Kofs,5,1,1
+3,Krisy,1,1,1
+3,La Fouine,245,138,1
+3,La Fève,1,1,1
+3,La Rumeur,1,1,1
+3,Lacraps,1,1,1
+3,Lacrim,4,1,1
+3,Lartiste,49,1,8
+3,Laylow,15,1,1
+3,Lefa,158,66,1
+3,Les Sages Poètes de la Rue,1,1,1
+3,Leto,1,1,1
+3,Lomepal,1,1,1
+3,Lonepsi,1,1,1
+3,Lord Esperanza,2,1,1
+3,Lucio Bukowski,1,1,1
+3,Luv Resval,1,1,1
+3,L’Algérino,47,4,1
+3,L’Entourage,1,1,1
+3,MC Solaar,2,1,1
+3,MZ,2,1,1
+3,Mac Tyer,64,11,1
+3,Maes,1,1,1
+3,Maska,119,24,1
+3,Mister You,22,1,1
+3,Moha La Squale,1,1,1
+3,Mysa,4,1,1
+3,Mystik,28,5,1
+3,Médine,2,1,1
+3,Nahir,18,2,1
+3,Naps,2,1,1
+3,Naza,12,1,1
+3,Neg’ Marrons,84,33,2
+3,Nekfeu,49,8,3
+3,Nessbeal,1,1,1
+3,Ninho,5,1,1
+3,Niro,1,1,1
+3,Niska,4,1,1
+3,Octobre Rouge,2,1,1
+3,Ol’ Kainry,31,1,1
+3,OrelSan,4,1,1
+3,Oxmo Puccino,46,10,1
+3,PLK,26,1,1
+3,PNL,2,1,1
+3,Psy 4 de la Rime,29,2,1
+3,R.E.D.K.,1,1,1
+3,RK,26,1,1
+3,Retro X,1,1,1
+3,Ridsa,1,1,1
+3,Rim’K,2,1,1
+3,Rochdi,1,1,1
+3,Rockin’ Squat,7,1,1
+3,Rohff,69,6,1
+3,Roméo Elvis,5,1,1
+3,Roshi,1,1,1
+3,S-Crew,13,1,1
+3,S.Pri Noir,68,6,1
+3,SCH,4,1,1
+3,Sadek,8,1,1
+3,Salif,13,2,2
+3,Sam’s,10,1,1
+3,Scylla,3,1,1
+3,Sefyu,54,10,1
+3,Seth Gueko,2,1,1
+3,Sexion d’Assaut,14,1,1
+3,Sinik,17,1,1
+3,Sneazzy,13,1,1
+3,Sniper,70,15,1
+3,So La Lune,1,1,1
+3,Sofiane,29,1,1
+3,Sopico,1,1,1
+3,Soprano,4,1,1
+3,Stupeflip,52,8,1
+3,Suzuya,1,1,1
+3,Svinkels,3,1,1
+3,Swift Guad,1,1,1
+3,TSR Crew,3,1,1
+3,TiTo Prince,17,1,1
+3,Timal,4,1,1
+3,VII,1,1,1
+3,Vald,10,1,1
+3,Vin’s,3,1,1
+3,Volts Face,1,1,1
+3,YL,2,1,1
+3,Youssoupha,25,1,1
+3,Youv Dee,13,1,1
+3,Zamdane,1,1,1
+3,Zikxo,1,1,1
+3,Zkr,1,1,1
+3,​DA Uzi,1,1,1
+4,13 Block,38,1,1
+4,3010,9,1,1
+4,404Billy,2,1,1
+4,A2H,4,2,1
+4,Akhenaton,4,1,3
+4,Aladin 135,1,1,1
+4,Alkpote,1,1,1
+4,Alonzo,42,2,1
+4,Alpha Wann,1,1,1
+4,Ateyaba,3,1,1
+4,Beeby,14,1,1
+4,Bekar,17,2,1
+4,Bigflo & Oli,65,6,1
+4,Black M,115,14,1
+4,Booba,3,1,1
+4,Busta Flex,147,48,1
+4,Caballero,11,2,1
+4,D. Ace,31,2,1
+4,DTF,2,1,1
+4,Dadju,1,1,1
+4,Damso,12,1,1
+4,Davodka,1,1,1
+4,Deen Burbigo,3,1,1
+4,Demi Portion,1,1,1
+4,Despo Rutti,4,1,1
+4,Diam’s,26,2,1
+4,Dibson,2,1,1
+4,Dinos,47,7,1
+4,Disiz,74,12,1
+4,Djadja & Dinaz,1,1,1
+4,Dooz Kawa,2,1,1
+4,Dosseh,20,1,1
+4,Elams,59,8,1
+4,Fabe,17,2,2
+4,Fonky Family,5,1,1
+4,Franglish,6,1,1
+4,Freeze Corleone,1,1,1
+4,Furax Barbarossa,4,1,1
+4,GLK,5,1,1
+4,Georgio,8,1,1
+4,Gims,10,1,1
+4,Gradur,26,1,1
+4,Grand Corps Malade,7,2,1
+4,Grems,24,1,1
+4,Guizmo,1,1,1
+4,Hamza,1,1,1
+4,Hatik,1,1,1
+4,Hayce Lemsi,1,1,1
+4,Hippocampe Fou,98,30,1
+4,Hooss,1,1,1
+4,Hornet La Frappe,3,1,1
+4,Hugo TSR,2,1,1
+4,IAM,6,2,2
+4,ISK,3,1,1
+4,Jarod,1,1,1
+4,Jok’Air,9,1,1
+4,Jorrdee,13,1,1
+4,Josman,33,3,1
+4,JuL,2,1,1
+4,KIK,1,1,1
+4,Kaaris,45,3,1
+4,Kalash Criminel,1,1,1
+4,Kamikaz,1,1,1
+4,KeBlack,8,1,1
+4,Kekra,9,1,1
+4,Keny Arkana,3,1,1
+4,Kery James,22,1,1
+4,Klub des Loosers,1,1,1
+4,Koba LaD,1,1,1
+4,Kofs,1,1,1
+4,Krisy,1,1,1
+4,La Fouine,245,143,1
+4,La Fève,1,1,1
+4,La Rumeur,3,1,1
+4,Lacraps,1,1,1
+4,Lacrim,7,1,1
+4,Lartiste,81,7,2
+4,Laylow,2,1,1
+4,Lefa,115,29,1
+4,Les Sages Poètes de la Rue,1,1,1
+4,Leto,4,2,1
+4,Lomepal,1,1,1
+4,Lonepsi,1,1,1
+4,Lord Esperanza,1,1,1
+4,Lucio Bukowski,1,1,1
+4,Luv Resval,1,1,1
+4,L’Algérino,21,1,1
+4,L’Entourage,1,1,1
+4,MC Solaar,1,1,1
+4,MZ,9,1,1
+4,Mac Tyer,13,1,1
+4,Maes,1,1,1
+4,Maska,47,2,1
+4,Mister You,5,1,1
+4,Moha La Squale,1,1,1
+4,Mysa,1,1,1
+4,Mystik,29,2,1
+4,Médine,4,1,1
+4,Nahir,1,1,1
+4,Naps,1,1,1
+4,Naza,29,3,1
+4,Neg’ Marrons,116,45,1
+4,Nekfeu,81,18,1
+4,Nessbeal,1,1,1
+4,Ninho,48,3,1
+4,Niro,1,1,1
+4,Niska,8,1,1
+4,Octobre Rouge,5,1,1
+4,Ol’ Kainry,1,1,1
+4,OrelSan,26,2,1
+4,Oxmo Puccino,1,1,1
+4,PLK,233,138,12
+4,PNL,3,1,1
+4,Psy 4 de la Rime,72,18,1
+4,R.E.D.K.,1,1,1
+4,RK,8,1,1
+4,Retro X,1,1,1
+4,Ridsa,3,1,1
+4,Rim’K,1,1,1
+4,Rochdi,1,1,1
+4,Rockin’ Squat,7,1,1
+4,Rohff,77,11,1
+4,Roméo Elvis,4,1,1
+4,Roshi,1,1,1
+4,S-Crew,7,1,1
+4,S.Pri Noir,103,12,1
+4,SCH,10,1,1
+4,Sadek,85,7,2
+4,Salif,4,1,2
+4,Sam’s,7,1,1
+4,Scylla,1,1,1
+4,Sefyu,50,4,1
+4,Seth Gueko,2,1,1
+4,Sexion d’Assaut,14,2,1
+4,Sinik,7,1,1
+4,Sneazzy,2,1,1
+4,Sniper,51,1,1
+4,So La Lune,1,1,1
+4,Sofiane,5,1,1
+4,Sopico,2,1,1
+4,Soprano,11,1,1
+4,Stupeflip,2,1,1
+4,Suzuya,1,1,1
+4,Svinkels,4,1,1
+4,Swift Guad,1,1,1
+4,TSR Crew,3,1,1
+4,TiTo Prince,56,12,1
+4,Timal,3,1,1
+4,VII,1,1,1
+4,Vald,19,1,1
+4,Vin’s,1,1,1
+4,Volts Face,1,1,1
+4,YL,1,1,1
+4,Youssoupha,11,1,1
+4,Youv Dee,11,1,1
+4,Zamdane,1,1,1
+4,Zikxo,7,1,1
+4,Zkr,1,1,1
+4,​DA Uzi,1,1,1
+5,13 Block,146,62,1
+5,3010,1,1,1
+5,404Billy,3,1,1
+5,A2H,11,1,1
+5,Akhenaton,3,1,1
+5,Aladin 135,1,1,1
+5,Alkpote,1,1,1
+5,Alonzo,44,5,1
+5,Alpha Wann,1,1,1
+5,Ateyaba,1,1,1
+5,Beeby,11,1,1
+5,Bekar,14,2,1
+5,Bigflo & Oli,124,36,1
+5,Black M,71,7,3
+5,Booba,3,1,1
+5,Busta Flex,91,14,1
+5,Caballero,103,27,3
+5,D. Ace,12,1,1
+5,DTF,1,1,1
+5,Dadju,11,1,1
+5,Damso,31,3,1
+5,Davodka,1,1,1
+5,Deen Burbigo,48,7,1
+5,Demi Portion,11,1,1
+5,Despo Rutti,2,1,1
+5,Diam’s,88,23,1
+5,Dibson,4,1,1
+5,Dinos,88,15,1
+5,Disiz,2,1,1
+5,Djadja & Dinaz,11,1,1
+5,Dooz Kawa,1,1,1
+5,Dosseh,37,1,1
+5,Elams,12,1,1
+5,Fabe,1,1,1
+5,Fonky Family,6,1,1
+5,Franglish,7,1,1
+5,Freeze Corleone,1,1,1
+5,Furax Barbarossa,1,1,1
+5,GLK,12,1,1
+5,Georgio,11,1,2
+5,Gims,117,17,7
+5,Gradur,1,1,1
+5,Grand Corps Malade,1,1,1
+5,Grems,29,5,1
+5,Guizmo,2,1,1
+5,Hamza,70,18,1
+5,Hatik,11,1,1
+5,Hayce Lemsi,2,1,1
+5,Hippocampe Fou,141,64,5
+5,Hooss,1,1,1
+5,Hornet La Frappe,36,3,1
+5,Hugo TSR,1,1,1
+5,IAM,2,1,1
+5,ISK,1,1,1
+5,Jarod,16,1,1
+5,Jok’Air,124,38,1
+5,Jorrdee,7,1,1
+5,Josman,1,1,1
+5,JuL,1,1,1
+5,KIK,78,14,1
+5,Kaaris,12,2,1
+5,Kalash Criminel,1,1,1
+5,Kamikaz,1,1,1
+5,KeBlack,6,1,1
+5,Kekra,48,5,1
+5,Keny Arkana,1,1,1
+5,Kery James,33,10,1
+5,Klub des Loosers,1,1,1
+5,Koba LaD,1,1,1
+5,Kofs,1,1,1
+5,Krisy,1,1,1
+5,La Fouine,161,69,1
+5,La Fève,1,1,1
+5,La Rumeur,1,1,1
+5,Lacraps,3,1,1
+5,Lacrim,1,1,1
+5,Lartiste,77,9,14
+5,Laylow,1,1,1
+5,Lefa,154,51,1
+5,Les Sages Poètes de la Rue,1,1,1
+5,Leto,4,1,1
+5,Lomepal,1,1,1
+5,Lonepsi,1,1,1
+5,Lord Esperanza,1,1,1
+5,Lucio Bukowski,1,1,1
+5,Luv Resval,1,1,1
+5,L’Algérino,7,1,1
+5,L’Entourage,1,1,1
+5,MC Solaar,1,1,1
+5,MZ,45,5,1
+5,Mac Tyer,2,1,1
+5,Maes,2,1,1
+5,Maska,15,1,1
+5,Mister You,1,1,1
+5,Moha La Squale,1,1,1
+5,Mysa,6,1,1
+5,Mystik,20,1,1
+5,Médine,12,2,1
+5,Nahir,1,1,1
+5,Naps,1,1,1
+5,Naza,28,3,1
+5,Neg’ Marrons,21,1,1
+5,Nekfeu,21,2,1
+5,Nessbeal,1,1,1
+5,Ninho,25,1,2
+5,Niro,8,1,1
+5,Niska,3,1,1
+5,Octobre Rouge,4,1,1
+5,Ol’ Kainry,39,3,1
+5,OrelSan,6,1,1
+5,Oxmo Puccino,12,1,3
+5,PLK,63,7,1
+5,PNL,2,1,1
+5,Psy 4 de la Rime,13,1,1
+5,R.E.D.K.,1,1,1
+5,RK,81,25,1
+5,Retro X,1,1,1
+5,Ridsa,2,1,1
+5,Rim’K,1,1,1
+5,Rochdi,1,1,1
+5,Rockin’ Squat,1,1,1
+5,Rohff,67,16,2
+5,Roméo Elvis,1,1,1
+5,Roshi,1,1,1
+5,S-Crew,3,1,1
+5,S.Pri Noir,43,3,1
+5,SCH,2,1,1
+5,Sadek,30,2,1
+5,Salif,17,2,2
+5,Sam’s,1,1,1
+5,Scylla,1,1,1
+5,Sefyu,28,4,1
+5,Seth Gueko,1,1,1
+5,Sexion d’Assaut,8,1,1
+5,Sinik,1,1,1
+5,Sneazzy,77,6,1
+5,Sniper,38,2,6
+5,So La Lune,1,1,1
+5,Sofiane,74,10,1
+5,Sopico,8,1,1
+5,Soprano,1,1,1
+5,Stupeflip,2,1,1
+5,Suzuya,1,1,1
+5,Svinkels,3,1,1
+5,Swift Guad,1,1,1
+5,TSR Crew,3,1,1
+5,TiTo Prince,2,1,1
+5,Timal,2,1,1
+5,VII,1,1,1
+5,Vald,1,1,1
+5,Vin’s,1,1,1
+5,Volts Face,1,1,1
+5,YL,2,1,1
+5,Youssoupha,13,1,1
+5,Youv Dee,3,1,1
+5,Zamdane,2,1,1
+5,Zikxo,1,1,1
+5,Zkr,1,1,1
+5,​DA Uzi,1,1,1

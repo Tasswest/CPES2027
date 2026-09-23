@@ -212,6 +212,13 @@ def main() -> None:
             idx_w7 = idx_w7[ans.to_numpy() >= annee]
         mots_w7 = int(n_tok[idx_w7].sum())
         print(f"\n=== {nom} (web7 : {mots_w7:,} mots) ===".replace(",", " "))
+        if mots_w7 < T_CAND:
+            # Sans ses titres avec invités (option 1), web7 peut passer sous le
+            # seuil : la variante n'est alors pas testable, et on le dit.
+            print(f"  ignorée : web7 sous le seuil de {T_CAND:,} mots".replace(",", " "))
+            resumes.append({"variante": nom, "mots_web7": mots_w7,
+                            "n_titres_web7": int(len(idx_w7))})
+            continue
         r = classement(mat, n_tok, meta, rng, annee_min=annee)
         r["variante"] = nom
         bruts.append(r)

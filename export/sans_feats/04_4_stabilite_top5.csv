@@ -1,0 +1,102 @@
+features,metric,artiste,n_top5,freq_top5
+char,burrows_delta,Worms-T,29,0.9666666666666667
+char,burrows_delta,Zkr,21,0.7
+char,burrows_delta,Panama Bende,18,0.6
+char,burrows_delta,ISK,12,0.4
+char,burrows_delta,S.Pri Noir,9,0.3
+char,burrows_delta,Vin’s,8,0.26666666666666666
+char,burrows_delta,Dibson,7,0.23333333333333334
+char,burrows_delta,Lesram,7,0.23333333333333334
+char,burrows_delta,Ademo,5,0.16666666666666666
+char,burrows_delta,Nahir,4,0.13333333333333333
+char,burrows_delta,Niro,4,0.13333333333333333
+char,burrows_delta,Deen Burbigo,3,0.1
+char,burrows_delta,Lacrim,3,0.1
+char,burrows_delta,Sam’s,3,0.1
+char,burrows_delta,Guizmo,2,0.06666666666666667
+char,burrows_delta,Hayce Lemsi,2,0.06666666666666667
+char,burrows_delta,Sofiane,2,0.06666666666666667
+char,burrows_delta,Zikxo,2,0.06666666666666667
+char,burrows_delta,Beeby,1,0.03333333333333333
+char,burrows_delta,Beendo Z,1,0.03333333333333333
+char,burrows_delta,L’Entourage,1,0.03333333333333333
+char,burrows_delta,PLK,1,0.03333333333333333
+char,burrows_delta,S-Crew,1,0.03333333333333333
+char,burrows_delta,SCH,1,0.03333333333333333
+char,burrows_delta,Sadek,1,0.03333333333333333
+char,burrows_delta,Sneazzy,1,0.03333333333333333
+char,burrows_delta,YL,1,0.03333333333333333
+char,cosine_delta,Kerchak,28,0.9333333333333333
+char,cosine_delta,Beendo Z,26,0.8666666666666667
+char,cosine_delta,UZI (FRA),16,0.5333333333333333
+char,cosine_delta,Werenoi,14,0.4666666666666667
+char,cosine_delta,ISK,10,0.3333333333333333
+char,cosine_delta,Zkr,9,0.3
+char,cosine_delta,ASHE 22,7,0.23333333333333334
+char,cosine_delta,Fresh laDouille,6,0.2
+char,cosine_delta,GLK,5,0.16666666666666666
+char,cosine_delta,Maes,4,0.13333333333333333
+char,cosine_delta,​DA Uzi,4,0.13333333333333333
+char,cosine_delta,Hornet La Frappe,3,0.1
+char,cosine_delta,RK,3,0.1
+char,cosine_delta,Gambi,2,0.06666666666666667
+char,cosine_delta,Lesram,2,0.06666666666666667
+char,cosine_delta,Roshi,2,0.06666666666666667
+char,cosine_delta,SCH,2,0.06666666666666667
+char,cosine_delta,Worms-T,2,0.06666666666666667
+char,cosine_delta,Zola,2,0.06666666666666667
+char,cosine_delta,Diddi Trix,1,0.03333333333333333
+char,cosine_delta,JuL,1,0.03333333333333333
+char,cosine_delta,Timal,1,0.03333333333333333
+mfw,burrows_delta,Zkr,23,0.7666666666666667
+mfw,burrows_delta,Panama Bende,13,0.43333333333333335
+mfw,burrows_delta,GLK,12,0.4
+mfw,burrows_delta,Dibson,11,0.36666666666666664
+mfw,burrows_delta,ISK,11,0.36666666666666664
+mfw,burrows_delta,SCH,10,0.3333333333333333
+mfw,burrows_delta,Lacrim,9,0.3
+mfw,burrows_delta,Sofiane,9,0.3
+mfw,burrows_delta,Hayce Lemsi,8,0.26666666666666666
+mfw,burrows_delta,Beendo Z,5,0.16666666666666666
+mfw,burrows_delta,Guizmo,5,0.16666666666666666
+mfw,burrows_delta,Lesram,5,0.16666666666666666
+mfw,burrows_delta,Mister You,4,0.13333333333333333
+mfw,burrows_delta,Deen Burbigo,3,0.1
+mfw,burrows_delta,Denzo,3,0.1
+mfw,burrows_delta,Nahir,3,0.1
+mfw,burrows_delta,Soso Maness,3,0.1
+mfw,burrows_delta,YL,3,0.1
+mfw,burrows_delta,Ninho,2,0.06666666666666667
+mfw,burrows_delta,Sadek,2,0.06666666666666667
+mfw,burrows_delta,Hatik,1,0.03333333333333333
+mfw,burrows_delta,Rohff,1,0.03333333333333333
+mfw,burrows_delta,S-Crew,1,0.03333333333333333
+mfw,burrows_delta,S.Pri Noir,1,0.03333333333333333
+mfw,burrows_delta,Sneazzy,1,0.03333333333333333
+mfw,burrows_delta,Vin’s,1,0.03333333333333333
+mfw,cosine_delta,Werenoi,18,0.6
+mfw,cosine_delta,Kerchak,16,0.5333333333333333
+mfw,cosine_delta,SCH,15,0.5
+mfw,cosine_delta,Beendo Z,13,0.43333333333333335
+mfw,cosine_delta,GLK,13,0.43333333333333335
+mfw,cosine_delta,Soso Maness,13,0.43333333333333335
+mfw,cosine_delta,Maes,9,0.3
+mfw,cosine_delta,UZI (FRA),8,0.26666666666666666
+mfw,cosine_delta,Fresh laDouille,7,0.23333333333333334
+mfw,cosine_delta,Sofiane,7,0.23333333333333334
+mfw,cosine_delta,ISK,3,0.1
+mfw,cosine_delta,Lesram,3,0.1
+mfw,cosine_delta,Mister You,3,0.1
+mfw,cosine_delta,So La Lune,3,0.1
+mfw,cosine_delta,Djadja & Dinaz,2,0.06666666666666667
+mfw,cosine_delta,Hatik,2,0.06666666666666667
+mfw,cosine_delta,Lacrim,2,0.06666666666666667
+mfw,cosine_delta,Ninho,2,0.06666666666666667
+mfw,cosine_delta,Roshi,2,0.06666666666666667
+mfw,cosine_delta,Seth Gueko,2,0.06666666666666667
+mfw,cosine_delta,​DA Uzi,2,0.06666666666666667
+mfw,cosine_delta,Hooss,1,0.03333333333333333
+mfw,cosine_delta,Hornet La Frappe,1,0.03333333333333333
+mfw,cosine_delta,Koba LaD,1,0.03333333333333333
+mfw,cosine_delta,RK,1,0.03333333333333333
+mfw,cosine_delta,SDM,1,0.03333333333333333

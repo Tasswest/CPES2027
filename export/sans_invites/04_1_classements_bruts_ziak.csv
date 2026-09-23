@@ -1,0 +1,3001 @@
+rep,features,metric,rang,artiste,distance
+0,mfw,cosine_delta,1,Werenoi,0.7335849761653443
+0,mfw,cosine_delta,2,Lemon Haze,0.7456013856302324
+0,mfw,cosine_delta,3,Fresh laDouille,0.7490113969268839
+0,mfw,cosine_delta,4,Rimkus,0.7637163382329567
+0,mfw,cosine_delta,5,Kerchak,0.7857337803668002
+0,mfw,cosine_delta,6,Soso Maness,0.7863235909935067
+0,mfw,cosine_delta,7,Roshi,0.7923043379952719
+0,mfw,cosine_delta,8,ISK,0.7925014262946408
+0,mfw,cosine_delta,9,Hatik,0.7944775349692756
+0,mfw,cosine_delta,10,Lacrim,0.7989853677861004
+0,mfw,cosine_delta,11,Dika,0.8010618163076064
+0,mfw,cosine_delta,12,Hornet La Frappe,0.8041588608783758
+0,mfw,cosine_delta,13,Graya,0.8085315780422867
+0,mfw,cosine_delta,14,So La Lune,0.8132728713001791
+0,mfw,cosine_delta,15,JuL,0.8134552768779734
+0,mfw,cosine_delta,16,SDM,0.8163050985001025
+0,mfw,cosine_delta,17,Koba LaD,0.819925359580514
+0,mfw,cosine_delta,18,S-Pion,0.8217842975215336
+0,mfw,cosine_delta,19,SCH,0.8244973803333917
+0,mfw,cosine_delta,20,Maes,0.8287863060153198
+0,mfw,cosine_delta,21,UZI (FRA),0.8293801204489303
+0,mfw,cosine_delta,22,Zola,0.8315181807452111
+0,mfw,cosine_delta,23,Beendo Z,0.8367681300257341
+0,mfw,cosine_delta,24,Worms-T,0.8369405437033203
+0,mfw,cosine_delta,25,​DA Uzi,0.8389000478963816
+0,mfw,burrows_delta,1,Lacrim,0.6755043133624224
+0,mfw,burrows_delta,2,ISK,0.6764963804131361
+0,mfw,burrows_delta,3,SCH,0.6926794166108763
+0,mfw,burrows_delta,4,S-Pion,0.6993422531260608
+0,mfw,burrows_delta,5,Dibson,0.7031557393740916
+0,mfw,burrows_delta,6,Seth Gueko,0.7071360186897091
+0,mfw,burrows_delta,7,Deen Burbigo,0.7085599360531762
+0,mfw,burrows_delta,8,RK,0.7125528254272819
+0,mfw,burrows_delta,9,Lemon Haze,0.7154120919360126
+0,mfw,burrows_delta,10,Zkr,0.7168294064380728
+0,mfw,burrows_delta,11,PLK,0.7179072945063695
+0,mfw,burrows_delta,12,JuL,0.7203821727420971
+0,mfw,burrows_delta,13,Swift Guad,0.7217317101693144
+0,mfw,burrows_delta,14,Sneazzy,0.7223834995009081
+0,mfw,burrows_delta,15,Rimkus,0.7270587058079482
+0,mfw,burrows_delta,16,L’Animalerie,0.7271326473424218
+0,mfw,burrows_delta,17,Denzo,0.7281463080746104
+0,mfw,burrows_delta,18,Mister V,0.7312180816807125
+0,mfw,burrows_delta,19,Guizmo,0.7312681795033511
+0,mfw,burrows_delta,20,Graya,0.7316549412286386
+0,mfw,burrows_delta,21,Sadek,0.734047971609352
+0,mfw,burrows_delta,22,YL,0.735313362616212
+0,mfw,burrows_delta,23,113,0.7372292860672229
+0,mfw,burrows_delta,24,Hayce Lemsi,0.7383244535215147
+0,mfw,burrows_delta,25,Hatik,0.739246721437474
+0,char,cosine_delta,1,Kerchak,0.7789989348516732
+0,char,cosine_delta,2,Roshi,0.8122228983118894
+0,char,cosine_delta,3,Beendo Z,0.8172159448833944
+0,char,cosine_delta,4,Werenoi,0.8186043955553535
+0,char,cosine_delta,5,Rimkus,0.824091565162729
+0,char,cosine_delta,6,Fresh laDouille,0.8364992538291973
+0,char,cosine_delta,7,Lemon Haze,0.8373926001309278
+0,char,cosine_delta,8,​DA Uzi,0.8385049681557549
+0,char,cosine_delta,9,UZI (FRA),0.8430768335774126
+0,char,cosine_delta,10,Worms-T,0.8502434517206284
+0,char,cosine_delta,11,ISK,0.8528786050520856
+0,char,cosine_delta,12,Lesram,0.855472547398587
+0,char,cosine_delta,13,Maes,0.8561471177542596
+0,char,cosine_delta,14,Hooss,0.859456634097867
+0,char,cosine_delta,15,SDM,0.8594992072975254
+0,char,cosine_delta,16,SCH,0.8634927378878201
+0,char,cosine_delta,17,Hatik,0.8645840658879983
+0,char,cosine_delta,18,Zkr,0.8671980148646108
+0,char,cosine_delta,19,ASHE 22,0.867214881880489
+0,char,cosine_delta,20,​​okis,0.8691886259439559
+0,char,cosine_delta,21,Niaks,0.869258941409626
+0,char,cosine_delta,22,Zola,0.8699066092160102
+0,char,cosine_delta,23,BFG,0.8710865321747766
+0,char,cosine_delta,24,RK,0.8715424994884684
+0,char,cosine_delta,25,Gazo,0.8718527594526486
+0,char,burrows_delta,1,L’Animalerie,0.7616846626112352
+0,char,burrows_delta,2,ISK,0.7670184168530564
+0,char,burrows_delta,3,Deen Burbigo,0.7734924071604298
+0,char,burrows_delta,4,SCH,0.7763447904126646
+0,char,burrows_delta,5,Ademo,0.7873854314002681
+0,char,burrows_delta,6,PLK,0.7890246307481987
+0,char,burrows_delta,7,Lesram,0.7919056007599444
+0,char,burrows_delta,8,Lacrim,0.7923583793990702
+0,char,burrows_delta,9,Vin’s,0.7930061880520453
+0,char,burrows_delta,10,Zkr,0.794470362265547
+0,char,burrows_delta,11,Leck,0.7946333454271581
+0,char,burrows_delta,12,Worms-T,0.7947896541308506
+0,char,burrows_delta,13,S-Crew,0.7954040647905364
+0,char,burrows_delta,14,Sadek,0.7958835348883182
+0,char,burrows_delta,15,Sam’s,0.7974078463469717
+0,char,burrows_delta,16,Dibson,0.7978260842613718
+0,char,burrows_delta,17,Saké (FRA),0.8010648693192743
+0,char,burrows_delta,18,Guizmo,0.8016979146084345
+0,char,burrows_delta,19,Nakk Mendosa,0.8049276776463824
+0,char,burrows_delta,20,S.Pri Noir,0.8071490214363453
+0,char,burrows_delta,21,Sniper,0.8079328588546181
+0,char,burrows_delta,22,Panama Bende,0.808245160366254
+0,char,burrows_delta,23,Beeby,0.8086913960046244
+0,char,burrows_delta,24,5 Majeur,0.8089539216503703
+0,char,burrows_delta,25,Seth Gueko,0.8103324364777624
+1,mfw,cosine_delta,1,Lemon Haze,0.7505532724688695
+1,mfw,cosine_delta,2,Maes,0.770223800361794
+1,mfw,cosine_delta,3,UZI (FRA),0.7951868080354934
+1,mfw,cosine_delta,4,Dika,0.7964822978088953
+1,mfw,cosine_delta,5,Kerchak,0.7991270157665052
+1,mfw,cosine_delta,6,Beendo Z,0.7997270635645825
+1,mfw,cosine_delta,7,SCH,0.8036981424505348
+1,mfw,cosine_delta,8,Koba LaD,0.8057419522575703
+1,mfw,cosine_delta,9,Fresh laDouille,0.8078907588972687
+1,mfw,cosine_delta,10,Werenoi,0.8087798307332936
+1,mfw,cosine_delta,11,Rimkus,0.8098228328405119
+1,mfw,cosine_delta,12,Soso Maness,0.8225117324514473
+1,mfw,cosine_delta,13,GLK,0.8235414718100884
+1,mfw,cosine_delta,14,Hornet La Frappe,0.8261491793316805
+1,mfw,cosine_delta,15,Mister You,0.8282125169326258
+1,mfw,cosine_delta,16,AM La Scampia,0.8288180526091835
+1,mfw,cosine_delta,17,Timal,0.8299405624334353
+1,mfw,cosine_delta,18,Worms-T,0.8300806942551446
+1,mfw,cosine_delta,19,So La Lune,0.8318551648763278
+1,mfw,cosine_delta,20,Graya,0.8325004816976971
+1,mfw,cosine_delta,21,Sadek,0.8347422938886954
+1,mfw,cosine_delta,22,PLK,0.8348333458655033
+1,mfw,cosine_delta,23,Zkr,0.8358668928461108
+1,mfw,cosine_delta,24,Meryl,0.8390326118733806
+1,mfw,cosine_delta,25,4Keus,0.8450630701928404
+1,mfw,burrows_delta,1,Zkr,0.6787910486487712
+1,mfw,burrows_delta,2,S-Crew,0.6904154733242495
+1,mfw,burrows_delta,3,Panama Bende,0.6932685134486483
+1,mfw,burrows_delta,4,Sadek,0.695689232369347
+1,mfw,burrows_delta,5,ISK,0.7011675540793144
+1,mfw,burrows_delta,6,Mister V,0.7039415351096336
+1,mfw,burrows_delta,7,Dibson,0.7050686620999757
+1,mfw,burrows_delta,8,S-Pion,0.7100514662698078
+1,mfw,burrows_delta,9,Lemon Haze,0.7125792603740434
+1,mfw,burrows_delta,10,Souffrance,0.7174612484095235
+1,mfw,burrows_delta,11,Swift Guad,0.7229908654988194
+1,mfw,burrows_delta,12,SCH,0.7239619531018209
+1,mfw,burrows_delta,13,MMZ,0.7253738456647372
+1,mfw,burrows_delta,14,YL,0.727332725327587
+1,mfw,burrows_delta,15,Jarod,0.7279917096877343
+1,mfw,burrows_delta,16,Vin’s,0.7307817321987436
+1,mfw,burrows_delta,17,Rimkus,0.7319337831393076
+1,mfw,burrows_delta,18,Worms-T,0.7324616120236801
+1,mfw,burrows_delta,19,Hayce Lemsi,0.7337752207672479
+1,mfw,burrows_delta,20,L’Animalerie,0.7349568694365808
+1,mfw,burrows_delta,21,Soso Maness,0.7361857809766618
+1,mfw,burrows_delta,22,Seth Gueko,0.736913139519643
+1,mfw,burrows_delta,23,Beendo Z,0.7386448040798361
+1,mfw,burrows_delta,24,Leck,0.7419183173375903
+1,mfw,burrows_delta,25,Ninho,0.7440005180616025
+1,char,cosine_delta,1,Zkr,0.8176352481877338
+1,char,cosine_delta,2,UZI (FRA),0.8194637958688632
+1,char,cosine_delta,3,Beendo Z,0.8336800323948824
+1,char,cosine_delta,4,Niro,0.8360772686827891
+1,char,cosine_delta,5,Lemon Haze,0.8365839981532823
+1,char,cosine_delta,6,Hornet La Frappe,0.836824342258306
+1,char,cosine_delta,7,Roshi,0.8382884538642431
+1,char,cosine_delta,8,GLK,0.8405621402038848
+1,char,cosine_delta,9,Kerchak,0.846407258743868
+1,char,cosine_delta,10,Rimkus,0.8466823611984426
+1,char,cosine_delta,11,Maes,0.8472158500935798
+1,char,cosine_delta,12,ASHE 22,0.8507464692287054
+1,char,cosine_delta,13,Werenoi,0.8533981387843723
+1,char,cosine_delta,14,​​okis,0.8575692486602877
+1,char,cosine_delta,15,Fresh laDouille,0.8578625310192715
+1,char,cosine_delta,16,Timal,0.8627998058064139
+1,char,cosine_delta,17,Bosh,0.8645451172839815
+1,char,cosine_delta,18,Worms-T,0.8658542933642035
+1,char,cosine_delta,19,​DA Uzi,0.8661600540093971
+1,char,cosine_delta,20,ISK,0.8675800773560569
+1,char,cosine_delta,21,Diddi Trix,0.872212753966069
+1,char,cosine_delta,22,Hooss,0.8726125088271732
+1,char,cosine_delta,23,PRIME,0.8727629409224873
+1,char,cosine_delta,24,Dika,0.8757709585234901
+1,char,cosine_delta,25,BFG,0.8809228565306211
+1,char,burrows_delta,1,Zkr,0.7565056390408793
+1,char,burrows_delta,2,Vin’s,0.7633141333979501
+1,char,burrows_delta,3,Panama Bende,0.7714623839235774
+1,char,burrows_delta,4,ISK,0.771530801279349
+1,char,burrows_delta,5,L’Animalerie,0.7721810534282634
+1,char,burrows_delta,6,Sam’s,0.7812843502753879
+1,char,burrows_delta,7,Worms-T,0.7841761599496979
+1,char,burrows_delta,8,Niro,0.7880452330401367
+1,char,burrows_delta,9,Dibson,0.7933227357196087
+1,char,burrows_delta,10,Leck,0.7945139466336067
+1,char,burrows_delta,11,Deen Burbigo,0.7956568044158295
+1,char,burrows_delta,12,Souffrance,0.7971490100960209
+1,char,burrows_delta,13,Sadek,0.7980356010961465
+1,char,burrows_delta,14,YL,0.7982790887759138
+1,char,burrows_delta,15,Mister V,0.801251213109604
+1,char,burrows_delta,16,Swift Guad,0.8047293689365608
+1,char,burrows_delta,17,SCH,0.8052426054401561
+1,char,burrows_delta,18,S.Pri Noir,0.8055129964664345
+1,char,burrows_delta,19,S-Crew,0.8056136762467437
+1,char,burrows_delta,20,Saké (FRA),0.8057564582233703
+1,char,burrows_delta,21,Nakk Mendosa,0.8065058419412515
+1,char,burrows_delta,22,Mysa,0.8073645862108921
+1,char,burrows_delta,23,Alpha Wann,0.8086351558765715
+1,char,burrows_delta,24,Jarod,0.8104222309531776
+1,char,burrows_delta,25,Caballero,0.8109530980442401
+2,mfw,cosine_delta,1,SCH,0.7101857317705486
+2,mfw,cosine_delta,2,Lemon Haze,0.767072680056519
+2,mfw,cosine_delta,3,Rimkus,0.7809154426678317
+2,mfw,cosine_delta,4,Werenoi,0.7835589234851661
+2,mfw,cosine_delta,5,GLK,0.7870739708571903
+2,mfw,cosine_delta,6,Fresh laDouille,0.7937645306298953
+2,mfw,cosine_delta,7,Soso Maness,0.795106659780229
+2,mfw,cosine_delta,8,So La Lune,0.800861169647428
+2,mfw,cosine_delta,9,Dika,0.8021178842448511
+2,mfw,cosine_delta,10,Mister You,0.8078033420341
+2,mfw,cosine_delta,11,Kerchak,0.8093535721855297
+2,mfw,cosine_delta,12,SDM,0.8102545371073225
+2,mfw,cosine_delta,13,ASHE 22,0.8103218802789904
+2,mfw,cosine_delta,14,Maes,0.8134264515147761
+2,mfw,cosine_delta,15,​DA Uzi,0.816782914277222
+2,mfw,cosine_delta,16,Niro,0.8168188528486784
+2,mfw,cosine_delta,17,Beendo Z,0.8173133132220942
+2,mfw,cosine_delta,18,Moha La Squale,0.817482533345316
+2,mfw,cosine_delta,19,Koba LaD,0.8195599671361369
+2,mfw,cosine_delta,20,4Keus,0.8244583987628681
+2,mfw,cosine_delta,21,UZI (FRA),0.8262463726075066
+2,mfw,cosine_delta,22,MMZ,0.8294591313231656
+2,mfw,cosine_delta,23,Timal,0.8340232971286887
+2,mfw,cosine_delta,24,Zola,0.8349708524095578
+2,mfw,cosine_delta,25,Graya,0.8376927579925033
+2,mfw,burrows_delta,1,Lesram,0.6981821100013167
+2,mfw,burrows_delta,2,GLK,0.6986520828531047
+2,mfw,burrows_delta,3,Zkr,0.7033724893115939
+2,mfw,burrows_delta,4,S-Pion,0.7037686202175325
+2,mfw,burrows_delta,5,ISK,0.7106917331797975
+2,mfw,burrows_delta,6,Panama Bende,0.711100567435331
+2,mfw,burrows_delta,7,Sadek,0.7118030228683794
+2,mfw,burrows_delta,8,Vald,0.7141403341303939
+2,mfw,burrows_delta,9,PLK,0.7173974322392094
+2,mfw,burrows_delta,10,Lemon Haze,0.7174229619498299
+2,mfw,burrows_delta,11,Mister V,0.7176652033310568
+2,mfw,burrows_delta,12,Zola,0.7177603261599711
+2,mfw,burrows_delta,13,Sofiane,0.7180844305842156
+2,mfw,burrows_delta,14,Dibson,0.7211787630732974
+2,mfw,burrows_delta,15,Lartiste,0.7224625612007114
+2,mfw,burrows_delta,16,Guizmo,0.7226433432680046
+2,mfw,burrows_delta,17,Niro,0.7234937235841221
+2,mfw,burrows_delta,18,Beendo Z,0.7241718958675925
+2,mfw,burrows_delta,19,Zikxo,0.7260561089258873
+2,mfw,burrows_delta,20,RK,0.7274493891078592
+2,mfw,burrows_delta,21,Leck,0.72752776950847
+2,mfw,burrows_delta,22,Rimkus,0.7281559972707976
+2,mfw,burrows_delta,23,Mister You,0.7286139666448858
+2,mfw,burrows_delta,24,L’Animalerie,0.7288147750279822
+2,mfw,burrows_delta,25,SCH,0.7292181751566702
+2,char,cosine_delta,1,SCH,0.8111417534918501
+2,char,cosine_delta,2,Maes,0.8162620513308201
+2,char,cosine_delta,3,Kerchak,0.827513999851176
+2,char,cosine_delta,4,Rimkus,0.8320108886550627
+2,char,cosine_delta,5,Lemon Haze,0.8348487031782503
+2,char,cosine_delta,6,UZI (FRA),0.838116848089618
+2,char,cosine_delta,7,Niro,0.8382607526422463
+2,char,cosine_delta,8,ISK,0.84028094201075
+2,char,cosine_delta,9,Djadja & Dinaz,0.8411352939010303
+2,char,cosine_delta,10,Zola,0.8440408008971978
+2,char,cosine_delta,11,ASHE 22,0.8460848568952971
+2,char,cosine_delta,12,Werenoi,0.8477988852013076
+2,char,cosine_delta,13,Beendo Z,0.8479107010702905
+2,char,cosine_delta,14,Fresh laDouille,0.8488562561234834
+2,char,cosine_delta,15,​DA Uzi,0.8493767044348466
+2,char,cosine_delta,16,GLK,0.8554862403792712
+2,char,cosine_delta,17,Dika,0.8567601690021933
+2,char,cosine_delta,18,Roshi,0.8569259481191891
+2,char,cosine_delta,19,PLK,0.8643860143421327
+2,char,cosine_delta,20,4Keus,0.86589138372752
+2,char,cosine_delta,21,SDM,0.866692934090817
+2,char,cosine_delta,22,​​okis,0.8671243174429001
+2,char,cosine_delta,23,BFG,0.8677812009787162
+2,char,cosine_delta,24,RK,0.8702473426261206
+2,char,cosine_delta,25,Bosh,0.8738108911112195
+2,char,burrows_delta,1,L’Animalerie,0.7650560630723072
+2,char,burrows_delta,2,Lesram,0.7762733795899691
+2,char,burrows_delta,3,Panama Bende,0.7763729557346156
+2,char,burrows_delta,4,Zola,0.7775630172892265
+2,char,burrows_delta,5,Niro,0.7778957869358574
+2,char,burrows_delta,6,Leck,0.7790914815895823
+2,char,burrows_delta,7,Mister You,0.7878835109011989
+2,char,burrows_delta,8,Saké (FRA),0.791936190695169
+2,char,burrows_delta,9,S.Pri Noir,0.793265667490639
+2,char,burrows_delta,10,Dibson,0.7934010941944142
+2,char,burrows_delta,11,Dosseh,0.7942333839447059
+2,char,burrows_delta,12,Grödash,0.7959132216869389
+2,char,burrows_delta,13,Guizmo,0.796006188403807
+2,char,burrows_delta,14,Vin’s,0.7965860332267589
+2,char,burrows_delta,15,Sofiane,0.798126422936158
+2,char,burrows_delta,16,Volts Face,0.7985107787643877
+2,char,burrows_delta,17,Caballero,0.7994004658705599
+2,char,burrows_delta,18,5 Majeur,0.7998879751460126
+2,char,burrows_delta,19,PLK,0.8015780410219183
+2,char,burrows_delta,20,Sadek,0.8018848126822583
+2,char,burrows_delta,21,Nakk Mendosa,0.8020971991660256
+2,char,burrows_delta,22,404Billy,0.804236366702117
+2,char,burrows_delta,23,ISK,0.8042916866048081
+2,char,burrows_delta,24,Sam’s,0.8045496018214338
+2,char,burrows_delta,25,Zikxo,0.8047327982375694
+3,mfw,cosine_delta,1,Lemon Haze,0.7677686773949948
+3,mfw,cosine_delta,2,UZI (FRA),0.7712945717983745
+3,mfw,cosine_delta,3,Mister You,0.7749906263957025
+3,mfw,cosine_delta,4,​DA Uzi,0.7811970969743312
+3,mfw,cosine_delta,5,Rimkus,0.7821718188836919
+3,mfw,cosine_delta,6,Werenoi,0.7874770611321076
+3,mfw,cosine_delta,7,SCH,0.7932206631439886
+3,mfw,cosine_delta,8,Dika,0.7980287055746949
+3,mfw,cosine_delta,9,GLK,0.7989787389990984
+3,mfw,cosine_delta,10,Kerchak,0.7991333388413207
+3,mfw,cosine_delta,11,Kalash Criminel,0.7999435259857877
+3,mfw,cosine_delta,12,Fresh laDouille,0.8001304613070095
+3,mfw,cosine_delta,13,Hornet La Frappe,0.8044686177421271
+3,mfw,cosine_delta,14,S-Pion,0.8079060113135206
+3,mfw,cosine_delta,15,ISK,0.8132680100054375
+3,mfw,cosine_delta,16,Soso Maness,0.8150322997495032
+3,mfw,cosine_delta,17,Benab,0.8272994884683892
+3,mfw,cosine_delta,18,RK,0.8285925531076072
+3,mfw,cosine_delta,19,Koba LaD,0.8306849023986205
+3,mfw,cosine_delta,20,Graya,0.8333819896477077
+3,mfw,cosine_delta,21,Maes,0.8341850995442375
+3,mfw,cosine_delta,22,MMZ,0.8355056640525307
+3,mfw,cosine_delta,23,Niska,0.8370023510661413
+3,mfw,cosine_delta,24,Lesram,0.8377732039102072
+3,mfw,cosine_delta,25,AM La Scampia,0.8407051043789312
+3,mfw,burrows_delta,1,SCH,0.6911639534592022
+3,mfw,burrows_delta,2,S-Crew,0.6951645235875188
+3,mfw,burrows_delta,3,Zkr,0.6990146935315438
+3,mfw,burrows_delta,4,S-Pion,0.7017814386138428
+3,mfw,burrows_delta,5,ISK,0.7026406274276519
+3,mfw,burrows_delta,6,YL,0.7027781025622244
+3,mfw,burrows_delta,7,Hayce Lemsi,0.7132395962114155
+3,mfw,burrows_delta,8,GLK,0.7182536392834654
+3,mfw,burrows_delta,9,Leck,0.7213644122109188
+3,mfw,burrows_delta,10,Beendo Z,0.7218866606768993
+3,mfw,burrows_delta,11,Maes,0.7230010009373357
+3,mfw,burrows_delta,12,Nahir,0.7236950735907524
+3,mfw,burrows_delta,13,​DA Uzi,0.7239139765950681
+3,mfw,burrows_delta,14,Mister You,0.7240391918503656
+3,mfw,burrows_delta,15,Lemon Haze,0.7259674341399632
+3,mfw,burrows_delta,16,Rimkus,0.7270486176353704
+3,mfw,burrows_delta,17,PLK,0.7288318192848683
+3,mfw,burrows_delta,18,Furax Barbarossa,0.7292203025856522
+3,mfw,burrows_delta,19,Dibson,0.7292459853045048
+3,mfw,burrows_delta,20,Niaks,0.7294670671189922
+3,mfw,burrows_delta,21,RK,0.7314295854885592
+3,mfw,burrows_delta,22,Deen Burbigo,0.7339645724660263
+3,mfw,burrows_delta,23,Despo Rutti,0.739265199106295
+3,mfw,burrows_delta,24,Soso Maness,0.7400668031719354
+3,mfw,burrows_delta,25,Hornet La Frappe,0.7418031571374408
+3,char,cosine_delta,1,UZI (FRA),0.7983834020912239
+3,char,cosine_delta,2,Kerchak,0.8033524483473605
+3,char,cosine_delta,3,​DA Uzi,0.8086022822156153
+3,char,cosine_delta,4,Beendo Z,0.8148434373893425
+3,char,cosine_delta,5,ISK,0.818996694504877
+3,char,cosine_delta,6,Fresh laDouille,0.8335613208667019
+3,char,cosine_delta,7,RK,0.8368669687895556
+3,char,cosine_delta,8,Werenoi,0.8382919875355607
+3,char,cosine_delta,9,Rimkus,0.8402729347985455
+3,char,cosine_delta,10,Lemon Haze,0.8427283440376931
+3,char,cosine_delta,11,Lesram,0.8432796549641995
+3,char,cosine_delta,12,Zkr,0.8446542780968088
+3,char,cosine_delta,13,Roshi,0.8569730018522499
+3,char,cosine_delta,14,ASHE 22,0.8604428713963495
+3,char,cosine_delta,15,Nahir,0.8623660907745677
+3,char,cosine_delta,16,Dika,0.8703526978296169
+3,char,cosine_delta,17,​​okis,0.8712688231928175
+3,char,cosine_delta,18,Heuss L’enfoiré,0.873201179495001
+3,char,cosine_delta,19,Sopico,0.8737867443871691
+3,char,cosine_delta,20,Bosh,0.874584784929908
+3,char,cosine_delta,21,Djadja & Dinaz,0.8776814118957059
+3,char,cosine_delta,22,Gambi,0.8788737302849111
+3,char,cosine_delta,23,PSO Thug,0.8814335175100991
+3,char,cosine_delta,24,PRIME,0.8822115899119238
+3,char,cosine_delta,25,Benab,0.8827834431988417
+3,char,burrows_delta,1,ISK,0.7560586734728416
+3,char,burrows_delta,2,L’Animalerie,0.7702117934513363
+3,char,burrows_delta,3,Sam’s,0.7853085448320947
+3,char,burrows_delta,4,Zkr,0.7860240834410903
+3,char,burrows_delta,5,Leck,0.7892168064027453
+3,char,burrows_delta,6,PLK,0.7927555774104115
+3,char,burrows_delta,7,S-Crew,0.793331972408634
+3,char,burrows_delta,8,Despo Rutti,0.8006134572744958
+3,char,burrows_delta,9,Nakk Mendosa,0.8023681058803775
+3,char,burrows_delta,10,Dibson,0.8031878045043671
+3,char,burrows_delta,11,Vald,0.8039966590797327
+3,char,burrows_delta,12,Nahir,0.8063288807657788
+3,char,burrows_delta,13,Saké (FRA),0.8065529741019781
+3,char,burrows_delta,14,Denzo,0.8074701831903585
+3,char,burrows_delta,15,Sadek,0.8076299709832935
+3,char,burrows_delta,16,Beendo Z,0.8090317014895332
+3,char,burrows_delta,17,Deen Burbigo,0.8091359970420648
+3,char,burrows_delta,18,5 Majeur,0.8107505345429398
+3,char,burrows_delta,19,Niro,0.8109524272584003
+3,char,burrows_delta,20,Zola,0.8109779883858249
+3,char,burrows_delta,21,Lesram,0.8111992466555803
+3,char,burrows_delta,22,SCH,0.812723090452265
+3,char,burrows_delta,23,Hugo TSR,0.8129194748938604
+3,char,burrows_delta,24,Lacraps,0.812972026570506
+3,char,burrows_delta,25,Panama Bende,0.8136380440199894
+4,mfw,cosine_delta,1,Lemon Haze,0.7731218254410304
+4,mfw,cosine_delta,2,GLK,0.7743636147432438
+4,mfw,cosine_delta,3,Rimkus,0.780015513829446
+4,mfw,cosine_delta,4,UZI (FRA),0.7804968042844875
+4,mfw,cosine_delta,5,Maes,0.7846751793714278
+4,mfw,cosine_delta,6,Werenoi,0.7847290632538471
+4,mfw,cosine_delta,7,Naps,0.7888604265468843
+4,mfw,cosine_delta,8,Mister You,0.7908730167620414
+4,mfw,cosine_delta,9,Soso Maness,0.7945329088504404
+4,mfw,cosine_delta,10,Fresh laDouille,0.8001974769384271
+4,mfw,cosine_delta,11,Lesram,0.8046447786145803
+4,mfw,cosine_delta,12,Zola,0.8075350661120093
+4,mfw,cosine_delta,13,SCH,0.808801588679791
+4,mfw,cosine_delta,14,Koba LaD,0.8105003366296648
+4,mfw,cosine_delta,15,Kerchak,0.813005310115911
+4,mfw,cosine_delta,16,ASHE 22,0.8152348801061919
+4,mfw,cosine_delta,17,Roshi,0.8161901568527419
+4,mfw,cosine_delta,18,Zkr,0.8192879145915934
+4,mfw,cosine_delta,19,Dika,0.8221038194251316
+4,mfw,cosine_delta,20,Niro,0.8252172510007969
+4,mfw,cosine_delta,21,Seth Gueko,0.8300738295273766
+4,mfw,cosine_delta,22,Timal,0.8301270607502425
+4,mfw,cosine_delta,23,Hornet La Frappe,0.8337203498444548
+4,mfw,cosine_delta,24,Graya,0.8352049799805547
+4,mfw,cosine_delta,25,Kodes,0.8352903531044934
+4,mfw,burrows_delta,1,Zkr,0.6706247297204049
+4,mfw,burrows_delta,2,S-Pion,0.7078100156165618
+4,mfw,burrows_delta,3,Hayce Lemsi,0.7087969666843951
+4,mfw,burrows_delta,4,SCH,0.7186608904620045
+4,mfw,burrows_delta,5,Koba LaD,0.719690451244938
+4,mfw,burrows_delta,6,ISK,0.724364830840125
+4,mfw,burrows_delta,7,Maes,0.7256570624604686
+4,mfw,burrows_delta,8,Lemon Haze,0.7293716572653244
+4,mfw,burrows_delta,9,GLK,0.730004747687866
+4,mfw,burrows_delta,10,Beendo Z,0.731351235266606
+4,mfw,burrows_delta,11,Ademo,0.7328776441504169
+4,mfw,burrows_delta,12,Mister V,0.7331643426616385
+4,mfw,burrows_delta,13,Dibson,0.7336705171899515
+4,mfw,burrows_delta,14,Caballero,0.7339689838830816
+4,mfw,burrows_delta,15,Guizmo,0.7373883564708469
+4,mfw,burrows_delta,16,Rimkus,0.7374009768120755
+4,mfw,burrows_delta,17,S-Crew,0.7377023447939701
+4,mfw,burrows_delta,18,Niro,0.7385311951026201
+4,mfw,burrows_delta,19,MMZ,0.7397712465331135
+4,mfw,burrows_delta,20,Deen Burbigo,0.7403944197017206
+4,mfw,burrows_delta,21,Nahir,0.7406395475533106
+4,mfw,burrows_delta,22,L’Animalerie,0.7406855028953012
+4,mfw,burrows_delta,23,Soso Maness,0.7415692500961084
+4,mfw,burrows_delta,24,Zola,0.7429911349785462
+4,mfw,burrows_delta,25,Nekfeu,0.7439668077596462
+4,char,cosine_delta,1,UZI (FRA),0.8026277240963683
+4,char,cosine_delta,2,Zkr,0.8218113878576303
+4,char,cosine_delta,3,Beendo Z,0.8222050446412406
+4,char,cosine_delta,4,Zola,0.8260834686440752
+4,char,cosine_delta,5,Rimkus,0.8344600035495331
+4,char,cosine_delta,6,Kerchak,0.8349013164838011
+4,char,cosine_delta,7,ASHE 22,0.8410461806937206
+4,char,cosine_delta,8,Lemon Haze,0.8443228609883384
+4,char,cosine_delta,9,Niro,0.8443861587042778
+4,char,cosine_delta,10,Werenoi,0.846755212579557
+4,char,cosine_delta,11,Gradur,0.8532607763800915
+4,char,cosine_delta,12,Gambi,0.8570458049717704
+4,char,cosine_delta,13,Fresh laDouille,0.8580258701542414
+4,char,cosine_delta,14,​DA Uzi,0.8607010512581965
+4,char,cosine_delta,15,​​okis,0.8615813474248594
+4,char,cosine_delta,16,Lesram,0.8630643069971216
+4,char,cosine_delta,17,Seth Gueko,0.8672693193470148
+4,char,cosine_delta,18,GLK,0.868666267602265
+4,char,cosine_delta,19,Naps,0.8691448626242454
+4,char,cosine_delta,20,SDM,0.8707154599207293
+4,char,cosine_delta,21,4Keus,0.8728227707681899
+4,char,cosine_delta,22,RK,0.8732820841144944
+4,char,cosine_delta,23,Dika,0.8744684148867347
+4,char,cosine_delta,24,Djadja & Dinaz,0.8772195389164195
+4,char,cosine_delta,25,Nahir,0.8782487292220442
+4,char,burrows_delta,1,Zkr,0.7292279299295369
+4,char,burrows_delta,2,Caballero,0.7662191819656661
+4,char,burrows_delta,3,L’Animalerie,0.7750846346628824
+4,char,burrows_delta,4,Sadek,0.7768345692828846
+4,char,burrows_delta,5,Dosseh,0.7783868299343791
+4,char,burrows_delta,6,Deen Burbigo,0.7845247908448413
+4,char,burrows_delta,7,Dibson,0.7921267510236735
+4,char,burrows_delta,8,Ademo,0.7933793496852416
+4,char,burrows_delta,9,Leck,0.7941497310783601
+4,char,burrows_delta,10,Worms-T,0.7948606940058183
+4,char,burrows_delta,11,Zola,0.7976708074304502
+4,char,burrows_delta,12,Nakk Mendosa,0.7995426063106903
+4,char,burrows_delta,13,Sam’s,0.7997272027036361
+4,char,burrows_delta,14,Saké (FRA),0.8013307919030384
+4,char,burrows_delta,15,Panama Bende,0.8036364910346131
+4,char,burrows_delta,16,5 Majeur,0.805783113014387
+4,char,burrows_delta,17,Hayce Lemsi,0.8062035551880609
+4,char,burrows_delta,18,Denzo,0.807324530873233
+4,char,burrows_delta,19,YL,0.807818551670692
+4,char,burrows_delta,20,Niro,0.8093789099433006
+4,char,burrows_delta,21,SCH,0.8104767526480485
+4,char,burrows_delta,22,Nahir,0.8110010704671607
+4,char,burrows_delta,23,ISK,0.8120447564137105
+4,char,burrows_delta,24,Seth Gueko,0.81356257557616
+4,char,burrows_delta,25,S-Crew,0.8141166263982071
+5,mfw,cosine_delta,1,Lemon Haze,0.7573915062990879
+5,mfw,cosine_delta,2,Kerchak,0.7643685533604669
+5,mfw,cosine_delta,3,Werenoi,0.766024343222503
+5,mfw,cosine_delta,4,GLK,0.7663669695807269
+5,mfw,cosine_delta,5,Roshi,0.7701012830073263
+5,mfw,cosine_delta,6,4Keus,0.7742633574117281
+5,mfw,cosine_delta,7,Rimkus,0.7748171216602946
+5,mfw,cosine_delta,8,Beendo Z,0.7849841356185752
+5,mfw,cosine_delta,9,Soso Maness,0.7871346264932823
+5,mfw,cosine_delta,10,​DA Uzi,0.7908399744701895
+5,mfw,cosine_delta,11,Fresh laDouille,0.7917863565898418
+5,mfw,cosine_delta,12,Mister You,0.7978203751078683
+5,mfw,cosine_delta,13,S-Pion,0.8022029764032999
+5,mfw,cosine_delta,14,Dika,0.8077000223390893
+5,mfw,cosine_delta,15,Elams,0.8157153521877244
+5,mfw,cosine_delta,16,Graya,0.8185704962582543
+5,mfw,cosine_delta,17,Maes,0.8210120839498181
+5,mfw,cosine_delta,18,Lacrim,0.821353382613629
+5,mfw,cosine_delta,19,Zola,0.822839997999846
+5,mfw,cosine_delta,20,ASHE 22,0.8273401315975483
+5,mfw,cosine_delta,21,UZI (FRA),0.8289755528966883
+5,mfw,cosine_delta,22,Nahir,0.8299840187254338
+5,mfw,cosine_delta,23,Diddi Trix,0.8321666919688003
+5,mfw,cosine_delta,24,Koba LaD,0.8322815285512801
+5,mfw,cosine_delta,25,SCH,0.8330154071971038
+5,mfw,burrows_delta,1,4Keus,0.6919119933549457
+5,mfw,burrows_delta,2,S-Pion,0.6948610168831008
+5,mfw,burrows_delta,3,SCH,0.6959717717598914
+5,mfw,burrows_delta,4,ISK,0.7040973197454906
+5,mfw,burrows_delta,5,YL,0.7044553127905383
+5,mfw,burrows_delta,6,Mister You,0.7089228321327746
+5,mfw,burrows_delta,7,Beendo Z,0.710544604273003
+5,mfw,burrows_delta,8,Nahir,0.7119222347791467
+5,mfw,burrows_delta,9,JuL,0.7134414702834372
+5,mfw,burrows_delta,10,Lacrim,0.7167136663025252
+5,mfw,burrows_delta,11,Maes,0.7181214463855176
+5,mfw,burrows_delta,12,Werenoi,0.7184600825579541
+5,mfw,burrows_delta,13,Rimkus,0.7198220833146987
+5,mfw,burrows_delta,14,Dibson,0.7201754923891627
+5,mfw,burrows_delta,15,Lemon Haze,0.7203523282106586
+5,mfw,burrows_delta,16,Deen Burbigo,0.7212190434904788
+5,mfw,burrows_delta,17,Panama Bende,0.7220251302148076
+5,mfw,burrows_delta,18,GLK,0.7221219824411698
+5,mfw,burrows_delta,19,Lesram,0.7225689008235608
+5,mfw,burrows_delta,20,Zkr,0.7254512610572326
+5,mfw,burrows_delta,21,Sam’s,0.7259987421214078
+5,mfw,burrows_delta,22,L’Animalerie,0.7282360497320948
+5,mfw,burrows_delta,23,Leck,0.7315668426784498
+5,mfw,burrows_delta,24,S.Pri Noir,0.736306152974045
+5,mfw,burrows_delta,25,Hugo TSR,0.7376162514828414
+5,char,cosine_delta,1,Kerchak,0.8065691907645864
+5,char,cosine_delta,2,​DA Uzi,0.8131085107451843
+5,char,cosine_delta,3,Beendo Z,0.8225682597714579
+5,char,cosine_delta,4,Fresh laDouille,0.8258122830283281
+5,char,cosine_delta,5,ASHE 22,0.8272217215748828
+5,char,cosine_delta,6,Rimkus,0.8299943971605761
+5,char,cosine_delta,7,Lesram,0.833418997555221
+5,char,cosine_delta,8,Lemon Haze,0.8406747975853277
+5,char,cosine_delta,9,Zola,0.8445371354277368
+5,char,cosine_delta,10,Roshi,0.8454247931048109
+5,char,cosine_delta,11,UZI (FRA),0.8459377845403797
+5,char,cosine_delta,12,Diddi Trix,0.8483694054303841
+5,char,cosine_delta,13,Nahir,0.8487104741072442
+5,char,cosine_delta,14,Gambi,0.8586214215472597
+5,char,cosine_delta,15,Zkr,0.8615392332175106
+5,char,cosine_delta,16,Werenoi,0.8619495852486965
+5,char,cosine_delta,17,JuL,0.8635246506313612
+5,char,cosine_delta,18,4Keus,0.8642031107712915
+5,char,cosine_delta,19,Djadja & Dinaz,0.8645891861033778
+5,char,cosine_delta,20,Bosh,0.8683853127611825
+5,char,cosine_delta,21,Sopico,0.8709530531251468
+5,char,cosine_delta,22,Gazo,0.8728356787844551
+5,char,cosine_delta,23,Niaks,0.8730214709915571
+5,char,cosine_delta,24,Heuss L’enfoiré,0.874422237606165
+5,char,cosine_delta,25,Maes,0.8745229905340284
+5,char,burrows_delta,1,L’Animalerie,0.7617866929215806
+5,char,burrows_delta,2,4Keus,0.7705163563886129
+5,char,burrows_delta,3,Sam’s,0.7717988176320456
+5,char,burrows_delta,4,Leck,0.7752232462672617
+5,char,burrows_delta,5,Lesram,0.7758119174877978
+5,char,burrows_delta,6,Vin’s,0.7819510205281079
+5,char,burrows_delta,7,Deen Burbigo,0.7839747997924128
+5,char,burrows_delta,8,Nakk Mendosa,0.7849471587311333
+5,char,burrows_delta,9,Dibson,0.7856494631766349
+5,char,burrows_delta,10,Nahir,0.7881482541841269
+5,char,burrows_delta,11,Lacrim,0.788872120242194
+5,char,burrows_delta,12,ISK,0.7898024910593656
+5,char,burrows_delta,13,Panama Bende,0.792307884394887
+5,char,burrows_delta,14,S.Pri Noir,0.7979426110840656
+5,char,burrows_delta,15,Saké (FRA),0.798410496374862
+5,char,burrows_delta,16,S-Crew,0.7997182887918246
+5,char,burrows_delta,17,YL,0.799906510029979
+5,char,burrows_delta,18,Sadek,0.8006619585248328
+5,char,burrows_delta,19,5 Majeur,0.8007306813587929
+5,char,burrows_delta,20,Denzo,0.8010904819710413
+5,char,burrows_delta,21,JuL,0.8022928681332954
+5,char,burrows_delta,22,Zikxo,0.8047364837111013
+5,char,burrows_delta,23,Zkr,0.8081381094588537
+5,char,burrows_delta,24,Ademo,0.8081686613217721
+5,char,burrows_delta,25,Zola,0.8084099190225786
+6,mfw,cosine_delta,1,Kerchak,0.7706091580326382
+6,mfw,cosine_delta,2,Werenoi,0.7706266042606359
+6,mfw,cosine_delta,3,Lemon Haze,0.7745289406146301
+6,mfw,cosine_delta,4,Roshi,0.7777008122404513
+6,mfw,cosine_delta,5,Rimkus,0.7868286610338242
+6,mfw,cosine_delta,6,Mister You,0.7919512031199116
+6,mfw,cosine_delta,7,Maes,0.7981961394128646
+6,mfw,cosine_delta,8,Graya,0.8003585407645791
+6,mfw,cosine_delta,9,Koba LaD,0.8116423905480848
+6,mfw,cosine_delta,10,So La Lune,0.8146014773410032
+6,mfw,cosine_delta,11,Lacrim,0.8169650203594594
+6,mfw,cosine_delta,12,Dika,0.8173546535766583
+6,mfw,cosine_delta,13,​DA Uzi,0.8200081790797309
+6,mfw,cosine_delta,14,Niro,0.8240120582880273
+6,mfw,cosine_delta,15,Fresh laDouille,0.8250460720506596
+6,mfw,cosine_delta,16,Heuss L’enfoiré,0.8274446486933227
+6,mfw,cosine_delta,17,UZI (FRA),0.8295222082801188
+6,mfw,cosine_delta,18,Zola,0.8329759143937195
+6,mfw,cosine_delta,19,Djadja & Dinaz,0.8332399415613341
+6,mfw,cosine_delta,20,AM La Scampia,0.8340686393056229
+6,mfw,cosine_delta,21,GLK,0.8354077519980545
+6,mfw,cosine_delta,22,RK,0.8362871323380037
+6,mfw,cosine_delta,23,Laylow,0.8371005997384791
+6,mfw,cosine_delta,24,Benab,0.8421609583159524
+6,mfw,cosine_delta,25,Soso Maness,0.8442284205680259
+6,mfw,burrows_delta,1,SCH,0.6841505399819447
+6,mfw,burrows_delta,2,Mister You,0.6901268476944592
+6,mfw,burrows_delta,3,Hayce Lemsi,0.6935033875335165
+6,mfw,burrows_delta,4,S-Crew,0.6953715645641864
+6,mfw,burrows_delta,5,Koba LaD,0.6976372772883079
+6,mfw,burrows_delta,6,Zkr,0.7000602901658372
+6,mfw,burrows_delta,7,S-Pion,0.7019937274654346
+6,mfw,burrows_delta,8,Dibson,0.7049639101398613
+6,mfw,burrows_delta,9,Seth Gueko,0.7105536787949267
+6,mfw,burrows_delta,10,Leck,0.7141865954455636
+6,mfw,burrows_delta,11,Lemon Haze,0.7162114477186994
+6,mfw,burrows_delta,12,Rimkus,0.7169920287294912
+6,mfw,burrows_delta,13,Nahir,0.7177009433700398
+6,mfw,burrows_delta,14,Mister V,0.7188330987868617
+6,mfw,burrows_delta,15,Lacrim,0.7206018981765305
+6,mfw,burrows_delta,16,​DA Uzi,0.722679774466484
+6,mfw,burrows_delta,17,Sam’s,0.7239379762088779
+6,mfw,burrows_delta,18,Panama Bende,0.7251788120969646
+6,mfw,burrows_delta,19,PLK,0.7253970349578723
+6,mfw,burrows_delta,20,Beendo Z,0.7265779958310057
+6,mfw,burrows_delta,21,Elams,0.7276719755384374
+6,mfw,burrows_delta,22,Nekfeu,0.7284053924983075
+6,mfw,burrows_delta,23,Casseurs Flowters,0.7286829094768565
+6,mfw,burrows_delta,24,Graya,0.7296566780553868
+6,mfw,burrows_delta,25,L’Animalerie,0.7301704570112679
+6,char,cosine_delta,1,Kerchak,0.7943938529860861
+6,char,cosine_delta,2,RK,0.8091656888332756
+6,char,cosine_delta,3,Werenoi,0.8204405749238789
+6,char,cosine_delta,4,​DA Uzi,0.8270300388693173
+6,char,cosine_delta,5,Roshi,0.8328650757211723
+6,char,cosine_delta,6,Rimkus,0.8349065619160796
+6,char,cosine_delta,7,UZI (FRA),0.8377653143536616
+6,char,cosine_delta,8,Lemon Haze,0.8394752333234552
+6,char,cosine_delta,9,Maes,0.8406597956496262
+6,char,cosine_delta,10,Fresh laDouille,0.8407214626157762
+6,char,cosine_delta,11,Lesram,0.8457479175935397
+6,char,cosine_delta,12,Beendo Z,0.8467448904847329
+6,char,cosine_delta,13,Zkr,0.854051167482172
+6,char,cosine_delta,14,Zola,0.8552049655698208
+6,char,cosine_delta,15,ASHE 22,0.8605981082664607
+6,char,cosine_delta,16,Niro,0.865959586744458
+6,char,cosine_delta,17,Timal,0.8709143635034536
+6,char,cosine_delta,18,ISK,0.872011912326963
+6,char,cosine_delta,19,Worms-T,0.8746572804139863
+6,char,cosine_delta,20,4Keus,0.8756934646022903
+6,char,cosine_delta,21,So La Lune,0.8789012786401027
+6,char,cosine_delta,22,Gambi,0.8789817756916017
+6,char,cosine_delta,23,Dika,0.8803542508182305
+6,char,cosine_delta,24,Heuss L’enfoiré,0.8814577415424747
+6,char,cosine_delta,25,PRIME,0.881727926416134
+6,char,burrows_delta,1,Zkr,0.7490483139137867
+6,char,burrows_delta,2,L’Animalerie,0.7668987444888262
+6,char,burrows_delta,3,S-Crew,0.769198234135241
+6,char,burrows_delta,4,Leck,0.7783953700554067
+6,char,burrows_delta,5,Sam’s,0.7796252762405951
+6,char,burrows_delta,6,SCH,0.7826441667769697
+6,char,burrows_delta,7,Worms-T,0.7886518538276738
+6,char,burrows_delta,8,ISK,0.7892075748513234
+6,char,burrows_delta,9,Deen Burbigo,0.789973685659139
+6,char,burrows_delta,10,L’Entourage,0.7900027988492058
+6,char,burrows_delta,11,Nakk Mendosa,0.7902002438013266
+6,char,burrows_delta,12,Panama Bende,0.7904818663825146
+6,char,burrows_delta,13,Nahir,0.7919901935921237
+6,char,burrows_delta,14,Mister You,0.7934109112410257
+6,char,burrows_delta,15,Casseurs Flowters,0.794930875040827
+6,char,burrows_delta,16,Niro,0.7953271697909869
+6,char,burrows_delta,17,Zikxo,0.7960983049315068
+6,char,burrows_delta,18,Hayce Lemsi,0.7961045948568679
+6,char,burrows_delta,19,Lacraps,0.7967088487655316
+6,char,burrows_delta,20,PLK,0.7982349392540268
+6,char,burrows_delta,21,Dibson,0.8012217145335411
+6,char,burrows_delta,22,Lesram,0.8026840842562212
+6,char,burrows_delta,23,Nekfeu,0.8029761446902558
+6,char,burrows_delta,24,S.Pri Noir,0.8054758483057867
+6,char,burrows_delta,25,Saké (FRA),0.8056029018182413
+7,mfw,cosine_delta,1,SCH,0.7234839634531789
+7,mfw,cosine_delta,2,Mister You,0.7376091536571185
+7,mfw,cosine_delta,3,Werenoi,0.7378022655425687
+7,mfw,cosine_delta,4,Lemon Haze,0.7523400210443076
+7,mfw,cosine_delta,5,Rimkus,0.778421229759119
+7,mfw,cosine_delta,6,GLK,0.7841535762894369
+7,mfw,cosine_delta,7,Beendo Z,0.7884412481728981
+7,mfw,cosine_delta,8,UZI (FRA),0.7993016567652387
+7,mfw,cosine_delta,9,Lacrim,0.8011188537740025
+7,mfw,cosine_delta,10,ISK,0.8086275300230146
+7,mfw,cosine_delta,11,Graya,0.8093369158621175
+7,mfw,cosine_delta,12,Timal,0.8154804829407594
+7,mfw,cosine_delta,13,So La Lune,0.8181508539708449
+7,mfw,cosine_delta,14,S-Pion,0.8224183029304264
+7,mfw,cosine_delta,15,AM La Scampia,0.8230349531008309
+7,mfw,cosine_delta,16,Dika,0.8251341336545278
+7,mfw,cosine_delta,17,​​okis,0.8283833112789116
+7,mfw,cosine_delta,18,Kerchak,0.829783598749676
+7,mfw,cosine_delta,19,Zola,0.8298617808055708
+7,mfw,cosine_delta,20,ASHE 22,0.8324288342525734
+7,mfw,cosine_delta,21,Roshi,0.8329092663463187
+7,mfw,cosine_delta,22,Fresh laDouille,0.8334265383668938
+7,mfw,cosine_delta,23,Djadja & Dinaz,0.8369121110769089
+7,mfw,cosine_delta,24,Meryl,0.8399912534096646
+7,mfw,cosine_delta,25,Maes,0.8417606030114599
+7,mfw,burrows_delta,1,Zkr,0.6853819757917292
+7,mfw,burrows_delta,2,S-Pion,0.6893863592135341
+7,mfw,burrows_delta,3,GLK,0.6942339308750518
+7,mfw,burrows_delta,4,Lemon Haze,0.714626871841149
+7,mfw,burrows_delta,5,Panama Bende,0.716166045527368
+7,mfw,burrows_delta,6,Ninho,0.7185153343243644
+7,mfw,burrows_delta,7,Zikxo,0.7194397275274029
+7,mfw,burrows_delta,8,SCH,0.7219401746247613
+7,mfw,burrows_delta,9,Rimkus,0.7221806735958175
+7,mfw,burrows_delta,10,Guizmo,0.7232395887463003
+7,mfw,burrows_delta,11,S-Crew,0.7232953895530766
+7,mfw,burrows_delta,12,Seth Gueko,0.7252343155565371
+7,mfw,burrows_delta,13,Mister You,0.7255567141117281
+7,mfw,burrows_delta,14,ISK,0.7260917971585231
+7,mfw,burrows_delta,15,Vin’s,0.7265993057816689
+7,mfw,burrows_delta,16,Nahir,0.7266685926530054
+7,mfw,burrows_delta,17,L’Animalerie,0.7274207127898558
+7,mfw,burrows_delta,18,Sniper,0.7302090940978604
+7,mfw,burrows_delta,19,Sneazzy,0.73083936434063
+7,mfw,burrows_delta,20,Hayce Lemsi,0.7308420244175261
+7,mfw,burrows_delta,21,Beendo Z,0.731544983238336
+7,mfw,burrows_delta,22,Dibson,0.7319621835167919
+7,mfw,burrows_delta,23,Zola,0.7331094699909402
+7,mfw,burrows_delta,24,Lesram,0.7346306769948928
+7,mfw,burrows_delta,25,Deen Burbigo,0.7349024218645211
+7,char,cosine_delta,1,Beendo Z,0.7877133956843533
+7,char,cosine_delta,2,UZI (FRA),0.80974748602062
+7,char,cosine_delta,3,Kerchak,0.8180043197006561
+7,char,cosine_delta,4,Werenoi,0.8192613232081896
+7,char,cosine_delta,5,Zola,0.8259457649169646
+7,char,cosine_delta,6,Rimkus,0.827754477852
+7,char,cosine_delta,7,ISK,0.8326504654671802
+7,char,cosine_delta,8,ASHE 22,0.8328903236321372
+7,char,cosine_delta,9,Roshi,0.8351377463522658
+7,char,cosine_delta,10,Lemon Haze,0.8400764296208769
+7,char,cosine_delta,11,Djadja & Dinaz,0.8425752239010459
+7,char,cosine_delta,12,Ninho,0.8426430897280021
+7,char,cosine_delta,13,Zkr,0.8511681642908827
+7,char,cosine_delta,14,Maes,0.8577786975708744
+7,char,cosine_delta,15,​​okis,0.8586006181696519
+7,char,cosine_delta,16,Fresh laDouille,0.8617497752352419
+7,char,cosine_delta,17,Worms-T,0.8624074714398501
+7,char,cosine_delta,18,Mister You,0.8624759034550754
+7,char,cosine_delta,19,Lesram,0.863755217598108
+7,char,cosine_delta,20,​DA Uzi,0.8716123000305038
+7,char,cosine_delta,21,BFG,0.872650559763043
+7,char,cosine_delta,22,Youri,0.873334031852383
+7,char,cosine_delta,23,GLK,0.8745645926734193
+7,char,cosine_delta,24,4Keus,0.879204640939627
+7,char,cosine_delta,25,Heuss L’enfoiré,0.880121029747103
+7,char,burrows_delta,1,Ninho,0.7589460417597462
+7,char,burrows_delta,2,L’Animalerie,0.7661125031325822
+7,char,burrows_delta,3,Zkr,0.7739166673700704
+7,char,burrows_delta,4,Sadek,0.7772732814278125
+7,char,burrows_delta,5,Leck,0.7777914043793488
+7,char,burrows_delta,6,Nakk Mendosa,0.7799550141720472
+7,char,burrows_delta,7,Hayce Lemsi,0.7808548806320723
+7,char,burrows_delta,8,Lesram,0.781658337205187
+7,char,burrows_delta,9,Worms-T,0.7828677673043767
+7,char,burrows_delta,10,Deen Burbigo,0.7828931314412436
+7,char,burrows_delta,11,Vin’s,0.7880142423456579
+7,char,burrows_delta,12,Nahir,0.7883182447588527
+7,char,burrows_delta,13,Saké (FRA),0.790407689342754
+7,char,burrows_delta,14,ISK,0.7929196791117553
+7,char,burrows_delta,15,Guizmo,0.7963139352955755
+7,char,burrows_delta,16,Zikxo,0.7964987397624156
+7,char,burrows_delta,17,Sneazzy,0.7982179510597643
+7,char,burrows_delta,18,S.Pri Noir,0.799468446515419
+7,char,burrows_delta,19,Panama Bende,0.8006953096990822
+7,char,burrows_delta,20,Zola,0.8012775284617071
+7,char,burrows_delta,21,5 Majeur,0.8024044436643353
+7,char,burrows_delta,22,Sniper,0.8083937881835233
+7,char,burrows_delta,23,Dibson,0.8084221682978208
+7,char,burrows_delta,24,Jarod,0.8095102830265827
+7,char,burrows_delta,25,S-Crew,0.8096388996464788
+8,mfw,cosine_delta,1,SCH,0.657453416282416
+8,mfw,cosine_delta,2,Mister You,0.7592970633953358
+8,mfw,cosine_delta,3,Lemon Haze,0.7702567520668299
+8,mfw,cosine_delta,4,ISK,0.7755239162911367
+8,mfw,cosine_delta,5,Fresh laDouille,0.7819796465371861
+8,mfw,cosine_delta,6,Naps,0.7941738334046415
+8,mfw,cosine_delta,7,Werenoi,0.8022711464887199
+8,mfw,cosine_delta,8,UZI (FRA),0.8083740311234292
+8,mfw,cosine_delta,9,Rimkus,0.8091837595252263
+8,mfw,cosine_delta,10,Dika,0.8110451723191092
+8,mfw,cosine_delta,11,Koba LaD,0.825638096952049
+8,mfw,cosine_delta,12,Graya,0.8271659470743558
+8,mfw,cosine_delta,13,Kerchak,0.8300059522909682
+8,mfw,cosine_delta,14,Sadek,0.8341464872579647
+8,mfw,cosine_delta,15,Roshi,0.8343994401246944
+8,mfw,cosine_delta,16,AM La Scampia,0.839827062675441
+8,mfw,cosine_delta,17,S-Pion,0.8407246199685633
+8,mfw,cosine_delta,18,Houari,0.8408626465507318
+8,mfw,cosine_delta,19,Sefyu,0.8422839080095261
+8,mfw,cosine_delta,20,Maes,0.8442189436051072
+8,mfw,cosine_delta,21,Hornet La Frappe,0.8442894477904367
+8,mfw,cosine_delta,22,GLK,0.8448289548611275
+8,mfw,cosine_delta,23,KaNoé (BEL),0.8460623939683718
+8,mfw,cosine_delta,24,Beendo Z,0.8510544714500381
+8,mfw,cosine_delta,25,Gambi,0.8512261321565389
+8,mfw,burrows_delta,1,ISK,0.6753621141622325
+8,mfw,burrows_delta,2,S-Pion,0.6950409307139096
+8,mfw,burrows_delta,3,Hayce Lemsi,0.6968885441376838
+8,mfw,burrows_delta,4,Mister You,0.7065115497193519
+8,mfw,burrows_delta,5,Guizmo,0.7065937020406936
+8,mfw,burrows_delta,6,SCH,0.7096611079239415
+8,mfw,burrows_delta,7,Zkr,0.7097814704699473
+8,mfw,burrows_delta,8,Lemon Haze,0.7132201998387386
+8,mfw,burrows_delta,9,YL,0.7159327383416442
+8,mfw,burrows_delta,10,Nahir,0.7175061938506001
+8,mfw,burrows_delta,11,Niaks,0.7175564226730994
+8,mfw,burrows_delta,12,Souffrance,0.718102238837241
+8,mfw,burrows_delta,13,Dibson,0.7247667264783548
+8,mfw,burrows_delta,14,S-Crew,0.7284861337379119
+8,mfw,burrows_delta,15,Deen Burbigo,0.72848886374107
+8,mfw,burrows_delta,16,Graya,0.7295392860968576
+8,mfw,burrows_delta,17,Sadek,0.7303872818378733
+8,mfw,burrows_delta,18,Mister V,0.7324653197638307
+8,mfw,burrows_delta,19,Rimkus,0.7326290956104924
+8,mfw,burrows_delta,20,4Keus,0.7328145029894328
+8,mfw,burrows_delta,21,L’Animalerie,0.7334698732790631
+8,mfw,burrows_delta,22,Leck,0.7387687376825104
+8,mfw,burrows_delta,23,Hugo TSR,0.7404657157159477
+8,mfw,burrows_delta,24,Sexion d’Assaut,0.7414466582866048
+8,mfw,burrows_delta,25,Ninho,0.7443413087771098
+8,char,cosine_delta,1,SCH,0.8165157930061135
+8,char,cosine_delta,2,ISK,0.8213930285889034
+8,char,cosine_delta,3,ASHE 22,0.8215835084428602
+8,char,cosine_delta,4,Rimkus,0.8301264758565998
+8,char,cosine_delta,5,Werenoi,0.8357125686139955
+8,char,cosine_delta,6,Beendo Z,0.8372376369453698
+8,char,cosine_delta,7,Kerchak,0.8375697120851299
+8,char,cosine_delta,8,UZI (FRA),0.8425917348872565
+8,char,cosine_delta,9,Fresh laDouille,0.8446525417496624
+8,char,cosine_delta,10,Lemon Haze,0.8461560675077384
+8,char,cosine_delta,11,Maes,0.8464201680061872
+8,char,cosine_delta,12,Zkr,0.8476512394881661
+8,char,cosine_delta,13,Gambi,0.8579549721255819
+8,char,cosine_delta,14,Worms-T,0.8590154961630128
+8,char,cosine_delta,15,Nahir,0.8618115551384967
+8,char,cosine_delta,16,Roshi,0.8624016589017542
+8,char,cosine_delta,17,Djadja & Dinaz,0.8634546860683702
+8,char,cosine_delta,18,Dika,0.8641269389299083
+8,char,cosine_delta,19,Lesram,0.8673773857415967
+8,char,cosine_delta,20,​​okis,0.8682279704406095
+8,char,cosine_delta,21,Heuss L’enfoiré,0.868781924350257
+8,char,cosine_delta,22,F430,0.8694168253257611
+8,char,cosine_delta,23,Gazo,0.872516543939966
+8,char,cosine_delta,24,Elh Kmer,0.872815719000446
+8,char,cosine_delta,25,JuL,0.8734876054661128
+8,char,burrows_delta,1,L’Animalerie,0.7723789902101892
+8,char,burrows_delta,2,Nahir,0.7724645633501267
+8,char,burrows_delta,3,Zkr,0.7731586838563899
+8,char,burrows_delta,4,ISK,0.7759786942858594
+8,char,burrows_delta,5,Worms-T,0.7789242809649363
+8,char,burrows_delta,6,Leck,0.7816842277525408
+8,char,burrows_delta,7,S-Crew,0.7900073709375541
+8,char,burrows_delta,8,Nakk Mendosa,0.7930084766399735
+8,char,burrows_delta,9,S.Pri Noir,0.7950240848547954
+8,char,burrows_delta,10,Saké (FRA),0.7977926032208746
+8,char,burrows_delta,11,Seth Gueko,0.7990881729688114
+8,char,burrows_delta,12,Caballero,0.7995963168051873
+8,char,burrows_delta,13,5 Majeur,0.8023558502598456
+8,char,burrows_delta,14,Dibson,0.803524124178076
+8,char,burrows_delta,15,Hayce Lemsi,0.8046828030304282
+8,char,burrows_delta,16,4Keus,0.8059172901044882
+8,char,burrows_delta,17,Nekfeu,0.8074949409280268
+8,char,burrows_delta,18,Rimkus,0.8088764229217204
+8,char,burrows_delta,19,Deen Burbigo,0.8091641954885143
+8,char,burrows_delta,20,Vin’s,0.8100364066976692
+8,char,burrows_delta,21,Sexion d’Assaut,0.8107441176366622
+8,char,burrows_delta,22,Beeby,0.8107677583396704
+8,char,burrows_delta,23,Hugo TSR,0.810967417229112
+8,char,burrows_delta,24,Lesram,0.8118244908597632
+8,char,burrows_delta,25,SCH,0.811997036427492
+9,mfw,cosine_delta,1,SCH,0.7504058474727379
+9,mfw,cosine_delta,2,GLK,0.772445927161609
+9,mfw,cosine_delta,3,Lemon Haze,0.77350917358311
+9,mfw,cosine_delta,4,Werenoi,0.7760797046722723
+9,mfw,cosine_delta,5,Maes,0.7875089596841968
+9,mfw,cosine_delta,6,Soso Maness,0.7903582176060324
+9,mfw,cosine_delta,7,ISK,0.7911357001531482
+9,mfw,cosine_delta,8,Beendo Z,0.7945216474791528
+9,mfw,cosine_delta,9,Dika,0.7960661374053978
+9,mfw,cosine_delta,10,Rimkus,0.7982695542866711
+9,mfw,cosine_delta,11,​DA Uzi,0.8014605072501002
+9,mfw,cosine_delta,12,Kerchak,0.811472145180641
+9,mfw,cosine_delta,13,Sofiane,0.8148529514514798
+9,mfw,cosine_delta,14,Hatik,0.825579431081664
+9,mfw,cosine_delta,15,MMZ,0.8307355377233052
+9,mfw,cosine_delta,16,Fresh laDouille,0.832254227132245
+9,mfw,cosine_delta,17,UZI (FRA),0.8360695755959245
+9,mfw,cosine_delta,18,Graya,0.8371547132399048
+9,mfw,cosine_delta,19,Koba LaD,0.8376293579692791
+9,mfw,cosine_delta,20,Zkr,0.8376708697283775
+9,mfw,cosine_delta,21,Zola,0.8381293416367805
+9,mfw,cosine_delta,22,Moha La Squale,0.8397942208346523
+9,mfw,cosine_delta,23,So La Lune,0.8425343118991022
+9,mfw,cosine_delta,24,SDM,0.8448008510276547
+9,mfw,cosine_delta,25,S-Pion,0.8448723836842573
+9,mfw,burrows_delta,1,Lacrim,0.6842229879417046
+9,mfw,burrows_delta,2,Zkr,0.6878681458810626
+9,mfw,burrows_delta,3,GLK,0.688342772977649
+9,mfw,burrows_delta,4,ISK,0.6927930428387474
+9,mfw,burrows_delta,5,SCH,0.6976364059102439
+9,mfw,burrows_delta,6,Sofiane,0.6989887500136497
+9,mfw,burrows_delta,7,Panama Bende,0.7005763838770939
+9,mfw,burrows_delta,8,MMZ,0.7080372625858731
+9,mfw,burrows_delta,9,Beendo Z,0.710157812577077
+9,mfw,burrows_delta,10,Mister V,0.7125996122429179
+9,mfw,burrows_delta,11,S-Pion,0.71274287955717
+9,mfw,burrows_delta,12,Dibson,0.7156113801746106
+9,mfw,burrows_delta,13,Lemon Haze,0.719605513617029
+9,mfw,burrows_delta,14,Nahir,0.7206958597968517
+9,mfw,burrows_delta,15,Rimkus,0.7216634799357496
+9,mfw,burrows_delta,16,Vald,0.7247240324397494
+9,mfw,burrows_delta,17,Sadek,0.7272233098988882
+9,mfw,burrows_delta,18,Swift Guad,0.7288953196442608
+9,mfw,burrows_delta,19,S-Crew,0.728930509079146
+9,mfw,burrows_delta,20,Guizmo,0.730017628112661
+9,mfw,burrows_delta,21,Lesram,0.730895682933781
+9,mfw,burrows_delta,22,​DA Uzi,0.7326086312925123
+9,mfw,burrows_delta,23,Nekfeu,0.7338181582600917
+9,mfw,burrows_delta,24,Zola,0.7359222136644503
+9,mfw,burrows_delta,25,Sneazzy,0.7363861464168774
+9,char,cosine_delta,1,Beendo Z,0.8039072494085093
+9,char,cosine_delta,2,Kerchak,0.8074680363050863
+9,char,cosine_delta,3,UZI (FRA),0.8195633747960523
+9,char,cosine_delta,4,Hornet La Frappe,0.81963331860384
+9,char,cosine_delta,5,​DA Uzi,0.8241462210670027
+9,char,cosine_delta,6,Zkr,0.8309292754208581
+9,char,cosine_delta,7,Rimkus,0.8346546736899203
+9,char,cosine_delta,8,Bosh,0.8370762603007
+9,char,cosine_delta,9,Nahir,0.8386155756580349
+9,char,cosine_delta,10,Lemon Haze,0.8403038086565957
+9,char,cosine_delta,11,Werenoi,0.8455054772884665
+9,char,cosine_delta,12,Zola,0.8457610003937189
+9,char,cosine_delta,13,ASHE 22,0.8469521055088659
+9,char,cosine_delta,14,SCH,0.8492823939081442
+9,char,cosine_delta,15,Fresh laDouille,0.8584198438763212
+9,char,cosine_delta,16,​​okis,0.8594493875711688
+9,char,cosine_delta,17,Naps,0.8603829858939103
+9,char,cosine_delta,18,SDM,0.8617891582968918
+9,char,cosine_delta,19,Lesram,0.8630858032896942
+9,char,cosine_delta,20,ISK,0.8639643659880473
+9,char,cosine_delta,21,Dika,0.8665772817203296
+9,char,cosine_delta,22,Niaks,0.8705109216538363
+9,char,cosine_delta,23,Roshi,0.8706001573993821
+9,char,cosine_delta,24,Maes,0.872127618974765
+9,char,cosine_delta,25,Worms-T,0.872294478531952
+9,char,burrows_delta,1,Lacrim,0.7593668974493273
+9,char,burrows_delta,2,L’Animalerie,0.7637611129420563
+9,char,burrows_delta,3,Zkr,0.7700215154992408
+9,char,burrows_delta,4,Panama Bende,0.7733371234094857
+9,char,burrows_delta,5,Sadek,0.777196789337277
+9,char,burrows_delta,6,Nahir,0.7805643824007957
+9,char,burrows_delta,7,Worms-T,0.7820204361629062
+9,char,burrows_delta,8,Hugo TSR,0.7820859327135555
+9,char,burrows_delta,9,ISK,0.7883798868522051
+9,char,burrows_delta,10,Sneazzy,0.7891415006308853
+9,char,burrows_delta,11,Leck,0.7895397886202741
+9,char,burrows_delta,12,S-Crew,0.7907690857794366
+9,char,burrows_delta,13,Caballero,0.7951323013995202
+9,char,burrows_delta,14,Saké (FRA),0.7960949928656477
+9,char,burrows_delta,15,Sofiane,0.7980429997021532
+9,char,burrows_delta,16,Lesram,0.8004329372073632
+9,char,burrows_delta,17,Zola,0.8011525098985852
+9,char,burrows_delta,18,5 Majeur,0.8028031736824923
+9,char,burrows_delta,19,SCH,0.804246454604424
+9,char,burrows_delta,20,Niro,0.8045441772580101
+9,char,burrows_delta,21,Jarod,0.8061085857068229
+9,char,burrows_delta,22,PLK,0.8064318095997505
+9,char,burrows_delta,23,S.Pri Noir,0.8069844728286965
+9,char,burrows_delta,24,Alpha Wann,0.8071503177228166
+9,char,burrows_delta,25,Niaks,0.8072548822681599
+10,mfw,cosine_delta,1,SCH,0.7129456113541476
+10,mfw,cosine_delta,2,Lemon Haze,0.7499483382594979
+10,mfw,cosine_delta,3,Fresh laDouille,0.7790125239756371
+10,mfw,cosine_delta,4,Rimkus,0.7799210691623142
+10,mfw,cosine_delta,5,Beendo Z,0.780832798997372
+10,mfw,cosine_delta,6,Dika,0.7855685999988673
+10,mfw,cosine_delta,7,So La Lune,0.7882158277305216
+10,mfw,cosine_delta,8,Werenoi,0.794889449532973
+10,mfw,cosine_delta,9,GLK,0.797955596791579
+10,mfw,cosine_delta,10,MRC,0.8148605916854184
+10,mfw,cosine_delta,11,Timal,0.8161005703839215
+10,mfw,cosine_delta,12,Lacrim,0.8162797794640345
+10,mfw,cosine_delta,13,Graya,0.816977798748296
+10,mfw,cosine_delta,14,Kerchak,0.8177928793209249
+10,mfw,cosine_delta,15,ISK,0.8191268764838027
+10,mfw,cosine_delta,16,UZI (FRA),0.8208465744323186
+10,mfw,cosine_delta,17,Roshi,0.821737148139758
+10,mfw,cosine_delta,18,Maes,0.8237385593243299
+10,mfw,cosine_delta,19,AM La Scampia,0.8269918272131158
+10,mfw,cosine_delta,20,S-Pion,0.8273977902614125
+10,mfw,cosine_delta,21,PLK,0.8301675083480498
+10,mfw,cosine_delta,22,Djadja & Dinaz,0.8346025635860024
+10,mfw,cosine_delta,23,Naps,0.8369561996091
+10,mfw,cosine_delta,24,Moha La Squale,0.8384181118994967
+10,mfw,cosine_delta,25,​DA Uzi,0.839912738961911
+10,mfw,burrows_delta,1,Zkr,0.6716481140250583
+10,mfw,burrows_delta,2,Lacrim,0.674847005060008
+10,mfw,burrows_delta,3,SCH,0.6860135254793108
+10,mfw,burrows_delta,4,S-Pion,0.6999276664006422
+10,mfw,burrows_delta,5,Mister V,0.7073780550195554
+10,mfw,burrows_delta,6,Lemon Haze,0.7095323002884024
+10,mfw,burrows_delta,7,Beendo Z,0.7100368144114025
+10,mfw,burrows_delta,8,Deen Burbigo,0.716386327023795
+10,mfw,burrows_delta,9,L’Animalerie,0.7200872954861975
+10,mfw,burrows_delta,10,Sofiane,0.721053015855518
+10,mfw,burrows_delta,11,Dibson,0.7215594277654179
+10,mfw,burrows_delta,12,Souffrance,0.7217986619894403
+10,mfw,burrows_delta,13,Denzo,0.7224274153476695
+10,mfw,burrows_delta,14,Rimkus,0.7224399899094736
+10,mfw,burrows_delta,15,Vin’s,0.7228477281471005
+10,mfw,burrows_delta,16,So La Lune,0.7230178786588428
+10,mfw,burrows_delta,17,Sadek,0.7252356909340979
+10,mfw,burrows_delta,18,Sam’s,0.7262827031419042
+10,mfw,burrows_delta,19,Soso Maness,0.7274856617545183
+10,mfw,burrows_delta,20,Panama Bende,0.7293362637589414
+10,mfw,burrows_delta,21,Nahir,0.7297997560031502
+10,mfw,burrows_delta,22,GLK,0.7311255127652775
+10,mfw,burrows_delta,23,Sexion d’Assaut,0.733461887007159
+10,mfw,burrows_delta,24,MMZ,0.7341027705460362
+10,mfw,burrows_delta,25,Niro,0.7341040969721013
+10,char,cosine_delta,1,Beendo Z,0.806342950544083
+10,char,cosine_delta,2,UZI (FRA),0.8179692712239361
+10,char,cosine_delta,3,Rimkus,0.8254415513306201
+10,char,cosine_delta,4,Roshi,0.827818605896264
+10,char,cosine_delta,5,Kerchak,0.830630796320309
+10,char,cosine_delta,6,Lemon Haze,0.8349025249322162
+10,char,cosine_delta,7,Maes,0.836106061022091
+10,char,cosine_delta,8,Werenoi,0.8389997409138652
+10,char,cosine_delta,9,SCH,0.8482738509034805
+10,char,cosine_delta,10,Fresh laDouille,0.8491987583324091
+10,char,cosine_delta,11,Timal,0.8505491402437801
+10,char,cosine_delta,12,Zkr,0.8512089671131701
+10,char,cosine_delta,13,GLK,0.8518706400540447
+10,char,cosine_delta,14,Zola,0.8518903191195412
+10,char,cosine_delta,15,​DA Uzi,0.852337296946199
+10,char,cosine_delta,16,Nahir,0.8537859958577014
+10,char,cosine_delta,17,ISK,0.8562120436044045
+10,char,cosine_delta,18,ASHE 22,0.8586862751717876
+10,char,cosine_delta,19,​​okis,0.8634261950660227
+10,char,cosine_delta,20,Gambi,0.8699859216098553
+10,char,cosine_delta,21,Dika,0.872690695050368
+10,char,cosine_delta,22,Djadja & Dinaz,0.8731588167324635
+10,char,cosine_delta,23,Worms-T,0.8742191967034236
+10,char,cosine_delta,24,Diddi Trix,0.8762840439456046
+10,char,cosine_delta,25,Naps,0.8765782950803072
+10,char,burrows_delta,1,Zkr,0.7447783507970756
+10,char,burrows_delta,2,L’Animalerie,0.7593957951365103
+10,char,burrows_delta,3,Lacrim,0.7610556329282017
+10,char,burrows_delta,4,Sadek,0.7732727298725123
+10,char,burrows_delta,5,Vin’s,0.7740407280786765
+10,char,burrows_delta,6,Deen Burbigo,0.7786274901655558
+10,char,burrows_delta,7,Leck,0.7822269975359686
+10,char,burrows_delta,8,Vald,0.7822807325934232
+10,char,burrows_delta,9,Saké (FRA),0.7832405669036173
+10,char,burrows_delta,10,Worms-T,0.7893754175370031
+10,char,burrows_delta,11,Nahir,0.7897645117455168
+10,char,burrows_delta,12,SCH,0.7907693990855958
+10,char,burrows_delta,13,Sam’s,0.7913494704023557
+10,char,burrows_delta,14,Niro,0.794669601658853
+10,char,burrows_delta,15,Caballero,0.7948216749602998
+10,char,burrows_delta,16,Zola,0.7955121992600295
+10,char,burrows_delta,17,5 Majeur,0.7977793976180422
+10,char,burrows_delta,18,Panama Bende,0.7982477442326529
+10,char,burrows_delta,19,Beendo Z,0.7986892868069314
+10,char,burrows_delta,20,S.Pri Noir,0.8013273421408212
+10,char,burrows_delta,21,L’Entourage,0.804584374605181
+10,char,burrows_delta,22,Nakk Mendosa,0.8072240161091043
+10,char,burrows_delta,23,ISK,0.8099153015513268
+10,char,burrows_delta,24,PLK,0.8109321643156246
+10,char,burrows_delta,25,Denzo,0.8112453258453861
+11,mfw,cosine_delta,1,Soso Maness,0.7405022158256286
+11,mfw,cosine_delta,2,Beendo Z,0.7557908361597196
+11,mfw,cosine_delta,3,Zola,0.7606417251443918
+11,mfw,cosine_delta,4,Lemon Haze,0.7666959255262924
+11,mfw,cosine_delta,5,Roshi,0.7717510255178348
+11,mfw,cosine_delta,6,Rimkus,0.7800560479879828
+11,mfw,cosine_delta,7,UZI (FRA),0.7824675245671346
+11,mfw,cosine_delta,8,Werenoi,0.7903124505737789
+11,mfw,cosine_delta,9,Fresh laDouille,0.7942740720632682
+11,mfw,cosine_delta,10,GLK,0.8023657300061054
+11,mfw,cosine_delta,11,100 Blaze,0.8038517734208519
+11,mfw,cosine_delta,12,​DA Uzi,0.8049574885081653
+11,mfw,cosine_delta,13,ASHE 22,0.806151170923388
+11,mfw,cosine_delta,14,Dika,0.8084568121609652
+11,mfw,cosine_delta,15,Maes,0.813372791131589
+11,mfw,cosine_delta,16,SDM,0.814712923812206
+11,mfw,cosine_delta,17,Djadja & Dinaz,0.816040954544955
+11,mfw,cosine_delta,18,Hornet La Frappe,0.817264585353887
+11,mfw,cosine_delta,19,ISK,0.820348861822289
+11,mfw,cosine_delta,20,AM La Scampia,0.8238172004215363
+11,mfw,cosine_delta,21,Kerchak,0.8267781721281755
+11,mfw,cosine_delta,22,SCH,0.8273785360440491
+11,mfw,cosine_delta,23,S-Pion,0.8305876826835162
+11,mfw,cosine_delta,24,Graya,0.8349879202135906
+11,mfw,cosine_delta,25,Hooss,0.8432368505566898
+11,mfw,burrows_delta,1,Beendo Z,0.6786889673433879
+11,mfw,burrows_delta,2,S-Pion,0.6935448521943722
+11,mfw,burrows_delta,3,ISK,0.6978197177783193
+11,mfw,burrows_delta,4,SCH,0.7130228845174348
+11,mfw,burrows_delta,5,S-Crew,0.7149870309238557
+11,mfw,burrows_delta,6,YL,0.7166756599440784
+11,mfw,burrows_delta,7,Lemon Haze,0.7211546883095282
+11,mfw,burrows_delta,8,Vin’s,0.7312931701595178
+11,mfw,burrows_delta,9,Rimkus,0.7314752894731478
+11,mfw,burrows_delta,10,Zola,0.7327336533752502
+11,mfw,burrows_delta,11,L’Animalerie,0.733271664813358
+11,mfw,burrows_delta,12,Panama Bende,0.7355355826986939
+11,mfw,burrows_delta,13,Dibson,0.7362243590470203
+11,mfw,burrows_delta,14,Mister You,0.7365212334460002
+11,mfw,burrows_delta,15,Sadek,0.7366252083907138
+11,mfw,burrows_delta,16,Nahir,0.7370920702660184
+11,mfw,burrows_delta,17,Lesram,0.7397089885819339
+11,mfw,burrows_delta,18,PLK,0.7401578340722483
+11,mfw,burrows_delta,19,Leck,0.7412450377070592
+11,mfw,burrows_delta,20,GLK,0.7430116990250626
+11,mfw,burrows_delta,21,​DA Uzi,0.7434207842876894
+11,mfw,burrows_delta,22,Guizmo,0.7441743658038906
+11,mfw,burrows_delta,23,RK,0.7443265057620991
+11,mfw,burrows_delta,24,Worms-T,0.7454700595329243
+11,mfw,burrows_delta,25,Lacrim,0.7465375949116131
+11,char,cosine_delta,1,Kerchak,0.815250802236566
+11,char,cosine_delta,2,UZI (FRA),0.8176123400367661
+11,char,cosine_delta,3,Beendo Z,0.8191849865284562
+11,char,cosine_delta,4,Hornet La Frappe,0.8210858813048263
+11,char,cosine_delta,5,ISK,0.8253207838650704
+11,char,cosine_delta,6,Roshi,0.8298085465656552
+11,char,cosine_delta,7,Zola,0.8327058184815008
+11,char,cosine_delta,8,Rimkus,0.8332265753054633
+11,char,cosine_delta,9,Zkr,0.8393872922620509
+11,char,cosine_delta,10,ASHE 22,0.8422598844464446
+11,char,cosine_delta,11,​DA Uzi,0.8469579286274306
+11,char,cosine_delta,12,Lemon Haze,0.8488695263159027
+11,char,cosine_delta,13,Maes,0.8553872437728554
+11,char,cosine_delta,14,Lesram,0.86014270327726
+11,char,cosine_delta,15,Fresh laDouille,0.8606590798083926
+11,char,cosine_delta,16,Werenoi,0.8607083401055364
+11,char,cosine_delta,17,Djadja & Dinaz,0.8612726889232752
+11,char,cosine_delta,18,100 Blaze,0.8624715543904564
+11,char,cosine_delta,19,Nahir,0.8659487947312361
+11,char,cosine_delta,20,BFG,0.8669011915812631
+11,char,cosine_delta,21,​​okis,0.867608337162922
+11,char,cosine_delta,22,Dika,0.8677155472946303
+11,char,cosine_delta,23,Gambi,0.8752467293610446
+11,char,cosine_delta,24,Gazo,0.8776334085108417
+11,char,cosine_delta,25,Heuss L’enfoiré,0.8798706847471709
+11,char,burrows_delta,1,S-Crew,0.7467372249353912
+11,char,burrows_delta,2,L’Animalerie,0.7632587760689122
+11,char,burrows_delta,3,Vin’s,0.7668139897258113
+11,char,burrows_delta,4,ISK,0.7691606764460237
+11,char,burrows_delta,5,Sam’s,0.7746643783213655
+11,char,burrows_delta,6,Nakk Mendosa,0.7812795566385271
+11,char,burrows_delta,7,Leck,0.7841046476556885
+11,char,burrows_delta,8,Worms-T,0.7842611346983297
+11,char,burrows_delta,9,Sadek,0.787365281704159
+11,char,burrows_delta,10,Nahir,0.7882279708791281
+11,char,burrows_delta,11,Panama Bende,0.7887095789150681
+11,char,burrows_delta,12,Beendo Z,0.7895415425138769
+11,char,burrows_delta,13,YL,0.7938121285686319
+11,char,burrows_delta,14,S.Pri Noir,0.7994183733282448
+11,char,burrows_delta,15,Zikxo,0.8001641823645461
+11,char,burrows_delta,16,5 Majeur,0.8005599599605938
+11,char,burrows_delta,17,Deen Burbigo,0.8018589950347089
+11,char,burrows_delta,18,Zkr,0.8021206554868862
+11,char,burrows_delta,19,R.E.D.K.,0.8024362335915698
+11,char,burrows_delta,20,Lesram,0.8075063046980788
+11,char,burrows_delta,21,BFG,0.8123747477744757
+11,char,burrows_delta,22,SCH,0.8124871849813975
+11,char,burrows_delta,23,Saké (FRA),0.8126123715068917
+11,char,burrows_delta,24,Dibson,0.8135656681926223
+11,char,burrows_delta,25,Lemon Haze,0.8160843647157495
+12,mfw,cosine_delta,1,Lacrim,0.7563874040204954
+12,mfw,cosine_delta,2,Lemon Haze,0.7598533126376097
+12,mfw,cosine_delta,3,Maes,0.7688554655130508
+12,mfw,cosine_delta,4,GLK,0.7730066895879206
+12,mfw,cosine_delta,5,Werenoi,0.7742717485793489
+12,mfw,cosine_delta,6,Rimkus,0.7865464833537109
+12,mfw,cosine_delta,7,Nahir,0.7939764932643121
+12,mfw,cosine_delta,8,Dika,0.8061608458055382
+12,mfw,cosine_delta,9,Soso Maness,0.8062283918635538
+12,mfw,cosine_delta,10,Fresh laDouille,0.8081263812499698
+12,mfw,cosine_delta,11,Lesram,0.8137195552768091
+12,mfw,cosine_delta,12,Beendo Z,0.8166645906290184
+12,mfw,cosine_delta,13,UZI (FRA),0.8177095172700868
+12,mfw,cosine_delta,14,​DA Uzi,0.8203277521560726
+12,mfw,cosine_delta,15,Kerchak,0.8219902902329985
+12,mfw,cosine_delta,16,ASHE 22,0.8292398027327892
+12,mfw,cosine_delta,17,AM La Scampia,0.8312411765980843
+12,mfw,cosine_delta,18,Houari,0.8323257531180652
+12,mfw,cosine_delta,19,Zikxo,0.8334345975176751
+12,mfw,cosine_delta,20,Benab,0.8369291865971509
+12,mfw,cosine_delta,21,Graya,0.8385339743009794
+12,mfw,cosine_delta,22,Kodes,0.8386465811027368
+12,mfw,cosine_delta,23,Diddi Trix,0.8406961475001177
+12,mfw,cosine_delta,24,SCH,0.8421547706648703
+12,mfw,cosine_delta,25,Koba LaD,0.8457392143736807
+12,mfw,burrows_delta,1,Lacrim,0.6758642834340075
+12,mfw,burrows_delta,2,Zkr,0.67749586264478
+12,mfw,burrows_delta,3,Guizmo,0.7034974829683408
+12,mfw,burrows_delta,4,Nahir,0.704294457761463
+12,mfw,burrows_delta,5,Dibson,0.711665159951644
+12,mfw,burrows_delta,6,YL,0.712560946785407
+12,mfw,burrows_delta,7,S-Pion,0.7204548315904651
+12,mfw,burrows_delta,8,Panama Bende,0.7216550214106247
+12,mfw,burrows_delta,9,Lemon Haze,0.7235729874953992
+12,mfw,burrows_delta,10,Rimkus,0.729565205437873
+12,mfw,burrows_delta,11,PLK,0.7316656783394541
+12,mfw,burrows_delta,12,Mister V,0.7345398799472773
+12,mfw,burrows_delta,13,L’Animalerie,0.7354741719484673
+12,mfw,burrows_delta,14,Lesram,0.7354763652613628
+12,mfw,burrows_delta,15,Hayce Lemsi,0.7367236043337418
+12,mfw,burrows_delta,16,Beendo Z,0.7373818213498168
+12,mfw,burrows_delta,17,Soso Maness,0.7375022206359254
+12,mfw,burrows_delta,18,Leck,0.7381453112163446
+12,mfw,burrows_delta,19,Koba LaD,0.7397746443596268
+12,mfw,burrows_delta,20,Zikxo,0.7406127892584825
+12,mfw,burrows_delta,21,Maes,0.7406165052970883
+12,mfw,burrows_delta,22,GLK,0.7407483858344148
+12,mfw,burrows_delta,23,Denzo,0.7421207111670441
+12,mfw,burrows_delta,24,S.Pri Noir,0.7424750083811
+12,mfw,burrows_delta,25,ISK,0.7432108202220568
+12,char,cosine_delta,1,Kerchak,0.8135859301010459
+12,char,cosine_delta,2,Beendo Z,0.8193486571689432
+12,char,cosine_delta,3,ASHE 22,0.8225398146902221
+12,char,cosine_delta,4,Werenoi,0.8249586421273356
+12,char,cosine_delta,5,UZI (FRA),0.8300255761630684
+12,char,cosine_delta,6,Rimkus,0.8330877332522253
+12,char,cosine_delta,7,Lemon Haze,0.8363387077539601
+12,char,cosine_delta,8,Zkr,0.8385765036248423
+12,char,cosine_delta,9,​DA Uzi,0.8499899912018658
+12,char,cosine_delta,10,Nahir,0.8509016901550759
+12,char,cosine_delta,11,Maes,0.8544865724986249
+12,char,cosine_delta,12,4Keus,0.8567855118894658
+12,char,cosine_delta,13,GLK,0.8591101253544629
+12,char,cosine_delta,14,ISK,0.8614628091181838
+12,char,cosine_delta,15,SCH,0.8640373347212749
+12,char,cosine_delta,16,Zikxo,0.8672660826712659
+12,char,cosine_delta,17,SDM,0.8677835154426266
+12,char,cosine_delta,18,​​okis,0.8695352434308635
+12,char,cosine_delta,19,Heuss L’enfoiré,0.8717091593276255
+12,char,cosine_delta,20,Lesram,0.8721672372254017
+12,char,cosine_delta,21,RK,0.8732182881530158
+12,char,cosine_delta,22,Koba LaD,0.8739825767290423
+12,char,cosine_delta,23,BFG,0.8753562883091799
+12,char,cosine_delta,24,Timal,0.8771997014971227
+12,char,cosine_delta,25,PLK,0.8773002861825194
+12,char,burrows_delta,1,Zkr,0.7492140403341194
+12,char,burrows_delta,2,L’Animalerie,0.7673412491539181
+12,char,burrows_delta,3,Lacrim,0.781082350816726
+12,char,burrows_delta,4,Guizmo,0.7907566427671218
+12,char,burrows_delta,5,Leck,0.7928459401174478
+12,char,burrows_delta,6,Worms-T,0.7931175351597779
+12,char,burrows_delta,7,Zikxo,0.7944330303582285
+12,char,burrows_delta,8,Niro,0.7961704586793376
+12,char,burrows_delta,9,Nahir,0.7965522879281037
+12,char,burrows_delta,10,Sadek,0.7975115243997641
+12,char,burrows_delta,11,Sam’s,0.7988859490484276
+12,char,burrows_delta,12,5 Majeur,0.8007510389087988
+12,char,burrows_delta,13,Nakk Mendosa,0.8010284207223497
+12,char,burrows_delta,14,Mysa,0.8022772489641402
+12,char,burrows_delta,15,Dibson,0.8032131870185599
+12,char,burrows_delta,16,S.Pri Noir,0.8050861213429019
+12,char,burrows_delta,17,Beendo Z,0.8052219586440768
+12,char,burrows_delta,18,Vin’s,0.8069005982612927
+12,char,burrows_delta,19,Lesram,0.8069613740249039
+12,char,burrows_delta,20,ISK,0.8089328109706215
+12,char,burrows_delta,21,Saké (FRA),0.8106752536403184
+12,char,burrows_delta,22,Lacraps,0.8126563663536853
+12,char,burrows_delta,23,Panama Bende,0.813327334736362
+12,char,burrows_delta,24,Rimkus,0.8140589390519593
+12,char,burrows_delta,25,Zola,0.8144960033233075
+13,mfw,cosine_delta,1,Lemon Haze,0.7583471376681065
+13,mfw,cosine_delta,2,Lesram,0.7628885685523522
+13,mfw,cosine_delta,3,Werenoi,0.7744039846646917
+13,mfw,cosine_delta,4,SDM,0.7745108385855132
+13,mfw,cosine_delta,5,Rimkus,0.7869170252184534
+13,mfw,cosine_delta,6,Djadja & Dinaz,0.7884249505788948
+13,mfw,cosine_delta,7,Soso Maness,0.7981330308791799
+13,mfw,cosine_delta,8,Fresh laDouille,0.7993964147409613
+13,mfw,cosine_delta,9,Dika,0.8042687313597766
+13,mfw,cosine_delta,10,Lacrim,0.8053411059345641
+13,mfw,cosine_delta,11,Kerchak,0.8072176436487966
+13,mfw,cosine_delta,12,SCH,0.8075847579467392
+13,mfw,cosine_delta,13,UZI (FRA),0.8081362143592282
+13,mfw,cosine_delta,14,Zkr,0.8147258905863917
+13,mfw,cosine_delta,15,Maes,0.8153903817532036
+13,mfw,cosine_delta,16,GLK,0.8224700349847693
+13,mfw,cosine_delta,17,Graya,0.8255685265978907
+13,mfw,cosine_delta,18,Zola,0.8271932244859561
+13,mfw,cosine_delta,19,AM La Scampia,0.8301127696600583
+13,mfw,cosine_delta,20,S-Pion,0.8351593869556658
+13,mfw,cosine_delta,21,Niro,0.8368345763419736
+13,mfw,cosine_delta,22,ASHE 22,0.8382571741244355
+13,mfw,cosine_delta,23,Koba LaD,0.8387769796208582
+13,mfw,cosine_delta,24,Sefyu,0.840566691769288
+13,mfw,cosine_delta,25,Kodes,0.8408433471225596
+13,mfw,burrows_delta,1,Zkr,0.6883925456024695
+13,mfw,burrows_delta,2,Sofiane,0.7119757820593996
+13,mfw,burrows_delta,3,S-Pion,0.7123884978966444
+13,mfw,burrows_delta,4,Deen Burbigo,0.7154766520435887
+13,mfw,burrows_delta,5,Djadja & Dinaz,0.7199522954490538
+13,mfw,burrows_delta,6,Lacrim,0.7209381719326498
+13,mfw,burrows_delta,7,SCH,0.7218144553282885
+13,mfw,burrows_delta,8,Mister V,0.7218214430510591
+13,mfw,burrows_delta,9,Lemon Haze,0.7237610129752827
+13,mfw,burrows_delta,10,Soso Maness,0.7262217510291888
+13,mfw,burrows_delta,11,Leck,0.7273837306539983
+13,mfw,burrows_delta,12,Niro,0.731421022761411
+13,mfw,burrows_delta,13,GLK,0.731502051296701
+13,mfw,burrows_delta,14,Jarod,0.7322890787389977
+13,mfw,burrows_delta,15,SDM,0.7328470524454924
+13,mfw,burrows_delta,16,Vin’s,0.7330652258354482
+13,mfw,burrows_delta,17,Panama Bende,0.7333897720731161
+13,mfw,burrows_delta,18,Rimkus,0.7338967571632673
+13,mfw,burrows_delta,19,Koba LaD,0.7359543437713919
+13,mfw,burrows_delta,20,Lesram,0.7364942869156926
+13,mfw,burrows_delta,21,Nahir,0.7380510974718149
+13,mfw,burrows_delta,22,Mister You,0.7390142782387233
+13,mfw,burrows_delta,23,Graya,0.7390965080701505
+13,mfw,burrows_delta,24,Intouchable,0.7394124467456541
+13,mfw,burrows_delta,25,L’Animalerie,0.739799116594771
+13,char,cosine_delta,1,Lesram,0.815920036307398
+13,char,cosine_delta,2,UZI (FRA),0.8201308682232258
+13,char,cosine_delta,3,Kerchak,0.8273699469742908
+13,char,cosine_delta,4,Rimkus,0.8293757369177854
+13,char,cosine_delta,5,Lemon Haze,0.8359873873562069
+13,char,cosine_delta,6,Werenoi,0.8398642091071471
+13,char,cosine_delta,7,Zkr,0.8421797801046512
+13,char,cosine_delta,8,Timal,0.8453196952512784
+13,char,cosine_delta,9,Djadja & Dinaz,0.8472777157489173
+13,char,cosine_delta,10,SDM,0.852308936164436
+13,char,cosine_delta,11,Fresh laDouille,0.8552792817188433
+13,char,cosine_delta,12,Maes,0.856450517361454
+13,char,cosine_delta,13,ASHE 22,0.8572928733369226
+13,char,cosine_delta,14,Niro,0.8600353530615505
+13,char,cosine_delta,15,SCH,0.86125347565385
+13,char,cosine_delta,16,Beendo Z,0.8634208163831267
+13,char,cosine_delta,17,Dika,0.8665022166296319
+13,char,cosine_delta,18,Bosh,0.8697420891787585
+13,char,cosine_delta,19,Roshi,0.8713201055926104
+13,char,cosine_delta,20,​​okis,0.8727364689988258
+13,char,cosine_delta,21,Kofs,0.8738091066952736
+13,char,cosine_delta,22,4Keus,0.8749964442365896
+13,char,cosine_delta,23,Niaks,0.8751358102316502
+13,char,cosine_delta,24,Worms-T,0.8754764059982564
+13,char,cosine_delta,25,Ninho,0.8772167424813332
+13,char,burrows_delta,1,Niro,0.7690747880934395
+13,char,burrows_delta,2,L’Animalerie,0.7708262174372416
+13,char,burrows_delta,3,Deen Burbigo,0.7714385918560459
+13,char,burrows_delta,4,Ademo,0.7747893776185459
+13,char,burrows_delta,5,Leck,0.7788190521260694
+13,char,burrows_delta,6,Lesram,0.7833301417759312
+13,char,burrows_delta,7,Vin’s,0.7848312979060678
+13,char,burrows_delta,8,Lacrim,0.7856363182825988
+13,char,burrows_delta,9,Panama Bende,0.787095534649551
+13,char,burrows_delta,10,Zkr,0.7896044486535736
+13,char,burrows_delta,11,Worms-T,0.790139612148092
+13,char,burrows_delta,12,Mister You,0.7920221488183712
+13,char,burrows_delta,13,SCH,0.7952629805387766
+13,char,burrows_delta,14,Nakk Mendosa,0.7998902494391906
+13,char,burrows_delta,15,Casseurs Flowters,0.8001549840954925
+13,char,burrows_delta,16,Saké (FRA),0.8002131989864756
+13,char,burrows_delta,17,S.Pri Noir,0.8024899878791403
+13,char,burrows_delta,18,5 Majeur,0.8029896034493946
+13,char,burrows_delta,19,Dosseh,0.8094608487116706
+13,char,burrows_delta,20,Denzo,0.8115803451365027
+13,char,burrows_delta,21,ISK,0.8127756997938145
+13,char,burrows_delta,22,Sam’s,0.8128943328855542
+13,char,burrows_delta,23,Guizmo,0.813603140735973
+13,char,burrows_delta,24,Zesau,0.8137566087423633
+13,char,burrows_delta,25,Caballero,0.8140499352667279
+14,mfw,cosine_delta,1,Lemon Haze,0.7579933751667057
+14,mfw,cosine_delta,2,Rimkus,0.7713578435872154
+14,mfw,cosine_delta,3,UZI (FRA),0.7715872283643351
+14,mfw,cosine_delta,4,Maes,0.781073090028445
+14,mfw,cosine_delta,5,Werenoi,0.7822961382962381
+14,mfw,cosine_delta,6,Lacrim,0.7900138348238767
+14,mfw,cosine_delta,7,Dika,0.7953363202644996
+14,mfw,cosine_delta,8,Zkr,0.7986801511013539
+14,mfw,cosine_delta,9,SDM,0.8124599986355746
+14,mfw,cosine_delta,10,Seth Gueko,0.8147481554937221
+14,mfw,cosine_delta,11,​DA Uzi,0.8158047220233757
+14,mfw,cosine_delta,12,SCH,0.8176008723409496
+14,mfw,cosine_delta,13,Kerchak,0.8182635366717258
+14,mfw,cosine_delta,14,AM La Scampia,0.8189907459123851
+14,mfw,cosine_delta,15,4Keus,0.8223447834147958
+14,mfw,cosine_delta,16,Roshi,0.8226895529839663
+14,mfw,cosine_delta,17,​​okis,0.8231630959606726
+14,mfw,cosine_delta,18,Benab,0.8242586314213765
+14,mfw,cosine_delta,19,Fresh laDouille,0.8262974019142582
+14,mfw,cosine_delta,20,Graya,0.8283873212289623
+14,mfw,cosine_delta,21,Beendo Z,0.8291075977902213
+14,mfw,cosine_delta,22,Naps,0.8293950894672938
+14,mfw,cosine_delta,23,S-Pion,0.8311759718074982
+14,mfw,cosine_delta,24,ASHE 22,0.8321607750979464
+14,mfw,cosine_delta,25,Sofiane,0.8361443436296999
+14,mfw,burrows_delta,1,Zkr,0.6635074902022866
+14,mfw,burrows_delta,2,Sofiane,0.6949759320072516
+14,mfw,burrows_delta,3,Lacrim,0.6958531908829777
+14,mfw,burrows_delta,4,S-Pion,0.7017022903394747
+14,mfw,burrows_delta,5,Nahir,0.7053661786241466
+14,mfw,burrows_delta,6,Panama Bende,0.7112729643520922
+14,mfw,burrows_delta,7,Hayce Lemsi,0.7125680169246207
+14,mfw,burrows_delta,8,L’Entourage,0.718789964611901
+14,mfw,burrows_delta,9,Rimkus,0.7233940848434766
+14,mfw,burrows_delta,10,Seth Gueko,0.724618685591371
+14,mfw,burrows_delta,11,ISK,0.725820408893963
+14,mfw,burrows_delta,12,Lemon Haze,0.726801310691431
+14,mfw,burrows_delta,13,SCH,0.7317512589253493
+14,mfw,burrows_delta,14,​DA Uzi,0.7349259669108781
+14,mfw,burrows_delta,15,Lesram,0.7384432066760408
+14,mfw,burrows_delta,16,Leck,0.7397436998373975
+14,mfw,burrows_delta,17,MMZ,0.7408858246551661
+14,mfw,burrows_delta,18,Deen Burbigo,0.7423824323241516
+14,mfw,burrows_delta,19,Sadek,0.7435403581890885
+14,mfw,burrows_delta,20,Maes,0.7458115008419506
+14,mfw,burrows_delta,21,Hatik,0.7473074858538314
+14,mfw,burrows_delta,22,Swift Guad,0.7489242973171762
+14,mfw,burrows_delta,23,Graya,0.7491703604743775
+14,mfw,burrows_delta,24,L’Animalerie,0.7492995298248579
+14,mfw,burrows_delta,25,Denzo,0.7499185642025418
+14,char,cosine_delta,1,Beendo Z,0.7777770723143069
+14,char,cosine_delta,2,UZI (FRA),0.8039695954757756
+14,char,cosine_delta,3,ISK,0.8207197529588555
+14,char,cosine_delta,4,​DA Uzi,0.832964267686632
+14,char,cosine_delta,5,Rimkus,0.8368723563995192
+14,char,cosine_delta,6,Maes,0.8369759966880511
+14,char,cosine_delta,7,ASHE 22,0.8395205403551181
+14,char,cosine_delta,8,Lemon Haze,0.8395862506361343
+14,char,cosine_delta,9,Werenoi,0.843864275126424
+14,char,cosine_delta,10,Zkr,0.844171267060196
+14,char,cosine_delta,11,Kerchak,0.8468267732266735
+14,char,cosine_delta,12,Fresh laDouille,0.8602371381804492
+14,char,cosine_delta,13,Djadja & Dinaz,0.8637304920121557
+14,char,cosine_delta,14,Roshi,0.8648260589197144
+14,char,cosine_delta,15,Lesram,0.8659349107872603
+14,char,cosine_delta,16,​​okis,0.8679434567089324
+14,char,cosine_delta,17,Dika,0.8693821679439463
+14,char,cosine_delta,18,Hornet La Frappe,0.870499696520159
+14,char,cosine_delta,19,Hatik,0.8705717594170551
+14,char,cosine_delta,20,Niaks,0.8733682034346149
+14,char,cosine_delta,21,Zbig,0.8756497099677347
+14,char,cosine_delta,22,Benab,0.8791392024356015
+14,char,cosine_delta,23,Zola,0.8808139026787744
+14,char,cosine_delta,24,BFG,0.8809539590645595
+14,char,cosine_delta,25,SDM,0.8832544828873863
+14,char,burrows_delta,1,ISK,0.7656200173757661
+14,char,burrows_delta,2,L’Entourage,0.7659075274633861
+14,char,burrows_delta,3,L’Animalerie,0.7676766551789842
+14,char,burrows_delta,4,Lacrim,0.7690154356161489
+14,char,burrows_delta,5,Zkr,0.7782518778088466
+14,char,burrows_delta,6,Panama Bende,0.7851311690007954
+14,char,burrows_delta,7,Leck,0.7909427775581928
+14,char,burrows_delta,8,Sofiane,0.7915017132527448
+14,char,burrows_delta,9,Beendo Z,0.7915404037615917
+14,char,burrows_delta,10,Hatik,0.7926805608704206
+14,char,burrows_delta,11,Nahir,0.7953500433639699
+14,char,burrows_delta,12,Worms-T,0.7958126348461523
+14,char,burrows_delta,13,Lesram,0.795985512674952
+14,char,burrows_delta,14,Hayce Lemsi,0.7967818721877041
+14,char,burrows_delta,15,Sadek,0.7971131594166609
+14,char,burrows_delta,16,Vin’s,0.7971376773965996
+14,char,burrows_delta,17,Saké (FRA),0.7973545443812275
+14,char,burrows_delta,18,Deen Burbigo,0.8005800692985907
+14,char,burrows_delta,19,S.Pri Noir,0.8024292291309651
+14,char,burrows_delta,20,Nakk Mendosa,0.8053287283018321
+14,char,burrows_delta,21,Beeby,0.8053837881573742
+14,char,burrows_delta,22,PLK,0.8087212709146082
+14,char,burrows_delta,23,Niro,0.8111169785888552
+14,char,burrows_delta,24,5 Majeur,0.8119140176813926
+14,char,burrows_delta,25,Rimkus,0.815159536530411
+15,mfw,cosine_delta,1,Lemon Haze,0.7527428268294785
+15,mfw,cosine_delta,2,Ninho,0.7726745462058935
+15,mfw,cosine_delta,3,Rimkus,0.7760847810393182
+15,mfw,cosine_delta,4,UZI (FRA),0.786258212407792
+15,mfw,cosine_delta,5,Roshi,0.7876322937857251
+15,mfw,cosine_delta,6,Lacrim,0.7989951254498129
+15,mfw,cosine_delta,7,Soso Maness,0.8029362709308117
+15,mfw,cosine_delta,8,Dika,0.8067033839880008
+15,mfw,cosine_delta,9,Fresh laDouille,0.8088785770530216
+15,mfw,cosine_delta,10,Maes,0.8157972126603529
+15,mfw,cosine_delta,11,Mister You,0.8164441512730561
+15,mfw,cosine_delta,12,Koba LaD,0.8189873850327493
+15,mfw,cosine_delta,13,Werenoi,0.8209120625937734
+15,mfw,cosine_delta,14,Graya,0.8212572940244584
+15,mfw,cosine_delta,15,SCH,0.8257207288433833
+15,mfw,cosine_delta,16,Beendo Z,0.8289458555456959
+15,mfw,cosine_delta,17,S-Pion,0.8305239238077928
+15,mfw,cosine_delta,18,Benab,0.8309104495580357
+15,mfw,cosine_delta,19,Zola,0.8319173067966037
+15,mfw,cosine_delta,20,Zkr,0.834546503318581
+15,mfw,cosine_delta,21,Landy,0.8364989619189475
+15,mfw,cosine_delta,22,Meryl,0.8375875635761154
+15,mfw,cosine_delta,23,Sefyu,0.8389943030606535
+15,mfw,cosine_delta,24,Houari,0.8390983872761093
+15,mfw,cosine_delta,25,SDM,0.8410780304537475
+15,mfw,burrows_delta,1,Zkr,0.6610104441831104
+15,mfw,burrows_delta,2,Hayce Lemsi,0.687430819845663
+15,mfw,burrows_delta,3,Lacrim,0.6918755708175941
+15,mfw,burrows_delta,4,Vald,0.6979772784173031
+15,mfw,burrows_delta,5,SCH,0.7089556777949791
+15,mfw,burrows_delta,6,S-Pion,0.7127972210728994
+15,mfw,burrows_delta,7,Lemon Haze,0.7133169035111241
+15,mfw,burrows_delta,8,Zola,0.7136404312426865
+15,mfw,burrows_delta,9,Souffrance,0.7149177848146961
+15,mfw,burrows_delta,10,Deen Burbigo,0.7171030353380909
+15,mfw,burrows_delta,11,Vin’s,0.7207952314007762
+15,mfw,burrows_delta,12,Panama Bende,0.7212197239735478
+15,mfw,burrows_delta,13,Mister You,0.7214431514844611
+15,mfw,burrows_delta,14,L’Animalerie,0.72398932674267
+15,mfw,burrows_delta,15,Leck,0.7259954574889117
+15,mfw,burrows_delta,16,Beendo Z,0.7279497358130698
+15,mfw,burrows_delta,17,Mister V,0.7289967168323842
+15,mfw,burrows_delta,18,S-Crew,0.729579796559733
+15,mfw,burrows_delta,19,Rimkus,0.7302548682677
+15,mfw,burrows_delta,20,Hatik,0.7306108766208167
+15,mfw,burrows_delta,21,Soso Maness,0.7310864983151464
+15,mfw,burrows_delta,22,GLK,0.7327152158166054
+15,mfw,burrows_delta,23,L’Entourage,0.7328657630505322
+15,mfw,burrows_delta,24,Swift Guad,0.7329758287114556
+15,mfw,burrows_delta,25,El Matador,0.7336770778275984
+15,char,cosine_delta,1,UZI (FRA),0.8054634704112476
+15,char,cosine_delta,2,Rimkus,0.8285336046135402
+15,char,cosine_delta,3,Kerchak,0.8331432512244406
+15,char,cosine_delta,4,ASHE 22,0.8335467937790186
+15,char,cosine_delta,5,Zola,0.8364322738514349
+15,char,cosine_delta,6,Lemon Haze,0.837304740306153
+15,char,cosine_delta,7,Zkr,0.8414361287479252
+15,char,cosine_delta,8,Maes,0.8432241621455606
+15,char,cosine_delta,9,Beendo Z,0.8454071411095224
+15,char,cosine_delta,10,​DA Uzi,0.8481731862638456
+15,char,cosine_delta,11,Youri,0.8517799501637289
+15,char,cosine_delta,12,ISK,0.855654632162119
+15,char,cosine_delta,13,Fresh laDouille,0.8573275857991747
+15,char,cosine_delta,14,Hornet La Frappe,0.8638622107759149
+15,char,cosine_delta,15,Werenoi,0.8658724419640877
+15,char,cosine_delta,16,Lesram,0.8667206442338556
+15,char,cosine_delta,17,Roshi,0.866815577624321
+15,char,cosine_delta,18,Ninho,0.8716117530492367
+15,char,cosine_delta,19,Worms-T,0.8718074389995432
+15,char,cosine_delta,20,Gambi,0.8739348674079802
+15,char,cosine_delta,21,​​okis,0.8745020870156142
+15,char,cosine_delta,22,Gazo,0.8756184958401707
+15,char,cosine_delta,23,Nahir,0.8756626116291304
+15,char,cosine_delta,24,Dika,0.8766076488693595
+15,char,cosine_delta,25,Benab,0.8779146441959393
+15,char,burrows_delta,1,Zkr,0.754812519705021
+15,char,burrows_delta,2,Vald,0.75728691669466
+15,char,burrows_delta,3,L’Animalerie,0.76150073023619
+15,char,burrows_delta,4,Lacrim,0.7666818139361431
+15,char,burrows_delta,5,Leck,0.7754164407531333
+15,char,burrows_delta,6,Vin’s,0.7755994301107538
+15,char,burrows_delta,7,Hayce Lemsi,0.7792842379686719
+15,char,burrows_delta,8,Nakk Mendosa,0.7878362296570665
+15,char,burrows_delta,9,Panama Bende,0.7883346701909688
+15,char,burrows_delta,10,Deen Burbigo,0.7899178558144961
+15,char,burrows_delta,11,Sam’s,0.7914633638526536
+15,char,burrows_delta,12,Seth Gueko,0.7926005116887251
+15,char,burrows_delta,13,L’Entourage,0.7935720097730172
+15,char,burrows_delta,14,Saké (FRA),0.7995385712194524
+15,char,burrows_delta,15,Zamdane,0.8002315212957355
+15,char,burrows_delta,16,5 Majeur,0.803970216559349
+15,char,burrows_delta,17,Zola,0.8045015078856856
+15,char,burrows_delta,18,Lesram,0.8046396132855248
+15,char,burrows_delta,19,Worms-T,0.8050009504144703
+15,char,burrows_delta,20,Beeby,0.8060715785176258
+15,char,burrows_delta,21,Hugo TSR,0.8063953934041674
+15,char,burrows_delta,22,R.E.D.K.,0.8084704208259018
+15,char,burrows_delta,23,ISK,0.8109457712218722
+15,char,burrows_delta,24,Denzo,0.8110771080510937
+15,char,burrows_delta,25,Lacraps,0.8111394388827439
+16,mfw,cosine_delta,1,Maes,0.75388627222764
+16,mfw,cosine_delta,2,Lemon Haze,0.7607274619773416
+16,mfw,cosine_delta,3,SCH,0.7647191887344402
+16,mfw,cosine_delta,4,UZI (FRA),0.767475249170987
+16,mfw,cosine_delta,5,Rimkus,0.7808097504739897
+16,mfw,cosine_delta,6,​DA Uzi,0.7809513602283693
+16,mfw,cosine_delta,7,Fresh laDouille,0.7828446097618241
+16,mfw,cosine_delta,8,Soso Maness,0.7873585570683947
+16,mfw,cosine_delta,9,Koba LaD,0.7884566711662095
+16,mfw,cosine_delta,10,Beendo Z,0.798865996980781
+16,mfw,cosine_delta,11,Dika,0.799436691072936
+16,mfw,cosine_delta,12,RK,0.8043819988630121
+16,mfw,cosine_delta,13,Kerchak,0.8076904105053361
+16,mfw,cosine_delta,14,Werenoi,0.8164712058885866
+16,mfw,cosine_delta,15,ASHE 22,0.81792362866897
+16,mfw,cosine_delta,16,Naps,0.8188431174694351
+16,mfw,cosine_delta,17,YL,0.8197354195697101
+16,mfw,cosine_delta,18,Lacrim,0.8222271122274696
+16,mfw,cosine_delta,19,Djadja & Dinaz,0.8259024495535396
+16,mfw,cosine_delta,20,Sofiane,0.828884185332818
+16,mfw,cosine_delta,21,AM La Scampia,0.8319183620984689
+16,mfw,cosine_delta,22,Gambi,0.8398145897430419
+16,mfw,cosine_delta,23,Graya,0.841031073360838
+16,mfw,cosine_delta,24,ISK,0.8426208638802527
+16,mfw,cosine_delta,25,Zola,0.8426785768364313
+16,mfw,burrows_delta,1,Hayce Lemsi,0.6763023996731795
+16,mfw,burrows_delta,2,Zkr,0.6825584876932773
+16,mfw,burrows_delta,3,YL,0.683623702247683
+16,mfw,burrows_delta,4,S-Pion,0.6957389372443941
+16,mfw,burrows_delta,5,Maes,0.701683936720752
+16,mfw,burrows_delta,6,Soso Maness,0.7043362510709226
+16,mfw,burrows_delta,7,Dibson,0.7053755726661418
+16,mfw,burrows_delta,8,ISK,0.706135313921179
+16,mfw,burrows_delta,9,Vald,0.7070034095586095
+16,mfw,burrows_delta,10,Beendo Z,0.7079492329912523
+16,mfw,burrows_delta,11,Guizmo,0.7105476871996578
+16,mfw,burrows_delta,12,Lemon Haze,0.7123546128462189
+16,mfw,burrows_delta,13,Rimkus,0.7151075427406695
+16,mfw,burrows_delta,14,Koba LaD,0.7202984666111364
+16,mfw,burrows_delta,15,Hatik,0.7203110101582914
+16,mfw,burrows_delta,16,Lesram,0.7204474053973973
+16,mfw,burrows_delta,17,Lacrim,0.7208721465084733
+16,mfw,burrows_delta,18,Mister V,0.7232113709354665
+16,mfw,burrows_delta,19,Nahir,0.7239287988424024
+16,mfw,burrows_delta,20,PLK,0.7243476113134223
+16,mfw,burrows_delta,21,L’Animalerie,0.7269054432666446
+16,mfw,burrows_delta,22,​DA Uzi,0.7281761885185158
+16,mfw,burrows_delta,23,S-Crew,0.730762126076722
+16,mfw,burrows_delta,24,Seth Gueko,0.7312029554617936
+16,mfw,burrows_delta,25,Leck,0.7326845132902908
+16,char,cosine_delta,1,Zkr,0.8066402633374743
+16,char,cosine_delta,2,Kerchak,0.814840863129865
+16,char,cosine_delta,3,Beendo Z,0.8150660964333987
+16,char,cosine_delta,4,RK,0.8191353553550815
+16,char,cosine_delta,5,Maes,0.8220590403532899
+16,char,cosine_delta,6,ISK,0.8230877881011316
+16,char,cosine_delta,7,UZI (FRA),0.8259287964096576
+16,char,cosine_delta,8,Rimkus,0.8323357910895257
+16,char,cosine_delta,9,ASHE 22,0.834451747350962
+16,char,cosine_delta,10,​DA Uzi,0.8354708976109427
+16,char,cosine_delta,11,Zola,0.8398759266453515
+16,char,cosine_delta,12,Lemon Haze,0.8401915833450839
+16,char,cosine_delta,13,Fresh laDouille,0.8445385055479726
+16,char,cosine_delta,14,Werenoi,0.847330685649169
+16,char,cosine_delta,15,Leto,0.8603268643300002
+16,char,cosine_delta,16,Gambi,0.8620977053256653
+16,char,cosine_delta,17,Dika,0.862548375927338
+16,char,cosine_delta,18,Koba LaD,0.8638763784675536
+16,char,cosine_delta,19,Bosh,0.8682423990776247
+16,char,cosine_delta,20,Seth Gueko,0.8717683257709943
+16,char,cosine_delta,21,​​okis,0.872120022059687
+16,char,cosine_delta,22,Lesram,0.8721617373940407
+16,char,cosine_delta,23,Soso Maness,0.8739083495114156
+16,char,cosine_delta,24,BFG,0.8755350817404235
+16,char,cosine_delta,25,Djadja & Dinaz,0.8775484929578206
+16,char,burrows_delta,1,Zkr,0.7345430952943689
+16,char,burrows_delta,2,ISK,0.7578432986220441
+16,char,burrows_delta,3,L’Animalerie,0.7602600067273534
+16,char,burrows_delta,4,Vin’s,0.764997756648135
+16,char,burrows_delta,5,YL,0.7752413620508302
+16,char,burrows_delta,6,Hayce Lemsi,0.7800659686632413
+16,char,burrows_delta,7,Saké (FRA),0.7846919865614111
+16,char,burrows_delta,8,Vald,0.786976676092026
+16,char,burrows_delta,9,PLK,0.7875309743467733
+16,char,burrows_delta,10,Sam’s,0.7893075904367549
+16,char,burrows_delta,11,Dibson,0.7914164712272149
+16,char,burrows_delta,12,S-Crew,0.7922307906014203
+16,char,burrows_delta,13,Hugo TSR,0.7945364143997012
+16,char,burrows_delta,14,Nahir,0.7952778134525509
+16,char,burrows_delta,15,Worms-T,0.7952986016607352
+16,char,burrows_delta,16,Deen Burbigo,0.7965908849645691
+16,char,burrows_delta,17,Seth Gueko,0.7968530466829267
+16,char,burrows_delta,18,Leck,0.7973025629691556
+16,char,burrows_delta,19,Soso Maness,0.8041574470812959
+16,char,burrows_delta,20,Souffrance,0.8047557303992691
+16,char,burrows_delta,21,Zikxo,0.8048015961267763
+16,char,burrows_delta,22,Nakk Mendosa,0.805423199015353
+16,char,burrows_delta,23,Sopico,0.8067723872547049
+16,char,burrows_delta,24,Beendo Z,0.8079580754267706
+16,char,burrows_delta,25,Guizmo,0.8091083707854092
+17,mfw,cosine_delta,1,SCH,0.7375777676459998
+17,mfw,cosine_delta,2,Mister You,0.7399597318647889
+17,mfw,cosine_delta,3,Werenoi,0.747127422307325
+17,mfw,cosine_delta,4,Lemon Haze,0.7548359067741091
+17,mfw,cosine_delta,5,Fresh laDouille,0.7679877698856434
+17,mfw,cosine_delta,6,Lacrim,0.7760343239516246
+17,mfw,cosine_delta,7,Rimkus,0.7780769327800627
+17,mfw,cosine_delta,8,Graya,0.7823886937675051
+17,mfw,cosine_delta,9,ISK,0.7845545783120311
+17,mfw,cosine_delta,10,GLK,0.798869703858241
+17,mfw,cosine_delta,11,Roshi,0.8060670051967433
+17,mfw,cosine_delta,12,Zola,0.8070222955283625
+17,mfw,cosine_delta,13,Dika,0.8074864708784071
+17,mfw,cosine_delta,14,Soso Maness,0.8153420705185704
+17,mfw,cosine_delta,15,AM La Scampia,0.8162403965361571
+17,mfw,cosine_delta,16,Kerchak,0.820268784426837
+17,mfw,cosine_delta,17,Maes,0.8254755249499648
+17,mfw,cosine_delta,18,Lesram,0.8301925026194679
+17,mfw,cosine_delta,19,Zikxo,0.8348306191846049
+17,mfw,cosine_delta,20,UZI (FRA),0.8358741363636772
+17,mfw,cosine_delta,21,ASHE 22,0.8360934164373077
+17,mfw,cosine_delta,22,Houari,0.8367322098778094
+17,mfw,cosine_delta,23,S-Pion,0.8382275364838263
+17,mfw,cosine_delta,24,So La Lune,0.8424412402155436
+17,mfw,cosine_delta,25,OBOY,0.8440520852023916
+17,mfw,burrows_delta,1,Lacrim,0.696734803725453
+17,mfw,burrows_delta,2,S-Pion,0.6987412917081406
+17,mfw,burrows_delta,3,SCH,0.7027995540651321
+17,mfw,burrows_delta,4,ISK,0.7041178311364292
+17,mfw,burrows_delta,5,Zikxo,0.7048123435603336
+17,mfw,burrows_delta,6,Svinkels,0.7132216740624546
+17,mfw,burrows_delta,7,GLK,0.7137163845691269
+17,mfw,burrows_delta,8,Rohff,0.7155714491380126
+17,mfw,burrows_delta,9,S-Crew,0.7198422204759597
+17,mfw,burrows_delta,10,Sadek,0.7201367172591204
+17,mfw,burrows_delta,11,Hayce Lemsi,0.721618426456111
+17,mfw,burrows_delta,12,Mister V,0.7218302532222677
+17,mfw,burrows_delta,13,Zkr,0.7229037292733568
+17,mfw,burrows_delta,14,Lemon Haze,0.7230379261555981
+17,mfw,burrows_delta,15,Mister You,0.723933676788716
+17,mfw,burrows_delta,16,Zola,0.7273113334752195
+17,mfw,burrows_delta,17,Soso Maness,0.7284646803816386
+17,mfw,burrows_delta,18,Beendo Z,0.7295573740384023
+17,mfw,burrows_delta,19,L’Animalerie,0.7311367190299963
+17,mfw,burrows_delta,20,Sexion d’Assaut,0.7329317325590795
+17,mfw,burrows_delta,21,Graya,0.7343871969269041
+17,mfw,burrows_delta,22,RK,0.7348656949755292
+17,mfw,burrows_delta,23,Nahir,0.7352759351294031
+17,mfw,burrows_delta,24,Lesram,0.7353423988772658
+17,mfw,burrows_delta,25,Rimkus,0.7383699320848643
+17,char,cosine_delta,1,Beendo Z,0.7975206606193788
+17,char,cosine_delta,2,Rimkus,0.8253555215610252
+17,char,cosine_delta,3,UZI (FRA),0.8259650291545662
+17,char,cosine_delta,4,ISK,0.827818437333071
+17,char,cosine_delta,5,Werenoi,0.8284502192496734
+17,char,cosine_delta,6,Kerchak,0.8339765036168929
+17,char,cosine_delta,7,Fresh laDouille,0.8376108356084061
+17,char,cosine_delta,8,Lemon Haze,0.8403335750040757
+17,char,cosine_delta,9,ASHE 22,0.8461168650250332
+17,char,cosine_delta,10,SCH,0.8468641610731473
+17,char,cosine_delta,11,​​okis,0.8523503515856594
+17,char,cosine_delta,12,Zola,0.8527606045256441
+17,char,cosine_delta,13,Mister You,0.8535754373663569
+17,char,cosine_delta,14,Worms-T,0.8576197491709877
+17,char,cosine_delta,15,Zkr,0.8581610787991539
+17,char,cosine_delta,16,Maes,0.859982225819487
+17,char,cosine_delta,17,Ninho,0.8622892197787437
+17,char,cosine_delta,18,Niaks,0.8644220101244527
+17,char,cosine_delta,19,Djadja & Dinaz,0.8651381228830672
+17,char,cosine_delta,20,Lesram,0.8651500765414748
+17,char,cosine_delta,21,Roshi,0.8675739013954846
+17,char,cosine_delta,22,BFG,0.8675758413046307
+17,char,cosine_delta,23,GLK,0.8717014761066089
+17,char,cosine_delta,24,Nahir,0.8772976919614769
+17,char,cosine_delta,25,MHD,0.8803529343148728
+17,char,burrows_delta,1,S-Crew,0.7548511915257653
+17,char,burrows_delta,2,L’Animalerie,0.7653416261892798
+17,char,burrows_delta,3,Zkr,0.7747003190933895
+17,char,burrows_delta,4,Sam’s,0.7770638591412
+17,char,burrows_delta,5,Zola,0.7802178512872309
+17,char,burrows_delta,6,Sadek,0.7823474480864094
+17,char,burrows_delta,7,Worms-T,0.7824819542187903
+17,char,burrows_delta,8,Nakk Mendosa,0.7845545905854343
+17,char,burrows_delta,9,ISK,0.7850532151920476
+17,char,burrows_delta,10,Niro,0.7869792760206763
+17,char,burrows_delta,11,Zikxo,0.7875846662975104
+17,char,burrows_delta,12,Nahir,0.7883271957311014
+17,char,burrows_delta,13,Leck,0.7892822492904382
+17,char,burrows_delta,14,Saké (FRA),0.7903405100266543
+17,char,burrows_delta,15,Vin’s,0.7949906582055358
+17,char,burrows_delta,16,Sneazzy,0.798688513084596
+17,char,burrows_delta,17,Ademo,0.7989155069508297
+17,char,burrows_delta,18,SCH,0.8006620762036695
+17,char,burrows_delta,19,Rohff,0.8019464158869961
+17,char,burrows_delta,20,Hugo TSR,0.8022458610817467
+17,char,burrows_delta,21,Sopico,0.8022915166958525
+17,char,burrows_delta,22,Lesram,0.8033093746672801
+17,char,burrows_delta,23,S.Pri Noir,0.8047183253311347
+17,char,burrows_delta,24,Mister You,0.8068547350966541
+17,char,burrows_delta,25,Panama Bende,0.8068581097528569
+18,mfw,cosine_delta,1,SCH,0.7503051593557095
+18,mfw,cosine_delta,2,GLK,0.7748991782185857
+18,mfw,cosine_delta,3,Beendo Z,0.7749871726272939
+18,mfw,cosine_delta,4,Lemon Haze,0.7780627866535444
+18,mfw,cosine_delta,5,Rimkus,0.7811166705566568
+18,mfw,cosine_delta,6,Roshi,0.7831266891443143
+18,mfw,cosine_delta,7,Kerchak,0.7918924466927806
+18,mfw,cosine_delta,8,Soso Maness,0.8127682996132553
+18,mfw,cosine_delta,9,Dika,0.8194947055101092
+18,mfw,cosine_delta,10,Werenoi,0.8240304720755519
+18,mfw,cosine_delta,11,Fresh laDouille,0.8291309303273305
+18,mfw,cosine_delta,12,Zola,0.8298507110466333
+18,mfw,cosine_delta,13,Graya,0.834421381123805
+18,mfw,cosine_delta,14,S-Pion,0.8364533778337214
+18,mfw,cosine_delta,15,Maes,0.8368173077775722
+18,mfw,cosine_delta,16,Lesram,0.8408030015357838
+18,mfw,cosine_delta,17,Meryl,0.840935541144257
+18,mfw,cosine_delta,18,Zbig,0.8452644848299135
+18,mfw,cosine_delta,19,JuL,0.8465089494620801
+18,mfw,cosine_delta,20,UZI (FRA),0.8484927924533555
+18,mfw,cosine_delta,21,Nahir,0.8500354311052449
+18,mfw,cosine_delta,22,ASHE 22,0.852231906866304
+18,mfw,cosine_delta,23,​​okis,0.8527748993180619
+18,mfw,cosine_delta,24,Lacrim,0.8542663416077081
+18,mfw,cosine_delta,25,100 Blaze,0.8574743634594736
+18,mfw,burrows_delta,1,Guizmo,0.6723475332956393
+18,mfw,burrows_delta,2,S-Pion,0.6922469263909298
+18,mfw,burrows_delta,3,SCH,0.6953557686157746
+18,mfw,burrows_delta,4,Zkr,0.7012048277244157
+18,mfw,burrows_delta,5,Panama Bende,0.7061329276431925
+18,mfw,burrows_delta,6,Beendo Z,0.7062586785931576
+18,mfw,burrows_delta,7,Deen Burbigo,0.7064796013791494
+18,mfw,burrows_delta,8,GLK,0.7104847785334943
+18,mfw,burrows_delta,9,Mister V,0.7180634917134736
+18,mfw,burrows_delta,10,Lemon Haze,0.7202347317431218
+18,mfw,burrows_delta,11,Nahir,0.7210720339384509
+18,mfw,burrows_delta,12,Aladin 135,0.7217254066582514
+18,mfw,burrows_delta,13,Vin’s,0.7226785845092775
+18,mfw,burrows_delta,14,Lacrim,0.7267062966700261
+18,mfw,burrows_delta,15,Dibson,0.7269717194545321
+18,mfw,burrows_delta,16,Rimkus,0.7301591668685234
+18,mfw,burrows_delta,17,RK,0.7303475393569342
+18,mfw,burrows_delta,18,L’Animalerie,0.7304451522516288
+18,mfw,burrows_delta,19,Worms-T,0.7317894697716206
+18,mfw,burrows_delta,20,Hugo TSR,0.7319765729610794
+18,mfw,burrows_delta,21,Ninho,0.7341252466361357
+18,mfw,burrows_delta,22,Leck,0.734130766806045
+18,mfw,burrows_delta,23,Intouchable,0.7347751219933627
+18,mfw,burrows_delta,24,Zikxo,0.7353518921937067
+18,mfw,burrows_delta,25,Zola,0.7354421651438545
+18,char,cosine_delta,1,Beendo Z,0.7972877506850966
+18,char,cosine_delta,2,Zkr,0.8215974023334742
+18,char,cosine_delta,3,Kerchak,0.8219210623587359
+18,char,cosine_delta,4,Maes,0.8251557813708865
+18,char,cosine_delta,5,Lesram,0.8255298736837606
+18,char,cosine_delta,6,Rimkus,0.833767172402591
+18,char,cosine_delta,7,SCH,0.8376259121073717
+18,char,cosine_delta,8,Werenoi,0.8378031994079237
+18,char,cosine_delta,9,Roshi,0.839992687347845
+18,char,cosine_delta,10,Lemon Haze,0.841569478377672
+18,char,cosine_delta,11,Nahir,0.8476439314301549
+18,char,cosine_delta,12,GLK,0.8492197218398176
+18,char,cosine_delta,13,ASHE 22,0.8493989264012988
+18,char,cosine_delta,14,Niro,0.8542817202575592
+18,char,cosine_delta,15,UZI (FRA),0.8543085367105783
+18,char,cosine_delta,16,Worms-T,0.8627520220256908
+18,char,cosine_delta,17,JuL,0.8652957390929267
+18,char,cosine_delta,18,Zola,0.8656276087979123
+18,char,cosine_delta,19,Dika,0.8679323992667238
+18,char,cosine_delta,20,ISK,0.868377062452935
+18,char,cosine_delta,21,Gazo,0.8728948958145905
+18,char,cosine_delta,22,BFG,0.8736785872007099
+18,char,cosine_delta,23,Djadja & Dinaz,0.8743136640686127
+18,char,cosine_delta,24,4Keus,0.874522851066725
+18,char,cosine_delta,25,​DA Uzi,0.8750388854065698
+18,char,burrows_delta,1,Guizmo,0.741394272576307
+18,char,burrows_delta,2,Zkr,0.7611723514270728
+18,char,burrows_delta,3,L’Animalerie,0.7621802130186015
+18,char,burrows_delta,4,Panama Bende,0.7700036747544462
+18,char,burrows_delta,5,Deen Burbigo,0.7728789082024669
+18,char,burrows_delta,6,Zikxo,0.7809285435950878
+18,char,burrows_delta,7,Leck,0.783941264435365
+18,char,burrows_delta,8,Worms-T,0.7846407736636927
+18,char,burrows_delta,9,Sam’s,0.7922862226573181
+18,char,burrows_delta,10,SCH,0.7944697678241202
+18,char,burrows_delta,11,ISK,0.7949189083190709
+18,char,burrows_delta,12,Dibson,0.7952538487671255
+18,char,burrows_delta,13,Nahir,0.7953292392578133
+18,char,burrows_delta,14,Vin’s,0.7967336550352754
+18,char,burrows_delta,15,Niro,0.7970639513550049
+18,char,burrows_delta,16,5 Majeur,0.7993470765217993
+18,char,burrows_delta,17,L’Entourage,0.8008187064679966
+18,char,burrows_delta,18,Saké (FRA),0.8029955789381628
+18,char,burrows_delta,19,Nakk Mendosa,0.8042849604485388
+18,char,burrows_delta,20,Lacrim,0.804897445421289
+18,char,burrows_delta,21,Hugo TSR,0.8057083469630112
+18,char,burrows_delta,22,S-Crew,0.8059121058475415
+18,char,burrows_delta,23,Rimkus,0.8076832474272122
+18,char,burrows_delta,24,GLK,0.8084200247581087
+18,char,burrows_delta,25,Lesram,0.812395323283933
+19,mfw,cosine_delta,1,Werenoi,0.7483361074485297
+19,mfw,cosine_delta,2,Maes,0.7620679072500579
+19,mfw,cosine_delta,3,Lemon Haze,0.772313817527082
+19,mfw,cosine_delta,4,Beendo Z,0.7736233537116202
+19,mfw,cosine_delta,5,Soso Maness,0.7759557593713677
+19,mfw,cosine_delta,6,Ninho,0.7769833950006135
+19,mfw,cosine_delta,7,SCH,0.778893191277948
+19,mfw,cosine_delta,8,Kerchak,0.782740770773912
+19,mfw,cosine_delta,9,Rimkus,0.7852739508921052
+19,mfw,cosine_delta,10,Graya,0.7868263617639669
+19,mfw,cosine_delta,11,Seth Gueko,0.7964914957829735
+19,mfw,cosine_delta,12,Fresh laDouille,0.8001383276653251
+19,mfw,cosine_delta,13,Zola,0.8045043267364915
+19,mfw,cosine_delta,14,Dika,0.8092204623975063
+19,mfw,cosine_delta,15,GLK,0.8113785010147709
+19,mfw,cosine_delta,16,UZI (FRA),0.8163243768043833
+19,mfw,cosine_delta,17,SDM,0.8192138246315448
+19,mfw,cosine_delta,18,​DA Uzi,0.8234950382568933
+19,mfw,cosine_delta,19,ISK,0.8273495592627997
+19,mfw,cosine_delta,20,Hornet La Frappe,0.8335379828048927
+19,mfw,cosine_delta,21,100 Blaze,0.8369147226961242
+19,mfw,cosine_delta,22,Koba LaD,0.8386475516878327
+19,mfw,cosine_delta,23,Heuss L’enfoiré,0.8399772920500734
+19,mfw,cosine_delta,24,S-Pion,0.8400214067800721
+19,mfw,cosine_delta,25,Zkr,0.8450298619218013
+19,mfw,burrows_delta,1,Zkr,0.694775173530804
+19,mfw,burrows_delta,2,S-Pion,0.7030983323842377
+19,mfw,burrows_delta,3,Soso Maness,0.703227574288037
+19,mfw,burrows_delta,4,Beendo Z,0.7041583814609672
+19,mfw,burrows_delta,5,Lacrim,0.7091722945786264
+19,mfw,burrows_delta,6,Ninho,0.7097879303502307
+19,mfw,burrows_delta,7,SCH,0.7123794384846545
+19,mfw,burrows_delta,8,Panama Bende,0.7139971433579322
+19,mfw,burrows_delta,9,GLK,0.7140213601245864
+19,mfw,burrows_delta,10,Dibson,0.7217518900762862
+19,mfw,burrows_delta,11,Rimkus,0.7219233521388277
+19,mfw,burrows_delta,12,Zola,0.722077605989221
+19,mfw,burrows_delta,13,Seth Gueko,0.7241143514596095
+19,mfw,burrows_delta,14,YL,0.7249903761117188
+19,mfw,burrows_delta,15,Lemon Haze,0.725454658867696
+19,mfw,burrows_delta,16,Vald,0.7263755189844785
+19,mfw,burrows_delta,17,​DA Uzi,0.7296278303803677
+19,mfw,burrows_delta,18,ISK,0.7325296026258419
+19,mfw,burrows_delta,19,Deen Burbigo,0.7333721425270743
+19,mfw,burrows_delta,20,Sadek,0.7334759929880829
+19,mfw,burrows_delta,21,Leck,0.7352027878832023
+19,mfw,burrows_delta,22,L’Animalerie,0.7359671974024413
+19,mfw,burrows_delta,23,Sam’s,0.7371170097410218
+19,mfw,burrows_delta,24,Sofiane,0.7406098466334929
+19,mfw,burrows_delta,25,Denzo,0.7441851502650367
+19,char,cosine_delta,1,Beendo Z,0.8043475346893296
+19,char,cosine_delta,2,UZI (FRA),0.8111743179470482
+19,char,cosine_delta,3,Kerchak,0.8135960454024411
+19,char,cosine_delta,4,SCH,0.8218905491283792
+19,char,cosine_delta,5,Zkr,0.8231495473325855
+19,char,cosine_delta,6,​DA Uzi,0.8297297934214832
+19,char,cosine_delta,7,GLK,0.8301563380781192
+19,char,cosine_delta,8,Ninho,0.8318967658897692
+19,char,cosine_delta,9,Lesram,0.8337846063032102
+19,char,cosine_delta,10,Rimkus,0.8345186618012366
+19,char,cosine_delta,11,Lemon Haze,0.8427743633959529
+19,char,cosine_delta,12,Zola,0.8438236330136709
+19,char,cosine_delta,13,Werenoi,0.851553855539142
+19,char,cosine_delta,14,Gambi,0.8562351799152434
+19,char,cosine_delta,15,ISK,0.858943543596689
+19,char,cosine_delta,16,Bosh,0.8606045731067801
+19,char,cosine_delta,17,Maes,0.8676990937067268
+19,char,cosine_delta,18,ASHE 22,0.868115287848565
+19,char,cosine_delta,19,Roshi,0.8690497102247499
+19,char,cosine_delta,20,BFG,0.8691626053550761
+19,char,cosine_delta,21,RK,0.8694990596091756
+19,char,cosine_delta,22,Heuss L’enfoiré,0.8703935275467269
+19,char,cosine_delta,23,PRIME,0.8706542270722827
+19,char,cosine_delta,24,Seth Gueko,0.8721346787793856
+19,char,cosine_delta,25,Dika,0.8722319991933856
+19,char,burrows_delta,1,Zkr,0.7664781079266557
+19,char,burrows_delta,2,L’Animalerie,0.7682016841942989
+19,char,burrows_delta,3,Panama Bende,0.7773930487506568
+19,char,burrows_delta,4,Nakk Mendosa,0.7829713770029384
+19,char,burrows_delta,5,Nahir,0.7849893182271986
+19,char,burrows_delta,6,Ninho,0.7854581852118199
+19,char,burrows_delta,7,Soso Maness,0.7856557344964255
+19,char,burrows_delta,8,Leck,0.7866569448734129
+19,char,burrows_delta,9,Beendo Z,0.7868075234215586
+19,char,burrows_delta,10,GLK,0.787688577308567
+19,char,burrows_delta,11,Lacrim,0.7879355185961334
+19,char,burrows_delta,12,ISK,0.7897909615454671
+19,char,burrows_delta,13,Sadek,0.7923220218179198
+19,char,burrows_delta,14,Vin’s,0.7950469383465185
+19,char,burrows_delta,15,Saké (FRA),0.7977015007359003
+19,char,burrows_delta,16,Dibson,0.798744532230218
+19,char,burrows_delta,17,L’Entourage,0.8067584730953828
+19,char,burrows_delta,18,SCH,0.8074699338764902
+19,char,burrows_delta,19,Lesram,0.807712596803903
+19,char,burrows_delta,20,S-Crew,0.8093764902778807
+19,char,burrows_delta,21,5 Majeur,0.8107190128211591
+19,char,burrows_delta,22,Sam’s,0.8126659830284202
+19,char,burrows_delta,23,Volts Face,0.8130699707292
+19,char,burrows_delta,24,YL,0.8135520870810168
+19,char,burrows_delta,25,Bigflo & Oli,0.813952677258709
+20,mfw,cosine_delta,1,Lacrim,0.7330559894490449
+20,mfw,cosine_delta,2,Werenoi,0.7548122262115924
+20,mfw,cosine_delta,3,GLK,0.7579424198206619
+20,mfw,cosine_delta,4,Lemon Haze,0.7592152165410577
+20,mfw,cosine_delta,5,Soso Maness,0.7742204907167423
+20,mfw,cosine_delta,6,Zola,0.7923558373136479
+20,mfw,cosine_delta,7,Mister You,0.7941287378500901
+20,mfw,cosine_delta,8,Beendo Z,0.799236584079597
+20,mfw,cosine_delta,9,Kerchak,0.8076788568107743
+20,mfw,cosine_delta,10,Rimkus,0.809638769054422
+20,mfw,cosine_delta,11,Roshi,0.8105369156493869
+20,mfw,cosine_delta,12,Dika,0.8118751974866381
+20,mfw,cosine_delta,13,UZI (FRA),0.8124697990115375
+20,mfw,cosine_delta,14,Maes,0.8144760183714513
+20,mfw,cosine_delta,15,ISK,0.8189512749739113
+20,mfw,cosine_delta,16,Graya,0.8196265247824301
+20,mfw,cosine_delta,17,AM La Scampia,0.8237065791801363
+20,mfw,cosine_delta,18,Hooss,0.8278995020133169
+20,mfw,cosine_delta,19,​DA Uzi,0.833206591758095
+20,mfw,cosine_delta,20,SCH,0.8334706097113784
+20,mfw,cosine_delta,21,Bosh,0.8336977859410971
+20,mfw,cosine_delta,22,Moha La Squale,0.8373005977699647
+20,mfw,cosine_delta,23,Zkr,0.8384842512222638
+20,mfw,cosine_delta,24,Lesram,0.8419192111511818
+20,mfw,cosine_delta,25,Sofiane,0.842501897498648
+20,mfw,burrows_delta,1,Lacrim,0.6724489036965013
+20,mfw,burrows_delta,2,​DA Uzi,0.6864644075818284
+20,mfw,burrows_delta,3,Zkr,0.6882604219896695
+20,mfw,burrows_delta,4,Sofiane,0.692693383818365
+20,mfw,burrows_delta,5,GLK,0.7001073023624902
+20,mfw,burrows_delta,6,S-Pion,0.7037291235334122
+20,mfw,burrows_delta,7,Nahir,0.7069917717719932
+20,mfw,burrows_delta,8,Zola,0.708856949278107
+20,mfw,burrows_delta,9,ISK,0.7168734968733426
+20,mfw,burrows_delta,10,Lemon Haze,0.7203396977724809
+20,mfw,burrows_delta,11,Vin’s,0.7209850903714262
+20,mfw,burrows_delta,12,Sniper,0.7256066298188583
+20,mfw,burrows_delta,13,Nekfeu,0.7267071904435076
+20,mfw,burrows_delta,14,Panama Bende,0.7268384762924597
+20,mfw,burrows_delta,15,RK,0.7270106738990649
+20,mfw,burrows_delta,16,L’Animalerie,0.7276446494866953
+20,mfw,burrows_delta,17,Beendo Z,0.7281823504010535
+20,mfw,burrows_delta,18,Leck,0.7283898989934477
+20,mfw,burrows_delta,19,Sadek,0.7302475132110677
+20,mfw,burrows_delta,20,Rimkus,0.730865543660199
+20,mfw,burrows_delta,21,Dibson,0.7310824631587405
+20,mfw,burrows_delta,22,Sam’s,0.7329336572457672
+20,mfw,burrows_delta,23,Hayce Lemsi,0.7334684698706678
+20,mfw,burrows_delta,24,YL,0.7341081385672098
+20,mfw,burrows_delta,25,Swift Guad,0.7352360730891709
+20,char,cosine_delta,1,Beendo Z,0.7893996184972827
+20,char,cosine_delta,2,Roshi,0.8150748470924722
+20,char,cosine_delta,3,UZI (FRA),0.8289800027964653
+20,char,cosine_delta,4,Zkr,0.8296460934759082
+20,char,cosine_delta,5,Kerchak,0.8318184653225527
+20,char,cosine_delta,6,ISK,0.8403847681870606
+20,char,cosine_delta,7,RK,0.8413152604442735
+20,char,cosine_delta,8,Lemon Haze,0.8415112557041793
+20,char,cosine_delta,9,Werenoi,0.8445938833542682
+20,char,cosine_delta,10,Zola,0.8460193752768059
+20,char,cosine_delta,11,Maes,0.8495796822242865
+20,char,cosine_delta,12,Rimkus,0.8503020026341835
+20,char,cosine_delta,13,Bosh,0.8602610725451296
+20,char,cosine_delta,14,Djadja & Dinaz,0.8647866081310089
+20,char,cosine_delta,15,Lesram,0.8648976037922136
+20,char,cosine_delta,16,Hooss,0.8652377947498278
+20,char,cosine_delta,17,​DA Uzi,0.8659715507993815
+20,char,cosine_delta,18,Mister You,0.8681692126840012
+20,char,cosine_delta,19,ASHE 22,0.8682918748958686
+20,char,cosine_delta,20,Lacrim,0.8746055697046533
+20,char,cosine_delta,21,GLK,0.8769326646277765
+20,char,cosine_delta,22,BFG,0.8771804278087971
+20,char,cosine_delta,23,Dika,0.877780482772788
+20,char,cosine_delta,24,Heuss L’enfoiré,0.879525105084149
+20,char,cosine_delta,25,SDM,0.8799855853225519
+20,char,burrows_delta,1,Zkr,0.7493554317854754
+20,char,burrows_delta,2,Vin’s,0.7613295374671297
+20,char,burrows_delta,3,L’Animalerie,0.7622589878564918
+20,char,burrows_delta,4,S-Crew,0.7685500916302502
+20,char,burrows_delta,5,Sam’s,0.7695553419960309
+20,char,burrows_delta,6,Leck,0.7788406776944214
+20,char,burrows_delta,7,Lacrim,0.7793010027694881
+20,char,burrows_delta,8,Caballero,0.7887017116721293
+20,char,burrows_delta,9,Nahir,0.7890715548503201
+20,char,burrows_delta,10,Lesram,0.7897542393742892
+20,char,burrows_delta,11,Panama Bende,0.7913648036425981
+20,char,burrows_delta,12,Sofiane,0.7943655688347827
+20,char,burrows_delta,13,Niro,0.7944696069652707
+20,char,burrows_delta,14,Dibson,0.7953166270196586
+20,char,burrows_delta,15,5 Majeur,0.7984225852248352
+20,char,burrows_delta,16,Nakk Mendosa,0.7996862335149924
+20,char,burrows_delta,17,Hayce Lemsi,0.8029570106130053
+20,char,burrows_delta,18,Sneazzy,0.8067788351995073
+20,char,burrows_delta,19,Sadek,0.8069539503176112
+20,char,burrows_delta,20,Zesau,0.8074882715595573
+20,char,burrows_delta,21,Zikxo,0.8079514673789228
+20,char,burrows_delta,22,Beendo Z,0.8111292463940708
+20,char,burrows_delta,23,Worms-T,0.8112371042717839
+20,char,burrows_delta,24,​DA Uzi,0.811363139873807
+20,char,burrows_delta,25,ISK,0.8128500322962046
+21,mfw,cosine_delta,1,SCH,0.7591553787579498
+21,mfw,cosine_delta,2,Lemon Haze,0.7622103666876838
+21,mfw,cosine_delta,3,Rimkus,0.7741001853169963
+21,mfw,cosine_delta,4,Kerchak,0.7898962344695637
+21,mfw,cosine_delta,5,Dika,0.7916601215936998
+21,mfw,cosine_delta,6,UZI (FRA),0.7982695009595873
+21,mfw,cosine_delta,7,Niro,0.801576707794574
+21,mfw,cosine_delta,8,Fresh laDouille,0.8039027756460833
+21,mfw,cosine_delta,9,Mister You,0.8059845334449476
+21,mfw,cosine_delta,10,Graya,0.8116164388671671
+21,mfw,cosine_delta,11,Ninho,0.8141732613586254
+21,mfw,cosine_delta,12,Maes,0.8173416033132147
+21,mfw,cosine_delta,13,Soso Maness,0.824575890632415
+21,mfw,cosine_delta,14,Zkr,0.8247788564434184
+21,mfw,cosine_delta,15,Werenoi,0.8272651185943265
+21,mfw,cosine_delta,16,GLK,0.8276500882344734
+21,mfw,cosine_delta,17,Sofiane,0.8285282243255089
+21,mfw,cosine_delta,18,Guizmo,0.8360403421909253
+21,mfw,cosine_delta,19,Youri,0.8392849458156015
+21,mfw,cosine_delta,20,YL,0.8413209163664271
+21,mfw,cosine_delta,21,Worms-T,0.8420751993540851
+21,mfw,cosine_delta,22,Meryl,0.8459579148789075
+21,mfw,cosine_delta,23,S-Pion,0.8467066613659442
+21,mfw,cosine_delta,24,Zbig,0.8473050783548627
+21,mfw,cosine_delta,25,Roshi,0.8474027146998928
+21,mfw,burrows_delta,1,Zkr,0.6504455963388447
+21,mfw,burrows_delta,2,Guizmo,0.6879349248966858
+21,mfw,burrows_delta,3,S-Pion,0.6998111098782013
+21,mfw,burrows_delta,4,Nekfeu,0.7066511956746724
+21,mfw,burrows_delta,5,YL,0.7106035373244092
+21,mfw,burrows_delta,6,Panama Bende,0.7156099215579413
+21,mfw,burrows_delta,7,Dibson,0.7177171385177377
+21,mfw,burrows_delta,8,Lemon Haze,0.720053974702538
+21,mfw,burrows_delta,9,Rimkus,0.7200607506992546
+21,mfw,burrows_delta,10,Lesram,0.720132822126579
+21,mfw,burrows_delta,11,Beendo Z,0.7224678603763717
+21,mfw,burrows_delta,12,SCH,0.7245781123532978
+21,mfw,burrows_delta,13,S-Crew,0.7250993952248971
+21,mfw,burrows_delta,14,Worms-T,0.7281556894108311
+21,mfw,burrows_delta,15,L’Animalerie,0.7289550725745121
+21,mfw,burrows_delta,16,Mister You,0.7303514474589707
+21,mfw,burrows_delta,17,Graya,0.7309947985378004
+21,mfw,burrows_delta,18,Denzo,0.7328109755863241
+21,mfw,burrows_delta,19,Swift Guad,0.7332486902765709
+21,mfw,burrows_delta,20,Deen Burbigo,0.7345672830799754
+21,mfw,burrows_delta,21,Niro,0.7352441777196121
+21,mfw,burrows_delta,22,Ninho,0.7372923912880855
+21,mfw,burrows_delta,23,Souffrance,0.7383409603216382
+21,mfw,burrows_delta,24,Hugo TSR,0.7406915999943969
+21,mfw,burrows_delta,25,Dika,0.7423556781240214
+21,char,cosine_delta,1,Zkr,0.7966291927117606
+21,char,cosine_delta,2,Kerchak,0.8224452150470349
+21,char,cosine_delta,3,Niro,0.8248348262261472
+21,char,cosine_delta,4,UZI (FRA),0.8252598217767053
+21,char,cosine_delta,5,Fresh laDouille,0.8277235934902549
+21,char,cosine_delta,6,Beendo Z,0.8336835121806305
+21,char,cosine_delta,7,Rimkus,0.8341894746124449
+21,char,cosine_delta,8,Lemon Haze,0.8412752419250499
+21,char,cosine_delta,9,SCH,0.8425497801310948
+21,char,cosine_delta,10,ASHE 22,0.8436509884370298
+21,char,cosine_delta,11,ISK,0.8480109652431325
+21,char,cosine_delta,12,Roshi,0.8517167841654651
+21,char,cosine_delta,13,Worms-T,0.8532422899772951
+21,char,cosine_delta,14,RK,0.8610298108247556
+21,char,cosine_delta,15,Werenoi,0.8643954808839458
+21,char,cosine_delta,16,Djadja & Dinaz,0.8648076129500406
+21,char,cosine_delta,17,Sopico,0.8690797315867949
+21,char,cosine_delta,18,Gambi,0.8716273372480361
+21,char,cosine_delta,19,Dika,0.8721517042097817
+21,char,cosine_delta,20,Moha La Squale,0.872195058615353
+21,char,cosine_delta,21,Zbig,0.8736220446535067
+21,char,cosine_delta,22,​​okis,0.8736645018516712
+21,char,cosine_delta,23,Lesram,0.8742608366658258
+21,char,cosine_delta,24,SDM,0.8745835189050768
+21,char,cosine_delta,25,Gazo,0.8787304541576344
+21,char,burrows_delta,1,Zkr,0.7551907955014682
+21,char,burrows_delta,2,Deen Burbigo,0.7595866874032402
+21,char,burrows_delta,3,L’Animalerie,0.7598403616986262
+21,char,burrows_delta,4,Guizmo,0.7756734855722852
+21,char,burrows_delta,5,Worms-T,0.7768007751849494
+21,char,burrows_delta,6,Niro,0.7768589353907052
+21,char,burrows_delta,7,Dibson,0.7900564331638149
+21,char,burrows_delta,8,Leck,0.7910838588516189
+21,char,burrows_delta,9,5 Majeur,0.7919384803792354
+21,char,burrows_delta,10,Saké (FRA),0.792175926430096
+21,char,burrows_delta,11,Nekfeu,0.793246760332748
+21,char,burrows_delta,12,Panama Bende,0.7943964859001523
+21,char,burrows_delta,13,Hugo TSR,0.7956496628150209
+21,char,burrows_delta,14,Nakk Mendosa,0.7983323150687837
+21,char,burrows_delta,15,SCH,0.7991652539361095
+21,char,burrows_delta,16,Aketo,0.8010074705185904
+21,char,burrows_delta,17,Lesram,0.8019184093651158
+21,char,burrows_delta,18,YL,0.804995376890531
+21,char,burrows_delta,19,Casseurs Flowters,0.8051249571829323
+21,char,burrows_delta,20,Sopico,0.8054814762545698
+21,char,burrows_delta,21,L’Entourage,0.8063436621616452
+21,char,burrows_delta,22,Denzo,0.8081483039643406
+21,char,burrows_delta,23,Zikxo,0.8107866018153448
+21,char,burrows_delta,24,Souffrance,0.8110743357129392
+21,char,burrows_delta,25,Caballero,0.8111740638005058
+22,mfw,cosine_delta,1,SCH,0.7212386422327975
+22,mfw,cosine_delta,2,Beendo Z,0.7362767086256201
+22,mfw,cosine_delta,3,GLK,0.7456613378547967
+22,mfw,cosine_delta,4,Lemon Haze,0.7599484052018428
+22,mfw,cosine_delta,5,Maes,0.7637569261025863
+22,mfw,cosine_delta,6,Fresh laDouille,0.772950761670451
+22,mfw,cosine_delta,7,Rimkus,0.7851604318974343
+22,mfw,cosine_delta,8,Kerchak,0.7878276572694811
+22,mfw,cosine_delta,9,Werenoi,0.7907048935784526
+22,mfw,cosine_delta,10,ISK,0.7938062221622137
+22,mfw,cosine_delta,11,Mister You,0.8029289701805492
+22,mfw,cosine_delta,12,UZI (FRA),0.8099844335340491
+22,mfw,cosine_delta,13,Soso Maness,0.8107526602395752
+22,mfw,cosine_delta,14,AM La Scampia,0.8124192623302747
+22,mfw,cosine_delta,15,Koba LaD,0.815454249679041
+22,mfw,cosine_delta,16,Graya,0.8187268775628901
+22,mfw,cosine_delta,17,​DA Uzi,0.81948533373143
+22,mfw,cosine_delta,18,Ninho,0.8198708296172084
+22,mfw,cosine_delta,19,ASHE 22,0.8212476972928284
+22,mfw,cosine_delta,20,S-Pion,0.8258284778516524
+22,mfw,cosine_delta,21,Dika,0.835621931667258
+22,mfw,cosine_delta,22,Bosh,0.8366434704084563
+22,mfw,cosine_delta,23,Nahir,0.8403139402816742
+22,mfw,cosine_delta,24,Hornet La Frappe,0.8410895057784253
+22,mfw,cosine_delta,25,Moha La Squale,0.8412374875272497
+22,mfw,burrows_delta,1,ISK,0.6856457120149344
+22,mfw,burrows_delta,2,S-Pion,0.6911179920962789
+22,mfw,burrows_delta,3,Beendo Z,0.7022865992123751
+22,mfw,burrows_delta,4,Dibson,0.7089126786932078
+22,mfw,burrows_delta,5,Sam’s,0.7131345942784745
+22,mfw,burrows_delta,6,Nahir,0.7142909888972564
+22,mfw,burrows_delta,7,GLK,0.7144148861325877
+22,mfw,burrows_delta,8,Niro,0.7160782589273522
+22,mfw,burrows_delta,9,Lemon Haze,0.7215270713288342
+22,mfw,burrows_delta,10,Zkr,0.7218199907468235
+22,mfw,burrows_delta,11,SCH,0.7251647032049388
+22,mfw,burrows_delta,12,S-Crew,0.7262139028738631
+22,mfw,burrows_delta,13,Guizmo,0.7270437954830961
+22,mfw,burrows_delta,14,Maes,0.7290223992613818
+22,mfw,burrows_delta,15,Rimkus,0.7331224274713546
+22,mfw,burrows_delta,16,Hornet La Frappe,0.7338478162045617
+22,mfw,burrows_delta,17,Intouchable,0.7349257107032251
+22,mfw,burrows_delta,18,Zikxo,0.7350552138607993
+22,mfw,burrows_delta,19,Lesram,0.7351490548107177
+22,mfw,burrows_delta,20,Lacrim,0.7366627049245249
+22,mfw,burrows_delta,21,Ademo,0.7393199901529638
+22,mfw,burrows_delta,22,Sadek,0.7393506701506929
+22,mfw,burrows_delta,23,Koba LaD,0.7394335704095688
+22,mfw,burrows_delta,24,Graya,0.7396390858899394
+22,mfw,burrows_delta,25,L’Entourage,0.7402080359385806
+22,char,cosine_delta,1,Beendo Z,0.7982440849304732
+22,char,cosine_delta,2,ISK,0.8217826558121508
+22,char,cosine_delta,3,UZI (FRA),0.8222958044654466
+22,char,cosine_delta,4,Fresh laDouille,0.822323033510769
+22,char,cosine_delta,5,SCH,0.8226799176654243
+22,char,cosine_delta,6,Kerchak,0.8264293431448353
+22,char,cosine_delta,7,GLK,0.8317057569978892
+22,char,cosine_delta,8,Rimkus,0.8340974718747702
+22,char,cosine_delta,9,ASHE 22,0.8371706994356939
+22,char,cosine_delta,10,Lesram,0.8391352737277386
+22,char,cosine_delta,11,Lemon Haze,0.8396230390987578
+22,char,cosine_delta,12,Werenoi,0.8436537240323816
+22,char,cosine_delta,13,​DA Uzi,0.8489054336703354
+22,char,cosine_delta,14,Bosh,0.8518988149413717
+22,char,cosine_delta,15,RK,0.8541475795451919
+22,char,cosine_delta,16,Koba LaD,0.865959939343522
+22,char,cosine_delta,17,F430,0.8674407996744309
+22,char,cosine_delta,18,Worms-T,0.8685057693209899
+22,char,cosine_delta,19,Heuss L’enfoiré,0.8687691783762816
+22,char,cosine_delta,20,Dika,0.8704118220329613
+22,char,cosine_delta,21,Zola,0.8707591257111412
+22,char,cosine_delta,22,Maes,0.8726956641831786
+22,char,cosine_delta,23,Seth Gueko,0.8755758760363967
+22,char,cosine_delta,24,BFG,0.8779217763936943
+22,char,cosine_delta,25,​​okis,0.878103263498342
+22,char,burrows_delta,1,ISK,0.7597624386870575
+22,char,burrows_delta,2,L’Animalerie,0.7688581019789247
+22,char,burrows_delta,3,Deen Burbigo,0.7757636033835076
+22,char,burrows_delta,4,S-Crew,0.7764734281579808
+22,char,burrows_delta,5,Sadek,0.7841882784793682
+22,char,burrows_delta,6,Sam’s,0.7849727992900395
+22,char,burrows_delta,7,Nahir,0.7864401767176074
+22,char,burrows_delta,8,Ademo,0.7911460205362232
+22,char,burrows_delta,9,Dibson,0.7917311402424706
+22,char,burrows_delta,10,Lesram,0.7929593504326083
+22,char,burrows_delta,11,Leck,0.79298170490598
+22,char,burrows_delta,12,Guizmo,0.7940758934417735
+22,char,burrows_delta,13,Vin’s,0.794174066963441
+22,char,burrows_delta,14,L’Entourage,0.8010383108309707
+22,char,burrows_delta,15,Niro,0.8037271276168422
+22,char,burrows_delta,16,Zikxo,0.8037531033571755
+22,char,burrows_delta,17,Worms-T,0.8044294233260407
+22,char,burrows_delta,18,Nekfeu,0.8054916336056661
+22,char,burrows_delta,19,Saké (FRA),0.8056136203477356
+22,char,burrows_delta,20,Panama Bende,0.8060810891745205
+22,char,burrows_delta,21,Beeby,0.8079877989019305
+22,char,burrows_delta,22,5 Majeur,0.8083433437479673
+22,char,burrows_delta,23,Nakk Mendosa,0.8104160217192845
+22,char,burrows_delta,24,Seth Gueko,0.8134817340072623
+22,char,burrows_delta,25,Hayce Lemsi,0.8137539676578532
+23,mfw,cosine_delta,1,Zkr,0.7412711103303075
+23,mfw,cosine_delta,2,SCH,0.7558173131214359
+23,mfw,cosine_delta,3,Lemon Haze,0.7654607833028513
+23,mfw,cosine_delta,4,Werenoi,0.766505172754971
+23,mfw,cosine_delta,5,Kerchak,0.7734421951476169
+23,mfw,cosine_delta,6,Koba LaD,0.7752739852021154
+23,mfw,cosine_delta,7,Lacrim,0.7772383691519484
+23,mfw,cosine_delta,8,Rimkus,0.7839861577854798
+23,mfw,cosine_delta,9,Roshi,0.7933823802283102
+23,mfw,cosine_delta,10,​DA Uzi,0.7983880512262229
+23,mfw,cosine_delta,11,Maes,0.8000253246287197
+23,mfw,cosine_delta,12,Beendo Z,0.800812176617459
+23,mfw,cosine_delta,13,Dika,0.8050748278792951
+23,mfw,cosine_delta,14,JuL,0.8122782744918283
+23,mfw,cosine_delta,15,Lesram,0.8247809818615613
+23,mfw,cosine_delta,16,Fresh laDouille,0.8269296986178447
+23,mfw,cosine_delta,17,Graya,0.8274310182207408
+23,mfw,cosine_delta,18,Hatik,0.8279574288192558
+23,mfw,cosine_delta,19,Mister You,0.8281977215861791
+23,mfw,cosine_delta,20,GLK,0.8283335205960513
+23,mfw,cosine_delta,21,UZI (FRA),0.8296708862145821
+23,mfw,cosine_delta,22,Soso Maness,0.8320920314576296
+23,mfw,cosine_delta,23,Benab,0.8321328349333521
+23,mfw,cosine_delta,24,PLK,0.8334534961723465
+23,mfw,cosine_delta,25,Bosh,0.8342481564934512
+23,mfw,burrows_delta,1,Zkr,0.6432317909020909
+23,mfw,burrows_delta,2,Lacrim,0.6554324183433055
+23,mfw,burrows_delta,3,S-Crew,0.6872134709504728
+23,mfw,burrows_delta,4,S-Pion,0.7004663822908463
+23,mfw,burrows_delta,5,Dibson,0.7030555773605276
+23,mfw,burrows_delta,6,Rimkus,0.7158277772837567
+23,mfw,burrows_delta,7,Lemon Haze,0.717756667777838
+23,mfw,burrows_delta,8,SCH,0.7178102234166204
+23,mfw,burrows_delta,9,Beendo Z,0.718185973624069
+23,mfw,burrows_delta,10,​DA Uzi,0.7185440159932539
+23,mfw,burrows_delta,11,GLK,0.7232696045151573
+23,mfw,burrows_delta,12,Leck,0.7237563785817204
+23,mfw,burrows_delta,13,Soso Maness,0.7269884175914324
+23,mfw,burrows_delta,14,L’Animalerie,0.7288444599282943
+23,mfw,burrows_delta,15,Lesram,0.7304885962984657
+23,mfw,burrows_delta,16,Nahir,0.7306537265020268
+23,mfw,burrows_delta,17,Worms-T,0.7310913710639475
+23,mfw,burrows_delta,18,Panama Bende,0.7311817377815298
+23,mfw,burrows_delta,19,Hugo TSR,0.7330932304074365
+23,mfw,burrows_delta,20,Vin’s,0.734117168395516
+23,mfw,burrows_delta,21,Guizmo,0.734726857557836
+23,mfw,burrows_delta,22,Niro,0.7361819996071729
+23,mfw,burrows_delta,23,PLK,0.7362087286649305
+23,mfw,burrows_delta,24,ISK,0.7372087801966176
+23,mfw,burrows_delta,25,YL,0.7374661242606387
+23,char,cosine_delta,1,​DA Uzi,0.7978340004425939
+23,char,cosine_delta,2,Kerchak,0.7979661062904244
+23,char,cosine_delta,3,Roshi,0.8143351704999578
+23,char,cosine_delta,4,UZI (FRA),0.8267284038886047
+23,char,cosine_delta,5,Rimkus,0.8270864233999865
+23,char,cosine_delta,6,Werenoi,0.8301352611598506
+23,char,cosine_delta,7,Koba LaD,0.8333955796412325
+23,char,cosine_delta,8,Lemon Haze,0.8362164180382528
+23,char,cosine_delta,9,Maes,0.8383830297413979
+23,char,cosine_delta,10,ASHE 22,0.83987799496827
+23,char,cosine_delta,11,Zkr,0.8493691136270506
+23,char,cosine_delta,12,Gambi,0.8513522548233149
+23,char,cosine_delta,13,Lacrim,0.8528753271523637
+23,char,cosine_delta,14,Beendo Z,0.8546392404800086
+23,char,cosine_delta,15,SCH,0.8555711526822216
+23,char,cosine_delta,16,Fresh laDouille,0.861015917197226
+23,char,cosine_delta,17,Gradur,0.8628418954631986
+23,char,cosine_delta,18,PLK,0.8629552316868344
+23,char,cosine_delta,19,Timal,0.864576080099233
+23,char,cosine_delta,20,Lesram,0.8675799195529661
+23,char,cosine_delta,21,Djadja & Dinaz,0.8682067130126168
+23,char,cosine_delta,22,Limsa d’Aulnay,0.8697329970373543
+23,char,cosine_delta,23,Youri,0.8701352309786772
+23,char,cosine_delta,24,Worms-T,0.8731107751809939
+23,char,cosine_delta,25,RK,0.8731265697064704
+23,char,burrows_delta,1,Lacrim,0.7429602117967332
+23,char,burrows_delta,2,S-Crew,0.7431826448512474
+23,char,burrows_delta,3,L’Animalerie,0.7659124817929038
+23,char,burrows_delta,4,Zkr,0.7705094265512362
+23,char,burrows_delta,5,Dibson,0.7783416115832432
+23,char,burrows_delta,6,Vin’s,0.7789523353774954
+23,char,burrows_delta,7,Worms-T,0.782826694000898
+23,char,burrows_delta,8,Leck,0.7842689940257611
+23,char,burrows_delta,9,Saké (FRA),0.7875179462364962
+23,char,burrows_delta,10,Casseurs Flowters,0.7911380019657328
+23,char,burrows_delta,11,L’Entourage,0.7928979327246498
+23,char,burrows_delta,12,Panama Bende,0.793341996441578
+23,char,burrows_delta,13,Lesram,0.7939970343894613
+23,char,burrows_delta,14,Niro,0.7945787087368599
+23,char,burrows_delta,15,Dosseh,0.7969099786403688
+23,char,burrows_delta,16,Nakk Mendosa,0.7969335748383246
+23,char,burrows_delta,17,SCH,0.7984046515118303
+23,char,burrows_delta,18,Sam’s,0.7991724446850731
+23,char,burrows_delta,19,Nahir,0.8006847164140163
+23,char,burrows_delta,20,PLK,0.8011445831189785
+23,char,burrows_delta,21,Denzo,0.8028392965359104
+23,char,burrows_delta,22,Grödash,0.8044040646626281
+23,char,burrows_delta,23,Caballero,0.8050647577556568
+23,char,burrows_delta,24,Zikxo,0.8086626953122223
+23,char,burrows_delta,25,5 Majeur,0.8093430093095967
+24,mfw,cosine_delta,1,Hornet La Frappe,0.7451389351754596
+24,mfw,cosine_delta,2,Lemon Haze,0.7535988462471269
+24,mfw,cosine_delta,3,Kerchak,0.7688201637613769
+24,mfw,cosine_delta,4,Dika,0.7789884061873328
+24,mfw,cosine_delta,5,Lacrim,0.7876914553134717
+24,mfw,cosine_delta,6,Rimkus,0.7877786044879431
+24,mfw,cosine_delta,7,Fresh laDouille,0.7916848037683799
+24,mfw,cosine_delta,8,Maes,0.797700768628347
+24,mfw,cosine_delta,9,Beendo Z,0.7988322615386537
+24,mfw,cosine_delta,10,​DA Uzi,0.8095558917838441
+24,mfw,cosine_delta,11,SCH,0.8212664272745722
+24,mfw,cosine_delta,12,Lesram,0.8228473757420174
+24,mfw,cosine_delta,13,RK,0.825030521901105
+24,mfw,cosine_delta,14,Soso Maness,0.8251339986167376
+24,mfw,cosine_delta,15,Werenoi,0.8277530255127273
+24,mfw,cosine_delta,16,Timal,0.8289228829282407
+24,mfw,cosine_delta,17,Graya,0.8292599220272802
+24,mfw,cosine_delta,18,Niro,0.8310722337912975
+24,mfw,cosine_delta,19,Bosh,0.8317906599189528
+24,mfw,cosine_delta,20,Youri,0.8397722217769085
+24,mfw,cosine_delta,21,Kodes,0.8398964813122554
+24,mfw,cosine_delta,22,Houari,0.8430346356776031
+24,mfw,cosine_delta,23,AM La Scampia,0.8439760494715463
+24,mfw,cosine_delta,24,UZI (FRA),0.8463465680445054
+24,mfw,cosine_delta,25,PLK,0.8467382082928072
+24,mfw,burrows_delta,1,Dibson,0.6886047017534169
+24,mfw,burrows_delta,2,SCH,0.690460083839789
+24,mfw,burrows_delta,3,Lacrim,0.6920764722643528
+24,mfw,burrows_delta,4,Hornet La Frappe,0.6940322058062534
+24,mfw,burrows_delta,5,Zkr,0.6948105701258653
+24,mfw,burrows_delta,6,Mister You,0.6998221885376312
+24,mfw,burrows_delta,7,RK,0.7019135797574868
+24,mfw,burrows_delta,8,Panama Bende,0.702557788531757
+24,mfw,burrows_delta,9,Guizmo,0.7034314602615807
+24,mfw,burrows_delta,10,YL,0.7049003410634315
+24,mfw,burrows_delta,11,Beendo Z,0.7062533149524968
+24,mfw,burrows_delta,12,Lemon Haze,0.7129951635879824
+24,mfw,burrows_delta,13,Sadek,0.7148106028000364
+24,mfw,burrows_delta,14,Mister V,0.7165338639848864
+24,mfw,burrows_delta,15,​DA Uzi,0.7165422576375755
+24,mfw,burrows_delta,16,S-Crew,0.7169488944211224
+24,mfw,burrows_delta,17,S-Pion,0.7186011214037865
+24,mfw,burrows_delta,18,Sam’s,0.7203640130936165
+24,mfw,burrows_delta,19,Nahir,0.7246567026762616
+24,mfw,burrows_delta,20,Vald,0.7250728778427575
+24,mfw,burrows_delta,21,L’Animalerie,0.7251453698468951
+24,mfw,burrows_delta,22,Lesram,0.7269549711879152
+24,mfw,burrows_delta,23,Zikxo,0.7275721721545514
+24,mfw,burrows_delta,24,ISK,0.7275963229277447
+24,mfw,burrows_delta,25,Rimkus,0.728249852878508
+24,char,cosine_delta,1,Kerchak,0.8018354390377074
+24,char,cosine_delta,2,Hornet La Frappe,0.8052832477890555
+24,char,cosine_delta,3,Beendo Z,0.8208214578468583
+24,char,cosine_delta,4,Rimkus,0.8266764362224489
+24,char,cosine_delta,5,Lemon Haze,0.8339868791242209
+24,char,cosine_delta,6,Roshi,0.8391278706592575
+24,char,cosine_delta,7,Fresh laDouille,0.839374760507432
+24,char,cosine_delta,8,Werenoi,0.8425056280542973
+24,char,cosine_delta,9,Zkr,0.8446330021627971
+24,char,cosine_delta,10,UZI (FRA),0.8456831531794937
+24,char,cosine_delta,11,RK,0.8464048196658778
+24,char,cosine_delta,12,Niro,0.8493931712372613
+24,char,cosine_delta,13,ASHE 22,0.8508721497735563
+24,char,cosine_delta,14,PLK,0.8557514562162877
+24,char,cosine_delta,15,Lesram,0.8572177008130345
+24,char,cosine_delta,16,Maes,0.8605013591503569
+24,char,cosine_delta,17,Timal,0.8607114054259949
+24,char,cosine_delta,18,Gambi,0.8619167469661146
+24,char,cosine_delta,19,Bosh,0.8622108135318028
+24,char,cosine_delta,20,Dika,0.8627342468731805
+24,char,cosine_delta,21,JuL,0.8639664627016025
+24,char,cosine_delta,22,​​okis,0.865531518551516
+24,char,cosine_delta,23,Zola,0.8658290380508081
+24,char,cosine_delta,24,ISK,0.8664682896700081
+24,char,cosine_delta,25,​DA Uzi,0.8665753050872275
+24,char,burrows_delta,1,L’Animalerie,0.7640919831325113
+24,char,burrows_delta,2,Sam’s,0.7677417872462122
+24,char,burrows_delta,3,Vald,0.7729999825962386
+24,char,burrows_delta,4,Zkr,0.7805548672288722
+24,char,burrows_delta,5,Lacrim,0.780898405344638
+24,char,burrows_delta,6,Lesram,0.7831894700923795
+24,char,burrows_delta,7,Sadek,0.7843258956397209
+24,char,burrows_delta,8,Panama Bende,0.7849861246662779
+24,char,burrows_delta,9,Worms-T,0.7899502976104193
+24,char,burrows_delta,10,Ademo,0.790257700216622
+24,char,burrows_delta,11,Ninho,0.793102773805669
+24,char,burrows_delta,12,Leck,0.793741626971079
+24,char,burrows_delta,13,S-Crew,0.7938961112415198
+24,char,burrows_delta,14,Seth Gueko,0.795481665774489
+24,char,burrows_delta,15,Nahir,0.7961300518526412
+24,char,burrows_delta,16,SCH,0.7979596971027649
+24,char,burrows_delta,17,Vin’s,0.8022518108528703
+24,char,burrows_delta,18,Beendo Z,0.8050289534834112
+24,char,burrows_delta,19,Souffrance,0.8053544507854505
+24,char,burrows_delta,20,Deen Burbigo,0.8061927921315243
+24,char,burrows_delta,21,Mister You,0.8062493889089255
+24,char,burrows_delta,22,Dibson,0.8063273916323863
+24,char,burrows_delta,23,PLK,0.8063513849739699
+24,char,burrows_delta,24,Dosseh,0.807310197178915
+24,char,burrows_delta,25,Saké (FRA),0.8080052775351874
+25,mfw,cosine_delta,1,Fresh laDouille,0.7350376378930525
+25,mfw,cosine_delta,2,Zola,0.739490651753231
+25,mfw,cosine_delta,3,SCH,0.7509233521810019
+25,mfw,cosine_delta,4,Lemon Haze,0.7519502274320012
+25,mfw,cosine_delta,5,ISK,0.7727367404793253
+25,mfw,cosine_delta,6,Rimkus,0.7728292029312671
+25,mfw,cosine_delta,7,Werenoi,0.7820409825338249
+25,mfw,cosine_delta,8,SDM,0.783787746279595
+25,mfw,cosine_delta,9,Graya,0.7857527040486887
+25,mfw,cosine_delta,10,Kerchak,0.7910414859490924
+25,mfw,cosine_delta,11,Roshi,0.8022522506925136
+25,mfw,cosine_delta,12,UZI (FRA),0.808730518033643
+25,mfw,cosine_delta,13,Beendo Z,0.8194386523474865
+25,mfw,cosine_delta,14,Soso Maness,0.8236307230766284
+25,mfw,cosine_delta,15,​DA Uzi,0.8247650356166136
+25,mfw,cosine_delta,16,Houari,0.8264441227522813
+25,mfw,cosine_delta,17,Mister You,0.8270777608127599
+25,mfw,cosine_delta,18,Maes,0.8291606070198223
+25,mfw,cosine_delta,19,Dika,0.8334724641026214
+25,mfw,cosine_delta,20,ASHE 22,0.8337665710853969
+25,mfw,cosine_delta,21,Timal,0.841180665486742
+25,mfw,cosine_delta,22,Zbig,0.8424095108021175
+25,mfw,cosine_delta,23,AM La Scampia,0.8448858296589907
+25,mfw,cosine_delta,24,Alonzo,0.846146457133248
+25,mfw,cosine_delta,25,Sadek,0.8483856490539967
+25,mfw,burrows_delta,1,S-Crew,0.6814602626740789
+25,mfw,burrows_delta,2,Zkr,0.6919600775037187
+25,mfw,burrows_delta,3,ISK,0.692776794235272
+25,mfw,burrows_delta,4,Sofiane,0.6928927510820524
+25,mfw,burrows_delta,5,Sadek,0.7017348774959967
+25,mfw,burrows_delta,6,113,0.7026813350182127
+25,mfw,burrows_delta,7,Hayce Lemsi,0.7039312657241378
+25,mfw,burrows_delta,8,Vald,0.7075781293900263
+25,mfw,burrows_delta,9,SCH,0.7100327485804024
+25,mfw,burrows_delta,10,Dibson,0.712280725630837
+25,mfw,burrows_delta,11,Lemon Haze,0.7166494667793291
+25,mfw,burrows_delta,12,S-Pion,0.7178526802371894
+25,mfw,burrows_delta,13,Panama Bende,0.7228997161604471
+25,mfw,burrows_delta,14,Zola,0.7231313557494025
+25,mfw,burrows_delta,15,Rimkus,0.7235086420616167
+25,mfw,burrows_delta,16,Denzo,0.7245033721452678
+25,mfw,burrows_delta,17,L’Animalerie,0.7257236067645954
+25,mfw,burrows_delta,18,Alonzo,0.7290112243170219
+25,mfw,burrows_delta,19,Mister V,0.7313836022899947
+25,mfw,burrows_delta,20,​DA Uzi,0.7319066905370943
+25,mfw,burrows_delta,21,Aladin 135,0.7324390393792107
+25,mfw,burrows_delta,22,Alpha Wann,0.734091952817433
+25,mfw,burrows_delta,23,Lacrim,0.7343643536382989
+25,mfw,burrows_delta,24,Seth Gueko,0.734998620708615
+25,mfw,burrows_delta,25,Graya,0.7362881849976902
+25,char,cosine_delta,1,Zola,0.8065999790629902
+25,char,cosine_delta,2,Fresh laDouille,0.8119994891206987
+25,char,cosine_delta,3,Kerchak,0.8210562694420511
+25,char,cosine_delta,4,Zkr,0.8217036375883902
+25,char,cosine_delta,5,UZI (FRA),0.8218575331405209
+25,char,cosine_delta,6,Beendo Z,0.8235930869104439
+25,char,cosine_delta,7,ISK,0.8315807206877961
+25,char,cosine_delta,8,Rimkus,0.8334684603046592
+25,char,cosine_delta,9,Timal,0.8335116792014919
+25,char,cosine_delta,10,Djadja & Dinaz,0.8342094242474711
+25,char,cosine_delta,11,Lemon Haze,0.8399220682924466
+25,char,cosine_delta,12,Werenoi,0.8401643450022469
+25,char,cosine_delta,13,ASHE 22,0.8405964049330564
+25,char,cosine_delta,14,​DA Uzi,0.8490632200446252
+25,char,cosine_delta,15,Maes,0.8527506513063166
+25,char,cosine_delta,16,SCH,0.8559162863599434
+25,char,cosine_delta,17,Dika,0.8673242032083758
+25,char,cosine_delta,18,Heuss L’enfoiré,0.8714223178164355
+25,char,cosine_delta,19,Gazo,0.8733015912828521
+25,char,cosine_delta,20,Niaks,0.8736627012692597
+25,char,cosine_delta,21,Sadek,0.8737912487531097
+25,char,cosine_delta,22,Youri,0.8740701288753685
+25,char,cosine_delta,23,Diddi Trix,0.8748887691068084
+25,char,cosine_delta,24,Bosh,0.8771273696804174
+25,char,cosine_delta,25,SDM,0.8782442485661233
+25,char,burrows_delta,1,Zkr,0.7506206817116248
+25,char,burrows_delta,2,Vald,0.7550269874601861
+25,char,burrows_delta,3,L’Animalerie,0.7657451854056465
+25,char,burrows_delta,4,S-Crew,0.7802521411610532
+25,char,burrows_delta,5,Sadek,0.7807541202833415
+25,char,burrows_delta,6,Dibson,0.7830948490258366
+25,char,burrows_delta,7,Panama Bende,0.7860109835981404
+25,char,burrows_delta,8,Hayce Lemsi,0.7885808924975163
+25,char,burrows_delta,9,Sam’s,0.7890570018049178
+25,char,burrows_delta,10,Leck,0.7901442190002375
+25,char,burrows_delta,11,Nakk Mendosa,0.7929069294914428
+25,char,burrows_delta,12,Worms-T,0.793532483581283
+25,char,burrows_delta,13,Zola,0.7942602739682968
+25,char,burrows_delta,14,ISK,0.8020057354119295
+25,char,burrows_delta,15,Limsa d’Aulnay,0.8021337840212285
+25,char,burrows_delta,16,Lacrim,0.8026374841724232
+25,char,burrows_delta,17,Beeby,0.8039573936066754
+25,char,burrows_delta,18,Sofiane,0.8051946550362774
+25,char,burrows_delta,19,Saké (FRA),0.8060283687144412
+25,char,burrows_delta,20,JuL,0.8078916036871873
+25,char,burrows_delta,21,S.Pri Noir,0.8088214791861617
+25,char,burrows_delta,22,R.E.D.K.,0.8090367090171731
+25,char,burrows_delta,23,Grödash,0.8105943188446866
+25,char,burrows_delta,24,Lesram,0.8120406003114743
+25,char,burrows_delta,25,Zikxo,0.8121819044830607
+26,mfw,cosine_delta,1,SCH,0.7569185998392551
+26,mfw,cosine_delta,2,Lemon Haze,0.7571935712098314
+26,mfw,cosine_delta,3,Soso Maness,0.7825513474166882
+26,mfw,cosine_delta,4,Werenoi,0.7864156110463508
+26,mfw,cosine_delta,5,Kerchak,0.788586661576098
+26,mfw,cosine_delta,6,Roshi,0.7982294834198072
+26,mfw,cosine_delta,7,Rimkus,0.8017555491656003
+26,mfw,cosine_delta,8,Dika,0.8074938600122049
+26,mfw,cosine_delta,9,Moha La Squale,0.809057274750097
+26,mfw,cosine_delta,10,Sofiane,0.8093818694387487
+26,mfw,cosine_delta,11,UZI (FRA),0.8137354136476984
+26,mfw,cosine_delta,12,Lacrim,0.8184822824830584
+26,mfw,cosine_delta,13,Beendo Z,0.8197920285813193
+26,mfw,cosine_delta,14,Fresh laDouille,0.8271324864818903
+26,mfw,cosine_delta,15,Koba LaD,0.8288544537026581
+26,mfw,cosine_delta,16,Zola,0.8295129124201243
+26,mfw,cosine_delta,17,GLK,0.8306776000787023
+26,mfw,cosine_delta,18,Maes,0.8320998070432306
+26,mfw,cosine_delta,19,Meryl,0.8344360856643664
+26,mfw,cosine_delta,20,Zikxo,0.8366986211500093
+26,mfw,cosine_delta,21,So La Lune,0.8367313950765618
+26,mfw,cosine_delta,22,S-Pion,0.8375305754775952
+26,mfw,cosine_delta,23,ASHE 22,0.8381046954090613
+26,mfw,cosine_delta,24,ISK,0.8381515121745287
+26,mfw,cosine_delta,25,Niro,0.8426593169835948
+26,mfw,burrows_delta,1,Zkr,0.6758975028698928
+26,mfw,burrows_delta,2,SCH,0.6892671345187207
+26,mfw,burrows_delta,3,ISK,0.6953544814917684
+26,mfw,burrows_delta,4,Nahir,0.6963550018014186
+26,mfw,burrows_delta,5,Dibson,0.7048475009018275
+26,mfw,burrows_delta,6,S-Pion,0.7114317917641765
+26,mfw,burrows_delta,7,GLK,0.713021276189975
+26,mfw,burrows_delta,8,Lemon Haze,0.7185548521069547
+26,mfw,burrows_delta,9,Rohff,0.7223017439639005
+26,mfw,burrows_delta,10,Nekfeu,0.7228568531449102
+26,mfw,burrows_delta,11,Beendo Z,0.72745595591512
+26,mfw,burrows_delta,12,Soso Maness,0.7288673052676539
+26,mfw,burrows_delta,13,Niro,0.7306853265570601
+26,mfw,burrows_delta,14,Swift Guad,0.7306989027907882
+26,mfw,burrows_delta,15,Deen Burbigo,0.7316917953706077
+26,mfw,burrows_delta,16,Denzo,0.7328139255113485
+26,mfw,burrows_delta,17,Rimkus,0.7348085194781099
+26,mfw,burrows_delta,18,Vin’s,0.7354785227275077
+26,mfw,burrows_delta,19,Lesram,0.7375560975792009
+26,mfw,burrows_delta,20,Seth Gueko,0.7384566576683368
+26,mfw,burrows_delta,21,L’Animalerie,0.7401616639807219
+26,mfw,burrows_delta,22,​DA Uzi,0.7415456039133096
+26,mfw,burrows_delta,23,Leck,0.7421940875535975
+26,mfw,burrows_delta,24,Lacrim,0.7447164507434761
+26,mfw,burrows_delta,25,Sneazzy,0.7460155011181275
+26,char,cosine_delta,1,Beendo Z,0.8039684512093648
+26,char,cosine_delta,2,UZI (FRA),0.8144907819586966
+26,char,cosine_delta,3,Kerchak,0.8185070916242296
+26,char,cosine_delta,4,Werenoi,0.8238190909819615
+26,char,cosine_delta,5,Roshi,0.8314417676740748
+26,char,cosine_delta,6,Rimkus,0.8315717327301124
+26,char,cosine_delta,7,SCH,0.8353339665321937
+26,char,cosine_delta,8,Zkr,0.8370057055157519
+26,char,cosine_delta,9,Lemon Haze,0.8372658097995391
+26,char,cosine_delta,10,ISK,0.8446449607433988
+26,char,cosine_delta,11,Zola,0.844906896365597
+26,char,cosine_delta,12,Hornet La Frappe,0.8461097579421082
+26,char,cosine_delta,13,​DA Uzi,0.8481805925852897
+26,char,cosine_delta,14,Fresh laDouille,0.853091754996795
+26,char,cosine_delta,15,Lesram,0.8575053973627951
+26,char,cosine_delta,16,ASHE 22,0.8585524805083449
+26,char,cosine_delta,17,Nahir,0.8614336771047193
+26,char,cosine_delta,18,Dika,0.8680878408429522
+26,char,cosine_delta,19,Gambi,0.8696294884969864
+26,char,cosine_delta,20,​​okis,0.8697376928475451
+26,char,cosine_delta,21,RK,0.8714776474849663
+26,char,cosine_delta,22,Koba LaD,0.8738910211992679
+26,char,cosine_delta,23,Maes,0.8742184722135635
+26,char,cosine_delta,24,Worms-T,0.8743078648009537
+26,char,cosine_delta,25,Moha La Squale,0.8750517267301012
+26,char,burrows_delta,1,Zkr,0.7518774828518899
+26,char,burrows_delta,2,Rohff,0.7700761077122454
+26,char,burrows_delta,3,L’Animalerie,0.7717168497834074
+26,char,burrows_delta,4,Nahir,0.7727112651653163
+26,char,burrows_delta,5,Dibson,0.7850091560589083
+26,char,burrows_delta,6,Leck,0.7865700503425566
+26,char,burrows_delta,7,ISK,0.7883678880015468
+26,char,burrows_delta,8,Nakk Mendosa,0.7899075195101493
+26,char,burrows_delta,9,Lesram,0.7909778134289361
+26,char,burrows_delta,10,SCH,0.7910174714352998
+26,char,burrows_delta,11,Deen Burbigo,0.793703564869531
+26,char,burrows_delta,12,Vin’s,0.7937181466795543
+26,char,burrows_delta,13,Worms-T,0.7975358449539244
+26,char,burrows_delta,14,Nekfeu,0.8013468422585117
+26,char,burrows_delta,15,Saké (FRA),0.8025823886558879
+26,char,burrows_delta,16,Zikxo,0.8057224683094558
+26,char,burrows_delta,17,5 Majeur,0.8090163207822332
+26,char,burrows_delta,18,Caballero,0.8091988288382423
+26,char,burrows_delta,19,Beendo Z,0.8095246547782821
+26,char,burrows_delta,20,Lacrim,0.8095375372130811
+26,char,burrows_delta,21,GLK,0.8103900873369636
+26,char,burrows_delta,22,Niro,0.8115459603833715
+26,char,burrows_delta,23,Hayce Lemsi,0.8154301881636858
+26,char,burrows_delta,24,Ninho,0.8165108140032625
+26,char,burrows_delta,25,Beeby,0.8175146497991688
+27,mfw,cosine_delta,1,GLK,0.7347429283125517
+27,mfw,cosine_delta,2,Soso Maness,0.7411247002764502
+27,mfw,cosine_delta,3,Werenoi,0.7478945460605849
+27,mfw,cosine_delta,4,Lemon Haze,0.7628156438010715
+27,mfw,cosine_delta,5,SCH,0.763875924539945
+27,mfw,cosine_delta,6,Maes,0.7772853124296548
+27,mfw,cosine_delta,7,Rimkus,0.7864847656503628
+27,mfw,cosine_delta,8,Fresh laDouille,0.7872813792461841
+27,mfw,cosine_delta,9,Dika,0.7935767148883077
+27,mfw,cosine_delta,10,Djadja & Dinaz,0.7953204435541094
+27,mfw,cosine_delta,11,Kerchak,0.7981608413619307
+27,mfw,cosine_delta,12,Mister You,0.8023272897186564
+27,mfw,cosine_delta,13,Lesram,0.8077082985358708
+27,mfw,cosine_delta,14,Timal,0.810729413404318
+27,mfw,cosine_delta,15,100 Blaze,0.8148112678310825
+27,mfw,cosine_delta,16,Beendo Z,0.8150101757346919
+27,mfw,cosine_delta,17,S-Pion,0.8235726143112042
+27,mfw,cosine_delta,18,Nahir,0.8261113348764716
+27,mfw,cosine_delta,19,Naps,0.8283609161035792
+27,mfw,cosine_delta,20,UZI (FRA),0.8290936118091503
+27,mfw,cosine_delta,21,Roshi,0.8309522780821084
+27,mfw,cosine_delta,22,Sofiane,0.8329700281347205
+27,mfw,cosine_delta,23,So La Lune,0.8348764002102518
+27,mfw,cosine_delta,24,Elh Kmer,0.8351710171062218
+27,mfw,cosine_delta,25,SDM,0.8365479400767228
+27,mfw,burrows_delta,1,Timal,0.6921337122426015
+27,mfw,burrows_delta,2,Nahir,0.6926005416576829
+27,mfw,burrows_delta,3,GLK,0.6981114586831015
+27,mfw,burrows_delta,4,Mister You,0.7001597309299364
+27,mfw,burrows_delta,5,Zkr,0.7008068563659039
+27,mfw,burrows_delta,6,Hayce Lemsi,0.7029341506463392
+27,mfw,burrows_delta,7,ISK,0.705659512615034
+27,mfw,burrows_delta,8,Mister V,0.7067627647433399
+27,mfw,burrows_delta,9,Sexion d’Assaut,0.7072293590021943
+27,mfw,burrows_delta,10,S-Pion,0.7084831777108561
+27,mfw,burrows_delta,11,S-Crew,0.7086098604642902
+27,mfw,burrows_delta,12,Deen Burbigo,0.7092316793066779
+27,mfw,burrows_delta,13,Niro,0.7101926719365319
+27,mfw,burrows_delta,14,Guizmo,0.7118875179389017
+27,mfw,burrows_delta,15,Lemon Haze,0.7119523237296139
+27,mfw,burrows_delta,16,SCH,0.7137513063519949
+27,mfw,burrows_delta,17,Denzo,0.7198959789633366
+27,mfw,burrows_delta,18,Sofiane,0.720248588877561
+27,mfw,burrows_delta,19,Soso Maness,0.7204966303391235
+27,mfw,burrows_delta,20,L’Animalerie,0.7241886247176956
+27,mfw,burrows_delta,21,Rimkus,0.725533327449592
+27,mfw,burrows_delta,22,Furax Barbarossa,0.72649473974431
+27,mfw,burrows_delta,23,Dibson,0.7273043474896864
+27,mfw,burrows_delta,24,Lesram,0.7283514201352246
+27,mfw,burrows_delta,25,Sam’s,0.7291468314143791
+27,char,cosine_delta,1,Beendo Z,0.8140125096730617
+27,char,cosine_delta,2,Kerchak,0.8143437946512074
+27,char,cosine_delta,3,Werenoi,0.8157834862548274
+27,char,cosine_delta,4,GLK,0.8175403900926882
+27,char,cosine_delta,5,ISK,0.8301939222103631
+27,char,cosine_delta,6,Rimkus,0.834316440213054
+27,char,cosine_delta,7,RK,0.8362096975930781
+27,char,cosine_delta,8,Lemon Haze,0.8381242240869589
+27,char,cosine_delta,9,Lesram,0.8394277906703052
+27,char,cosine_delta,10,Maes,0.841499236302181
+27,char,cosine_delta,11,ASHE 22,0.8447276081976245
+27,char,cosine_delta,12,UZI (FRA),0.851803762377569
+27,char,cosine_delta,13,​DA Uzi,0.8559422069987361
+27,char,cosine_delta,14,Fresh laDouille,0.8562321944212351
+27,char,cosine_delta,15,Zola,0.8578359328009599
+27,char,cosine_delta,16,Nahir,0.8616303600788995
+27,char,cosine_delta,17,SDM,0.8622893181754262
+27,char,cosine_delta,18,Roshi,0.8646797050956105
+27,char,cosine_delta,19,Djadja & Dinaz,0.8687401044815869
+27,char,cosine_delta,20,Timal,0.8692869203808686
+27,char,cosine_delta,21,Ninho,0.8712173947299187
+27,char,cosine_delta,22,Gambi,0.8735761861487283
+27,char,cosine_delta,23,Bosh,0.8735791888276901
+27,char,cosine_delta,24,Diddi Trix,0.8756391100124352
+27,char,cosine_delta,25,BFG,0.8761398906341399
+27,char,burrows_delta,1,ISK,0.7650022335433893
+27,char,burrows_delta,2,S-Crew,0.7650692225808284
+27,char,burrows_delta,3,L’Animalerie,0.7656085532418074
+27,char,burrows_delta,4,Zkr,0.7681905806744398
+27,char,burrows_delta,5,Niro,0.7744696327022924
+27,char,burrows_delta,6,Vin’s,0.7745820684169077
+27,char,burrows_delta,7,Nahir,0.7762030738151716
+27,char,burrows_delta,8,Sam’s,0.777415839542869
+27,char,burrows_delta,9,Nakk Mendosa,0.7799097569895866
+27,char,burrows_delta,10,Deen Burbigo,0.7826289701419221
+27,char,burrows_delta,11,Leck,0.783202425949413
+27,char,burrows_delta,12,Hugo TSR,0.7854528806420176
+27,char,burrows_delta,13,Beeby,0.7857557025281767
+27,char,burrows_delta,14,Mister You,0.7923034435231638
+27,char,burrows_delta,15,Worms-T,0.7932914973747338
+27,char,burrows_delta,16,Vald,0.7945888302941437
+27,char,burrows_delta,17,5 Majeur,0.7975301710039682
+27,char,burrows_delta,18,Saké (FRA),0.798210529102371
+27,char,burrows_delta,19,PLK,0.7994583733997906
+27,char,burrows_delta,20,Lesram,0.7996012231159603
+27,char,burrows_delta,21,Hayce Lemsi,0.801388763994935
+27,char,burrows_delta,22,Timal,0.8015614369623972
+27,char,burrows_delta,23,Sopico,0.8052633753092723
+27,char,burrows_delta,24,Lacrim,0.8060929989698086
+27,char,burrows_delta,25,Seth Gueko,0.808445299155521
+28,mfw,cosine_delta,1,Werenoi,0.7449009077229094
+28,mfw,cosine_delta,2,Soso Maness,0.764910805341088
+28,mfw,cosine_delta,3,Maes,0.7690020012076265
+28,mfw,cosine_delta,4,Lemon Haze,0.7724129634283365
+28,mfw,cosine_delta,5,Fresh laDouille,0.7820843570641013
+28,mfw,cosine_delta,6,Beendo Z,0.79071703571549
+28,mfw,cosine_delta,7,SCH,0.7914728335070615
+28,mfw,cosine_delta,8,Lacrim,0.8024573019865451
+28,mfw,cosine_delta,9,Rimkus,0.8054669346628911
+28,mfw,cosine_delta,10,Dika,0.8067876546304812
+28,mfw,cosine_delta,11,4Keus,0.8090559748766282
+28,mfw,cosine_delta,12,100 Blaze,0.8119949968378031
+28,mfw,cosine_delta,13,ASHE 22,0.8127794508839999
+28,mfw,cosine_delta,14,SDM,0.8184652598779095
+28,mfw,cosine_delta,15,Kerchak,0.8198136893598154
+28,mfw,cosine_delta,16,GLK,0.8212176971071851
+28,mfw,cosine_delta,17,S-Pion,0.8247570188823337
+28,mfw,cosine_delta,18,Graya,0.8261339909651847
+28,mfw,cosine_delta,19,Roshi,0.8261347290996872
+28,mfw,cosine_delta,20,Mister You,0.8270589494951587
+28,mfw,cosine_delta,21,Zola,0.8310492725346073
+28,mfw,cosine_delta,22,Meryl,0.8357228061490041
+28,mfw,cosine_delta,23,AM La Scampia,0.8366166742994519
+28,mfw,cosine_delta,24,Kodes,0.8368450221643422
+28,mfw,cosine_delta,25,​​okis,0.8382294964602637
+28,mfw,burrows_delta,1,S-Pion,0.710309125172983
+28,mfw,burrows_delta,2,Zkr,0.7110240149870454
+28,mfw,burrows_delta,3,Soso Maness,0.7207087998990026
+28,mfw,burrows_delta,4,YL,0.7218837095042764
+28,mfw,burrows_delta,5,S-Crew,0.7231973899968256
+28,mfw,burrows_delta,6,Beendo Z,0.723243199070554
+28,mfw,burrows_delta,7,Lacrim,0.7245944550936771
+28,mfw,burrows_delta,8,Rimkus,0.7248113073083782
+28,mfw,burrows_delta,9,Mister V,0.7252768978830604
+28,mfw,burrows_delta,10,Lemon Haze,0.7262768283492772
+28,mfw,burrows_delta,11,Vald,0.7273518524515705
+28,mfw,burrows_delta,12,SCH,0.7306177313407323
+28,mfw,burrows_delta,13,Rohff,0.7339398303760927
+28,mfw,burrows_delta,14,4Keus,0.7342488613311005
+28,mfw,burrows_delta,15,Denzo,0.7354320641199926
+28,mfw,burrows_delta,16,Grödash,0.7363921587323651
+28,mfw,burrows_delta,17,ISK,0.7386134563777873
+28,mfw,burrows_delta,18,Dibson,0.7398850275744705
+28,mfw,burrows_delta,19,Hayce Lemsi,0.7399906445464376
+28,mfw,burrows_delta,20,Nahir,0.7406359417245484
+28,mfw,burrows_delta,21,Hugo TSR,0.7409264863126743
+28,mfw,burrows_delta,22,Djadja & Dinaz,0.7427476404474412
+28,mfw,burrows_delta,23,ASHE 22,0.7452665316152288
+28,mfw,burrows_delta,24,Leck,0.7473136717486991
+28,mfw,burrows_delta,25,Niro,0.7484968912846898
+28,char,cosine_delta,1,Beendo Z,0.8035374286101026
+28,char,cosine_delta,2,Werenoi,0.8257649800940724
+28,char,cosine_delta,3,UZI (FRA),0.8270274030199509
+28,char,cosine_delta,4,Kerchak,0.8290658111884576
+28,char,cosine_delta,5,ASHE 22,0.8293331968153157
+28,char,cosine_delta,6,Lemon Haze,0.8334869744782187
+28,char,cosine_delta,7,Rimkus,0.83393820935839
+28,char,cosine_delta,8,Fresh laDouille,0.83575137563745
+28,char,cosine_delta,9,​DA Uzi,0.838404230878742
+28,char,cosine_delta,10,Maes,0.8453189533057675
+28,char,cosine_delta,11,SDM,0.85103752765388
+28,char,cosine_delta,12,Hornet La Frappe,0.8521575106280866
+28,char,cosine_delta,13,Roshi,0.8533024824485128
+28,char,cosine_delta,14,SCH,0.8592387974532542
+28,char,cosine_delta,15,​​okis,0.8610543449809002
+28,char,cosine_delta,16,Zola,0.862086002036137
+28,char,cosine_delta,17,GLK,0.8626608453278376
+28,char,cosine_delta,18,Diddi Trix,0.865651041774897
+28,char,cosine_delta,19,Zkr,0.8663196371604187
+28,char,cosine_delta,20,Worms-T,0.8676082482679828
+28,char,cosine_delta,21,Dika,0.8693973423700093
+28,char,cosine_delta,22,Sopico,0.8710854165815078
+28,char,cosine_delta,23,Nahir,0.8712756468337581
+28,char,cosine_delta,24,Lesram,0.8725619698014246
+28,char,cosine_delta,25,BFG,0.8758917052067111
+28,char,burrows_delta,1,L’Animalerie,0.768588442100665
+28,char,burrows_delta,2,Leck,0.7863342838950116
+28,char,burrows_delta,3,S-Crew,0.7868143819088248
+28,char,burrows_delta,4,Nahir,0.7885100020285404
+28,char,burrows_delta,5,Zikxo,0.788931741687113
+28,char,burrows_delta,6,Zkr,0.7906794715219777
+28,char,burrows_delta,7,Sadek,0.7911507315473839
+28,char,burrows_delta,8,Grödash,0.7939633813924041
+28,char,burrows_delta,9,Sam’s,0.7942669646743564
+28,char,burrows_delta,10,Worms-T,0.7985332836304918
+28,char,burrows_delta,11,YL,0.7990096005542453
+28,char,burrows_delta,12,4Keus,0.8035464247043695
+28,char,burrows_delta,13,5 Majeur,0.8045217505791734
+28,char,burrows_delta,14,Dibson,0.8059678198052658
+28,char,burrows_delta,15,Vald,0.8069571359661055
+28,char,burrows_delta,16,Deen Burbigo,0.8072934473230025
+28,char,burrows_delta,17,Denzo,0.8073230863130869
+28,char,burrows_delta,18,Nakk Mendosa,0.8078917913623543
+28,char,burrows_delta,19,GLK,0.808143127457831
+28,char,burrows_delta,20,Bigflo & Oli,0.8094189917547201
+28,char,burrows_delta,21,Rohff,0.8113388651318679
+28,char,burrows_delta,22,S.Pri Noir,0.8117123140316983
+28,char,burrows_delta,23,Beendo Z,0.8127344952989041
+28,char,burrows_delta,24,PLK,0.8128071246290726
+28,char,burrows_delta,25,SCH,0.815143986611939
+29,mfw,cosine_delta,1,Lemon Haze,0.7565504224282069
+29,mfw,cosine_delta,2,Werenoi,0.7573188700121226
+29,mfw,cosine_delta,3,Naps,0.7724367093164901
+29,mfw,cosine_delta,4,Lacrim,0.7770285746964587
+29,mfw,cosine_delta,5,Zola,0.7779760013068684
+29,mfw,cosine_delta,6,Rimkus,0.7806441621612559
+29,mfw,cosine_delta,7,Seth Gueko,0.7837818747751137
+29,mfw,cosine_delta,8,Maes,0.7841425224674106
+29,mfw,cosine_delta,9,UZI (FRA),0.7880481205709353
+29,mfw,cosine_delta,10,Beendo Z,0.7891591586197491
+29,mfw,cosine_delta,11,Kerchak,0.7945938041675553
+29,mfw,cosine_delta,12,SCH,0.8000334037269856
+29,mfw,cosine_delta,13,Mister You,0.803553507831668
+29,mfw,cosine_delta,14,Dika,0.8054830325034018
+29,mfw,cosine_delta,15,RK,0.8067553678241971
+29,mfw,cosine_delta,16,Fresh laDouille,0.8084502382548427
+29,mfw,cosine_delta,17,4Keus,0.8123923714115566
+29,mfw,cosine_delta,18,Soso Maness,0.8138280593633842
+29,mfw,cosine_delta,19,Hornet La Frappe,0.8293974254237186
+29,mfw,cosine_delta,20,ISK,0.8326322920978801
+29,mfw,cosine_delta,21,Zkr,0.8349579910339168
+29,mfw,cosine_delta,22,100 Blaze,0.83705841553145
+29,mfw,cosine_delta,23,Koba LaD,0.8378767119913804
+29,mfw,cosine_delta,24,Graya,0.8408732515592645
+29,mfw,cosine_delta,25,Sofiane,0.8414055928000584
+29,mfw,burrows_delta,1,Zkr,0.6688794372804596
+29,mfw,burrows_delta,2,S-Pion,0.6930164841911385
+29,mfw,burrows_delta,3,Seth Gueko,0.6969497735086202
+29,mfw,burrows_delta,4,Beendo Z,0.7011830269489313
+29,mfw,burrows_delta,5,ISK,0.7012215879229564
+29,mfw,burrows_delta,6,Dibson,0.718927199435632
+29,mfw,burrows_delta,7,Lemon Haze,0.7196225822136388
+29,mfw,burrows_delta,8,Soso Maness,0.7248691032752119
+29,mfw,burrows_delta,9,Mister You,0.7250977349587044
+29,mfw,burrows_delta,10,L’Animalerie,0.7259181771422751
+29,mfw,burrows_delta,11,Intouchable,0.7272004972109241
+29,mfw,burrows_delta,12,Guizmo,0.7280248989345115
+29,mfw,burrows_delta,13,Lacrim,0.7282282847734552
+29,mfw,burrows_delta,14,Rimkus,0.729521468749431
+29,mfw,burrows_delta,15,GLK,0.7299300840351802
+29,mfw,burrows_delta,16,Panama Bende,0.729971506387
+29,mfw,burrows_delta,17,Ninho,0.7303525121868758
+29,mfw,burrows_delta,18,Alonzo,0.7312980384373208
+29,mfw,burrows_delta,19,Zola,0.7314974542700845
+29,mfw,burrows_delta,20,Denzo,0.7320720781349767
+29,mfw,burrows_delta,21,RK,0.7330924543220158
+29,mfw,burrows_delta,22,Vin’s,0.7335490210166663
+29,mfw,burrows_delta,23,​DA Uzi,0.7371825895871493
+29,mfw,burrows_delta,24,4Keus,0.7380743537453796
+29,mfw,burrows_delta,25,Deen Burbigo,0.7395142645030517
+29,char,cosine_delta,1,Zkr,0.7978446012799557
+29,char,cosine_delta,2,Beendo Z,0.8076176272776063
+29,char,cosine_delta,3,Kerchak,0.8083049204350683
+29,char,cosine_delta,4,UZI (FRA),0.8083235909615681
+29,char,cosine_delta,5,RK,0.8217485902280578
+29,char,cosine_delta,6,Maes,0.82526618083786
+29,char,cosine_delta,7,Rimkus,0.8273200637141676
+29,char,cosine_delta,8,Gradur,0.8286040862464765
+29,char,cosine_delta,9,Werenoi,0.832989023485613
+29,char,cosine_delta,10,Seth Gueko,0.8339815522039508
+29,char,cosine_delta,11,Lemon Haze,0.839256200603724
+29,char,cosine_delta,12,Hatik,0.8396631086408309
+29,char,cosine_delta,13,ISK,0.8411035276340628
+29,char,cosine_delta,14,Zola,0.850034532161198
+29,char,cosine_delta,15,Lesram,0.8653757678259677
+29,char,cosine_delta,16,​DA Uzi,0.8656073501858303
+29,char,cosine_delta,17,Roshi,0.866444583625428
+29,char,cosine_delta,18,Sopico,0.8681414732037793
+29,char,cosine_delta,19,Timal,0.8697569083984564
+29,char,cosine_delta,20,Gambi,0.8709772037086805
+29,char,cosine_delta,21,Djadja & Dinaz,0.8710263636544349
+29,char,cosine_delta,22,SCH,0.8735502114366419
+29,char,cosine_delta,23,Worms-T,0.8763618794898143
+29,char,cosine_delta,24,ASHE 22,0.8764341260019891
+29,char,cosine_delta,25,Niaks,0.8767058995654852
+29,char,burrows_delta,1,Zkr,0.731912511680867
+29,char,burrows_delta,2,ISK,0.7658386470216691
+29,char,burrows_delta,3,L’Animalerie,0.767241481576428
+29,char,burrows_delta,4,Seth Gueko,0.7679015105652391
+29,char,burrows_delta,5,Vin’s,0.7803956909549624
+29,char,burrows_delta,6,Panama Bende,0.7826903702732134
+29,char,burrows_delta,7,Nakk Mendosa,0.7872219942791965
+29,char,burrows_delta,8,JuL,0.7892808894404002
+29,char,burrows_delta,9,S.Pri Noir,0.7922647049261062
+29,char,burrows_delta,10,Hatik,0.7927424949791761
+29,char,burrows_delta,11,Leck,0.7949533295388925
+29,char,burrows_delta,12,Sadek,0.7957833480225095
+29,char,burrows_delta,13,Sopico,0.7991161711711081
+29,char,burrows_delta,14,Mister You,0.8003401652005814
+29,char,burrows_delta,15,Saké (FRA),0.8004614053584694
+29,char,burrows_delta,16,GLK,0.801371682964942
+29,char,burrows_delta,17,Beendo Z,0.8041186864103602
+29,char,burrows_delta,18,YL,0.804145049964518
+29,char,burrows_delta,19,S-Crew,0.8046264864018631
+29,char,burrows_delta,20,Lacrim,0.8068064375678017
+29,char,burrows_delta,21,Worms-T,0.8073299088318989
+29,char,burrows_delta,22,Swift Guad,0.8076107954818359
+29,char,burrows_delta,23,Sam’s,0.8090865900391503
+29,char,burrows_delta,24,Dibson,0.809110805280992
+29,char,burrows_delta,25,Casseurs Flowters,0.8101811209466121

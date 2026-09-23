@@ -1,0 +1,11 @@
+variante,test,n_titres,distance,distance_mediane_hasard,p_valeur,mots_credites,n_non_credites,mots_non_credites,distance_non_credites,n_titres_2025,n_titres_web7,mots_web7,pct_featurings_ziak,pct_featurings_web7,taux_detection_p05,rang_median,top20
+sans featurings ni ad-libs,2025 : titres crédités à web7,8.0,0.8809768694949898,0.9346887644725776,0.0276,2538.0,15.0,6241.0,0.9387872424380748,23.0,78.0,36557.0,6.227936818779149,5.374912051462458,,,
+sans featurings ni ad-libs,contrôle : 100 % web7,8.0,,,0.0,,,,,,,,,,1.0,,
+sans featurings ni ad-libs,contrôle : 50 % web7,8.0,,,0.0025,,,,,,,,,,0.81,,
+sans featurings ni ad-libs,toutes années : titres crédités,10.0,0.9110276022462103,,0.074,,,,,,,,,,,,
+sans featurings ni ad-libs,classement général sans invités,,,,,,,,,,,,,,,111.5,0.0
+sans featurings,2025 : titres crédités à web7,8.0,0.8813483456849827,0.9372471960404205,0.024,2682.0,15.0,6720.0,0.945078213518573,23.0,78.0,37532.0,6.227936818779149,5.374912051462458,,,
+sans featurings,contrôle : 100 % web7,8.0,,,0.0,,,,,,,,,,1.0,,
+sans featurings,contrôle : 50 % web7,8.0,,,0.0025,,,,,,,,,,0.79,,
+sans featurings,toutes années : titres crédités,10.0,0.9118272435988402,,0.06833333333333333,,,,,,,,,,,,
+sans featurings,classement général sans invités,,,,,,,,,,,,,,,126.5,0.0

@@ -72,8 +72,11 @@ def main() -> None:
 
     rows = []
     for solo, groupe, n_mc in PAIRES:
-        if solo not in totals.index or groupe not in totals.index:
-            print(f"  (ignoré : {solo} / {groupe} absent du pool)")
+        # Un artiste passé sous le seuil (un corpus sans featurings peut en
+        # faire maigrir certains) n'est plus testable : la paire est sautée.
+        if solo not in songs or groupe not in songs:
+            print(f"  (ignoré : {solo} / {groupe} absent du pool, ou sous "
+                  f"{T_CAND:,} mots)")
             continue
         # Le solo est retiré du pool : on cherche le groupe depuis ses textes,
         # exactement comme on cherche un alias de Ziak sans Ziak dans le pool.
