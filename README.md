@@ -44,8 +44,9 @@ et [`notebook-authoring`](.github/skills/notebook-authoring/SKILL.md)) :
 **Deux écarts assumés**, signalés ici plutôt que passés sous silence :
 
 1. `images/` reste versionné. Le `.gitignore` amont n'y conserve que les figures `R00_*`
-   et `*_full_*` ; les neuf figures de l'article sont des livrables de corpus complet et
-   doivent accompagner le PDF.
+   et `*_full_*` ; les figures de l'article sont des livrables de corpus complet et
+   doivent accompagner le PDF. Celles du corpus sans featurings vivent dans
+   `images/sans_invites/`, comme leurs résultats dans `export/sans_invites/`.
 2. Le skill [`rap-eda-hip-hop-aesthetic`](.github/skills/rap-eda-hip-hop-aesthetic/SKILL.md)
    (fond noir, texte doré) n'est pas appliqué aux figures de l'article : il vise les
    visualisations exploratoires, alors que ces figures sont destinées à l'impression sur
@@ -53,12 +54,12 @@ et [`notebook-authoring`](.github/skills/notebook-authoring/SKILL.md)) :
 
 ## L'article
 
-- 📝 **[`article_ziak_stylometrie.docx`](article_ziak_stylometrie.docx)** — l'article rédigé, au format Word pour être retravaillé (16 pages, 9 figures, 10 tableaux).
+- 📝 **[`article_ziak_stylometrie.docx`](article_ziak_stylometrie.docx)** — l'article rédigé, au format Word pour être retravaillé (6 pages, 4 figures, 2 tableaux).
 - 📄 [`article_ziak_stylometrie.pdf`](article_ziak_stylometrie.pdf) — la même version en PDF.
 
-Il se lit **à deux niveaux** : la section 1 répond à la question en français courant, sans
-prérequis ; les sections suivantes exposent la méthode et les chiffres, chaque passage
-technique étant suivi d'un encadré « En clair », un lexique fermant l'article.
+Court par choix : une introduction qui pose l'énigme, puis les données, la méthode et
+les résultats, chaque verdict étant donné sur les trois corpus (publié, et deux façons
+d'en retirer les featurings).
 
 La méthode complète — récolte, prétraitement, moteur, analyses — est décrite
 pas à pas dans [`METHODE.md`](METHODE.md).
@@ -75,18 +76,23 @@ Ziak est apparu en 2020 sans identité civile publique, ce qui a nourri trois hy
 Toutes trois sont testables : si un auteur en cache un autre, les textes doivent porter la
 même signature statistique.
 
-| Hypothèse | Résultat | Solidité |
+| Hypothèse | Résultat (couplets d'invités retirés) | Solidité |
 |---|---|---|
-| Ziak est un rappeur du corpus, sous un autre nom | aucun des 392 candidats ne porte sa signature | forte |
-| Ziak est Mikeysem | 58ᵉ sur 493, derrière six artistes non suspectés | limitée (3 745 mots) |
-| web7 (ex-7 Jaws) écrit ses textes | jamais parmi ses proches, mais co-auteur crédité de 10 titres, avec une trace mesurable sur l'album 2025 (p = 0,04) | moyenne |
+| Ziak est un rappeur du corpus, sous un autre nom | aucun des 374 candidats ne porte sa signature, sur les trois corpus | forte |
+| Ziak est Mikeysem | 67ᵉ sur 494, derrière six artistes non suspectés | limitée (3 745 mots) |
+| web7 (ex-7 Jaws) écrit ses textes | jamais parmi ses proches, mais co-auteur crédité de 10 titres ; trace sur l'album 2025 (p = 0,028) qui disparaît quand les titres avec invités sont écartés (p = 0,14) | faible |
 
-**Validation** — la méthode retrouve le bon auteur dans 90 % des cas sur 177 artistes dont
-la réponse est connue, et 97,7 % pour la génération de Ziak. Confrontée à des liens réels
-plutôt que simulés — 14 recouvrements auteur/groupe, 3 changements de nom documentés —
-elle retrouve *Joke → Ateyaba* au premier rang sur 393 malgré un changement d'identité
-revendiqué, mais perd sa capacité de détection quand l'auteur ne signe qu'une fraction des
-textes.
+**Featurings** — le couplet d'un invité est rangé sous le nom de l'hôte, ce qui rapproche
+artificiellement ceux qui collaborent. Les balises Genius ont été re-collectées
+(34 666 pages sur 34 732) pour les retirer de deux façons : titres avec invité écartés
+(option 1), ou seuls les couplets d'invités (option 2). Sans eux, la méthode passe de
+90 % à 94-95 % de bonnes réponses.
+
+**Validation** — la méthode retrouve le bon auteur dans 94 % des cas sur 159 artistes dont
+la réponse est connue, et 100 % pour la génération de Ziak. Sur des changements de nom
+réels, elle retrouve *Joke → Ateyaba* au premier rang dans tous les tirages, Disiz au 2ᵉ
+et Gims au 3ᵉ ou 4ᵉ ; elle perd en revanche la trace d'un auteur qui ne signe qu'une
+fraction des textes d'un collectif.
 
 **Le cas Mikeysem** — le nom le plus souvent avancé ne figurait pas dans LRFAF : sans page
 Wikipédia, il échappait au critère d'inclusion du corpus. Ses titres ont été collectés et
@@ -122,7 +128,10 @@ python3 collecte_genius.py 1078135 .cache_lex/web7_raw.json       # web7 (ex-7 J
 python3 collecte_genius.py 2113831 .cache_lex/ziak_raw.json       # Ziak, avec balises
 python3 15_test_ziak_7jaws.py          # web7 au niveau de l'artiste, crédits
 python3 16_test_2025_web7.py           # expérience naturelle 2025, sans featurings
+python3 19_collecte_corpus.py          # balises Genius du corpus entier (~6 h)
+./rejouer_variantes.sh                 # corpus sans featurings (options 1 et 2) + étude
 python3 07_figures.py                  # figures de l'article
+CORPUS_VARIANTE=sans_invites python3 07_figures.py
 python3 12_article_pdf.py              # article_ziak_stylometrie.pdf
 python3 17_article_docx.py             # article_ziak_stylometrie.docx
 ```
@@ -140,4 +149,4 @@ balises de section de Genius).
 ## Notebooks
 
 - [`01_description_variables_quantitatives.ipynb`](01_description_variables_quantitatives.ipynb) : description des variables quantitatives du corpus (notebook d'origine du dépôt amont).
-- [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) : la version reproductible de l'étude, avec le code et ses sorties. Il couvre toute l'étude sauf les tests sur web7 (section 9 de l'article), qui ne vivent que dans les scripts `15_` et `16_`.
+- [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) : la version reproductible de l'étude, avec le code et ses sorties. Il couvre l'étude sur le corpus publié, sauf les tests sur web7 (scripts `15_` et `16_`) et les corpus sans featurings (`rejouer_variantes.sh`).

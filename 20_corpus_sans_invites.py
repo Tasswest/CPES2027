@@ -49,6 +49,7 @@ from genius_sections import (LIGNE_BALISE, _norme, est_balise_de_section,
 from stylo_features import corpus_brut_csv, export_dir
 
 COLLECTE = Path(".cache_lex/corpus_balises.jsonl")
+ECHECS = Path(".cache_lex/corpus_balises_echecs.jsonl")   # pages disparues de Genius
 SORTIE = Path("corpus_sans_invites.csv")          # option 2
 SORTIE_SANS_FEATS = Path("corpus_sans_feats.csv")  # option 1
 RESULT_DIR = export_dir()
@@ -126,8 +127,10 @@ def membres_par_artiste(collecte: dict, urls: pd.DataFrame) -> tuple[dict, pd.Da
                 lignes.append({"artiste": artiste, "intervenant": nom, "titres": k,
                                "sur": n, "part": part, "motif": motif})
         membres[artiste] = internes
-    return membres, pd.DataFrame(lignes).sort_values(["artiste", "part"],
-                                                     ascending=[True, False])
+    # L'intervenant départage les ex æquo : sans lui, l'ordre suivrait celui
+    # d'un ensemble Python, qui change d'une exécution à l'autre.
+    return membres, pd.DataFrame(lignes).sort_values(["artiste", "part", "intervenant"],
+                                                     ascending=[True, False, True])
 
 
 def main() -> None:
@@ -183,6 +186,7 @@ def main() -> None:
     resume = pd.DataFrame([{
         "titres_corpus": len(corpus),
         "titres_recollectes": int((st.etat == "nettoyé").sum()),
+        "pages_disparues": sum(1 for _ in open(ECHECS)) if ECHECS.exists() else 0,
         "artistes_nettoyes": int(st.loc[st.nettoye, "artist"].nunique()),
         "artistes_garde_fou": len(suspects),
         "mots_gardes": int(total_g), "mots_retires": int(total_r),

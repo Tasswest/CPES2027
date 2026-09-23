@@ -10,12 +10,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from stylo_features import export_dir
+from stylo_features import VARIANTE, export_dir
 from scipy import stats
 
-IMAGES_DIR = Path("images")
+# Comme les résultats, les figures d'un corpus sans featurings vivent dans un
+# sous-dossier : celles du corpus publié restent intactes.
+IMAGES_DIR = Path("images") if VARIANTE == "brut" else Path("images") / VARIANTE
 RESULT_DIR = export_dir()
-IMAGES_DIR.mkdir(exist_ok=True)
+IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
 mpl.rcParams.update({
     "figure.dpi": 130,
@@ -87,7 +89,8 @@ def fig_biais_taille() -> None:
                 ha="center", fontweight="bold", fontsize=10)
     ax.set_ylim(0, 1.08)
     ax.set_ylabel("Taux de bonne identification (rang 1)")
-    ax.set_title("c) Puissance mesurée sur vérité-terrain\n(177 artistes dont on connaît la réponse)")
+    n_art = pd.read_csv(RESULT_DIR / "03_1_validation_brute.csv", usecols=["artist"]).artist.nunique()
+    ax.set_title(f"c) Puissance mesurée sur vérité-terrain\n({n_art} artistes dont on connaît la réponse)")
     ax.tick_params(axis="x", labelsize=8)
 
     fig.suptitle("Pourquoi la démarche intuitive désigne le mauvais artiste",
@@ -396,7 +399,7 @@ def fig_alias_reels() -> None:
     ax.axvline(20, color=GRIS, ls="--", lw=1.2, label="seuil top 20")
     for yy, r in zip(y, s.rang_median):
         ax.text(r * 1.15, yy, f"{int(r)}", va="center", fontsize=7.5)
-    ax.set_xlabel("Rang du groupe parmi 392 candidats (log)")
+    ax.set_xlabel(f"Rang du groupe parmi {int(bruts.n_candidats.iloc[0])} candidats (log)")
     ax.set_title("a) Le lien d'auteur est-il retrouvé ?\n(vert : oui, dans le top 20)")
     ax.legend(fontsize=7.5, loc="lower right")
 
@@ -450,7 +453,7 @@ def fig_alias_temporel() -> None:
         ax.text(r + 0.4, yy, f"{int(r)}", va="center", fontsize=9, fontweight="bold")
     ax.set_yticks(y); ax.set_yticklabels(chg.libelle, fontsize=8.5)
     ax.set_xlim(0, max(chg.rang_median) * 1.5)
-    ax.set_xlabel("Rang de la période postérieure (sur 393)")
+    ax.set_xlabel(f"Rang de la période postérieure (sur {int(res.n_candidats.iloc[0])})")
     ax.set_title("a) L'artiste change de nom —\nla méthode le retrouve quand même")
 
     # b) distribution des rangs : changement vs controle
@@ -517,7 +520,7 @@ def fig_web7() -> None:
     ax.set_yticks(y)
     ax.set_yticklabels([noms[i] for i in ordre], fontsize=8.5)
     ax.set_xscale("log")
-    ax.set_xlabel("Rang médian vu depuis Ziak (sur 390, log)")
+    ax.set_xlabel(f"Rang médian vu depuis Ziak (sur {int(ref.n_candidats)}, log)")
     ax.set_title("a) Au niveau de l'artiste, web7\nn'est pas un voisin de Ziak")
 
     # b) experience 2025 : distribution de permutation
@@ -633,6 +636,11 @@ FIGURES = [("biais de taille", fig_biais_taille),
 
 if __name__ == "__main__":
     for nom, fn in FIGURES:
-        fn()
+        try:
+            fn()
+        except FileNotFoundError as e:
+            # Certaines analyses ne sont rejouées que sur le corpus publié (18_).
+            print(f"  figure « {nom} » sautée : {Path(e.filename).name} absent")
+            continue
         print(f"  figure « {nom} » écrite")
     print(f"\n{len(FIGURES)} figures dans {IMAGES_DIR}/")

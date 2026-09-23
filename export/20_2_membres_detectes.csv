@@ -18,8 +18,8 @@ artiste,intervenant,titres,sur,part,motif
 1995,sneazzy,26,38,0.6842105263157895,répertoire
 1995,alphawann,25,38,0.6578947368421053,répertoire
 1995,darrylzeuja,24,38,0.631578947368421,répertoire
-1995,sneazzywest,4,38,0.10526315789473684,récurrent
 1995,arenojaz,4,38,0.10526315789473684,récurrent
+1995,sneazzywest,4,38,0.10526315789473684,récurrent
 2zer,2zer,7,49,0.14285714285714285,récurrent
 2zer,nekfeu,4,49,0.08163265306122448,récurrent
 3010,3010,37,219,0.1689497716894977,récurrent
@@ -96,9 +96,9 @@ Bisso Na Bisso,passi,20,23,0.8695652173913043,répertoire
 Bisso Na Bisso,benj,17,23,0.7391304347826086,répertoire
 Bisso Na Bisso,calbo,16,23,0.6956521739130435,répertoire
 Bisso Na Bisso,doc,16,23,0.6956521739130435,répertoire
-Bisso Na Bisso,mpassi,14,23,0.6086956521739131,répertoire
 Bisso Na Bisso,gkill,14,23,0.6086956521739131,répertoire
 Bisso Na Bisso,lino,14,23,0.6086956521739131,répertoire
+Bisso Na Bisso,mpassi,14,23,0.6086956521739131,répertoire
 Bisso Na Bisso,mystik,11,23,0.4782608695652174,répertoire
 Black Kent,blackkent,20,121,0.1652892561983471,récurrent
 Black M,blackm,41,121,0.33884297520661155,récurrent
@@ -110,9 +110,9 @@ BraSco (FRA),brasco,10,31,0.3225806451612903,récurrent
 Busta Flex,bustaflex,26,127,0.2047244094488189,récurrent
 Butter Bullets,sidisid,28,103,0.27184466019417475,récurrent
 Caballero,caballero,15,74,0.20270270270270271,récurrent
-Caballero,ysha,4,74,0.05405405405405406,récurrent
 Caballero,jeanjass,4,74,0.05405405405405406,récurrent
 Caballero,sima,4,74,0.05405405405405406,récurrent
+Caballero,ysha,4,74,0.05405405405405406,récurrent
 Canardo,canardo,31,110,0.2818181818181818,récurrent
 Casey (FRA),casey,7,47,0.14893617021276595,récurrent
 Casseurs Flowters,orelsan,37,48,0.7708333333333334,répertoire
@@ -123,8 +123,8 @@ Chilla,chilla,9,67,0.13432835820895522,récurrent
 Cookiesan,cookiesan,6,61,0.09836065573770492,récurrent
 Cuizinier,cuizinier,19,31,0.6129032258064516,répertoire
 Cuizinier,thegenevanheathen,9,31,0.2903225806451613,récurrent
-Cuizinier,tidoberman,4,31,0.12903225806451613,récurrent
 Cuizinier,tekilatex,4,31,0.12903225806451613,récurrent
+Cuizinier,tidoberman,4,31,0.12903225806451613,récurrent
 D. Ace,dace,16,111,0.14414414414414414,récurrent
 DTF,rkm,95,96,0.9895833333333334,répertoire
 DTF,rti,93,96,0.96875,répertoire
@@ -189,8 +189,8 @@ Fixpen Sill,vidji,51,60,0.85,répertoire
 Fixpen Sill,lomepal,4,60,0.06666666666666667,récurrent
 Flynt,flynt,13,49,0.2653061224489796,récurrent
 Flynt,nasme,4,49,0.08163265306122448,récurrent
-Fonky Family,leratluciano,46,68,0.6764705882352942,répertoire
 Fonky Family,donchoa,46,68,0.6764705882352942,répertoire
+Fonky Family,leratluciano,46,68,0.6764705882352942,répertoire
 Fonky Family,menzo,39,68,0.5735294117647058,répertoire
 Fonky Family,sat,39,68,0.5735294117647058,répertoire
 Fonky Family,satlartificier,7,68,0.10294117647058823,récurrent
@@ -221,10 +221,10 @@ Guizmo,guizmo,29,228,0.12719298245614036,récurrent
 Guy2Bezbar,guy2bezbar,13,58,0.22413793103448276,récurrent
 Gérard Baste,gerardbaste,26,62,0.41935483870967744,répertoire
 Gérard Baste,a2h,4,62,0.06451612903225806,récurrent
-Gérard Baste,rhumg,4,62,0.06451612903225806,récurrent
-Gérard Baste,mrxavier,4,62,0.06451612903225806,récurrent
 Gérard Baste,fancie,4,62,0.06451612903225806,récurrent
 Gérard Baste,monsieurpoulpe,4,62,0.06451612903225806,récurrent
+Gérard Baste,mrxavier,4,62,0.06451612903225806,récurrent
+Gérard Baste,rhumg,4,62,0.06451612903225806,récurrent
 H Magnum,hmagnum,32,87,0.367816091954023,récurrent
 H Magnum,maitregims,9,87,0.10344827586206896,récurrent
 Hamza,hamza,17,164,0.10365853658536585,récurrent
@@ -308,10 +308,10 @@ La Brigade,2fray,8,23,0.34782608695652173,récurrent
 La Brigade,base,8,23,0.34782608695652173,récurrent
 La Brigade,dock,8,23,0.34782608695652173,récurrent
 La Brigade,dvice,7,23,0.30434782608695654,récurrent
-La Brigade,lekfear,5,23,0.21739130434782608,récurrent
 La Brigade,kfear,5,23,0.21739130434782608,récurrent
-La Caution,nikkfurie,50,56,0.8928571428571429,répertoire
+La Brigade,lekfear,5,23,0.21739130434782608,récurrent
 La Caution,hitekk,50,56,0.8928571428571429,répertoire
+La Caution,nikkfurie,50,56,0.8928571428571429,répertoire
 La Cliqua,daddylordc,19,27,0.7037037037037037,répertoire
 La Cliqua,rocca,17,27,0.6296296296296297,répertoire
 La Cliqua,raphael,15,27,0.5555555555555556,répertoire
@@ -329,8 +329,8 @@ Lacrim,lacrim,62,216,0.28703703703703703,récurrent
 Lacrim,tag,20,216,0.09259259259259259,récurrent
 Lady Laistee,ladylaistee,14,53,0.2641509433962264,récurrent
 Lady Laistee,scratches,4,53,0.07547169811320754,récurrent
-Lala &ce,lala,17,66,0.25757575757575757,récurrent
 Lala &ce,ce,17,66,0.25757575757575757,récurrent
+Lala &ce,lala,17,66,0.25757575757575757,récurrent
 Lala &ce,puccijr,4,66,0.06060606060606061,récurrent
 Landy,landy,16,67,0.23880597014925373,récurrent
 Landy,tag,5,67,0.07462686567164178,récurrent
@@ -345,9 +345,9 @@ Le 3ème Œil,mombi,9,43,0.20930232558139536,récurrent
 Le 3ème Œil,x2,4,43,0.09302325581395349,récurrent
 Le Juiice,lejuiice,7,36,0.19444444444444445,récurrent
 Le Juiice,tag,4,36,0.1111111111111111,récurrent
+Le Klub des 7,cyanure,9,33,0.2727272727272727,récurrent
 Le Klub des 7,fuzati,9,33,0.2727272727272727,récurrent
 Le Klub des 7,gerardbaste,9,33,0.2727272727272727,récurrent
-Le Klub des 7,cyanure,9,33,0.2727272727272727,récurrent
 Le Klub des 7,lejouage,8,33,0.24242424242424243,récurrent
 Le Klub des 7,jamesdelleck,7,33,0.21212121212121213,récurrent
 Le Klub des 7,fredyk,5,33,0.15151515151515152,récurrent
@@ -384,10 +384,10 @@ Lycos,lycos,14,78,0.1794871794871795,récurrent
 L’Algérino,lalgerino,33,122,0.27049180327868855,récurrent
 L’Animalerie,luciobukowski,11,23,0.4782608695652174,répertoire
 L’Animalerie,missak,10,23,0.43478260869565216,répertoire
-L’Animalerie,kalams,8,23,0.34782608695652173,récurrent
 L’Animalerie,antonserra,8,23,0.34782608695652173,récurrent
-L’Animalerie,kacemwapalek,7,23,0.30434782608695654,récurrent
+L’Animalerie,kalams,8,23,0.34782608695652173,récurrent
 L’Animalerie,dico,7,23,0.30434782608695654,récurrent
+L’Animalerie,kacemwapalek,7,23,0.30434782608695654,récurrent
 L’Animalerie,nadir,7,23,0.30434782608695654,récurrent
 L’Animalerie,ethorskull,6,23,0.2608695652173913,récurrent
 L’Animalerie,ilenazz,6,23,0.2608695652173913,récurrent
@@ -398,8 +398,8 @@ L’Entourage,nekfeu,22,37,0.5945945945945946,répertoire
 L’Entourage,deenburbigo,21,37,0.5675675675675675,répertoire
 L’Entourage,alphawann,20,37,0.5405405405405406,répertoire
 L’Entourage,effgee,20,37,0.5405405405405406,répertoire
-L’Entourage,doums,19,37,0.5135135135135135,répertoire
 L’Entourage,2zer,19,37,0.5135135135135135,répertoire
+L’Entourage,doums,19,37,0.5135135135135135,répertoire
 L’Entourage,framal,18,37,0.4864864864864865,répertoire
 L’Entourage,mekra,17,37,0.4594594594594595,répertoire
 L’Entourage,fonkyflav,7,37,0.1891891891891892,récurrent
@@ -413,8 +413,8 @@ MMZ,lazer,55,65,0.8461538461538461,répertoire
 MZ,hachep,76,88,0.8636363636363636,répertoire
 MZ,jokair,75,88,0.8522727272727273,répertoire
 MZ,dehmo,70,88,0.7954545454545454,répertoire
-MZ,rodk,6,88,0.06818181818181818,récurrent
 MZ,chich,6,88,0.06818181818181818,récurrent
+MZ,rodk,6,88,0.06818181818181818,récurrent
 MZ,marlo,5,88,0.056818181818181816,récurrent
 Mac Tyer,mactyer,43,219,0.1963470319634703,récurrent
 Maes,tag,20,128,0.15625,récurrent
@@ -430,8 +430,8 @@ Mafia K’1 Fry,karlito,15,42,0.35714285714285715,récurrent
 Mafia K’1 Fry,manukey,15,42,0.35714285714285715,récurrent
 Mafia K’1 Fry,mistaflo,15,42,0.35714285714285715,récurrent
 Mafia K’1 Fry,teddycorona,12,42,0.2857142857142857,récurrent
-Mafia K’1 Fry,lasmontana,4,42,0.09523809523809523,récurrent
 Mafia K’1 Fry,jessymoney,4,42,0.09523809523809523,récurrent
+Mafia K’1 Fry,lasmontana,4,42,0.09523809523809523,récurrent
 Mafia K’1 Fry,selimdu94,4,42,0.09523809523809523,récurrent
 Mafia Trece,awax,12,31,0.3870967741935484,récurrent
 Mafia Trece,aspeak,10,31,0.3225806451612903,récurrent
@@ -449,8 +449,8 @@ Manu Key,scratches,4,61,0.06557377049180328,récurrent
 Maska,maska,22,87,0.25287356321839083,récurrent
 McFly & Carlito,carlito,26,37,0.7027027027027027,répertoire
 McFly & Carlito,mcfly,25,37,0.6756756756756757,répertoire
-McFly & Carlito,oli,4,37,0.10810810810810811,récurrent
 McFly & Carlito,bigflo,4,37,0.10810810810810811,récurrent
+McFly & Carlito,oli,4,37,0.10810810810810811,récurrent
 Ministère A.M.E.R.,passi,12,25,0.48,répertoire
 Ministère A.M.E.R.,stomybugsy,11,25,0.44,répertoire
 Mister V,misterv,26,80,0.325,récurrent
@@ -482,8 +482,8 @@ Neg’ Marrons,jacky,56,72,0.7777777777777778,répertoire
 Nekfeu,nekfeu,53,135,0.3925925925925926,récurrent
 Nekfeu,framal,16,135,0.11851851851851852,récurrent
 Nekfeu,alphawann,14,135,0.1037037037037037,récurrent
-Nekfeu,doums,13,135,0.0962962962962963,récurrent
 Nekfeu,2zer,13,135,0.0962962962962963,récurrent
+Nekfeu,doums,13,135,0.0962962962962963,récurrent
 Nekfeu,mekra,10,135,0.07407407407407407,récurrent
 Nemir,nemir,18,51,0.35294117647058826,récurrent
 Nemir,grosmo,5,51,0.09803921568627451,récurrent
@@ -505,8 +505,8 @@ Nusky,nusky,6,61,0.09836065573770492,récurrent
 Nysay,exs,35,41,0.8536585365853658,répertoire
 Nysay,salif,34,41,0.8292682926829268,répertoire
 Népal,nepal,11,53,0.20754716981132076,récurrent
-Octobre Rouge,logan,38,60,0.6333333333333333,répertoire
 Octobre Rouge,grain2caf,38,60,0.6333333333333333,répertoire
+Octobre Rouge,logan,38,60,0.6333333333333333,répertoire
 Octobre Rouge,voodoo,20,60,0.3333333333333333,récurrent
 Octobre Rouge,scratches,9,60,0.15,récurrent
 Octobre Rouge,grain,5,60,0.08333333333333333,récurrent
@@ -527,9 +527,9 @@ PSO Thug,aero,50,60,0.8333333333333334,répertoire
 PSO Thug,tag,4,60,0.06666666666666667,récurrent
 Panama Bende,elyo,20,22,0.9090909090909091,répertoire
 Panama Bende,lesram,19,22,0.8636363636363636,répertoire
-Panama Bende,ormaz,15,22,0.6818181818181818,répertoire
-Panama Bende,asf,15,22,0.6818181818181818,répertoire
 Panama Bende,aladin135,15,22,0.6818181818181818,répertoire
+Panama Bende,asf,15,22,0.6818181818181818,répertoire
+Panama Bende,ormaz,15,22,0.6818181818181818,répertoire
 Panama Bende,plk,11,22,0.5,répertoire
 Panama Bende,zeu,10,22,0.45454545454545453,répertoire
 Panama Bende,assaf,6,22,0.2727272727272727,récurrent
@@ -542,8 +542,8 @@ Psy 4 de la Rime,alonzo,69,85,0.8117647058823529,répertoire
 Psy 4 de la Rime,vincenzo,59,85,0.6941176470588235,répertoire
 Puzzle (Fra),tony,14,22,0.6363636363636364,répertoire
 Puzzle (Fra),zedoo,14,22,0.6363636363636364,répertoire
-Puzzle (Fra),resha,12,22,0.5454545454545454,répertoire
 Puzzle (Fra),ben,12,22,0.5454545454545454,répertoire
+Puzzle (Fra),resha,12,22,0.5454545454545454,répertoire
 R.E.D.K.,redk,10,65,0.15384615384615385,récurrent
 RK,tag,13,123,0.10569105691056911,récurrent
 RK,rk,12,123,0.0975609756097561,récurrent
@@ -589,8 +589,8 @@ Saïan Supa Crew,vicelow,33,64,0.515625,répertoire
 Saïan Supa Crew,leeroy,25,64,0.390625,récurrent
 Saïan Supa Crew,sirsamuel,24,64,0.375,récurrent
 Saïan Supa Crew,feniksi,20,64,0.3125,récurrent
-Saïan Supa Crew,specta,15,64,0.234375,récurrent
 Saïan Supa Crew,sly,15,64,0.234375,récurrent
+Saïan Supa Crew,specta,15,64,0.234375,récurrent
 Saïan Supa Crew,slythemicbuddah,14,64,0.21875,récurrent
 Saïan Supa Crew,leeroykesiah,9,64,0.140625,récurrent
 Saïan Supa Crew,fefe,8,64,0.125,récurrent
@@ -679,8 +679,8 @@ TSR Crew,hugoboss,14,69,0.2028985507246377,récurrent
 TSR Crew,hugotsr,9,69,0.13043478260869565,récurrent
 TSR Crew,nero,8,69,0.11594202898550725,récurrent
 TTC,tekilatex,39,44,0.8863636363636364,répertoire
-TTC,tidoberman,37,44,0.8409090909090909,répertoire
 TTC,cuizinier,37,44,0.8409090909090909,répertoire
+TTC,tidoberman,37,44,0.8409090909090909,répertoire
 TTC,tacteel,4,44,0.09090909090909091,récurrent
 Tandem,mackregor,26,33,0.7878787878787878,répertoire
 Tandem,mactyer,25,33,0.7575757575757576,répertoire
@@ -695,8 +695,8 @@ Tiakola,tiakola,7,24,0.2916666666666667,récurrent
 Tiers,tiersmonde,9,59,0.15254237288135594,récurrent
 Timal,timal,10,116,0.08620689655172414,récurrent
 Timal,tag,9,116,0.07758620689655173,récurrent
-Tragédie,tizybone,10,40,0.25,récurrent
 Tragédie,silkyshai,10,40,0.25,récurrent
+Tragédie,tizybone,10,40,0.25,récurrent
 Tragédie,tragedie,4,40,0.1,récurrent
 Triptik,dabaaz,34,41,0.8292682926829268,répertoire
 Triptik,blackboul,30,41,0.7317073170731707,répertoire
