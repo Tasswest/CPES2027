@@ -178,6 +178,18 @@ Un titre sans balise est conservé tel quel : l'absence de balise ne prouve pas
 l'absence d'invité, et écarter ces titres biaiserait le corpus vers les
 artistes les mieux annotés.
 
+**Deux options, testées toutes les deux.** Le même repérage des invités sert
+deux traitements :
+
+| Option | Traitement | Corpus | Coût |
+|---|---|---|---|
+| 1 | tout titre avec un invité est écarté en entier | `corpus_sans_feats.csv` | les artistes qui collaborent beaucoup maigrissent, certains passent sous 12 000 mots |
+| 2 | seules les sections d'invités sont retirées | `corpus_sans_invites.csv` | un refrain partagé mal balisé peut laisser passer un peu de texte |
+
+Si le verdict est le même sur les deux, les featurings n'ont pas faussé
+l'analyse. Le même traitement s'applique aux paroles collectées hors LRFAF
+(Ziak, web7), dans les scripts `15_` et `16_`.
+
 ### 2.6 Le pipeline LRFAF reconstitué — `lrfaf_pipeline.py`
 
 Pour ajouter Mikeysem au corpus, il fallait produire ses lignes **dans le
@@ -364,7 +376,8 @@ résultats**, pour que l'étude puisse être rejouée sur le corpus propre sans
 écraser la version publiée.
 
 ```bash
-CORPUS_VARIANTE=sans_invites python3 04_attribution_ziak.py
+CORPUS_VARIANTE=sans_invites python3 04_attribution_ziak.py   # option 2
+CORPUS_VARIANTE=sans_feats   python3 04_attribution_ziak.py   # option 1
 ```
 
 ---
@@ -410,9 +423,9 @@ mêmes chiffres.
 
 La re-collecte des 34 732 titres tourne. À son terme :
 
-1. `20_corpus_sans_invites.py` reconstruit le corpus ;
-2. l'étude est rejouée sur la variante `sans_invites` ;
-3. l'article compare les trois hypothèses **avant et après** nettoyage.
+1. `20_corpus_sans_invites.py` reconstruit les deux corpus nettoyés ;
+2. l'étude est rejouée sur les variantes `sans_invites` et `sans_feats` ;
+3. l'article donne chaque verdict sur les deux options.
 
 Un correctif de parsing récent — Genius sépare le libellé de ses interprètes
 par un deux-points *ou* par un tiret, et seul le premier était lu — impose de

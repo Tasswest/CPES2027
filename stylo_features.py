@@ -27,20 +27,29 @@ import numpy as np
 import pandas as pd
 from scipy import sparse
 
-# Deux corpus coexistent : celui publié par LRFAF, et le même dont les strophes
-# d'invités ont été retirées (`20_corpus_sans_invites.py`). La variable
-# d'environnement CORPUS_VARIANTE choisit lequel, et isole cache et résultats,
-# pour que les deux versions de l'étude puissent être comparées.
+# Trois corpus coexistent, tous produits par `20_corpus_sans_invites.py` sauf le
+# premier :
+#   brut          le corpus publié par LRFAF, featurings compris ;
+#   sans_invites  option 2 — les strophes d'invités sont retirées, le reste du
+#                 titre est gardé ;
+#   sans_feats    option 1 — tout titre comportant un invité est écarté.
+# La variable d'environnement CORPUS_VARIANTE choisit lequel, et isole cache et
+# résultats, pour que les versions de l'étude puissent être comparées.
+FICHIERS_VARIANTE = {"sans_invites": "corpus_sans_invites.csv",
+                     "sans_feats": "corpus_sans_feats.csv"}
 VARIANTE = os.environ.get("CORPUS_VARIANTE", "brut")
-if VARIANTE not in ("brut", "sans_invites"):
+if VARIANTE != "brut" and VARIANTE not in FICHIERS_VARIANTE:
     raise SystemExit(f"CORPUS_VARIANTE inconnue : {VARIANTE!r}")
 CACHE_DIR = Path(".cache_stylo" if VARIANTE == "brut" else f".cache_stylo_{VARIANTE}")
+# Traitement des featurings pour les paroles Genius collectées hors LRFAF
+# (Ziak, web7) : « titres » pour l'option 1, « parties » sinon.
+OPTION_FEATURINGS = "titres" if VARIANTE == "sans_feats" else "parties"
 
 
 def corpus_csv() -> Path:
     """Chemin du corpus à analyser, selon la variante active."""
-    if VARIANTE == "sans_invites":
-        p = Path("corpus_sans_invites.csv")
+    if VARIANTE in FICHIERS_VARIANTE:
+        p = Path(FICHIERS_VARIANTE[VARIANTE])
         if p.exists():
             return p
         raise FileNotFoundError(

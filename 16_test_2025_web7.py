@@ -37,10 +37,11 @@ import pandas as pd
 from scipy import sparse
 
 import lrfaf_pipeline as P
-from genius_sections import retire_featurings
+from genius_sections import texte_selon_option
 from stylo_attribution import make_docs, rank_candidates, sample_indices, separation_score
-from stylo_features import (CACHE_DIR, build_cache, build_count_matrix,
-                            char_ngrams, clean_lyrics, export_dir, tokenize)
+from stylo_features import (CACHE_DIR, OPTION_FEATURINGS, build_cache,
+                            build_count_matrix, char_ngrams, clean_lyrics,
+                            export_dir, tokenize)
 
 RESULT_DIR = export_dir()
 ZIAK_RAW = Path(".cache_lex/ziak_raw.json")
@@ -56,9 +57,16 @@ N_CONTROLES = 200
 SEED = 20260917
 
 
-def prepare(raw: str, alias: set[str], sans_parentheses: bool) -> tuple[str, dict]:
-    """Paroles brutes Genius -> texte d'analyse, sans invités ni ad-libs."""
-    texte, stats = retire_featurings(P.strip_genius_header(raw), alias)
+def prepare(raw: str, alias: set[str], sans_parentheses: bool,
+            featured: list[str] | None = None) -> tuple[str | None, dict]:
+    """Paroles brutes Genius -> texte d'analyse, sans invités ni ad-libs.
+
+    None si le titre est écarté (option 1 : titre comportant un invité).
+    """
+    texte, stats = texte_selon_option(P.strip_genius_header(raw), alias,
+                                      OPTION_FEATURINGS, featured)
+    if texte is None:
+        return None, stats
     texte = P.lg_clean(texte)
     if sans_parentheses:
         texte = PARENTHESES.sub(" ", texte)
@@ -73,7 +81,9 @@ def charge(path: Path, artiste_id: int, alias: set[str], sans_par: bool,
         if (s["primary_artist_id"] != artiste_id or s.get("language") != "fr"
                 or not s.get("lyrics_raw") or any(e in feat for e in exclure_feat)):
             continue
-        texte, st = prepare(s["lyrics_raw"], alias, sans_par)
+        texte, st = prepare(s["lyrics_raw"], alias, sans_par, s.get("featured_artists"))
+        if texte is None:
+            continue
         cle = texte[:300]
         if len(tokenize(texte)) < 50 or cle in vus:
             continue

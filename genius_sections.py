@@ -79,7 +79,7 @@ def retire_featurings(texte: str, alias_principal: set[str]) -> tuple[str, dict]
     dans les balises (« web7 », « 7 Jaws », « 7Jaws »…).
     """
     alias = {_norme(a) for a in alias_principal}
-    garde, n_garde, n_retire = [], 0, 0
+    garde, n_garde, n_retire, n_sections = [], 0, 0, 0
     courant_garde = True
     for ligne in texte.split("\n"):
         if est_balise_de_section(ligne):
@@ -90,6 +90,8 @@ def retire_featurings(texte: str, alias_principal: set[str]) -> tuple[str, dict]
             courant_garde = noms is None or noms <= alias
             if courant_garde:
                 garde.append(ligne)
+            else:
+                n_sections += 1
             continue
         n = len(re.findall(r"\w+", ligne))
         if courant_garde:
@@ -97,4 +99,27 @@ def retire_featurings(texte: str, alias_principal: set[str]) -> tuple[str, dict]
             n_garde += n
         else:
             n_retire += n
-    return "\n".join(garde), {"mots_gardes": n_garde, "mots_retires": n_retire}
+    return "\n".join(garde), {"mots_gardes": n_garde, "mots_retires": n_retire,
+                              "sections_invites": n_sections}
+
+
+def texte_selon_option(texte: str, alias_principal: set[str], option: str,
+                       featured: list[str] | None = None) -> tuple[str | None, dict]:
+    """Applique l'une des deux façons d'écarter les featurings.
+
+    - « parties » (option 2) : seules les sections d'invités sont retirées ;
+    - « titres » (option 1) : un titre comportant un invité est écarté en
+      entier, et la fonction renvoie None. Un invité se reconnaît à une section
+      qui le nomme, ou, quand Genius la fournit, à la liste `featured`.
+
+    Les deux options partent du même repérage, si bien qu'elles ne diffèrent
+    que par ce qu'elles font d'un titre partagé.
+    """
+    sans, st = retire_featurings(texte, alias_principal)
+    alias = {_norme(a) for a in alias_principal}
+    invites = {_norme(f) for f in featured or []} - alias
+    if option == "titres":
+        return (None if st["sections_invites"] or invites else texte), st
+    if option == "parties":
+        return sans, st
+    raise ValueError(f"option inconnue : {option!r}")

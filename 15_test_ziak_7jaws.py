@@ -35,15 +35,17 @@ import pandas as pd
 from scipy import sparse
 
 import lrfaf_pipeline as P
+from genius_sections import texte_selon_option
 from stylo_attribution import make_docs, rank_candidates, sample_indices, separation_score
-from stylo_features import (CACHE_DIR, build_cache, build_count_matrix,
-                            char_ngrams, clean_lyrics, export_dir, load_corpus,
-                            tokenize)
+from stylo_features import (CACHE_DIR, OPTION_FEATURINGS, VARIANTE, build_cache,
+                            build_count_matrix, char_ngrams, clean_lyrics,
+                            export_dir, load_corpus, tokenize)
 
 RESULT_DIR = export_dir()
 
 RAW = Path(".cache_lex/web7_raw.json")
 WEB7_ID = 1078135
+ALIAS_WEB7 = {"web7", "7 Jaws", "7Jaws", "JawsLee", "SeptMachoires"}
 TARGET = "Ziak"
 CHALLENGER = "web7"
 T_CAND = 12_000
@@ -76,7 +78,18 @@ def charge_web7() -> tuple[pd.DataFrame, list[str]]:
             # Un titre partagé mettrait les mêmes mots des deux côtés du test.
             motifs.append(f"{s['title']} — featuring avec {feat}")
         else:
-            lyrics = P.strip_genius_header(P.lg_clean(s["lyrics_raw"]))
+            if VARIANTE == "brut":
+                # Corpus publié : les candidats gardent leurs featurings, web7 aussi.
+                lyrics = P.strip_genius_header(P.lg_clean(s["lyrics_raw"]))
+            else:
+                # Corpus nettoyé : web7 reçoit le même traitement que les candidats.
+                texte, _ = texte_selon_option(P.strip_genius_header(s["lyrics_raw"]),
+                                              ALIAS_WEB7, OPTION_FEATURINGS,
+                                              s.get("featured_artists"))
+                if texte is None:
+                    motifs.append(f"{s['title']} — titre avec invité (option 1)")
+                    continue
+                lyrics = P.lg_clean(texte)
             cle = clean_lyrics(lyrics)[:300]
             if cle in vus:
                 motifs.append(f"{s['title']} — doublon de paroles")

@@ -1,9 +1,18 @@
 #!/usr/bin/env python3
-"""Reconstruit le corpus en ne gardant, pour chaque titre, que le texte de l'artiste.
+"""Reconstruit le corpus sans featurings, selon deux options.
 
 Entrée : les paroles balisées re-collectées par `19_collecte_corpus.py`.
-Sortie : `corpus_sans_invites.csv`, de même schéma que LRFAF, dont la colonne
-`lyrics` ne contient plus les strophes attribuées à quelqu'un d'autre.
+Sorties, de même schéma que LRFAF :
+
+- `corpus_sans_invites.csv` — **option 2** : les strophes attribuées à
+  quelqu'un d'autre sont retirées, le reste du titre est gardé ;
+- `corpus_sans_feats.csv` — **option 1** : tout titre comportant un invité est
+  écarté en entier, ainsi que ceux dont le titre annonce un featuring.
+
+L'option 2 garde le plus de texte ; l'option 1 ne laisse aucun doute sur ce qui
+reste, au prix de corpus plus minces pour les artistes qui collaborent
+beaucoup. Si le verdict est le même sur les deux, les featurings n'ont pas
+faussé l'analyse.
 
 **Le piège des groupes.** La règle naïve — « retirer toute section nommant un
 autre que l'artiste » — vide les groupes de leur contenu : chez S-Crew, les
@@ -20,14 +29,15 @@ Deux garde-fous complètent la règle :
 
 - un artiste dont le nettoyage retirerait plus de `GARDE_FOU` de ses mots est
   laissé intact et signalé — signe que la détection de membres a échoué ;
-- un titre sans aucune balise est conservé tel quel : l'absence de balise
-  n'est pas une preuve d'absence d'invité, et retirer ces titres biaiserait le
-  corpus vers les artistes les mieux annotés.
+- un titre sans aucune balise est conservé tel quel, dans les deux options :
+  l'absence de balise n'est pas une preuve d'absence d'invité, et retirer ces
+  titres biaiserait le corpus vers les artistes les mieux annotés.
 """
 
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -39,8 +49,14 @@ from genius_sections import (LIGNE_BALISE, _norme, est_balise_de_section,
 from stylo_features import corpus_brut_csv, export_dir
 
 COLLECTE = Path(".cache_lex/corpus_balises.jsonl")
-SORTIE = Path("corpus_sans_invites.csv")
+SORTIE = Path("corpus_sans_invites.csv")          # option 2
+SORTIE_SANS_FEATS = Path("corpus_sans_feats.csv")  # option 1
 RESULT_DIR = export_dir()
+MIN_TOKENS_ARTISTE = 12_000   # seuil d'éligibilité d'un candidat
+
+# Un featuring annoncé dans le titre (« Titre (feat. X) ») : seule trace d'invité
+# pour un titre qui n'a pas pu être re-collecté.
+FEAT_DANS_TITRE = re.compile(r"\b(?:feat|ft)\b\.?", re.IGNORECASE)
 
 # Un intervenant est réputé interne s'il porte une bonne part du répertoire,
 # ou s'il revient régulièrement sans l'emporter : chez IAM, Akhenaton figure sur
@@ -130,7 +146,7 @@ def main() -> None:
         if rec is None:
             lyrics.append(r.lyrics)
             stats.append({"artist": r.artist, "url": r.url, "etat": "non recollecté",
-                          "mots_gardes": 0, "mots_retires": 0})
+                          "mots_gardes": 0, "mots_retires": 0, "sections_invites": 0})
             continue
         brut = P.strip_genius_header(rec["lyrics_raw"])
         sans, st = retire_featurings(brut, membres.get(r.artist, {_norme(r.artist)}))
@@ -147,12 +163,21 @@ def main() -> None:
     if suspects:
         print(f"garde-fou déclenché pour {len(suspects)} artiste(s) : "
               f"{', '.join(sorted(suspects)[:8])}\n")
+    st["nettoye"] = ~st.artist.isin(suspects) & (st.etat == "nettoyé")
+
+    # Option 1 : écarter les titres entiers. Mêmes garde-fous que l'option 2 :
+    # chez un artiste dont la détection de membres a échoué, on ne sait pas
+    # distinguer un invité d'un membre, et l'on ne retire rien.
+    avec_invite = (st.nettoye & (st.sections_invites > 0)).to_numpy()
+    feat_titre = corpus.title.fillna("").str.contains(FEAT_DANS_TITRE).to_numpy()
+    ecarte = avec_invite | (feat_titre & ~corpus.artist.isin(suspects).to_numpy())
+    sans_feats = corpus[~ecarte]
+    mots_bruts = corpus.lyrics.fillna("").str.count(r"\w+").to_numpy()
+
     corpus["lyrics_sans_invites"] = lyrics
     garde = corpus.artist.isin(suspects) | corpus.url.map(lambda u: u not in collecte)
     corpus["lyrics"] = corpus.lyrics.where(garde, corpus.lyrics_sans_invites)
     corpus = corpus.drop(columns=["lyrics_sans_invites"])
-
-    st["nettoye"] = ~st.artist.isin(suspects) & (st.etat == "nettoyé")
     total_g = st.loc[st.nettoye, "mots_gardes"].sum()
     total_r = st.loc[st.nettoye, "mots_retires"].sum()
     resume = pd.DataFrame([{
@@ -163,11 +188,34 @@ def main() -> None:
         "mots_gardes": int(total_g), "mots_retires": int(total_r),
         "part_retiree": total_r / max(total_g + total_r, 1),
         "seuil_membre": PART_MEMBRE, "seuil_garde_fou": GARDE_FOU,
+        "option1_titres_ecartes": int(ecarte.sum()),
+        "option1_titres_ecartes_balises": int(avec_invite.sum()),
+        "option1_titres_ecartes_titre": int((ecarte & ~avec_invite).sum()),
     }])
-    print(resume.to_string(index=False))
-    print(f"\n{100 * resume.part_retiree.iat[0]:.1f} % des mots retirés des titres nettoyés")
+    print(resume.T.to_string(header=False))
+    print(f"\noption 2 : {100 * resume.part_retiree.iat[0]:.1f} % des mots retirés "
+          "des titres nettoyés")
+
+    # Ce que l'option 1 coûte à chaque artiste : un candidat qui passe sous le
+    # seuil d'éligibilité sort du test, et cela doit se voir.
+    cout = (pd.DataFrame({"artist": corpus.artist, "mots": mots_bruts,
+                          "ecarte": ecarte})
+              .groupby("artist")
+              .apply(lambda d: pd.Series({
+                  "titres": len(d), "titres_ecartes": int(d.ecarte.sum()),
+                  "mots_avant": int(d.mots.sum()),
+                  "mots_apres": int(d.mots[~d.ecarte].sum())}), include_groups=False))
+    cout["part_ecartee"] = 1 - cout.mots_apres / cout.mots_avant.clip(lower=1)
+    cout["sort_du_test"] = ((cout.mots_avant >= MIN_TOKENS_ARTISTE)
+                            & (cout.mots_apres < MIN_TOKENS_ARTISTE))
+    print(f"option 1 : {int(ecarte.sum()):,} titres écartés ; "
+          f"{int(cout.sort_du_test.sum())} artiste(s) passent sous "
+          f"{MIN_TOKENS_ARTISTE:,} mots (approximation au décompte brut)")
 
     corpus.to_csv(SORTIE, index=False)
+    sans_feats.to_csv(SORTIE_SANS_FEATS, index=False)
+    cout.sort_values("part_ecartee", ascending=False) \
+        .to_csv(RESULT_DIR / "20_4_option1_par_artiste.csv")
     resume.to_csv(RESULT_DIR / "20_1_nettoyage_resume.csv", index=False)
     tab_membres.to_csv(RESULT_DIR / "20_2_membres_detectes.csv", index=False)
     (st.groupby("artist")
@@ -176,7 +224,7 @@ def main() -> None:
        .assign(part_retiree=lambda d: d.mots_retires / (d.mots_gardes + d.mots_retires))
        .sort_values("part_retiree", ascending=False)
        .to_csv(RESULT_DIR / "20_3_nettoyage_par_artiste.csv"))
-    print(f"écrit : {SORTIE}, {RESULT_DIR}/20_1 à 20_3")
+    print(f"écrit : {SORTIE}, {SORTIE_SANS_FEATS}, {RESULT_DIR}/20_1 à 20_4")
 
 
 if __name__ == "__main__":
