@@ -17,6 +17,7 @@ validation du protocole.
 
 from __future__ import annotations
 
+import os
 import re
 import unicodedata
 from collections import Counter
@@ -26,18 +27,48 @@ import numpy as np
 import pandas as pd
 from scipy import sparse
 
-CACHE_DIR = Path(".cache_stylo")
+# Deux corpus coexistent : celui publié par LRFAF, et le même dont les strophes
+# d'invités ont été retirées (`20_corpus_sans_invites.py`). La variable
+# d'environnement CORPUS_VARIANTE choisit lequel, et isole cache et résultats,
+# pour que les deux versions de l'étude puissent être comparées.
+VARIANTE = os.environ.get("CORPUS_VARIANTE", "brut")
+if VARIANTE not in ("brut", "sans_invites"):
+    raise SystemExit(f"CORPUS_VARIANTE inconnue : {VARIANTE!r}")
+CACHE_DIR = Path(".cache_stylo" if VARIANTE == "brut" else f".cache_stylo_{VARIANTE}")
 
 
 def corpus_csv() -> Path:
-    """Chemin du corpus LRFAF. Le dépôt amont l'a renommé `corpus.csv` ;
-    l'ancien nom reste accepté pour les copies locales déjà téléchargées."""
+    """Chemin du corpus à analyser, selon la variante active."""
+    if VARIANTE == "sans_invites":
+        p = Path("corpus_sans_invites.csv")
+        if p.exists():
+            return p
+        raise FileNotFoundError(
+            f"{p} absent — lancer 19_collecte_corpus.py puis "
+            "20_corpus_sans_invites.py.")
+    # Le dépôt amont a renommé le corpus `corpus.csv` ; l'ancien nom reste
+    # accepté pour les copies locales déjà téléchargées.
     for nom in ("corpus.csv", "RapFr.csv"):
         if Path(nom).exists():
             return Path(nom)
     raise FileNotFoundError(
         "Corpus LRFAF introuvable — le télécharger depuis "
         "huggingface.co/datasets/regicid/LRFAF (voir README).")
+
+
+def corpus_brut_csv() -> Path:
+    """Corpus LRFAF d'origine, quelle que soit la variante active."""
+    for nom in ("corpus.csv", "RapFr.csv"):
+        if Path(nom).exists():
+            return Path(nom)
+    raise FileNotFoundError("Corpus LRFAF introuvable — voir README.")
+
+
+def export_dir() -> Path:
+    """Dossier de sortie : `export/` pour le corpus publié, un sous-dossier sinon."""
+    d = Path("export") if VARIANTE == "brut" else Path("export") / VARIANTE
+    d.mkdir(parents=True, exist_ok=True)
+    return d
 
 
 

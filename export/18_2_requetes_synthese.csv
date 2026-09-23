@@ -1,0 +1,13 @@
+variante,features,metric,sep_top1,top1_modal
+"Genius, invités inclus",char,burrows_delta,-2.140148390194767,L’Animalerie
+"Genius, invités inclus",char,cosine_delta,-2.5440948917474717,Beendo Z
+"Genius, invités inclus",mfw,burrows_delta,-2.1791966278363657,ISK
+"Genius, invités inclus",mfw,cosine_delta,-2.859374223655869,Rimkus
+"Genius, invités retirés",char,burrows_delta,-2.143858258498996,L’Animalerie
+"Genius, invités retirés",char,cosine_delta,-2.5523537608401363,Beendo Z
+"Genius, invités retirés",mfw,burrows_delta,-2.186862040451721,ISK
+"Genius, invités retirés",mfw,cosine_delta,-2.834995157973866,Rimkus
+LRFAF (corpus publié),char,burrows_delta,-2.157872138874312,L’Animalerie
+LRFAF (corpus publié),char,cosine_delta,-2.5323849463122428,Beendo Z
+LRFAF (corpus publié),mfw,burrows_delta,-2.195916920154247,ISK
+LRFAF (corpus publié),mfw,cosine_delta,-2.7974110418592892,Rimkus

@@ -26,9 +26,9 @@ import numpy as np
 import pandas as pd
 
 from stylo_attribution import make_docs, rank_candidates, sample_indices, separation_score
-from stylo_features import build_cache
+from stylo_features import build_cache, export_dir
 
-RESULT_DIR = Path("export")
+RESULT_DIR = export_dir()
 TARGET = "Ziak"
 SEED = 20260911
 

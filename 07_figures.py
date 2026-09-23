@@ -9,10 +9,12 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+
+from stylo_features import export_dir
 from scipy import stats
 
 IMAGES_DIR = Path("images")
-RESULT_DIR = Path("export")
+RESULT_DIR = export_dir()
 IMAGES_DIR.mkdir(exist_ok=True)
 
 mpl.rcParams.update({
@@ -561,6 +563,60 @@ def fig_web7() -> None:
     plt.close(fig)
 
 
+def fig_featurings() -> None:
+    """Les couplets d'invités faussent-ils l'attribution ?"""
+    rangs = pd.read_csv(RESULT_DIR / "18_3_rangs_par_requete.csv", index_col=0)
+    ziak = pd.read_csv(RESULT_DIR / "18_5_couplets_de_ziak.csv")
+    simu = pd.read_csv(RESULT_DIR / "18_6_simulation_contamination.csv")
+    fig, axes = plt.subplots(1, 3, figsize=(13.4, 3.9))
+
+    # a) le nettoyage de la requete deplace-t-il le classement ?
+    ax = axes[0]
+    ordre = ["LRFAF (corpus publié)", "Genius, invités inclus", "Genius, invités retirés"]
+    noms = list(rangs.columns)
+    x = np.arange(len(noms))
+    for k, (var, col) in enumerate(zip(ordre, [GRIS, BLEU, VERT])):
+        ax.bar(x + (k - 1) * 0.27, rangs.loc[var], width=0.26, color=col,
+               label=var.replace(" (corpus publié)", ""))
+    ax.set_xticks(x)
+    ax.set_xticklabels(noms, rotation=30, ha="right", fontsize=8)
+    ax.set_ylabel("Rang médian vu depuis Ziak")
+    ax.legend(fontsize=7.3, loc="upper left")
+    ax.set_title("a) Retirer les invités de la requête\nne déplace pas le classement")
+
+    # b) le seul titre du corpus contenant un couplet de Ziak
+    ax = axes[1]
+    cols = [c for c in ziak.columns if c not in ("corpus des candidats", "sep_top1")]
+    x = np.arange(len(cols))
+    for k, (lib, col) in enumerate(zip(ziak["corpus des candidats"], [GRIS, ROUGE])):
+        ax.bar(x + (k - 0.5) * 0.36, ziak.loc[k, cols].astype(float), width=0.34,
+               color=col, label=lib)
+    ax.set_xticks(x)
+    ax.set_xticklabels(cols, rotation=30, ha="right", fontsize=8)
+    ax.set_ylabel("Rang médian vu depuis Ziak")
+    ax.legend(fontsize=7.3, loc="upper left")
+    ax.set_title("b) Retirer « T'aimerais » du corpus\nde Kerchak ne le rapproche pas")
+
+    # c) tolerance de la methode a du texte etranger chez les candidats
+    ax = axes[2]
+    f = 100 * simu.part_de_texte_etranger
+    ax.plot(f, 100 * simu.top_20, "o-", color=BLEU, lw=2, label="dans le top 20")
+    ax.plot(f, 100 * simu.rang_1, "s-", color=ORANGE, lw=2, label="au premier rang")
+    ax.axvline(1.6, color=VERT, ls="--", lw=1.4)
+    ax.text(2.4, 46, "part observée\nchez Ziak (1,6 %)", fontsize=7.6, color=VERT)
+    ax.set_ylim(40, 102)
+    ax.set_xlabel("Texte étranger injecté chez chaque candidat (%)")
+    ax.set_ylabel("Auteur retrouvé (%)")
+    ax.legend(fontsize=7.6, loc="lower left")
+    ax.set_title("c) La méthode tolère une forte\ncontamination des candidats")
+
+    fig.suptitle("Les couplets d'invités ne gouvernent pas le classement",
+                 fontsize=12.5, fontweight="bold", y=1.02)
+    fig.tight_layout()
+    fig.savefig(IMAGES_DIR / "18_1_featurings.png", bbox_inches="tight")
+    plt.close(fig)
+
+
 # Les fonctions doivent toutes être définies avant d'être appelées : ce bloc
 # ferme le fichier, sans quoi les figures écrites plus bas restent orphelines.
 FIGURES = [("biais de taille", fig_biais_taille),
@@ -571,7 +627,8 @@ FIGURES = [("biais de taille", fig_biais_taille),
            ("Mikeysem", fig_mikeysem),
            ("alias réels", fig_alias_reels),
            ("alias temporel", fig_alias_temporel),
-           ("web7", fig_web7)]
+           ("web7", fig_web7),
+           ("featurings", fig_featurings)]
 
 
 if __name__ == "__main__":

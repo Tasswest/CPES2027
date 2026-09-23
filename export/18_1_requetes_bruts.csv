@@ -1,0 +1,361 @@
+rep,variante,features,metric,top1,sep_top1
+0,LRFAF (corpus publié),mfw,cosine_delta,SCH,-2.8412704160704307
+0,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.302303863899243
+0,"Genius, invités inclus",mfw,cosine_delta,SCH,-2.906767556571461
+0,"Genius, invités inclus",mfw,burrows_delta,Zkr,-2.2577955629582482
+0,"Genius, invités retirés",mfw,cosine_delta,SCH,-2.885949602008021
+0,"Genius, invités retirés",mfw,burrows_delta,Zkr,-2.273491673735344
+0,LRFAF (corpus publié),char,cosine_delta,Nahir,-2.4229265797892925
+0,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.165671149161271
+0,"Genius, invités inclus",char,cosine_delta,SCH,-2.300827112340341
+0,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.182654280656711
+0,"Genius, invités retirés",char,cosine_delta,SCH,-2.326018322041765
+0,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.177385544744298
+1,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.8292002412295036
+1,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.5224915361901963
+1,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.853016965401751
+1,"Genius, invités inclus",mfw,burrows_delta,Zkr,-2.45144560135817
+1,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.8157029201073427
+1,"Genius, invités retirés",mfw,burrows_delta,Zkr,-2.455403625867556
+1,LRFAF (corpus publié),char,cosine_delta,UZI (FRA),-2.5736151072229476
+1,LRFAF (corpus publié),char,burrows_delta,Guizmo,-2.040056922527955
+1,"Genius, invités inclus",char,cosine_delta,UZI (FRA),-2.6305126902890406
+1,"Genius, invités inclus",char,burrows_delta,Guizmo,-2.076682775130182
+1,"Genius, invités retirés",char,cosine_delta,UZI (FRA),-2.6384548633027847
+1,"Genius, invités retirés",char,burrows_delta,Guizmo,-2.053011718710928
+2,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.7858983361962086
+2,LRFAF (corpus publié),mfw,burrows_delta,ISK,-2.083498848683225
+2,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.884554543236983
+2,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.149288992662921
+2,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.8397196660985147
+2,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.1565541230256198
+2,LRFAF (corpus publié),char,cosine_delta,Roshi,-2.3468550112981483
+2,LRFAF (corpus publié),char,burrows_delta,ISK,-2.121087446228913
+2,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.368392717791006
+2,"Genius, invités inclus",char,burrows_delta,ISK,-2.145649463709829
+2,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.3797222949187264
+2,"Genius, invités retirés",char,burrows_delta,ISK,-2.1767030278721284
+3,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.8617232034025846
+3,LRFAF (corpus publié),mfw,burrows_delta,ISK,-2.127989913090143
+3,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.902299732278201
+3,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.157614624835942
+3,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.8621648980102323
+3,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.1992663951901283
+3,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.767518234732755
+3,LRFAF (corpus publié),char,burrows_delta,ISK,-1.9029886838275107
+3,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.800303607618841
+3,"Genius, invités inclus",char,burrows_delta,ISK,-1.8768456798689785
+3,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.7862135730782533
+3,"Genius, invités retirés",char,burrows_delta,ISK,-1.9073991400916694
+4,LRFAF (corpus publié),mfw,cosine_delta,Werenoi,-2.797069358995912
+4,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.1119471323866432
+4,"Genius, invités inclus",mfw,cosine_delta,Werenoi,-2.962299483793131
+4,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.1281279518619316
+4,"Genius, invités retirés",mfw,cosine_delta,Werenoi,-2.9207848627328117
+4,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.1307266423745213
+4,LRFAF (corpus publié),char,cosine_delta,Kerchak,-2.4459154603086017
+4,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.0479805994768587
+4,"Genius, invités inclus",char,cosine_delta,Kerchak,-2.5132916598118045
+4,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.0877790092021438
+4,"Genius, invités retirés",char,cosine_delta,Kerchak,-2.4981553485748553
+4,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.0842503626265607
+5,LRFAF (corpus publié),mfw,cosine_delta,Werenoi,-2.748471612321268
+5,LRFAF (corpus publié),mfw,burrows_delta,ISK,-2.1984516498717466
+5,"Genius, invités inclus",mfw,cosine_delta,Werenoi,-2.8382330591010985
+5,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.177865763257522
+5,"Genius, invités retirés",mfw,cosine_delta,Werenoi,-2.8219274684494153
+5,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.1296883794645978
+5,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.874181212629701
+5,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.156084594095481
+5,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.937339049048811
+5,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.1660264223198302
+5,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.9083339272442896
+5,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.1728647876667453
+6,LRFAF (corpus publié),mfw,cosine_delta,ISK,-2.5153702416270884
+6,LRFAF (corpus publié),mfw,burrows_delta,ISK,-2.2853615411873895
+6,"Genius, invités inclus",mfw,cosine_delta,Lemon Haze,-2.5443186430526903
+6,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.2455502220511407
+6,"Genius, invités retirés",mfw,cosine_delta,SCH,-2.55772053584692
+6,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.303500315434247
+6,LRFAF (corpus publié),char,cosine_delta,ISK,-2.6641972536581426
+6,LRFAF (corpus publié),char,burrows_delta,ISK,-2.0792234412890838
+6,"Genius, invités inclus",char,cosine_delta,ISK,-2.669305730444566
+6,"Genius, invités inclus",char,burrows_delta,ISK,-2.0314786008882675
+6,"Genius, invités retirés",char,cosine_delta,ISK,-2.716914889105681
+6,"Genius, invités retirés",char,burrows_delta,ISK,-2.0710112960933147
+7,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.6960801855319967
+7,LRFAF (corpus publié),mfw,burrows_delta,Sofiane,-2.2692790086061474
+7,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.758525613583774
+7,"Genius, invités inclus",mfw,burrows_delta,Sofiane,-2.228217368127876
+7,"Genius, invités retirés",mfw,cosine_delta,Werenoi,-2.775272612739113
+7,"Genius, invités retirés",mfw,burrows_delta,Sofiane,-2.1726926674389824
+7,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.3318075950357042
+7,LRFAF (corpus publié),char,burrows_delta,Dibson,-2.150721811763837
+7,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.4005587109325726
+7,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.1037500631301893
+7,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.3719972936655833
+7,"Genius, invités retirés",char,burrows_delta,Dibson,-2.1118308843991977
+8,LRFAF (corpus publié),mfw,cosine_delta,Maes,-2.83446607810225
+8,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.5865549374824433
+8,"Genius, invités inclus",mfw,cosine_delta,Maes,-2.7468342898470928
+8,"Genius, invités inclus",mfw,burrows_delta,Zkr,-2.472147819226578
+8,"Genius, invités retirés",mfw,cosine_delta,Maes,-2.7429754874799634
+8,"Genius, invités retirés",mfw,burrows_delta,Zkr,-2.491907980620467
+8,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.5917907536842106
+8,LRFAF (corpus publié),char,burrows_delta,Zkr,-2.565177549192849
+8,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.5853658962152557
+8,"Genius, invités inclus",char,burrows_delta,Zkr,-2.475130138722977
+8,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.5505356259199767
+8,"Genius, invités retirés",char,burrows_delta,Zkr,-2.474138664146767
+9,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.7218018845066068
+9,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.1192334494633926
+9,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.7939646942234404
+9,"Genius, invités inclus",mfw,burrows_delta,Zkr,-2.0201876136563297
+9,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.7428078847153845
+9,"Genius, invités retirés",mfw,burrows_delta,Zkr,-2.0842826894292887
+9,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.644002198771612
+9,LRFAF (corpus publié),char,burrows_delta,ISK,-2.157683205812039
+9,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.6575905517368095
+9,"Genius, invités inclus",char,burrows_delta,ISK,-2.1303605802381034
+9,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.6590805382186375
+9,"Genius, invités retirés",char,burrows_delta,ISK,-2.124582607498448
+10,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.788712397781743
+10,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.2401735975565913
+10,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.840083992804709
+10,"Genius, invités inclus",mfw,burrows_delta,Zkr,-2.14154794357997
+10,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.828649660653221
+10,"Genius, invités retirés",mfw,burrows_delta,Zkr,-2.183631804250821
+10,LRFAF (corpus publié),char,cosine_delta,UZI (FRA),-2.5819357454000214
+10,LRFAF (corpus publié),char,burrows_delta,Zkr,-2.42889137488897
+10,"Genius, invités inclus",char,cosine_delta,UZI (FRA),-2.6279649301358634
+10,"Genius, invités inclus",char,burrows_delta,Zkr,-2.3602439910295114
+10,"Genius, invités retirés",char,cosine_delta,UZI (FRA),-2.6014813852462506
+10,"Genius, invités retirés",char,burrows_delta,Zkr,-2.356523105754104
+11,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.9473020595990924
+11,LRFAF (corpus publié),mfw,burrows_delta,Lacrim,-2.087602537234157
+11,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.9643937646107665
+11,"Genius, invités inclus",mfw,burrows_delta,Lacrim,-2.170014836370974
+11,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.9162885072038236
+11,"Genius, invités retirés",mfw,burrows_delta,Lacrim,-2.130608275381941
+11,LRFAF (corpus publié),char,cosine_delta,Kerchak,-2.63680480645821
+11,LRFAF (corpus publié),char,burrows_delta,Souffrance,-2.132207463977127
+11,"Genius, invités inclus",char,cosine_delta,Kerchak,-2.6851134212936114
+11,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.106297316189248
+11,"Genius, invités retirés",char,cosine_delta,Kerchak,-2.7305578409160063
+11,"Genius, invités retirés",char,burrows_delta,Souffrance,-2.102274068672378
+12,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.9567509276957273
+12,LRFAF (corpus publié),mfw,burrows_delta,Lacrim,-2.15692495963745
+12,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-3.0036587495079923
+12,"Genius, invités inclus",mfw,burrows_delta,SCH,-2.1340674749983717
+12,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.9395136149796333
+12,"Genius, invités retirés",mfw,burrows_delta,Lacrim,-2.1362017352056437
+12,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.5676853228375593
+12,LRFAF (corpus publié),char,burrows_delta,Zkr,-2.157257713313251
+12,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.6141424569743164
+12,"Genius, invités inclus",char,burrows_delta,Zkr,-2.115266177204695
+12,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.6058795455263506
+12,"Genius, invités retirés",char,burrows_delta,Zkr,-2.1293909013137338
+13,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.639075705089645
+13,LRFAF (corpus publié),mfw,burrows_delta,Lacrim,-2.0184440162713906
+13,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.7225252833707363
+13,"Genius, invités inclus",mfw,burrows_delta,Lacrim,-2.04757099397851
+13,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.7001427975018464
+13,"Genius, invités retirés",mfw,burrows_delta,Lacrim,-2.103903685794432
+13,LRFAF (corpus publié),char,cosine_delta,Kerchak,-2.2430511440444385
+13,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.0804188451671
+13,"Genius, invités inclus",char,cosine_delta,Kerchak,-2.258912378341539
+13,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.1170546659183973
+13,"Genius, invités retirés",char,cosine_delta,Kerchak,-2.292396732666746
+13,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.1052022562992727
+14,LRFAF (corpus publié),mfw,cosine_delta,Werenoi,-2.741581063894712
+14,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.0813544063842744
+14,"Genius, invités inclus",mfw,cosine_delta,Werenoi,-2.745216068751755
+14,"Genius, invités inclus",mfw,burrows_delta,Mister You,-2.032256190926442
+14,"Genius, invités retirés",mfw,cosine_delta,Werenoi,-2.7555815978078972
+14,"Genius, invités retirés",mfw,burrows_delta,Mister You,-2.051817192195343
+14,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.8343520678385885
+14,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.2094338115854693
+14,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.9487057415012803
+14,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.231307888939347
+14,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.898856571541973
+14,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.2248271972231746
+15,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.721123520009106
+15,LRFAF (corpus publié),mfw,burrows_delta,Dibson,-2.251462392029031
+15,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.809734869475616
+15,"Genius, invités inclus",mfw,burrows_delta,Dibson,-2.2483971759629076
+15,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.8540598858014365
+15,"Genius, invités retirés",mfw,burrows_delta,Dibson,-2.2343007491630846
+15,LRFAF (corpus publié),char,cosine_delta,Kerchak,-2.402852064809436
+15,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.1620958493155675
+15,"Genius, invités inclus",char,cosine_delta,Kerchak,-2.4525045265666026
+15,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.201814286064838
+15,"Genius, invités retirés",char,cosine_delta,Kerchak,-2.4807758754185536
+15,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.205959481570661
+16,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-3.0132916063307627
+16,LRFAF (corpus publié),mfw,burrows_delta,ISK,-2.2229505412251713
+16,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-3.070419750173035
+16,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.2228752690954012
+16,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-3.0560878299542016
+16,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.2461473569520587
+16,LRFAF (corpus publié),char,cosine_delta,ISK,-2.575603656429956
+16,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.193620139733036
+16,"Genius, invités inclus",char,cosine_delta,ISK,-2.5770915542200266
+16,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.232429014939999
+16,"Genius, invités retirés",char,cosine_delta,ISK,-2.585402835475332
+16,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.2321765069079396
+17,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.7943341091374947
+17,LRFAF (corpus publié),mfw,burrows_delta,ISK,-1.9412124882063215
+17,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.8431767607645058
+17,"Genius, invités inclus",mfw,burrows_delta,ISK,-1.9503764359125264
+17,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.835789196644753
+17,"Genius, invités retirés",mfw,burrows_delta,ISK,-1.962237385061261
+17,LRFAF (corpus publié),char,cosine_delta,Nahir,-2.640286038845598
+17,LRFAF (corpus publié),char,burrows_delta,Nahir,-2.011361966957447
+17,"Genius, invités inclus",char,cosine_delta,ISK,-2.577707791817712
+17,"Genius, invités inclus",char,burrows_delta,Nahir,-1.9484085532320217
+17,"Genius, invités retirés",char,cosine_delta,ISK,-2.615149338649215
+17,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-1.9229716257537803
+18,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.5219908285171146
+18,LRFAF (corpus publié),mfw,burrows_delta,Graya,-1.8802120144991943
+18,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.591827437309806
+18,"Genius, invités inclus",mfw,burrows_delta,GLK,-1.863757414984859
+18,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.5452161089652687
+18,"Genius, invités retirés",mfw,burrows_delta,GLK,-1.864194031667413
+18,LRFAF (corpus publié),char,cosine_delta,Fresh laDouille,-2.4413221799739175
+18,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.2002651482599993
+18,"Genius, invités inclus",char,cosine_delta,Kerchak,-2.3834762652481207
+18,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.2399555553158748
+18,"Genius, invités retirés",char,cosine_delta,Kerchak,-2.444704709411239
+18,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.2333729056008527
+19,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.721780327916329
+19,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.2660498925513277
+19,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.7802971818081637
+19,"Genius, invités inclus",mfw,burrows_delta,Lacrim,-2.230752946651037
+19,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.714908801307887
+19,"Genius, invités retirés",mfw,burrows_delta,Lacrim,-2.2261586991935194
+19,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.3777766858856975
+19,LRFAF (corpus publié),char,burrows_delta,ISK,-1.9596658971666157
+19,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.4638692553582087
+19,"Genius, invités inclus",char,burrows_delta,ISK,-1.9141395941925348
+19,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.4353663255951035
+19,"Genius, invités retirés",char,burrows_delta,ISK,-1.9370983248021798
+20,LRFAF (corpus publié),mfw,cosine_delta,Maes,-2.5225666745123148
+20,LRFAF (corpus publié),mfw,burrows_delta,ISK,-2.1643162286519524
+20,"Genius, invités inclus",mfw,cosine_delta,Maes,-2.5583977728336853
+20,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.1662397516492526
+20,"Genius, invités retirés",mfw,cosine_delta,Maes,-2.444022344917823
+20,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.1792503778202734
+20,LRFAF (corpus publié),char,cosine_delta,ISK,-2.3697912126634373
+20,LRFAF (corpus publié),char,burrows_delta,Zkr,-1.9722059827682825
+20,"Genius, invités inclus",char,cosine_delta,ISK,-2.3800019315121728
+20,"Genius, invités inclus",char,burrows_delta,Zkr,-1.8463327289390377
+20,"Genius, invités retirés",char,cosine_delta,ISK,-2.424271396522621
+20,"Genius, invités retirés",char,burrows_delta,Zkr,-1.8598006953763149
+21,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.933561298071022
+21,LRFAF (corpus publié),mfw,burrows_delta,Panama Bende,-2.0389519716333644
+21,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.9915614273668445
+21,"Genius, invités inclus",mfw,burrows_delta,Panama Bende,-2.0247989869298864
+21,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.940976217252732
+21,"Genius, invités retirés",mfw,burrows_delta,Panama Bende,-2.0480638443010997
+21,LRFAF (corpus publié),char,cosine_delta,Zkr,-2.461259238407477
+21,LRFAF (corpus publié),char,burrows_delta,Zkr,-2.1182305296597987
+21,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.485946888448163
+21,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.067607409161559
+21,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.4857504997301003
+21,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.0667657697510955
+22,LRFAF (corpus publié),mfw,cosine_delta,SCH,-3.0200063315308565
+22,LRFAF (corpus publié),mfw,burrows_delta,Lacrim,-2.347246224002458
+22,"Genius, invités inclus",mfw,cosine_delta,SCH,-3.2641090080593815
+22,"Genius, invités inclus",mfw,burrows_delta,Lacrim,-2.31311606818301
+22,"Genius, invités retirés",mfw,cosine_delta,SCH,-3.288802906987298
+22,"Genius, invités retirés",mfw,burrows_delta,Lacrim,-2.3132753354591022
+22,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.757732699790044
+22,LRFAF (corpus publié),char,burrows_delta,S-Crew,-2.26238501610707
+22,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.6842578402812594
+22,"Genius, invités inclus",char,burrows_delta,S-Crew,-2.253363460828645
+22,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.66040092236121
+22,"Genius, invités retirés",char,burrows_delta,S-Crew,-2.2520692440168655
+23,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.9193116890050144
+23,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.331781109989239
+23,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.959840422863192
+23,"Genius, invités inclus",mfw,burrows_delta,Zkr,-2.2066715900617297
+23,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.9461228749378243
+23,"Genius, invités retirés",mfw,burrows_delta,Zkr,-2.1903317468587122
+23,LRFAF (corpus publié),char,cosine_delta,Zkr,-2.440356333030807
+23,LRFAF (corpus publié),char,burrows_delta,Zkr,-2.3224936694765312
+23,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.46479122134857
+23,"Genius, invités inclus",char,burrows_delta,Zkr,-2.2433191092920723
+23,"Genius, invités retirés",char,cosine_delta,Kerchak,-2.4821594908695683
+23,"Genius, invités retirés",char,burrows_delta,Zkr,-2.2313056986859716
+24,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.8996804363048017
+24,LRFAF (corpus publié),mfw,burrows_delta,Rimkus,-1.995149131812277
+24,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.9444746269287156
+24,"Genius, invités inclus",mfw,burrows_delta,Rimkus,-2.0446095119217915
+24,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.9078323123555987
+24,"Genius, invités retirés",mfw,burrows_delta,Rimkus,-1.99859767569255
+24,LRFAF (corpus publié),char,cosine_delta,Zola,-2.3038270959706164
+24,LRFAF (corpus publié),char,burrows_delta,L’Animalerie,-2.238123100075827
+24,"Genius, invités inclus",char,cosine_delta,Kerchak,-2.206745047581724
+24,"Genius, invités inclus",char,burrows_delta,L’Animalerie,-2.268510209933266
+24,"Genius, invités retirés",char,cosine_delta,Kerchak,-2.2562031119490285
+24,"Genius, invités retirés",char,burrows_delta,L’Animalerie,-2.264605229076876
+25,LRFAF (corpus publié),mfw,cosine_delta,ISK,-2.707092768764454
+25,LRFAF (corpus publié),mfw,burrows_delta,ISK,-2.329013523211518
+25,"Genius, invités inclus",mfw,cosine_delta,ISK,-2.7668216092063154
+25,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.340438548583585
+25,"Genius, invités retirés",mfw,cosine_delta,ISK,-2.7272278254231965
+25,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.3201774642764312
+25,LRFAF (corpus publié),char,cosine_delta,ISK,-2.6597359987585545
+25,LRFAF (corpus publié),char,burrows_delta,ISK,-2.5052060678184533
+25,"Genius, invités inclus",char,cosine_delta,ISK,-2.5785483825201583
+25,"Genius, invités inclus",char,burrows_delta,ISK,-2.4786916612031895
+25,"Genius, invités retirés",char,cosine_delta,ISK,-2.633820915999236
+25,"Genius, invités retirés",char,burrows_delta,ISK,-2.494608116475145
+26,LRFAF (corpus publié),mfw,cosine_delta,Werenoi,-2.999924069230562
+26,LRFAF (corpus publié),mfw,burrows_delta,SCH,-2.197413469183964
+26,"Genius, invités inclus",mfw,cosine_delta,Werenoi,-3.110671992502074
+26,"Genius, invités inclus",mfw,burrows_delta,SCH,-2.2399088116088905
+26,"Genius, invités retirés",mfw,cosine_delta,Werenoi,-3.119554272322579
+26,"Genius, invités retirés",mfw,burrows_delta,SCH,-2.2526456572666596
+26,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.4497656581903406
+26,LRFAF (corpus publié),char,burrows_delta,SCH,-1.9157977612462354
+26,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.533942861955064
+26,"Genius, invités inclus",char,burrows_delta,SCH,-1.9074248035379955
+26,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.518671310890959
+26,"Genius, invités retirés",char,burrows_delta,SCH,-1.9197722846201677
+27,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.7062427797772948
+27,LRFAF (corpus publié),mfw,burrows_delta,ISK,-2.1329673637460447
+27,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.7479838877743745
+27,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.1470228738882957
+27,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.6896991012920095
+27,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.158702396581222
+27,LRFAF (corpus publié),char,cosine_delta,Beendo Z,-2.752440498184415
+27,LRFAF (corpus publié),char,burrows_delta,ISK,-2.0701500222821716
+27,"Genius, invités inclus",char,cosine_delta,Beendo Z,-2.7522999240011554
+27,"Genius, invités inclus",char,burrows_delta,ISK,-2.0577402363997677
+27,"Genius, invités retirés",char,cosine_delta,Beendo Z,-2.7667607537687946
+27,"Genius, invités retirés",char,burrows_delta,ISK,-2.088978336252505
+28,LRFAF (corpus publié),mfw,cosine_delta,Werenoi,-2.905958263879506
+28,LRFAF (corpus publié),mfw,burrows_delta,Zkr,-2.589022132675853
+28,"Genius, invités inclus",mfw,cosine_delta,Werenoi,-2.989623987285792
+28,"Genius, invités inclus",mfw,burrows_delta,Zkr,-2.5363096636258016
+28,"Genius, invités retirés",mfw,cosine_delta,Werenoi,-3.017302155747679
+28,"Genius, invités retirés",mfw,burrows_delta,Zkr,-2.5428484707106893
+28,LRFAF (corpus publié),char,cosine_delta,Zkr,-2.4102678986119392
+28,LRFAF (corpus publié),char,burrows_delta,Zkr,-2.263663120332809
+28,"Genius, invités inclus",char,cosine_delta,Zkr,-2.3382058256565648
+28,"Genius, invités inclus",char,burrows_delta,Zkr,-2.208484248909688
+28,"Genius, invités retirés",char,cosine_delta,Zkr,-2.348216393709445
+28,"Genius, invités retirés",char,burrows_delta,Zkr,-2.20453990415339
+29,LRFAF (corpus publié),mfw,cosine_delta,Rimkus,-2.830692840747271
+29,LRFAF (corpus publié),mfw,burrows_delta,ISK,-1.9981477232652642
+29,"Genius, invités inclus",mfw,cosine_delta,Rimkus,-2.8855935351889754
+29,"Genius, invités inclus",mfw,burrows_delta,ISK,-2.0269248261810597
+29,"Genius, invités retirés",mfw,cosine_delta,Rimkus,-2.8570507889715575
+29,"Genius, invités retirés",mfw,burrows_delta,ISK,-2.065252837138629
+29,LRFAF (corpus publié),char,cosine_delta,​DA Uzi,-2.401892636105122
+29,LRFAF (corpus publié),char,burrows_delta,Niro,-2.1460152827217933
+29,"Genius, invités inclus",char,cosine_delta,Kerchak,-2.445130781432993
+29,"Genius, invités inclus",char,burrows_delta,Niro,-2.129703780744107
+29,"Genius, invités retirés",char,cosine_delta,​DA Uzi,-2.4683601928858017
+29,"Genius, invités retirés",char,burrows_delta,Niro,-2.1303280688134127

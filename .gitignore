@@ -4,6 +4,10 @@
 corpus.csv
 RapFr.csv
 
+# Corpus reconstruit sans les strophes d'invités (20_corpus_sans_invites.py) :
+# même volume que l'original, et entièrement régénérable depuis la collecte.
+corpus_sans_invites.csv
+
 # Environnement Python local
 .venv/
 __pycache__/
@@ -12,8 +16,9 @@ __pycache__/
 # Checkpoints Jupyter
 .ipynb_checkpoints/
 
-# Cache stylométrique régénérable (stylo_features.py)
+# Caches stylométriques régénérables (stylo_features.py), une par variante
 .cache_stylo/
+.cache_stylo_sans_invites/
 
 # Lexiques et données brutes Genius (régénérables via collecte_genius.py)
 .cache_lex/

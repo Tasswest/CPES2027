@@ -25,13 +25,12 @@ import numpy as np
 import pandas as pd
 
 import lrfaf_pipeline as P
-from stylo_features import corpus_csv
+from stylo_features import corpus_brut_csv, export_dir
 
 ARTIST = "Mikeysem"
 RAW_JSON = Path(".cache_lex/mikeysem_raw.json")
 LEX_DIR = Path(".cache_lex")
-RESULT_DIR = Path("export")
-RESULT_DIR.mkdir(exist_ok=True)
+RESULT_DIR = export_dir()
 
 # Colonnes que le pipeline LRFAF ne permet pas de reproduire (voir RAPPORT).
 NOT_REPRODUCIBLE = [
@@ -139,7 +138,7 @@ def match_lrfaf_dtypes(df: pd.DataFrame, corpus: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> None:
-    corpus = pd.read_csv(corpus_csv())
+    corpus = pd.read_csv(corpus_brut_csv())
     consts = P.year_constants(corpus)
     lex = P.load_lexicons(LEX_DIR)
     print(f"Lexiques chargés : "

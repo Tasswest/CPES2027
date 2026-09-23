@@ -30,13 +30,12 @@ import numpy as np
 import pandas as pd
 
 import lrfaf_pipeline as P
-from stylo_features import corpus_csv
+from stylo_features import corpus_brut_csv, export_dir
 
 CACHE = Path(".cache_lex")
 ARCHIVE_URL = ("https://github.com/regicid/genius_french_rap_corpus/"
                "raw/master/corpus_rap_francais.tar.gz")
-RESULT_DIR = Path("export")
-RESULT_DIR.mkdir(exist_ok=True)
+RESULT_DIR = export_dir()
 
 
 def ensure_archive() -> Path:
@@ -151,7 +150,7 @@ def resume(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
 
 
 def main() -> None:
-    corpus = pd.read_csv(corpus_csv())
+    corpus = pd.read_csv(corpus_brut_csv())
     lex = P.load_lexicons(CACHE)
     cols = ["d_n_words", "d_n_unique", "d_n_je", "d_n_lines", "d_mwl",
             "d_n_french"]
