@@ -60,6 +60,9 @@ Il se lit **à deux niveaux** : la section 1 répond à la question en français
 prérequis ; les sections suivantes exposent la méthode et les chiffres, chaque passage
 technique étant suivi d'un encadré « En clair », un lexique fermant l'article.
 
+La méthode complète — récolte, prétraitement, moteur, analyses — est décrite
+pas à pas dans [`METHODE.md`](METHODE.md).
+
 Le texte vit dans [`article_contenu.py`](article_contenu.py), partagé par
 [`12_article_pdf.py`](12_article_pdf.py) et [`17_article_docx.py`](17_article_docx.py) :
 les deux formats ne peuvent pas diverger, et tous les chiffres sont relus dans `export/`.
