@@ -28,6 +28,9 @@ __pycache__/
 # macOS
 .DS_Store
 
+# Fichiers de verrouillage Word, créés tant que le document est ouvert
+~$*
+
 # Sorties brutes de diagnostic : régénérées par les scripts, jamais relues
 # ni par l'article ni par le notebook. Volumineuses, donc non versionnées.
 export/02_2_rangs_par_variante.csv
