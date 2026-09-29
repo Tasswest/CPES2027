@@ -1,0 +1,22 @@
+15:07:24  === pipeline : corpus collectes ===
+
+=== 1/8  corpus publié (15:07) ===
+15:07:24  · corpus déjà présent
+15:07:24  · .cache_stylo/meta.parquet déjà présent, on passe
+
+=== 2/8  collectes Genius (Mikeysem, web7, Ziak) (15:07) ===
+15:07:24  · .cache_lex/mikeysem_raw.json déjà présent, on passe
+15:07:24  · .cache_lex/web7_raw.json déjà présent, on passe
+15:07:24  · .cache_lex/ziak_raw.json déjà présent, on passe
+15:07:24  === terminé en 0 min ===
+15:07:41  === pipeline : balises ===
+
+=== 4/8  re-collecte des paroles balisées (15:07) ===
+15:07:41  ·    34666 titres déjà collectés, on passe
+15:07:41  === terminé en 0 min ===
+15:07:41  === pipeline : article ===
+
+=== 8/8  article (15:07) ===
+15:07:41  ! le .docx est plus récent que article_contenu.py — modifié à la main ?
+15:07:41    régénérer quand même : ./pipeline.sh article --force
+15:07:41  === terminé en 0 min ===

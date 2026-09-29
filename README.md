@@ -109,33 +109,41 @@ et se calibre contre une hypothèse nulle explicite.
 
 ## Pipeline
 
-Les scripts s'exécutent dans l'ordre ; le premier construit un cache de compteurs
-(`.cache_stylo/`, non versionné) qui rend les suivants quasi instantanés.
+Une seule commande enchaîne tout, du corpus brut à l'article :
 
 ```bash
-python3 stylo_features.py              # cache des compteurs par chanson (~1 min)
-python3 02_diagnostic_biais_taille.py  # pourquoi l'approche naïve échoue
-python3 03_validation_protocole.py     # validation sur vérité-terrain
-python3 04_attribution_ziak.py         # application à Ziak, verdict
-python3 05_robustesse.py               # sensibilité, imposteurs, générations
-python3 06_profil_stylistique.py       # portrait : marqueurs, excentricité
-python3 collecte_genius.py 3152412 .cache_lex/mikeysem_raw.json   # Mikeysem
-python3 08_ajout_mikeysem.py           # ajoute Mikeysem au format LRFAF
-python3 09_controle_reproduction.py    # contrôles du pipeline reconstitué
-python3 10_test_ziak_mikeysem.py       # test de l'hypothèse Mikeysem
-python3 13_validation_alias_reels.py   # validation sur recouvrements réels
-python3 14_test_alias_temporel.py      # coût d'un changement d'identité
-python3 collecte_genius.py 1078135 .cache_lex/web7_raw.json       # web7 (ex-7 Jaws)
-python3 collecte_genius.py 2113831 .cache_lex/ziak_raw.json       # Ziak, avec balises
-python3 15_test_ziak_7jaws.py          # web7 au niveau de l'artiste, crédits
-python3 16_test_2025_web7.py           # expérience naturelle 2025, sans featurings
-python3 19_collecte_corpus.py          # balises Genius du corpus entier (~6 h)
-./rejouer_variantes.sh                 # corpus sans featurings (options 1 et 2) + étude
-python3 07_figures.py                  # figures de l'article
-CORPUS_VARIANTE=sans_invites python3 07_figures.py
-python3 12_article_pdf.py              # article_ziak_stylometrie.pdf
-python3 17_article_docx.py             # article_ziak_stylometrie.docx
+./pipeline.sh
 ```
+
+Chaque étape est **idempotente** : ce qui existe déjà n'est pas refait, si bien
+qu'une relance après interruption reprend où elle s'est arrêtée sans rejouer
+les heures de collecte.
+
+| Étape | Ce qu'elle fait | Durée |
+|---|---|---|
+| `corpus` | télécharge LRFAF, construit le cache de compteurs | ~2 min |
+| `collectes` | Mikeysem, web7 et Ziak depuis Genius | ~5 min |
+| `analyses` | l'étude sur le corpus publié (13 scripts) | ~15 min |
+| `balises` | re-collecte des paroles balisées, 34 732 pages | **~6 h** |
+| `corpus_propres` | reconstruit les deux corpus sans featurings | ~3 min |
+| `variantes` | rejoue l'étude sur chacune | ~20 min |
+| `figures` | les figures, pour chaque corpus | ~2 min |
+| `article` | le PDF et le Word | ~10 s |
+
+```bash
+./pipeline.sh analyses figures     # seulement ces étapes
+./pipeline.sh --depuis variantes   # à partir de celle-ci
+./pipeline.sh balises --oui        # autorise l'étape longue
+./pipeline.sh article --force      # passe outre la protection du .docx
+./pipeline.sh --liste              # les étapes disponibles
+```
+
+Deux garde-fous. L'étape `balises` ne démarre pas sans `--oui`, pour qu'on ne
+lance jamais six heures de collecte par inadvertance. Et l'étape `article`
+refuse d'écraser un `.docx` plus récent que le texte source — signe qu'il a été
+retouché à la main.
+
+Journal horodaté : `export/pipeline.log`.
 
 Le pipeline LRFAF reconstitué ([`lrfaf_pipeline.py`](lrfaf_pipeline.py)) et son rapport
 de reproductibilité ([`RAPPORT_LRFAF.md`](RAPPORT_LRFAF.md)) documentent, colonne par
