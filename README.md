@@ -62,8 +62,9 @@ les résultats, chaque verdict étant donné sur les trois corpus (publié, et d
 d'en retirer les featurings).
 
 La méthode complète — récolte, prétraitement, moteur, analyses — est décrite
-pas à pas dans [`METHODE.md`](METHODE.md), et le code lui-même, bloc par bloc,
-dans [`CODE.md`](CODE.md).
+pas à pas dans [`METHODE.md`](METHODE.md), le code lui-même, bloc par bloc,
+dans [`CODE.md`](CODE.md), et la chaîne de traitement en schémas dans
+[`PIPELINE.md`](PIPELINE.md).
 
 Le texte vit dans [`article_contenu.py`](article_contenu.py), partagé par
 [`12_article_pdf.py`](12_article_pdf.py) et [`17_article_docx.py`](17_article_docx.py) :
