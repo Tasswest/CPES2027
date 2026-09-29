@@ -230,12 +230,19 @@ ETAPES_TEXTE = [
      "l'URL de chaque morceau, et la page Genius porte encore ses balises. {recol} pages "
      "sont re-téléchargées, en six heures environ."),
     ("6.  Reconstruire deux corpus propres",
-     "La difficulté est de distinguer un membre de groupe d'un invité : la règle naïve "
-     "viderait les groupes de leur contenu, les balises y nommant les membres, dont les "
-     "couplets <i>sont</i> le texte du groupe. Un intervenant récurrent est donc tenu "
-     "pour interne. Deux corpus en sortent : l'un retire les strophes d'invités "
-     "({part} % des mots), l'autre écarte en entier tout titre qui en comporte "
-     "({ecartes} titres)."),
+     "Sur Genius, chaque bloc de paroles porte le nom de celui qui le chante — "
+     "«&nbsp;[Couplet 1 : Akhenaton]&nbsp;». On pourrait donc supprimer tout bloc qui ne "
+     "nomme pas l'artiste principal, mais cela viderait les groupes de leur contenu : "
+     "chez IAM, les blocs nomment Akhenaton et Shurik'n, dont les couplets <i>sont</i> le "
+     "texte d'IAM.<br/>"
+     "Reste à distinguer un membre du groupe d'un invité de passage, et c'est la "
+     "fréquence qui les sépare : <b>un nom qui revient dans une grande partie des "
+     "morceaux de l'artiste est celui d'un membre, et ses couplets sont gardés ; un nom "
+     "qui n'apparaît qu'une ou deux fois est celui d'un invité, et ses couplets sont "
+     "retirés.</b><br/>"
+     "Deux corpus en sortent : l'un retire les couplets d'invités ({part}&nbsp;% des "
+     "mots), l'autre écarte en entier tout morceau qui en comporte ({ecartes} morceaux). "
+     "Le premier garde plus de matière, le second ne laisse aucun doute sur ce qui reste."),
     ("7.  Rejouer l'étude sur chaque corpus",
      "Les mêmes scripts sont relancés sur chaque variante, avec un cache et un dossier de "
      "résultats séparés : les chiffres du corpus publié restent intacts. C'est le test "
