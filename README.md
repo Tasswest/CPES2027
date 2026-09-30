@@ -161,9 +161,11 @@ balises de section de Genius).
 ## Notebooks
 
 - [`01_description_variables_quantitatives.ipynb`](01_description_variables_quantitatives.ipynb) : description des variables quantitatives du corpus (notebook d'origine du dépôt amont).
+- [`00_pipeline_traitement.ipynb`](00_pipeline_traitement.ipynb) : **la chaîne de traitement, code à l'appui**. Pour chaque étape, le code réel — extrait des modules par `inspect.getsource`, donc impossible à désynchroniser — puis sa démonstration sur un exemple. Se termine par une attribution complète en quinze lignes.
 - [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) : **l'étude complète**, en onze sections numérotées — du diagnostic du biais de taille au verdict comparé sur les trois corpus. Il recalcule en direct ce qui tient en quelques secondes (biais de taille, contrôle positif, classement des 392 candidats) et relit dans `export/` ce qui demande des heures, en le signalant à chaque fois. Il s'exécute de bout en bout en moins de dix secondes.
 
-Le notebook est produit par [`23_notebook.py`](23_notebook.py), qui l'écrit puis
-l'exécute : une cellule en erreur interrompt la construction au lieu de passer
+Les deux notebooks sont produits par [`23_notebook.py`](23_notebook.py) et
+[`24_notebook_pipeline.py`](24_notebook_pipeline.py), qui les écrivent puis
+les exécutent : une cellule en erreur interrompt la construction au lieu de passer
 inaperçue. Comme pour le Word, une fois le notebook retouché à la main c'est lui
 qui fait foi — relancer le script écraserait ces modifications.
