@@ -161,6 +161,10 @@ etape_article() {
   python3 12_article_pdf.py >> "$JOURNAL" 2>&1
   log "→ 17_article_docx.py"
   python3 17_article_docx.py >> "$JOURNAL" 2>&1
+  log "→ 21_schema_pipeline.py"
+  python3 21_schema_pipeline.py >> "$JOURNAL" 2>&1
+  log "→ 23_notebook.py"
+  python3 23_notebook.py >> "$JOURNAL" 2>&1
 }
 
 # ----------------------------------------------------------------------------
@@ -178,7 +182,7 @@ Usage : ./pipeline.sh [options] [étape...]
   corpus_propres  reconstruit les deux corpus nettoyés
   variantes       rejoue l'étude sur chaque variante    (~20 min)
   figures         les figures, pour chaque corpus
-  article         le PDF et le Word
+  article         le PDF, le Word, le schéma imprimable et le notebook
 
 Options :
   --depuis ÉTAPE  démarre à cette étape et continue jusqu'au bout

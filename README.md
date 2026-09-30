@@ -161,9 +161,9 @@ balises de section de Genius).
 ## Notebooks
 
 - [`01_description_variables_quantitatives.ipynb`](01_description_variables_quantitatives.ipynb) : description des variables quantitatives du corpus (notebook d'origine du dépôt amont).
+- [`02_stylometrie_ziak.ipynb`](02_stylometrie_ziak.ipynb) : **l'étude complète**, en onze sections numérotées — du diagnostic du biais de taille au verdict comparé sur les trois corpus. Il recalcule en direct ce qui tient en quelques secondes (biais de taille, contrôle positif, classement des 392 candidats) et relit dans `export/` ce qui demande des heures, en le signalant à chaque fois. Il s'exécute de bout en bout en moins de dix secondes.
 
-Le notebook `02_stylometrie_ziak.ipynb` a été retiré : écrit pour un corpus
-unique, il ignorait les trois variantes, le nettoyage des featurings et
-l'hypothèse web7, et contredisait donc l'étude. Il reste dans l'historique git.
-L'étude reproductible vit désormais dans les scripts, que
-[`rejouer_variantes.sh`](rejouer_variantes.sh) enchaîne dans l'ordre.
+Le notebook est produit par [`23_notebook.py`](23_notebook.py), qui l'écrit puis
+l'exécute : une cellule en erreur interrompt la construction au lieu de passer
+inaperçue. Comme pour le Word, une fois le notebook retouché à la main c'est lui
+qui fait foi — relancer le script écraserait ces modifications.
